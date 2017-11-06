@@ -38,6 +38,6 @@ public class User implements IUser {
 
   @Override
   public int compareTo(IUser that) {
-    return this.userId - that.getUserId();
+    return this.getUserId() - that.getUserId();
   }
 }
