@@ -1,6 +1,6 @@
 package edu.neu.ccs.cs5010;
 
 public interface ICmdHandler {
-  Boolean isValid();
+  boolean isValid();
   String getErrorMessage();
 }

@@ -2,6 +2,6 @@ package edu.neu.ccs.cs5010;
 
 public interface INodesCsvParser {
   IUser getNextUser();
-  Boolean hasNextUser();
+  boolean hasNextUser();
 
 }

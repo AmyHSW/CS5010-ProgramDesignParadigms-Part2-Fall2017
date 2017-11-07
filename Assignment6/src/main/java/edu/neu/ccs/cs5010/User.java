@@ -4,7 +4,7 @@ import java.time.LocalDate;
 
 public class User implements IUser {
 
-  public User(int userId, LocalDate date, Gender gender, int age, String city) {}
+  public User(int userId, LocalDate date, char gender, int age, String city) {}
 
   @Override
   public int getUserId() {
