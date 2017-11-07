@@ -76,7 +76,7 @@ public class User implements IUser {
   @Override
   public String toString() {
     return "User{" + "userId=" + userId + ", createdDate=" + createdDate + ", gender=" + gender
-            + ", age=" + age + ", city='" + city + ", numFollowers=" + numFollowers +
-            ", numFollowees=" + numFollowees + '}';
+        + ", age=" + age + ", city='" + city + ", numFollowers=" + numFollowers +
+        ", numFollowees=" + numFollowees + '}';
   }
 }

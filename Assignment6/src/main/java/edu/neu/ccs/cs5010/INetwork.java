@@ -5,9 +5,9 @@ import java.util.Set;
 
 public interface INetwork {
 
-  Void addUser(IUser user);
+  void addUser(IUser user);
 
-  Void addEdge(IEdge edge);
+  void addEdge(IEdge edge);
 
   List<IUser> getFriendList(IUser user);
 

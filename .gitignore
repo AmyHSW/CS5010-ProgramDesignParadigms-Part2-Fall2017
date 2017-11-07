@@ -1,8 +1,8 @@
 # IntelliJ config files #
-Assignment6/.idea/
-Assignment6/Assignment6.iml
+assignment6/.idea/
+assignment6/Assignment6.iml
 
 # Output directories #
-Assignment6/target/
+assignment6/target/
 
-Assignment6/.DS_Store
+assignment6/.DS_Store
