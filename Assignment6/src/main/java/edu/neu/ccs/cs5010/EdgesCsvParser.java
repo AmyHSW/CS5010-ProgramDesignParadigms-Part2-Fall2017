@@ -1,15 +1,22 @@
 package edu.neu.ccs.cs5010;
 
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Iterator;
 import java.util.List;
 
 public class EdgesCsvParser implements IEdgesCsvParser {
-  private List<String> edgeInfoLines;
+  private List<List<String>> edgeInfoLines;
   private static final int SOURCE_INDEX = 0;
   private static final int DESTINATION_INDEX = 1;
 
   public EdgesCsvParser(List<String> stringLines) {
-    edgeInfoLines = stringLines;
+    edgeInfoLines = new ArrayList<>();
+    for (int i = 1; i < stringLines.size(); i++) {
+      String currentEdgeLine = stringLines.get(i);
+      String[] elements = currentEdgeLine.split(",");
+      edgeInfoLines.add(Arrays.asList(elements));
+    }
   }
 
   @Override
@@ -18,7 +25,7 @@ public class EdgesCsvParser implements IEdgesCsvParser {
   }
 
   private class EdgeIterator implements Iterator<IEdge> {
-    int index = 1;
+    int index = 0;
 
     @Override
     public boolean hasNext() {
@@ -27,10 +34,9 @@ public class EdgesCsvParser implements IEdgesCsvParser {
 
     @Override
     public IEdge next() {
-      String currentEdgeLine = edgeInfoLines.get(index);
-      String[] elements = currentEdgeLine.split(",");
-      int fromId = Integer.parseInt(elements[SOURCE_INDEX]);
-      int toID = Integer.parseInt(elements[DESTINATION_INDEX]);
+      List<String> elements = edgeInfoLines.get(index);
+      int fromId = Integer.parseInt(elements.get(SOURCE_INDEX));
+      int toID = Integer.parseInt(elements.get(DESTINATION_INDEX));
       index++;
       return new Edge(fromId, toID);
     }
