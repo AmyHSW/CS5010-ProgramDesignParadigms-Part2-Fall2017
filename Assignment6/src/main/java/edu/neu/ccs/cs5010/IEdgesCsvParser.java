@@ -1,10 +1,8 @@
 package edu.neu.ccs.cs5010;
 
-import edu.neu.ccs.cs5010.IEdge;
+import java.util.Iterator;
 
 public interface IEdgesCsvParser {
 
-  IEdge getNextEdge();
-
-  boolean hasNextEdge();
+  Iterator<IEdge> iterator();
 }

@@ -1,8 +1,5 @@
 package edu.neu.ccs.cs5010;
 
-import edu.neu.ccs.cs5010.INodesCsvParser;
-import edu.neu.ccs.cs5010.IUser;
-
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.Iterator;
@@ -11,10 +8,10 @@ import java.util.List;
 public class NodesCsvParser implements INodesCsvParser {
   private List<String> userInfoLines;
   private static final int NODE_ID_INDEX = 0;
-  private static int CREATED_DATE_INDEX = 1;
-  private static int GENDER_INDEX = 2;
-  private static int AGE_INDEX = 3;
-  private static int CITY_INDEX = 4;
+  private static final int CREATED_DATE_INDEX = 1;
+  private static final int GENDER_INDEX = 2;
+  private static final int AGE_INDEX = 3;
+  private static final int CITY_INDEX = 4;
 
   public NodesCsvParser(List<String> stringLines) {
     userInfoLines = stringLines;
