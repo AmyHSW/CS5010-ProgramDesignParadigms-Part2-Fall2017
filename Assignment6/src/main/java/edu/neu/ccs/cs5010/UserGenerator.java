@@ -6,6 +6,7 @@ import java.util.List;
 import java.util.NoSuchElementException;
 
 public class UserGenerator implements IUserGenerator {
+
   private ICsvParser csvParser;
   private static final String DATE_FORMAT = "M/d/yyyy";
   private static final int NODE_ID_INDEX = 0;

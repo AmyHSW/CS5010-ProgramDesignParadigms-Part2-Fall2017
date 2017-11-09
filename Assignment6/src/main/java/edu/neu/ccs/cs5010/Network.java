@@ -1,5 +1,7 @@
 package edu.neu.ccs.cs5010;
 
+import org.omg.CORBA.DynAnyPackage.Invalid;
+
 import java.util.NoSuchElementException;
 import java.util.HashSet;
 import java.util.ArrayList;
@@ -10,10 +12,12 @@ import java.util.Set;
 import java.util.Random;
 
 public class Network implements INetwork {
-  private Map<IUser, Set<IUser>> connectionsMap;
-  private Map<Integer, IUser> usersMap;
-  private List<IUser> influencers;
+
   private static final int INFLUENCER_BOUND = 25;
+
+  private final Map<IUser, Set<IUser>> connectionsMap;
+  private final Map<Integer, IUser> usersMap;
+  private final List<IUser> influencers;
 
   public Network() {
     connectionsMap = new HashMap<>();
@@ -35,14 +39,15 @@ public class Network implements INetwork {
       IUser destination = usersMap.get(toId);
       source.addOneFollowee();
       destination.addOneFollower();
-      connectionsMap.put(source, connectionsMap.getOrDefault(source, new HashSet<>())).add(destination);
+      connectionsMap.put(source, connectionsMap.getOrDefault(source, new HashSet<>()))
+          .add(destination);
     }
   }
 
   @Override
   public Set<IUser> getFriendList(IUser user) {
     if (!connectionsMap.containsKey(user)) {
-      throw new NoSuchElementException("No such user in the connection");
+      throw new InvalidUserException("No such user in the connection");
     }
     return connectionsMap.get(user);
   }

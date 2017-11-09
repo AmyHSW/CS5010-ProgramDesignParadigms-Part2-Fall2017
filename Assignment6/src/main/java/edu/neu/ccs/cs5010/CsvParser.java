@@ -6,6 +6,7 @@ import java.util.Iterator;
 import java.util.List;
 
 public class CsvParser implements ICsvParser {
+
   private Iterator<List<String>> iterator;
 
   public CsvParser(List<String> stringLines) {

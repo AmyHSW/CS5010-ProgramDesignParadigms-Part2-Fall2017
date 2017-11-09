@@ -14,7 +14,8 @@ public class IoLibrary implements IIoLibrary {
     List<String> lines = new ArrayList<>();
     try (BufferedReader inputFile =
                  new BufferedReader(
-                         new InputStreamReader(new FileInputStream(filename), StandardCharsets.UTF_8)); ) {
+                         new InputStreamReader(new FileInputStream(filename),
+                                               StandardCharsets.UTF_8))) {
       String line;
       while ((line = inputFile.readLine()) != null) {
         lines.add(line);
