@@ -9,7 +9,7 @@ public interface INetwork {
 
   void addEdge(IEdge edge);
 
-  List<IUser> getFriendList(IUser user);
+  Set<IUser> getFriendList(IUser user);
 
   List<IUser> getInfluencers();
 
