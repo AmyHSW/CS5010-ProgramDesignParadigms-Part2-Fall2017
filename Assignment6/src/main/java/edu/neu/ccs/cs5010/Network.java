@@ -36,9 +36,6 @@ public class Network implements INetwork {
       source.addOneFollowee();
       destination.addOneFollower();
       connectionsMap.put(source, connectionsMap.getOrDefault(source, new HashSet<>())).add(destination);
-      if (destination.getNumFollowers() > INFLUENCER_BOUND) {
-        influencers.add(destination);
-      }
     }
   }
 
@@ -52,6 +49,11 @@ public class Network implements INetwork {
 
   @Override
   public List<IUser> getInfluencers() {
+    for (IUser user: usersMap.values()) {
+      if (user.getNumFollowers() > INFLUENCER_BOUND) {
+        influencers.add(user);
+      }
+    }
     return influencers;
   }
 
