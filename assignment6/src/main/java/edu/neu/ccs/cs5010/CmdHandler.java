@@ -189,4 +189,43 @@ public class CmdHandler implements ICmdHandler {
     return errorMessage.toString();
   }
 
+  @Override
+  public boolean equals(Object other) {
+    if (this == other) {
+      return true;
+    }
+    if (other == null || getClass() != other.getClass()) {
+      return false;
+    }
+
+    CmdHandler that = (CmdHandler) other;
+
+    if (processingFlag != that.processingFlag) {
+      return false;
+    }
+    if (numUsersToProcess != that.numUsersToProcess) {
+      return false;
+    }
+    if (numRecommendations != that.numRecommendations) {
+      return false;
+    }
+    if (!nodeFile.equals(that.nodeFile)) {
+      return false;
+    }
+    if (!edgeFile.equals(that.edgeFile)) {
+      return false;
+    }
+    return outputFile.equals(that.outputFile);
+  }
+
+  @Override
+  public int hashCode() {
+    int result = nodeFile.hashCode();
+    result = 31 * result + edgeFile.hashCode();
+    result = 31 * result + outputFile.hashCode();
+    result = 31 * result + (int) processingFlag;
+    result = 31 * result + numUsersToProcess;
+    result = 31 * result + numRecommendations;
+    return result;
+  }
 }
