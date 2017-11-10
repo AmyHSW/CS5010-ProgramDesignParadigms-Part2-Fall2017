@@ -24,6 +24,7 @@ public class CmdHandler implements ICmdHandler {
   private static final String PROCESSING_FLAG = "--processing-flag";
   private static final String NUM_USERS_TO_PROCESS = "--number-of-users-to-process";
   private static final String NUM_RECOMMENDATIONS = "--number-of-recommendations";
+  private static final int START_INDEX_OF_OPTIONAL_ARGUMENTS = 3;
 
   private boolean valid = false;
   private StringBuilder errorMessage = new StringBuilder();
@@ -47,7 +48,7 @@ public class CmdHandler implements ICmdHandler {
     if (!validateRequiredArguments(args[0], args[1], args[2])) {
       return;
     }
-    if (validateOptionalArguments(args, 3, len - 1)) {
+    if (validateOptionalArguments(args)) {
       valid = true;
     }
   }
@@ -73,10 +74,12 @@ public class CmdHandler implements ICmdHandler {
     }
   }
 
-  private boolean validateOptionalArguments(String[] args, int start, int end) {
+  private boolean validateOptionalArguments(String[] args) {
+    int start = START_INDEX_OF_OPTIONAL_ARGUMENTS;
     if (start == args.length) {
       return true;
     }
+    int end = args.length - 1;
     while (start < end) {
       if (!validateArgumentPair(args[start++], args[start++])) {
         return false;

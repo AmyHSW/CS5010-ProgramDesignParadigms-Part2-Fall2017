@@ -98,9 +98,7 @@ public class RecommendationSystem {
   }
 
   private void recommendFriendsForNewbie(IUser user) {
-    if (!isNewbie(user)
-        || userRecomMap.get(user).size() == numRecommendations
-        || network.getFriendsOfUser(user.getUserId()).size() == 0) {
+    if (!isNewbie(user) || network.getFriendsOfUser(user.getUserId()).size() == 0) {
       return;
     }
     int idWithMaxFriends = -1;
