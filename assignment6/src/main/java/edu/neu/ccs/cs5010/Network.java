@@ -1,8 +1,5 @@
 package edu.neu.ccs.cs5010;
 
-import org.omg.CORBA.DynAnyPackage.Invalid;
-
-import java.util.NoSuchElementException;
 import java.util.HashSet;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -15,7 +12,7 @@ public class Network implements INetwork {
 
   private static final int INFLUENCER_BOUND = 25;
 
-  private final Map<IUser, Set<IUser>> connectionsMap;
+  private final Map<Integer, Set<Integer>> connectionsMap;
   private final Map<Integer, IUser> usersMap;
   private final List<IUser> influencers;
 
@@ -27,7 +24,9 @@ public class Network implements INetwork {
 
   @Override
   public void addUser(IUser user) {
-    usersMap.put(user.getUserId(), user);
+    int userId = user.getUserId();
+    usersMap.put(userId, user);
+    connectionsMap.put(userId, new HashSet<>());
   }
 
   @Override
@@ -39,17 +38,16 @@ public class Network implements INetwork {
       IUser destination = usersMap.get(toId);
       source.addOneFollowee();
       destination.addOneFollower();
-      connectionsMap.put(source, connectionsMap.getOrDefault(source, new HashSet<>()))
-          .add(destination);
+      connectionsMap.get(fromId).add(toId);
     }
   }
 
   @Override
-  public Set<IUser> getFriendList(IUser user) {
-    if (!connectionsMap.containsKey(user)) {
+  public Set<Integer> getFriendList(int userId) {
+    if (!connectionsMap.containsKey(userId)) {
       throw new InvalidUserException("No such user in the connection");
     }
-    return connectionsMap.get(user);
+    return connectionsMap.get(userId);
   }
 
   @Override
