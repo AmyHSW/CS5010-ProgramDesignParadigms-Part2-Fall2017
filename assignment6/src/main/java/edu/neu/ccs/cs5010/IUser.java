@@ -8,10 +8,6 @@ public interface IUser extends Comparable<IUser> {
 
   void addOneFollower();
 
-  void addOneFollowee();
-
-  int getNumFollowees();
-
   int getNumFollowers();
 
   LocalDate getCreatedDate();

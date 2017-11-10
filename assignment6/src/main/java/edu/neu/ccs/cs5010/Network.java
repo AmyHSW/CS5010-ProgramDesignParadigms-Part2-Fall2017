@@ -1,25 +1,23 @@
 package edu.neu.ccs.cs5010;
 
-import java.util.HashSet;
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
-import java.util.Random;
 
 public class Network implements INetwork {
 
-  private static final int INFLUENCER_BOUND = 25;
-
   private final Map<Integer, Set<Integer>> connectionsMap;
   private final Map<Integer, IUser> usersMap;
-  private final List<IUser> influencers;
+  private final int influencerBound;
 
-  public Network() {
+  public Network(int influencerBound) {
     connectionsMap = new HashMap<>();
     usersMap = new HashMap<>();
-    influencers = new ArrayList<>();
+    this.influencerBound = influencerBound;
   }
 
   @Override
@@ -34,16 +32,14 @@ public class Network implements INetwork {
     int fromId = edge.getFromId();
     int toId = edge.getToId();
     if (usersMap.containsKey(fromId) && usersMap.containsKey(toId)) {
-      IUser source = usersMap.get(fromId);
       IUser destination = usersMap.get(toId);
-      source.addOneFollowee();
       destination.addOneFollower();
       connectionsMap.get(fromId).add(toId);
     }
   }
 
   @Override
-  public Set<Integer> getFriendList(int userId) {
+  public Set<Integer> getFriendsOfUser(int userId) {
     if (!connectionsMap.containsKey(userId)) {
       throw new InvalidUserException("No such user in the connection");
     }
@@ -51,25 +47,19 @@ public class Network implements INetwork {
   }
 
   @Override
-  public List<IUser> getInfluencers() {
+  public List<Integer> getInfluencers() {
+    List<Integer> influencers = new ArrayList<>();
     for (IUser user: usersMap.values()) {
-      if (user.getNumFollowers() > INFLUENCER_BOUND) {
-        influencers.add(user);
+      if (user.getNumFollowers() > influencerBound) {
+        influencers.add(user.getUserId());
       }
     }
     return influencers;
   }
 
   @Override
-  public IUser getRandomUser() {
-    Random rand = new Random();
-    int randomId = rand.nextInt(usersMap.size());
-    return usersMap.get(randomId);
-  }
-
-  @Override
-  public Set<Integer> getUserIdSet() {
-    return usersMap.keySet();
+  public Collection<IUser> getAllUsers() {
+    return usersMap.values();
   }
 
   @Override
@@ -83,21 +73,16 @@ public class Network implements INetwork {
 
     Network network = (Network) other;
 
-    if (connectionsMap != null ? !connectionsMap.equals(network.connectionsMap)
-            : network.connectionsMap != null)
-      return false;
-    if (usersMap != null ? !usersMap.equals(network.usersMap) : network.usersMap != null) {
+    if (!connectionsMap.equals(network.connectionsMap)) {
       return false;
     }
-    return influencers != null ? influencers.equals(network.influencers)
-            : network.influencers == null;
+    return usersMap.equals(network.usersMap);
   }
 
   @Override
   public int hashCode() {
     int result = connectionsMap != null ? connectionsMap.hashCode() : 0;
     result = 31 * result + (usersMap != null ? usersMap.hashCode() : 0);
-    result = 31 * result + (influencers != null ? influencers.hashCode() : 0);
     return result;
   }
 }

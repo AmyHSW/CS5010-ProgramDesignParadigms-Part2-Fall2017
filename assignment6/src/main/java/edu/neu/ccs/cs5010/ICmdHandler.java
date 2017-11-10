@@ -14,6 +14,8 @@ public interface ICmdHandler {
 
   int getNumRecommendations();
 
+  int getInfluencerBound();
+
   boolean isValid();
 
   String getErrorMessage();

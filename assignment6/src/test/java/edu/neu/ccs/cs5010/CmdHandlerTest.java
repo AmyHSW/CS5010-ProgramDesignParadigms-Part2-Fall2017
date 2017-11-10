@@ -40,7 +40,7 @@ public class CmdHandlerTest {
     cmdHandler4 = new CmdHandler(args4);
 
     String[] args5 = {"nodes_small.csv", "edges_small.csv", "output.csv",
-        "--processing-flag", "e", "--number-of-users-to-process", "-1"};
+        "--processing-flag", "e", "--number-of-users-to-process", "a"};
     cmdHandler5 = new CmdHandler(args5);
 
     String[] args6 = {"nodes_small.csv", "edges_small.csv", "output.csv",

@@ -6,12 +6,20 @@ public class CmdHandler implements ICmdHandler {
   private static final int NUM_RECOMMENDATIONS_UPPER_BOUND = 100;
   private static final int NUM_RECOMMENDATIONS_DEFAULT = 15;
 
+  private static final String NODE_FILE_SMALL = "nodes_small.csv";
+  private static final String NODE_FILE_LARGE = "nodes_10000.csv";
   private static final int TOTAL_NUM_USERS_SMALL = 100;
   private static final int TOTAL_NUM_USERS_LARGE = 9500;
+
   private static final int NUM_USERS_TO_PROCESS_LOWER_BOUND = 1;
   private static final int NUM_USERS_TO_PROCESS_DEFAULT = 100;
 
   private static final char PROCESSING_FLAG_DEFAULT = 's';
+  private static final char RANDOM_PROCESS = 'r';
+  private static final char PROCESS_FROM_END = 'e';
+
+  private static final int INFLUENCER_BOUND_SMALL = 25;
+  private static final int INFLUENCER_BOUND_LARGE = 250;
 
   private static final String PROCESSING_FLAG = "--processing-flag";
   private static final String NUM_USERS_TO_PROCESS = "--number-of-users-to-process";
@@ -87,9 +95,9 @@ public class CmdHandler implements ICmdHandler {
       case PROCESSING_FLAG:
         return validateProcessingFlag(argument);
       case NUM_USERS_TO_PROCESS:
-        return isPositiveInteger(argument) && validateNumUsersToProcess(Integer.parseInt(argument));
+        return isInteger(argument) && validateNumUsersToProcess(Integer.parseInt(argument));
       case NUM_RECOMMENDATIONS:
-        return isPositiveInteger(argument) && validateNumRecommendations(Integer.parseInt(argument));
+        return isInteger(argument) && validateNumRecommendations(Integer.parseInt(argument));
       default:
         errorMessage.append(flag).append(" cannot be recognized\n");
         return false;
@@ -98,7 +106,9 @@ public class CmdHandler implements ICmdHandler {
 
   private boolean validateProcessingFlag(String arg) {
     if (arg.length() == 1
-        && (arg.charAt(0) == 's' || arg.charAt(0) == 'e' || arg.charAt(0) == 'r')) {
+        && (arg.charAt(0) == PROCESSING_FLAG_DEFAULT
+        || arg.charAt(0) == RANDOM_PROCESS
+        || arg.charAt(0) == PROCESS_FROM_END)) {
       processingFlag = arg.charAt(0);
       return true;
     } else {
@@ -107,7 +117,7 @@ public class CmdHandler implements ICmdHandler {
     }
   }
 
-  private boolean isPositiveInteger(String argument) {
+  private boolean isInteger(String argument) {
     if (argument.matches("\\d+")) {
       return true;
     } else {
@@ -123,7 +133,7 @@ public class CmdHandler implements ICmdHandler {
       return false;
     }
     switch (nodeFile) {
-      case "nodes_small.csv":
+      case NODE_FILE_SMALL:
         if (num > TOTAL_NUM_USERS_SMALL) {
           errorMessage.append(num)
               .append(" is greater than total number of users\n");
@@ -131,7 +141,7 @@ public class CmdHandler implements ICmdHandler {
         }
         numUsersToProcess = num;
         return true;
-      case "nodes_10000.csv":
+      case NODE_FILE_LARGE:
         if (num > TOTAL_NUM_USERS_LARGE) {
           errorMessage.append(num)
               .append(" is greater than total number of users\n");
@@ -184,6 +194,18 @@ public class CmdHandler implements ICmdHandler {
   @Override
   public int getNumRecommendations() {
     return numRecommendations;
+  }
+
+  @Override
+  public int getInfluencerBound() {
+    switch (nodeFile) {
+      case NODE_FILE_SMALL:
+        return INFLUENCER_BOUND_SMALL;
+      case NODE_FILE_LARGE:
+        return INFLUENCER_BOUND_LARGE;
+      default:
+        return -1;
+    }
   }
 
   @Override

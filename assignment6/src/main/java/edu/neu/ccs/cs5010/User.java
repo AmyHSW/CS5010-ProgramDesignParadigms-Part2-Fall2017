@@ -9,7 +9,6 @@ public class User implements IUser {
   private int age;
   private String city;
   private int numFollowers;
-  private int numFollowees;
 
   public User(int userId, LocalDate createdDate, char gender, int age, String city) {
     this.userId = userId;
@@ -27,16 +26,6 @@ public class User implements IUser {
   @Override
   public void addOneFollower() {
     numFollowers++;
-  }
-
-  @Override
-  public void addOneFollowee() {
-    numFollowees++;
-  }
-
-  @Override
-  public int getNumFollowees() {
-    return numFollowees;
   }
 
   @Override
@@ -76,7 +65,6 @@ public class User implements IUser {
   @Override
   public String toString() {
     return "User{" + "userId=" + userId + ", createdDate=" + createdDate + ", gender=" + gender
-        + ", age=" + age + ", city='" + city + ", numFollowers=" + numFollowers +
-        ", numFollowees=" + numFollowees + '}';
+        + ", age=" + age + ", city=" + city + ", numFollowers=" + numFollowers + "}";
   }
 }

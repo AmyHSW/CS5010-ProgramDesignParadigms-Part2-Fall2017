@@ -1,5 +1,6 @@
 package edu.neu.ccs.cs5010;
 
+import java.util.Collection;
 import java.util.List;
 import java.util.Set;
 
@@ -9,12 +10,10 @@ public interface INetwork {
 
   void addEdge(IEdge edge);
 
-  Set<Integer> getFriendList(int userId);
+  Set<Integer> getFriendsOfUser(int userId);
 
-  List<IUser> getInfluencers();
+  List<Integer> getInfluencers();
 
-  IUser getRandomUser();
-
-  Set<Integer> getUserIdSet();
+  Collection<IUser> getAllUsers();
 
 }
