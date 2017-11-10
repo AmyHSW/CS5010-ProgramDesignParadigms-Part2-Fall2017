@@ -63,24 +63,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RecommendationSystem.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="RecommendationSystem.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs5010/RecommendationSystem.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="143">
-              <caret line="123" column="43" lean-forward="true" selection-start-line="123" selection-start-column="43" selection-end-line="123" selection-end-column="43" />
+            <state relative-caret-position="305">
+              <caret line="190" column="3" lean-forward="true" selection-start-line="190" selection-start-column="3" selection-end-line="190" selection-end-column="3" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#3286#3287#0" expanded="true" />
-                <element signature="e#3364#3365#0" expanded="true" />
+                <element signature="e#3421#3422#0" expanded="true" />
+                <element signature="e#3499#3500#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Network.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Network.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs5010/Network.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2106">
+            <state relative-caret-position="1944">
               <caret line="87" column="1" lean-forward="true" selection-start-line="87" selection-start-column="1" selection-end-line="87" selection-end-column="1" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -152,8 +152,8 @@
         <option value="$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs5010/UserGenerator.java" />
         <option value="$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs5010/Network.java" />
         <option value="$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs5010/INetwork.java" />
-        <option value="$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs5010/RecommendationSystem.java" />
         <option value="$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs5010/CmdHandler.java" />
+        <option value="$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs5010/RecommendationSystem.java" />
       </list>
     </option>
   </component>
@@ -170,7 +170,7 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-188" />
     <option name="y" value="23" />
     <option name="width" value="1934" />
@@ -281,7 +281,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.CmdHandlerTest">
+  <component name="RunManager" selected="Application.RecommendationSystem">
     <configuration name="CmdHandlerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -413,8 +413,8 @@
     </list>
     <recent_temporary>
       <list size="2">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.CmdHandlerTest" />
-        <item index="1" class="java.lang.String" itemvalue="Application.RecommendationSystem" />
+        <item index="0" class="java.lang.String" itemvalue="Application.RecommendationSystem" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.CmdHandlerTest" />
       </list>
     </recent_temporary>
   </component>
@@ -430,7 +430,7 @@
       <updated>1510257041138</updated>
       <workItem from="1510257042541" duration="8207000" />
       <workItem from="1510270236351" duration="268000" />
-      <workItem from="1510270544424" duration="10703000" />
+      <workItem from="1510270544424" duration="12818000" />
     </task>
     <servers />
   </component>
@@ -440,10 +440,10 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19178000" />
+    <option name="totallyTimeSpent" value="21293000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-11" y="-11" width="1942" height="1042" extended-state="7" />
+    <frame x="-11" y="-11" width="1942" height="1042" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -503,8 +503,8 @@
           <caret line="18" column="69" lean-forward="true" selection-start-line="18" selection-start-column="69" selection-end-line="18" selection-end-column="69" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#3286#3287#0" expanded="true" />
-            <element signature="e#3364#3365#0" expanded="true" />
+            <element signature="e#3421#3422#0" expanded="true" />
+            <element signature="e#3499#3500#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -577,8 +577,8 @@
           <caret line="4" column="25" lean-forward="false" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="25" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#3286#3287#0" expanded="true" />
-            <element signature="e#3364#3365#0" expanded="true" />
+            <element signature="e#3421#3422#0" expanded="true" />
+            <element signature="e#3499#3500#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -690,18 +690,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs5010/RecommendationSystem.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="143">
-          <caret line="123" column="43" lean-forward="true" selection-start-line="123" selection-start-column="43" selection-end-line="123" selection-end-column="43" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#3286#3287#0" expanded="true" />
-            <element signature="e#3364#3365#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs5010/CmdHandler.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-2568">
@@ -739,13 +727,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs5010/Network.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2106">
+        <state relative-caret-position="1944">
           <caret line="87" column="1" lean-forward="true" selection-start-line="87" selection-start-column="1" selection-end-line="87" selection-end-column="1" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1616#1617#0" expanded="true" />
             <element signature="e#1650#1651#0" expanded="true" />
             <marker date="1510338901710" expanded="true" signature="2182:2222" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs5010/RecommendationSystem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="305">
+          <caret line="190" column="3" lean-forward="true" selection-start-line="190" selection-start-column="3" selection-end-line="190" selection-end-column="3" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#3421#3422#0" expanded="true" />
+            <element signature="e#3499#3500#0" expanded="true" />
           </folding>
         </state>
       </provider>
