@@ -20,6 +20,7 @@ public class CmdHandlerTest {
   private ICmdHandler cmdHandler11;
   private ICmdHandler cmdHandler12;
   private ICmdHandler cmdHandler13;
+  private ICmdHandler cmdHandler14;
 
   @Before
   public void setUp() throws Exception {
@@ -74,6 +75,10 @@ public class CmdHandlerTest {
         "--processing-flag", "s", "--number-of-users-to-process", "30",
         "--number-of-recommendations", "10"};
     cmdHandler13 = new CmdHandler(args13);
+
+    String[] args14 = {"nodes_small.csv", "edges_small.csv", "output.csv",
+        "--processing-flag", "e", "--number-of-users-to-process", "0"};
+    cmdHandler14 = new CmdHandler(args14);
   }
 
   @Test
@@ -127,6 +132,7 @@ public class CmdHandlerTest {
     assertTrue(!cmdHandler11.isValid());
     assertTrue(!cmdHandler12.isValid());
     assertTrue(cmdHandler13.isValid());
+    assertTrue(!cmdHandler14.isValid());
   }
 
   @Test

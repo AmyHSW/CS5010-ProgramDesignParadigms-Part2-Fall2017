@@ -85,27 +85,33 @@ public class CmdHandler implements ICmdHandler {
   private boolean validateArgumentPair(String flag, String argument) {
     switch (flag) {
       case PROCESSING_FLAG:
-        if (argument.length() > 1) {
-          errorMessage.append(flag).append(" is not valid processing flag\n");
-          return false;
-        }
-        processingFlag = argument.charAt(0);
-        return true;
+        return validateProcessingFlag(argument);
       case NUM_USERS_TO_PROCESS:
-        return isInteger(argument) && validateNumUsersToProcess(Integer.parseInt(argument));
+        return isPositiveInteger(argument) && validateNumUsersToProcess(Integer.parseInt(argument));
       case NUM_RECOMMENDATIONS:
-        return isInteger(argument) && validateNumRecommendations(Integer.parseInt(argument));
+        return isPositiveInteger(argument) && validateNumRecommendations(Integer.parseInt(argument));
       default:
         errorMessage.append(flag).append(" cannot be recognized\n");
         return false;
     }
   }
 
-  private boolean isInteger(String argument) {
+  private boolean validateProcessingFlag(String arg) {
+    if (arg.length() == 1
+        && (arg.charAt(0) == 's' || arg.charAt(0) == 'e' || arg.charAt(0) == 'r')) {
+      processingFlag = arg.charAt(0);
+      return true;
+    } else {
+      errorMessage.append(arg).append(" is not a valid processing flag\n");
+      return false;
+    }
+  }
+
+  private boolean isPositiveInteger(String argument) {
     if (argument.matches("\\d+")) {
       return true;
     } else {
-      errorMessage.append(argument).append(" is not an integer\n");
+      errorMessage.append(argument).append(" is not an positive integer\n");
       return false;
     }
   }

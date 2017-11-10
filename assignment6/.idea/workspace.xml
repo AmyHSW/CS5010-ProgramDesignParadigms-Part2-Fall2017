@@ -15,7 +15,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.36634615">
+    <splitter split-orientation="horizontal" split-proportion="0.7432647">
       <split-first>
         <leaf>
           <file leaf-file-name="ICmdHandler.java" pinned="false" current-in-tab="false">
@@ -31,27 +31,27 @@
           <file leaf-file-name="CmdHandler.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs5010/CmdHandler.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="105">
-                  <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+                <state relative-caret-position="-1751">
+                  <caret line="98" column="25" lean-forward="false" selection-start-line="98" selection-start-column="25" selection-end-line="98" selection-end-column="25" />
                   <folding>
                     <element signature="e#1223#1224#0" expanded="true" />
                     <element signature="e#1247#1248#0" expanded="true" />
-                    <element signature="e#4873#4874#0" expanded="true" />
-                    <element signature="e#4898#4899#0" expanded="true" />
-                    <element signature="e#4943#4944#0" expanded="true" />
-                    <element signature="e#4968#4969#0" expanded="true" />
-                    <element signature="e#5015#5016#0" expanded="true" />
-                    <element signature="e#5042#5043#0" expanded="true" />
-                    <element signature="e#5091#5092#0" expanded="true" />
-                    <element signature="e#5122#5123#0" expanded="true" />
-                    <element signature="e#5173#5174#0" expanded="true" />
-                    <element signature="e#5207#5208#0" expanded="true" />
-                    <element signature="e#5259#5260#0" expanded="true" />
-                    <element signature="e#5294#5295#0" expanded="true" />
-                    <element signature="e#5336#5337#0" expanded="true" />
-                    <element signature="e#5358#5359#0" expanded="true" />
-                    <element signature="e#5407#5408#0" expanded="true" />
-                    <element signature="e#5447#5448#0" expanded="true" />
+                    <element signature="e#5082#5083#0" expanded="true" />
+                    <element signature="e#5107#5108#0" expanded="true" />
+                    <element signature="e#5152#5153#0" expanded="true" />
+                    <element signature="e#5177#5178#0" expanded="true" />
+                    <element signature="e#5224#5225#0" expanded="true" />
+                    <element signature="e#5251#5252#0" expanded="true" />
+                    <element signature="e#5300#5301#0" expanded="true" />
+                    <element signature="e#5331#5332#0" expanded="true" />
+                    <element signature="e#5382#5383#0" expanded="true" />
+                    <element signature="e#5416#5417#0" expanded="true" />
+                    <element signature="e#5468#5469#0" expanded="true" />
+                    <element signature="e#5503#5504#0" expanded="true" />
+                    <element signature="e#5545#5546#0" expanded="true" />
+                    <element signature="e#5567#5568#0" expanded="true" />
+                    <element signature="e#5616#5617#0" expanded="true" />
+                    <element signature="e#5656#5657#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -64,8 +64,8 @@
           <file leaf-file-name="CmdHandlerTest.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/test/java/edu/neu/ccs/cs5010/CmdHandlerTest.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="990">
-                  <caret line="66" column="41" lean-forward="false" selection-start-line="66" selection-start-column="41" selection-end-line="66" selection-end-column="41" />
+                <state relative-caret-position="2010">
+                  <caret line="134" column="38" lean-forward="false" selection-start-line="134" selection-start-column="38" selection-end-line="134" selection-end-column="38" />
                   <folding>
                     <element signature="imports" expanded="true" />
                   </folding>
@@ -435,8 +435,8 @@
     <recent_temporary>
       <list size="4">
         <item index="0" class="java.lang.String" itemvalue="JUnit.CmdHandlerTest" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.CmdHandlerTest.testHashCode" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.CmdHandlerTest.getErrorMessage" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.CmdHandlerTest.getErrorMessage" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.CmdHandlerTest.testHashCode" />
         <item index="3" class="java.lang.String" itemvalue="Application.RecommendationSystem" />
       </list>
     </recent_temporary>
@@ -451,20 +451,11 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1510257041138</updated>
-      <workItem from="1510257042541" duration="13430000" />
+      <workItem from="1510257042541" duration="14298000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="CmdHandlerTest - 2017.11.09 at 16h 17m 48s.xml">
-      <configuration name="CmdHandlerTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CmdHandlerTest - 2017.11.09 at 16h 53m 30s.xml">
-      <configuration name="CmdHandlerTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CmdHandlerTest - 2017.11.09 at 16h 55m 39s.xml">
-      <configuration name="CmdHandlerTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="CmdHandlerTest - 2017.11.09 at 17h 07m 07s.xml">
       <configuration name="CmdHandlerTest" configurationId="JUnit" />
     </history-entry>
@@ -483,12 +474,21 @@
     <history-entry file="CmdHandlerTest - 2017.11.09 at 17h 25m 01s.xml">
       <configuration name="CmdHandlerTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="CmdHandlerTest - 2017.11.09 at 17h 33m 31s.xml">
+      <configuration name="CmdHandlerTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CmdHandlerTest - 2017.11.09 at 17h 40m 28s.xml">
+      <configuration name="CmdHandlerTest" configurationId="JUnit" />
+    </history-entry>
     <history-entry file="CmdHandlerTest_getErrorMessage - 2017.11.09 at 17h 08m 25s.xml">
+      <configuration name="CmdHandlerTest.getErrorMessage" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CmdHandlerTest_getErrorMessage - 2017.11.09 at 17h 37m 37s.xml">
       <configuration name="CmdHandlerTest.getErrorMessage" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13430000" />
+    <option name="totallyTimeSpent" value="14298000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -500,14 +500,14 @@
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.039889958" sideWeight="0.26655897" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32956383" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.039889958" sideWeight="0.73344105" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.37689134" sideWeight="0.26655897" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12197092" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.37689134" sideWeight="0.73344105" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.14568157" sideWeight="0.49763033" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15993538" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15993538" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -658,35 +658,35 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs5010/CmdHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+        <state relative-caret-position="-1751">
+          <caret line="98" column="25" lean-forward="false" selection-start-line="98" selection-start-column="25" selection-end-line="98" selection-end-column="25" />
           <folding>
             <element signature="e#1223#1224#0" expanded="true" />
             <element signature="e#1247#1248#0" expanded="true" />
-            <element signature="e#4873#4874#0" expanded="true" />
-            <element signature="e#4898#4899#0" expanded="true" />
-            <element signature="e#4943#4944#0" expanded="true" />
-            <element signature="e#4968#4969#0" expanded="true" />
-            <element signature="e#5015#5016#0" expanded="true" />
-            <element signature="e#5042#5043#0" expanded="true" />
-            <element signature="e#5091#5092#0" expanded="true" />
-            <element signature="e#5122#5123#0" expanded="true" />
-            <element signature="e#5173#5174#0" expanded="true" />
-            <element signature="e#5207#5208#0" expanded="true" />
-            <element signature="e#5259#5260#0" expanded="true" />
-            <element signature="e#5294#5295#0" expanded="true" />
-            <element signature="e#5336#5337#0" expanded="true" />
-            <element signature="e#5358#5359#0" expanded="true" />
-            <element signature="e#5407#5408#0" expanded="true" />
-            <element signature="e#5447#5448#0" expanded="true" />
+            <element signature="e#5082#5083#0" expanded="true" />
+            <element signature="e#5107#5108#0" expanded="true" />
+            <element signature="e#5152#5153#0" expanded="true" />
+            <element signature="e#5177#5178#0" expanded="true" />
+            <element signature="e#5224#5225#0" expanded="true" />
+            <element signature="e#5251#5252#0" expanded="true" />
+            <element signature="e#5300#5301#0" expanded="true" />
+            <element signature="e#5331#5332#0" expanded="true" />
+            <element signature="e#5382#5383#0" expanded="true" />
+            <element signature="e#5416#5417#0" expanded="true" />
+            <element signature="e#5468#5469#0" expanded="true" />
+            <element signature="e#5503#5504#0" expanded="true" />
+            <element signature="e#5545#5546#0" expanded="true" />
+            <element signature="e#5567#5568#0" expanded="true" />
+            <element signature="e#5616#5617#0" expanded="true" />
+            <element signature="e#5656#5657#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/edu/neu/ccs/cs5010/CmdHandlerTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="990">
-          <caret line="66" column="41" lean-forward="false" selection-start-line="66" selection-start-column="41" selection-end-line="66" selection-end-column="41" />
+        <state relative-caret-position="2010">
+          <caret line="134" column="38" lean-forward="false" selection-start-line="134" selection-start-column="38" selection-end-line="134" selection-end-column="38" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
