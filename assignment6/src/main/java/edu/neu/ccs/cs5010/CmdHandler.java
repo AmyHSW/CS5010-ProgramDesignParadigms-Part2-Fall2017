@@ -86,6 +86,7 @@ public class CmdHandler implements ICmdHandler {
     switch (flag) {
       case PROCESSING_FLAG:
         if (argument.length() > 1) {
+          errorMessage.append(flag).append(" is not valid processing flag\n");
           return false;
         }
         processingFlag = argument.charAt(0);
