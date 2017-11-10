@@ -124,7 +124,7 @@ public class CmdHandler implements ICmdHandler {
         }
         numUsersToProcess = num;
         return true;
-      case "nodes_1000.csv":
+      case "nodes_10000.csv":
         if (num > TOTAL_NUM_USERS_LARGE) {
           errorMessage.append(num)
               .append(" is greater than total number of users\n");
