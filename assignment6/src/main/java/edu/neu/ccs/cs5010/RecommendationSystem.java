@@ -20,7 +20,7 @@ public class RecommendationSystem {
   protected final int numRecommendations;
   private final String outputDir;
   protected final Map<IUser, Set<Integer>> userRecomMap;
-  protected final Map<Integer, Integer> recomFreqencyMap;
+  protected final Map<Integer, Integer> recomFrequencyMap;
 
   public RecommendationSystem(ICmdHandler cmdHandler) {
     network = buildNetwork(cmdHandler.getNodeFile(),
@@ -29,7 +29,7 @@ public class RecommendationSystem {
     numRecommendations = cmdHandler.getNumRecommendations();
     outputDir = cmdHandler.getOutputFile();
     userRecomMap = new HashMap<>();
-    recomFreqencyMap = new HashMap<>();
+    recomFrequencyMap = new HashMap<>();
     pickUsersToProcess(cmdHandler.getNumUsersToProcess(), cmdHandler.getProcessingFlag());
   }
 
@@ -123,7 +123,7 @@ public class RecommendationSystem {
         continue;
       }
       userRecomMap.get(user).add(idFriend);
-      recomFreqencyMap.put(idFriend, recomFreqencyMap.getOrDefault(idFriend, 0) + 1);
+      recomFrequencyMap.put(idFriend, recomFrequencyMap.getOrDefault(idFriend, 0) + 1);
       if (userRecomMap.get(user).size() == numRecommendations) {
         return;
       }
@@ -161,7 +161,7 @@ public class RecommendationSystem {
       if (!friendsOfUser.contains(idFriend) && !recommendations.contains(idFriend)
               && idFriend != user.getUserId()) {
         recommendations.add(idFriend);
-        recomFreqencyMap.put(idFriend, recomFreqencyMap.getOrDefault(idFriend, 0) + 1);
+        recomFrequencyMap.put(idFriend, recomFrequencyMap.getOrDefault(idFriend, 0) + 1);
       }
     }
   }
@@ -183,7 +183,7 @@ public class RecommendationSystem {
   }
 
   public void printTopTen() {
-    List<Map.Entry<Integer, Integer>> entries = new ArrayList<>(recomFreqencyMap.entrySet());
+    List<Map.Entry<Integer, Integer>> entries = new ArrayList<>(recomFrequencyMap.entrySet());
     Collections.sort(entries, (o1, o2) -> o2.getValue().compareTo(o1.getValue()));
     System.out.println("Top ten most frequently recommended node IDs");
     for (int i = 0; i < TOP_TEN; i++) {

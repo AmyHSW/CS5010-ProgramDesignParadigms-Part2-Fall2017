@@ -45,7 +45,7 @@ public class RecommendationSystemBonus extends RecommendationSystem{
         continue;
       }
       recommendations.add(u.getUserId());
-      recomFreqencyMap.put(u.getUserId(), recomFreqencyMap.getOrDefault(u.getUserId(), 0) + 1);
+      recomFrequencyMap.put(u.getUserId(), recomFrequencyMap.getOrDefault(u.getUserId(), 0) + 1);
       if (recommendations.size() == numRecommendations) {
         break;
       }
