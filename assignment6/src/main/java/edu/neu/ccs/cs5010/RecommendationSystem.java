@@ -16,11 +16,11 @@ public class RecommendationSystem {
   private static final char PROCESS_FROM_BEGINNING = 's';
   private static final char PROCESS_FROM_END = 'e';
   private static final int TOP_TEN = 10;
-  private final INetwork network;
-  private final int numRecommendations;
+  protected final INetwork network;
+  protected final int numRecommendations;
   private final String outputDir;
-  private final Map<IUser, Set<Integer>> userRecomMap;
-  private final Map<Integer, Integer> recomFreqencyMap;
+  protected final Map<IUser, Set<Integer>> userRecomMap;
+  protected final Map<Integer, Integer> recomFreqencyMap;
 
   public RecommendationSystem(ICmdHandler cmdHandler) {
     network = buildNetwork(cmdHandler.getNodeFile(),
@@ -99,7 +99,7 @@ public class RecommendationSystem {
   }
 
   private void recommendFriendsForNewbie(IUser user) {
-    if (!isNewbie(user) || network.getFriendsOfUser(user.getUserId()).size() == 0) {
+    if (!isNewbie(user) || network.getFriendsOfUser(user.getUserId()).isEmpty()) {
       return;
     }
     int idWithMaxFriends = -1;
@@ -115,11 +115,11 @@ public class RecommendationSystem {
     addRecommendations(user, new ArrayList<>(network.getFriendsOfUser(idWithMaxFriends)));
   }
 
-  private void addRecommendations(IUser user, List<Integer> candidates) {
+  protected void addRecommendations(IUser user, List<Integer> candidates) {
     Collections.sort(candidates);
     Set<Integer> friendsOfUser = network.getFriendsOfUser(user.getUserId());
     for (int idFriend : candidates) {
-      if (friendsOfUser.contains(idFriend)) {
+      if (friendsOfUser.contains(idFriend) || idFriend == user.getUserId()) {
         continue;
       }
       userRecomMap.get(user).add(idFriend);
@@ -132,7 +132,7 @@ public class RecommendationSystem {
 
   private void recommendFriendsOfFriends(IUser user) {
     if (userRecomMap.get(user).size() == numRecommendations
-        || network.getFriendsOfUser(user.getUserId()).size() == 0) {
+        || network.getFriendsOfUser(user.getUserId()).isEmpty()) {
       return;
     }
     Set<Integer> friendsOfFriends = new HashSet<>();
@@ -158,8 +158,10 @@ public class RecommendationSystem {
     Set<Integer> recommendations = userRecomMap.get(user);
     while (recommendations.size() < numRecommendations) {
       int idFriend = allUsers.get(random.nextInt(allUsers.size())).getUserId();
-      if (!friendsOfUser.contains(idFriend) && !recommendations.contains(idFriend)) {
+      if (!friendsOfUser.contains(idFriend) && !recommendations.contains(idFriend)
+              && idFriend != user.getUserId()) {
         recommendations.add(idFriend);
+        recomFreqencyMap.put(idFriend, recomFreqencyMap.getOrDefault(idFriend, 0) + 1);
       }
     }
   }

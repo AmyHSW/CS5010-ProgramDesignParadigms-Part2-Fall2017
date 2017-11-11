@@ -4,6 +4,10 @@ import java.time.LocalDate;
 
 public interface IUser extends Comparable<IUser> {
 
+  int getAge();
+
+  String getCity();
+
   int getUserId();
 
   void addOneFollower();

@@ -58,6 +58,16 @@ public class User implements IUser {
   }
 
   @Override
+  public int getAge() {
+    return age;
+  }
+
+  @Override
+  public String getCity() {
+    return city;
+  }
+
+  @Override
   public int hashCode() {
     return userId;
   }
