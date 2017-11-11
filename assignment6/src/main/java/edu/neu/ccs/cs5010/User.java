@@ -3,6 +3,13 @@ package edu.neu.ccs.cs5010;
 import java.time.LocalDate;
 
 public class User implements IUser {
+
+  private static final char FEMALE = 'F';
+  private static final char MALE = 'M';
+  private static final char GENDER_OTHER = 'O';
+  private static final int AGE_LOWER_BOUND = 0;
+  private static final int AGE_UPPER_BOUND = 100;
+
   private int userId;
   private LocalDate createdDate;
   private char gender;
@@ -11,11 +18,27 @@ public class User implements IUser {
   private int numFollowers;
 
   public User(int userId, LocalDate createdDate, char gender, int age, String city) {
+    validateGender(gender);
+    validateAge(age);
+
     this.userId = userId;
     this.createdDate = createdDate;
     this.gender = gender;
     this.age = age;
     this.city = city;
+  }
+
+  private void validateGender(char gender) {
+    if (gender != FEMALE && gender != MALE && gender != GENDER_OTHER) {
+      throw new InvalidUserGenderException(gender + " is not valid");
+    }
+  }
+
+  private void validateAge(int age) {
+    if (age < AGE_LOWER_BOUND || age > AGE_UPPER_BOUND) {
+      throw new InvalidUserAgeException(age + " is not between "
+      + AGE_LOWER_BOUND + " and " + AGE_UPPER_BOUND);
+    }
   }
 
   @Override

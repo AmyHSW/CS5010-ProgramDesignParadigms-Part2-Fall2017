@@ -73,16 +73,20 @@ public class Network implements INetwork {
 
     Network network = (Network) other;
 
-    if (!connectionsMap.equals(network.connectionsMap)) {
+    if (influencerBound != network.influencerBound) {
       return false;
     }
-    return usersMap.equals(network.usersMap);
+    if (!usersMap.equals(network.usersMap)) {
+      return false;
+    }
+    return connectionsMap.equals(network.connectionsMap);
   }
 
   @Override
   public int hashCode() {
-    int result = connectionsMap != null ? connectionsMap.hashCode() : 0;
-    result = 31 * result + (usersMap != null ? usersMap.hashCode() : 0);
+    int result = connectionsMap.hashCode();
+    result = 31 * result + influencerBound;
+    result = 31 * result + usersMap.hashCode();
     return result;
   }
 }
