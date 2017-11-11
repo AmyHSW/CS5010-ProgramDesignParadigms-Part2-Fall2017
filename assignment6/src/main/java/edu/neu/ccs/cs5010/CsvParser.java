@@ -10,13 +10,15 @@ public class CsvParser implements ICsvParser {
   private Iterator<List<String>> iterator;
 
   public CsvParser(List<String> stringLines) {
-    List<List<String>> infoLines = new ArrayList<>();
-    for (int i = 1; i < stringLines.size(); i++) {
-      String currentEdgeLine = stringLines.get(i);
-      String[] elements = currentEdgeLine.split(",");
-      infoLines.add(Arrays.asList(elements));
+    if (stringLines != null) {
+      List<List<String>> infoLines = new ArrayList<>();
+      for (int i = 1; i < stringLines.size(); i++) {
+        String currentEdgeLine = stringLines.get(i);
+        String[] elements = currentEdgeLine.split(",");
+        infoLines.add(Arrays.asList(elements));
+      }
+      iterator = infoLines.iterator();
     }
-    iterator = infoLines.iterator();
   }
 
   @Override
