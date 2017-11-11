@@ -16,8 +16,21 @@ public class UserTest {
   public void setUp() throws Exception {
     LocalDate today = LocalDate.now();
     user1 = new User(1, today, 'F', 20, "Seattle");
-    user2 = new User(1, today, 'F', 20, "Seattle");
-    user3 = new User(2, today, 'F', 24, "Seattle");
+    user2 = new User(1, today, 'M', 20, "Seattle");
+    user3 = new User(2, today, 'O', 24, "Seattle");
+  }
+
+  @Test
+  public void getUserId() throws Exception {
+    assertTrue(user1.getUserId() == 1);
+  }
+
+  @Test
+  public void addAndGetNumFollowers() throws Exception {
+    user1.addOneFollower();
+    user1.addOneFollower();
+    assertTrue(user1.getNumFollowers() == 2);
+    assertTrue(user2.getNumFollowers() == 0);
   }
 
   @Test
@@ -42,4 +55,15 @@ public class UserTest {
   public void testToString() throws Exception {
     user1.toString();
   }
+
+  @Test(expected = InvalidUserAgeException.class)
+  public void expectedInvalidUserAgeException() throws Exception {
+    new User(1, LocalDate.now(), 'F', 200, "Seattle");
+  }
+
+  @Test(expected = InvalidUserGenderException.class)
+  public void expectedInvalidUserGenderException() throws Exception {
+    new User(1, LocalDate.now(), 'X', 20, "Hongkong");
+  }
+
 }
