@@ -10,7 +10,7 @@ import java.util.Map;
 import java.util.Random;
 import java.util.Set;
 
-public class RecommendationSystem {
+public class RecommendationSystem implements IRecommendationSystem {
 
   private static final char RANDOM_PROCESS = 'r';
   private static final char PROCESS_FROM_BEGINNING = 's';
@@ -18,9 +18,9 @@ public class RecommendationSystem {
   private static final int TOP_TEN = 10;
   protected final INetwork network;
   protected final int numRecommendations;
-  private final String outputDir;
   protected final Map<IUser, Set<Integer>> userRecomMap;
   protected final Map<Integer, Integer> recomFrequencyMap;
+  private final String outputDir;
 
   public RecommendationSystem(ICmdHandler cmdHandler) {
     network = buildNetwork(cmdHandler.getNodeFile(),
@@ -81,6 +81,7 @@ public class RecommendationSystem {
     }
   }
 
+  @Override
   public void startRecommendation() {
     for (IUser user : userRecomMap.keySet()) {
       recommendFriendsForUser(user);
@@ -166,6 +167,7 @@ public class RecommendationSystem {
     }
   }
 
+  @Override
   public void outputResults() {
     List<String> outputLines = new ArrayList<>();
     outputLines.add("Node ID,Recommended nodes");
@@ -182,9 +184,10 @@ public class RecommendationSystem {
     IoLibrary.generateOutput(outputDir, outputLines);
   }
 
+  @Override
   public void printTopTen() {
     List<Map.Entry<Integer, Integer>> entries = new ArrayList<>(recomFrequencyMap.entrySet());
-    Collections.sort(entries, (o1, o2) -> o2.getValue().compareTo(o1.getValue()));
+    entries.sort((o1, o2) -> o2.getValue().compareTo(o1.getValue()));
     System.out.println("Top ten most frequently recommended node IDs");
     for (int i = 0; i < TOP_TEN; i++) {
       Map.Entry<Integer, Integer> userFreq = entries.get(i);
@@ -197,7 +200,7 @@ public class RecommendationSystem {
     if (!cmdHandler.isValid()) {
       throw new InvalidInputException(cmdHandler.getErrorMessage());
     }
-    RecommendationSystem recommendationSystem = new RecommendationSystem(cmdHandler);
+    IRecommendationSystem recommendationSystem = new RecommendationSystem(cmdHandler);
     recommendationSystem.startRecommendation();
     recommendationSystem.outputResults();
     recommendationSystem.printTopTen();

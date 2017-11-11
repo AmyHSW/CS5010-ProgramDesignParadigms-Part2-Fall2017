@@ -1,6 +1,5 @@
 package edu.neu.ccs.cs5010;
 
-import java.util.Collections;
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
@@ -36,8 +35,11 @@ public class RecommendationSystemBonus extends RecommendationSystem{
   }
 
   private void recommendOldUsers(IUser user) {
+    if (userRecomMap.get(user).size() == numRecommendations) {
+      return;
+    }
     List<IUser> allUsers = new ArrayList<>(network.getAllUsers());
-    Collections.sort(allUsers, Comparator.comparing(IUser::getCreatedDate));
+    allUsers.sort(Comparator.comparing(IUser::getCreatedDate));
     Set<Integer> recommendations = userRecomMap.get(user);
     Set<Integer> friendsOfUser = network.getFriendsOfUser(user.getUserId());
     for (IUser u: allUsers) {
@@ -57,7 +59,7 @@ public class RecommendationSystemBonus extends RecommendationSystem{
     if (!cmdHandler.isValid()) {
       throw new InvalidInputException(cmdHandler.getErrorMessage());
     }
-    RecommendationSystemBonus recommendationSystem = new RecommendationSystemBonus(cmdHandler);
+    IRecommendationSystem recommendationSystem = new RecommendationSystemBonus(cmdHandler);
     recommendationSystem.startRecommendation();
     recommendationSystem.outputResults();
     recommendationSystem.printTopTen();
