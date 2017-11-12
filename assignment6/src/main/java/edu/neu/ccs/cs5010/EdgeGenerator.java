@@ -24,8 +24,8 @@ public class EdgeGenerator implements IEdgeGenerator {
     }
     List<String> elements = csvParser.getNextLine();
     int fromId = Integer.parseInt(elements.get(SOURCE_INDEX));
-    int toID = Integer.parseInt(elements.get(DESTINATION_INDEX));
-    return new Edge(fromId, toID);
+    int toId = Integer.parseInt(elements.get(DESTINATION_INDEX));
+    return IEdge.createEdge(fromId, toId);
   }
 
   @Override

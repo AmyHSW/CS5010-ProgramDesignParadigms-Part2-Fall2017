@@ -171,10 +171,10 @@ public class RecommendationSystem implements IRecommendationSystem {
   public void outputResults() {
     List<String> outputLines = new ArrayList<>();
     outputLines.add("Node ID,Recommended nodes");
-    for (IUser user : userRecomMap.keySet()) {
+    for (Map.Entry<IUser, Set<Integer>> entry: userRecomMap.entrySet()) {
       StringBuilder stringBuilder = new StringBuilder();
-      stringBuilder.append(user.getUserId()).append(",[");
-      for (int idFriend : userRecomMap.get(user)) {
+      stringBuilder.append(entry.getKey().getUserId()).append(",[");
+      for (int idFriend: entry.getValue()) {
         stringBuilder.append(idFriend).append(" ");
       }
       stringBuilder.deleteCharAt(stringBuilder.length() - 1);
@@ -187,7 +187,7 @@ public class RecommendationSystem implements IRecommendationSystem {
   @Override
   public void printTopTen() {
     List<Map.Entry<Integer, Integer>> entries = new ArrayList<>(recomFrequencyMap.entrySet());
-    entries.sort((o1, o2) -> o2.getValue().compareTo(o1.getValue()));
+    entries.sort((freq1, freq2) -> freq2.getValue().compareTo(freq1.getValue()));
     System.out.println("Top ten most frequently recommended node IDs");
     for (int i = 0; i < TOP_TEN; i++) {
       Map.Entry<Integer, Integer> userFreq = entries.get(i);

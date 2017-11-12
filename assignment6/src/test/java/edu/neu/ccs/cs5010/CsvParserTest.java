@@ -39,6 +39,8 @@ public class CsvParserTest {
             csvParser1.equals(csvParser2));
     assertFalse("CsvParser failed to provide the correct equal.",
             csvParser1.equals(csvParser3));
+    assertFalse("CsvParser failed to provide the correct equal.",
+            csvParser3.equals(csvParser2));
     assertTrue("CsvParser failed to provide the correct equal.",
             csvParser3.equals(csvParser4));
     assertFalse("CsvParser failed to provide the correct hashcode.",
