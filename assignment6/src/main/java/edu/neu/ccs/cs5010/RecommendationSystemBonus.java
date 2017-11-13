@@ -6,13 +6,24 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
+/**
+ * The RecommendationSystemBonus represents a recommendation system.
+ * @author Shuwan Huang, Jingyu Shen
+ */
 public class RecommendationSystemBonus extends RecommendationSystem{
   private static final int AGE_RANGE = 3;
 
+  /**
+   * Constructs a new RecommendationSystemBonus with a CmdHandler.
+   * @param cmdHandler a CmdHandler
+   */
   public RecommendationSystemBonus(ICmdHandler cmdHandler) {
     super(cmdHandler);
   }
 
+  /**
+   * Starts recommending friends for the selected users.
+   */
   @Override
   public void startRecommendation() {
     for (IUser user : userRecomMap.keySet()) {
@@ -54,6 +65,13 @@ public class RecommendationSystemBonus extends RecommendationSystem{
     }
   }
 
+  /**
+   * Accepts command-line arguments from user. Constructs a new CmdHandler with the arguments.
+   * If the arguments are invalid, throws an exception; otherwise, constructs a new
+   * RecommendationSystemBonus with the CmdHandler.
+   * @param args command-line arguments
+   * @throws InvalidInputException if the arguments are invalid
+   */
   public static void main(String[] args) {
     ICmdHandler cmdHandler = new CmdHandler(args);
     if (!cmdHandler.isValid()) {

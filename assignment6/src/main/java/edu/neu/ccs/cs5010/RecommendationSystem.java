@@ -10,6 +10,11 @@ import java.util.Map;
 import java.util.Random;
 import java.util.Set;
 
+/**
+ * The RecommendationSystem represents a recommendation system.
+ *
+ * @author Shuwan Huang, Jingyu Shen
+ */
 public class RecommendationSystem implements IRecommendationSystem {
 
   private static final char RANDOM_PROCESS = 'r';
@@ -22,6 +27,10 @@ public class RecommendationSystem implements IRecommendationSystem {
   protected final Map<Integer, Integer> recomFrequencyMap;
   private final String outputDir;
 
+  /**
+   * Constructs a new RecommendationSystem with a CmdHandler.
+   * @param cmdHandler a CmdHandler
+   */
   public RecommendationSystem(ICmdHandler cmdHandler) {
     network = buildNetwork(cmdHandler.getNodeFile(),
         cmdHandler.getEdgeFile(),
@@ -81,6 +90,9 @@ public class RecommendationSystem implements IRecommendationSystem {
     }
   }
 
+  /**
+   * Starts recommending friends for the selected users.
+   */
   @Override
   public void startRecommendation() {
     for (IUser user : userRecomMap.keySet()) {
@@ -169,6 +181,9 @@ public class RecommendationSystem implements IRecommendationSystem {
     }
   }
 
+  /**
+   * Saves the recommendations results to the output file.
+   */
   @Override
   public void outputResults() {
     List<String> outputLines = new ArrayList<>();
@@ -186,6 +201,9 @@ public class RecommendationSystem implements IRecommendationSystem {
     IoLibrary.generateOutput(outputDir, outputLines);
   }
 
+  /**
+   * Prints to console the top ten most frequently recommended node IDs.
+   */
   @Override
   public void printTopTen() {
     List<Map.Entry<Integer, Integer>> entries = new ArrayList<>(recomFrequencyMap.entrySet());
@@ -197,6 +215,13 @@ public class RecommendationSystem implements IRecommendationSystem {
     }
   }
 
+  /**
+   * Accepts command-line arguments from user. Constructs a new CmdHandler with the arguments.
+   * If the arguments are invalid, throws an exception; otherwise, constructs a new
+   * RecommendationSystem with the CmdHandler.
+   * @param args command-line arguments
+   * @throws InvalidInputException if the arguments are invalid
+   */
   public static void main(String[] args) {
     ICmdHandler cmdHandler = new CmdHandler(args);
     if (!cmdHandler.isValid()) {

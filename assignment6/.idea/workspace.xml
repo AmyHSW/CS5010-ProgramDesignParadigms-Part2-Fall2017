@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ef03c788-e6aa-4670-a865-6ad5a89a4d41" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs5010/CmdHandler.java" afterPath="$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs5010/CmdHandler.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs5010/ICmdHandler.java" afterPath="$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs5010/ICmdHandler.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs5010/IRecommendationSystem.java" afterPath="$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs5010/IRecommendationSystem.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs5010/RecommendationSystem.java" afterPath="$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs5010/RecommendationSystem.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs5010/RecommendationSystemBonus.java" afterPath="$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs5010/RecommendationSystemBonus.java" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -13,7 +17,352 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="450" />
+    <leaf>
+      <file leaf-file-name="RecommendationSystemBonus.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs5010/RecommendationSystemBonus.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="464">
+              <caret line="33" column="0" lean-forward="false" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CmdHandler.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs5010/CmdHandler.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="17" column="3" lean-forward="false" selection-start-line="17" selection-start-column="3" selection-end-line="17" selection-end-column="3" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="JAVA/edu.neu.ccs.cs5010" pinned="false" current-in-tab="true">
+        <entry file="uml://JAVA/edu.neu.ccs.cs5010">
+          <provider selected="true" editor-type-id="UmlEditorProvider">
+            <state>
+              <ID>JAVA</ID>
+              <OriginalElement>edu.neu.ccs.cs5010</OriginalElement>
+              <nodes>
+                <node x="419.475" y="80.0">edu.neu.ccs.cs5010.User</node>
+                <node x="767.806205673759" y="360.0">edu.neu.ccs.cs5010.IoLibrary</node>
+                <node x="845.306205673759" y="270.0">edu.neu.ccs.cs5010.IUserGenerator</node>
+                <node x="1240.931205673759" y="360.0">edu.neu.ccs.cs5010.EdgeGenerator</node>
+                <node x="10.5" y="360.0">edu.neu.ccs.cs5010.InvalidInputException</node>
+                <node x="1340.806205673759" y="270.0">edu.neu.ccs.cs5010.IEdgeGenerator</node>
+                <node x="230.22500000000002" y="0.0">edu.neu.ccs.cs5010.InvalidUserGenderException</node>
+                <node x="212.5" y="360.0">edu.neu.ccs.cs5010.IRecommendationSystem</node>
+                <node x="474.225" y="0.0">edu.neu.ccs.cs5010.InvalidUserAgeException</node>
+                <node x="417.975" y="160.0">edu.neu.ccs.cs5010.IUser</node>
+                <node x="485.97500000000014" y="270.0">edu.neu.ccs.cs5010.InvalidUserException</node>
+                <node x="1532.556205673759" y="270.0">edu.neu.ccs.cs5010.ICmdHandler</node>
+                <node x="946.931205673759" y="360.0">edu.neu.ccs.cs5010.UserGenerator</node>
+                <node x="463.3390070921987" y="610.0">edu.neu.ccs.cs5010.RecommendationSystemBonus</node>
+                <node x="473.6750000000001" y="360.0">edu.neu.ccs.cs5010.Network</node>
+                <node x="1139.681205673759" y="270.0">edu.neu.ccs.cs5010.ICsvParser</node>
+                <node x="1107.931205673759" y="360.0">edu.neu.ccs.cs5010.CsvParser</node>
+                <node x="684.9750000000001" y="270.0">edu.neu.ccs.cs5010.INetwork</node>
+                <node x="780.1306737588653" y="520.0">edu.neu.ccs.cs5010.RecommendationSystem</node>
+                <node x="1518.806205673759" y="360.0">edu.neu.ccs.cs5010.CmdHandler</node>
+                <node x="1279.4750000000001" y="160.0">edu.neu.ccs.cs5010.IEdge</node>
+                <node x="1280.9750000000001" y="80.0">edu.neu.ccs.cs5010.Edge</node>
+              </nodes>
+              <notes />
+              <edges>
+                <edge source="edu.neu.ccs.cs5010.RecommendationSystemBonus" target="edu.neu.ccs.cs5010.CmdHandler">
+                  <point x="60.25" y="-15.0" />
+                  <point x="644.0890070921987" y="580.0" />
+                  <point x="1613.306205673759" y="580.0" />
+                  <point x="31.5" y="15.0" />
+                </edge>
+                <edge source="edu.neu.ccs.cs5010.UserGenerator" target="edu.neu.ccs.cs5010.ICsvParser">
+                  <point x="17.625" y="-15.0" />
+                  <point x="1035.056205673759" y="320.0" />
+                  <point x="1149.2645390070923" y="320.0" />
+                  <point x="-47.916666666666686" y="15.0" />
+                </edge>
+                <edge source="edu.neu.ccs.cs5010.CsvParser" target="edu.neu.ccs.cs5010.ICsvParser">
+                  <point x="0.0" y="-15.0" />
+                  <point x="1163.931205673759" y="340.0" />
+                  <point x="1187.5978723404255" y="340.0" />
+                  <point x="-9.583333333333343" y="15.0" />
+                </edge>
+                <edge source="edu.neu.ccs.cs5010.RecommendationSystemBonus" target="edu.neu.ccs.cs5010.IRecommendationSystem">
+                  <point x="-20.08333333333337" y="-15.0" />
+                  <point x="563.7556737588653" y="570.0" />
+                  <point x="249.63067375886533" y="570.0" />
+                  <point x="249.63067375886533" y="500.0" />
+                  <point x="246.5" y="500.0" />
+                  <point x="-68.0" y="15.0" />
+                </edge>
+                <edge source="edu.neu.ccs.cs5010.RecommendationSystem" target="edu.neu.ccs.cs5010.UserGenerator">
+                  <point x="16.75" y="-15.0" />
+                  <point x="897.3806737588653" y="430.0" />
+                  <point x="1017.431205673759" y="430.0" />
+                  <point x="0.0" y="15.0" />
+                </edge>
+                <edge source="edu.neu.ccs.cs5010.RecommendationSystem" target="edu.neu.ccs.cs5010.Network">
+                  <point x="-39.08333333333334" y="-15.0" />
+                  <point x="841.547340425532" y="440.0" />
+                  <point x="524.6750000000002" y="440.0" />
+                  <point x="0.0" y="15.0" />
+                </edge>
+                <edge source="edu.neu.ccs.cs5010.RecommendationSystem" target="edu.neu.ccs.cs5010.ICsvParser">
+                  <point x="39.08333333333334" y="-15.0" />
+                  <point x="919.7140070921987" y="450.0" />
+                  <point x="1230.431205673759" y="450.0" />
+                  <point x="1230.431205673759" y="340.0" />
+                  <point x="1206.7645390070923" y="340.0" />
+                  <point x="9.583333333333314" y="15.0" />
+                </edge>
+                <edge source="edu.neu.ccs.cs5010.INetwork" target="edu.neu.ccs.cs5010.IEdge">
+                  <point x="26.25" y="-15.0" />
+                  <point x="763.7250000000001" y="250.0" />
+                  <point x="1304.6750000000002" y="250.0" />
+                  <point x="-16.80000000000001" y="15.0" />
+                </edge>
+                <edge source="edu.neu.ccs.cs5010.RecommendationSystem" target="edu.neu.ccs.cs5010.IUserGenerator">
+                  <point x="5.583333333333329" y="-15.0" />
+                  <point x="886.2140070921987" y="500.0" />
+                  <point x="881.306205673759" y="500.0" />
+                  <point x="-36.0" y="15.0" />
+                </edge>
+                <edge source="edu.neu.ccs.cs5010.RecommendationSystem" target="edu.neu.ccs.cs5010.IUser">
+                  <point x="-61.41666666666666" y="-15.0" />
+                  <point x="819.2140070921987" y="460.0" />
+                  <point x="427.00000000000006" y="460.0" />
+                  <point x="427.00000000000006" y="240.0" />
+                  <point x="433.35" y="240.0" />
+                  <point x="-25.625" y="15.0" />
+                </edge>
+                <edge source="edu.neu.ccs.cs5010.RecommendationSystemBonus" target="edu.neu.ccs.cs5010.InvalidInputException">
+                  <point x="-60.25" y="-15.0" />
+                  <point x="523.5890070921987" y="580.0" />
+                  <point x="56.0" y="580.0" />
+                  <point x="-45.5" y="15.0" />
+                </edge>
+                <edge source="edu.neu.ccs.cs5010.IEdge" target="edu.neu.ccs.cs5010.Edge">
+                  <point x="-21.0" y="-15.0" />
+                  <point x="-20.25" y="15.0" />
+                </edge>
+                <edge source="edu.neu.ccs.cs5010.Network" target="edu.neu.ccs.cs5010.IEdge">
+                  <point x="0.0" y="-15.0" />
+                  <point x="524.6750000000002" y="320.0" />
+                  <point x="475.475" y="320.0" />
+                  <point x="475.475" y="240.0" />
+                  <point x="1287.875" y="240.0" />
+                  <point x="-33.60000000000002" y="15.0" />
+                </edge>
+                <edge source="edu.neu.ccs.cs5010.EdgeGenerator" target="edu.neu.ccs.cs5010.ICsvParser">
+                  <point x="-17.875" y="-15.0" />
+                  <point x="1294.556205673759" y="320.0" />
+                  <point x="1245.0978723404257" y="320.0" />
+                  <point x="47.916666666666686" y="15.0" />
+                </edge>
+                <edge source="edu.neu.ccs.cs5010.RecommendationSystem" target="edu.neu.ccs.cs5010.IRecommendationSystem">
+                  <point x="-83.74999999999997" y="-15.0" />
+                  <point x="796.8806737588653" y="480.0" />
+                  <point x="314.5" y="480.0" />
+                  <point x="0.0" y="15.0" />
+                </edge>
+                <edge source="edu.neu.ccs.cs5010.RecommendationSystem" target="edu.neu.ccs.cs5010.IEdgeGenerator">
+                  <point x="61.41666666666666" y="-15.0" />
+                  <point x="942.047340425532" y="470.0" />
+                  <point x="1450.306205673759" y="470.0" />
+                  <point x="36.5" y="15.0" />
+                </edge>
+                <edge source="edu.neu.ccs.cs5010.RecommendationSystem" target="edu.neu.ccs.cs5010.ICmdHandler">
+                  <point x="83.75" y="-15.0" />
+                  <point x="964.3806737588653" y="490.0" />
+                  <point x="1508.306205673759" y="490.0" />
+                  <point x="1508.306205673759" y="340.0" />
+                  <point x="1554.056205673759" y="340.0" />
+                  <point x="-43.0" y="15.0" />
+                </edge>
+                <edge source="edu.neu.ccs.cs5010.RecommendationSystem" target="edu.neu.ccs.cs5010.CmdHandler">
+                  <point x="94.91666666666666" y="-15.0" />
+                  <point x="975.547340425532" y="500.0" />
+                  <point x="1550.306205673759" y="500.0" />
+                  <point x="-31.5" y="15.0" />
+                </edge>
+                <edge source="edu.neu.ccs.cs5010.UserGenerator" target="edu.neu.ccs.cs5010.IUserGenerator">
+                  <point x="-52.875" y="-15.0" />
+                  <point x="964.556205673759" y="340.0" />
+                  <point x="953.306205673759" y="340.0" />
+                  <point x="36.0" y="15.0" />
+                </edge>
+                <edge source="edu.neu.ccs.cs5010.IEdgeGenerator" target="edu.neu.ccs.cs5010.IEdge">
+                  <point x="0.0" y="-15.0" />
+                  <point x="1413.806205673759" y="250.0" />
+                  <point x="1338.275" y="250.0" />
+                  <point x="16.799999999999955" y="15.0" />
+                </edge>
+                <edge source="edu.neu.ccs.cs5010.EdgeGenerator" target="edu.neu.ccs.cs5010.IEdge">
+                  <point x="17.875" y="-15.0" />
+                  <point x="1330.306205673759" y="250.0" />
+                  <point x="1321.4750000000001" y="250.0" />
+                  <point x="0.0" y="15.0" />
+                </edge>
+                <edge source="edu.neu.ccs.cs5010.User" target="edu.neu.ccs.cs5010.InvalidUserAgeException">
+                  <point x="19.75" y="-15.0" />
+                  <point x="478.725" y="55.0" />
+                  <point x="575.725" y="55.0" />
+                  <point x="0.0" y="15.0" />
+                </edge>
+                <edge source="edu.neu.ccs.cs5010.User" target="edu.neu.ccs.cs5010.IUser">
+                  <point x="0.0" y="15.0" />
+                  <point x="0.0" y="-15.0" />
+                </edge>
+                <edge source="edu.neu.ccs.cs5010.RecommendationSystem" target="edu.neu.ccs.cs5010.IoLibrary">
+                  <point x="-5.583333333333343" y="-15.0" />
+                  <point x="875.047340425532" y="410.0" />
+                  <point x="819.306205673759" y="410.0" />
+                  <point x="0.0" y="15.0" />
+                </edge>
+                <edge source="edu.neu.ccs.cs5010.IUser" target="edu.neu.ccs.cs5010.User">
+                  <point x="-27.33333333333333" y="-15.0" />
+                  <point x="-26.333333333333332" y="15.0" />
+                </edge>
+                <edge source="edu.neu.ccs.cs5010.RecommendationSystem" target="edu.neu.ccs.cs5010.IEdge">
+                  <point x="72.58333333333331" y="-15.0" />
+                  <point x="953.2140070921987" y="480.0" />
+                  <point x="1497.306205673759" y="480.0" />
+                  <point x="1497.306205673759" y="240.0" />
+                  <point x="1355.075" y="240.0" />
+                  <point x="33.60000000000002" y="15.0" />
+                </edge>
+                <edge source="edu.neu.ccs.cs5010.Network" target="edu.neu.ccs.cs5010.INetwork">
+                  <point x="40.80000000000001" y="-15.0" />
+                  <point x="565.4750000000001" y="340.0" />
+                  <point x="702.4750000000001" y="340.0" />
+                  <point x="-35.0" y="15.0" />
+                </edge>
+                <edge source="edu.neu.ccs.cs5010.RecommendationSystemBonus" target="edu.neu.ccs.cs5010.RecommendationSystem">
+                  <point x="20.083333333333314" y="-15.0" />
+                  <point x="603.922340425532" y="570.0" />
+                  <point x="880.6306737588653" y="570.0" />
+                  <point x="0.0" y="15.0" />
+                </edge>
+                <edge source="edu.neu.ccs.cs5010.UserGenerator" target="edu.neu.ccs.cs5010.IUser">
+                  <point x="-17.625" y="-15.0" />
+                  <point x="999.806205673759" y="210.0" />
+                  <point x="494.85" y="210.0" />
+                  <point x="35.875" y="15.0" />
+                </edge>
+                <edge source="edu.neu.ccs.cs5010.EdgeGenerator" target="edu.neu.ccs.cs5010.IEdgeGenerator">
+                  <point x="53.625" y="-15.0" />
+                  <point x="1366.056205673759" y="340.0" />
+                  <point x="1377.306205673759" y="340.0" />
+                  <point x="-36.5" y="15.0" />
+                </edge>
+                <edge source="edu.neu.ccs.cs5010.Network" target="edu.neu.ccs.cs5010.IUser">
+                  <point x="-40.80000000000001" y="-15.0" />
+                  <point x="483.8750000000001" y="340.0" />
+                  <point x="453.475" y="340.0" />
+                  <point x="-5.125" y="15.0" />
+                </edge>
+                <edge source="edu.neu.ccs.cs5010.IUserGenerator" target="edu.neu.ccs.cs5010.IUser">
+                  <point x="0.0" y="-15.0" />
+                  <point x="917.306205673759" y="220.0" />
+                  <point x="484.6" y="220.0" />
+                  <point x="25.625" y="15.0" />
+                </edge>
+                <edge source="edu.neu.ccs.cs5010.RecommendationSystemBonus" target="edu.neu.ccs.cs5010.ICmdHandler">
+                  <point x="100.41666666666666" y="-15.0" />
+                  <point x="684.2556737588653" y="590.0" />
+                  <point x="1655.306205673759" y="590.0" />
+                  <point x="1655.306205673759" y="340.0" />
+                  <point x="1640.056205673759" y="340.0" />
+                  <point x="43.0" y="15.0" />
+                </edge>
+                <edge source="edu.neu.ccs.cs5010.Edge" target="edu.neu.ccs.cs5010.IEdge">
+                  <point x="20.25" y="15.0" />
+                  <point x="21.0" y="-15.0" />
+                </edge>
+                <edge source="edu.neu.ccs.cs5010.INetwork" target="edu.neu.ccs.cs5010.IUser">
+                  <point x="-26.25" y="-15.0" />
+                  <point x="711.2250000000001" y="230.0" />
+                  <point x="474.35" y="230.0" />
+                  <point x="15.375" y="15.0" />
+                </edge>
+                <edge source="edu.neu.ccs.cs5010.User" target="edu.neu.ccs.cs5010.InvalidUserGenderException">
+                  <point x="-19.75" y="-15.0" />
+                  <point x="439.225" y="55.0" />
+                  <point x="342.225" y="55.0" />
+                  <point x="0.0" y="15.0" />
+                </edge>
+                <edge source="edu.neu.ccs.cs5010.RecommendationSystem" target="edu.neu.ccs.cs5010.INetwork">
+                  <point x="-27.916666666666686" y="-15.0" />
+                  <point x="852.7140070921987" y="430.0" />
+                  <point x="746.306205673759" y="430.0" />
+                  <point x="746.306205673759" y="340.0" />
+                  <point x="737.4750000000001" y="340.0" />
+                  <point x="0.0" y="15.0" />
+                </edge>
+                <edge source="edu.neu.ccs.cs5010.CmdHandler" target="edu.neu.ccs.cs5010.ICmdHandler">
+                  <point x="0.0" y="-15.0" />
+                  <point x="1581.806205673759" y="340.0" />
+                  <point x="1597.056205673759" y="340.0" />
+                  <point x="0.0" y="15.0" />
+                </edge>
+                <edge source="edu.neu.ccs.cs5010.Network" target="edu.neu.ccs.cs5010.InvalidUserException">
+                  <point x="20.399999999999977" y="-15.0" />
+                  <point x="545.075" y="330.0" />
+                  <point x="575.4750000000001" y="330.0" />
+                  <point x="0.0" y="15.0" />
+                </edge>
+                <edge source="edu.neu.ccs.cs5010.RecommendationSystem" target="edu.neu.ccs.cs5010.InvalidInputException">
+                  <point x="-94.91666666666663" y="-15.0" />
+                  <point x="785.7140070921987" y="490.0" />
+                  <point x="147.0" y="490.0" />
+                  <point x="45.5" y="15.0" />
+                </edge>
+                <edge source="edu.neu.ccs.cs5010.RecommendationSystem" target="edu.neu.ccs.cs5010.EdgeGenerator">
+                  <point x="50.25" y="-15.0" />
+                  <point x="930.8806737588653" y="460.0" />
+                  <point x="1312.431205673759" y="460.0" />
+                  <point x="0.0" y="15.0" />
+                </edge>
+                <edge source="edu.neu.ccs.cs5010.RecommendationSystemBonus" target="edu.neu.ccs.cs5010.IUser">
+                  <point x="-100.41666666666663" y="-15.0" />
+                  <point x="483.42234042553207" y="590.0" />
+                  <point x="0.0" y="590.0" />
+                  <point x="0.0" y="230.0" />
+                  <point x="423.1" y="230.0" />
+                  <point x="-35.875" y="15.0" />
+                </edge>
+                <edge source="edu.neu.ccs.cs5010.RecommendationSystem" target="edu.neu.ccs.cs5010.CsvParser">
+                  <point x="27.916666666666686" y="-15.0" />
+                  <point x="908.547340425532" y="440.0" />
+                  <point x="1163.931205673759" y="440.0" />
+                  <point x="0.0" y="15.0" />
+                </edge>
+              </edges>
+              <settings layout="Hierarchic Group" zoom="0.7413793103448276" x="831.0" y="320.0" />
+              <SelectedNodes />
+              <Categories />
+              <SCOPE>All</SCOPE>
+              <VISIBILITY>private</VISIBILITY>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RecommendationSystem.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs5010/RecommendationSystem.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="211">
+              <caret line="217" column="0" lean-forward="false" selection-start-line="217" selection-start-column="0" selection-end-line="223" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -36,15 +385,11 @@
       <list>
         <option value="$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs5010/InvalidUserException.java" />
         <option value="$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs5010/InvalidInputException.java" />
-        <option value="$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs5010/ICmdHandler.java" />
-        <option value="$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs5010/CmdHandler.java" />
         <option value="$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs5010/RecommendationBonus.java" />
         <option value="$PROJECT_DIR$/src/test/java/edu/neu/ccs/cs5010/CsvParserTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/edu/neu/ccs/cs5010/CmdHandlerTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs5010/RecommendationSystem.java" />
         <option value="$PROJECT_DIR$/src/test/java/edu/neu/ccs/cs5010/UserGeneratorTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/edu/neu/ccs/cs5010/EdgeGeneratorTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs5010/RecommendationSystemBonus.java" />
         <option value="$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs5010/User.java" />
         <option value="$PROJECT_DIR$/src/test/java/edu/neu/ccs/cs5010/UserTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs5010/IUser.java" />
@@ -59,6 +404,11 @@
         <option value="$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs5010/IEdgeGenerator.java" />
         <option value="$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs5010/INetwork.java" />
         <option value="$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs5010/Network.java" />
+        <option value="$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs5010/RecommendationSystem.java" />
+        <option value="$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs5010/IRecommendationSystem.java" />
+        <option value="$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs5010/ICmdHandler.java" />
+        <option value="$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs5010/RecommendationSystemBonus.java" />
+        <option value="$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs5010/CmdHandler.java" />
       </list>
     </option>
   </component>
@@ -81,11 +431,11 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="-11" />
-    <option name="y" value="-11" />
-    <option name="width" value="1942" />
-    <option name="height" value="1042" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="1311" />
+    <option name="y" value="-257" />
+    <option name="width" value="1851" />
+    <option name="height" value="1050" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -102,41 +452,33 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
-      <pane id="Scratches" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="Assignment6" type="b2602c69:ProjectViewProjectNode" />
+              <item name="assignment6" type="b2602c69:ProjectViewProjectNode" />
               <item name="assignment6" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Assignment6" type="b2602c69:ProjectViewProjectNode" />
-              <item name="assignment6" type="462c0819:PsiDirectoryNode" />
-              <item name=".idea" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Assignment6" type="b2602c69:ProjectViewProjectNode" />
+              <item name="assignment6" type="b2602c69:ProjectViewProjectNode" />
               <item name="assignment6" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Assignment6" type="b2602c69:ProjectViewProjectNode" />
+              <item name="assignment6" type="b2602c69:ProjectViewProjectNode" />
               <item name="assignment6" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Assignment6" type="b2602c69:ProjectViewProjectNode" />
+              <item name="assignment6" type="b2602c69:ProjectViewProjectNode" />
               <item name="assignment6" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Assignment6" type="b2602c69:ProjectViewProjectNode" />
+              <item name="assignment6" type="b2602c69:ProjectViewProjectNode" />
               <item name="assignment6" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
@@ -144,31 +486,45 @@
               <item name="cs5010" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Assignment6" type="b2602c69:ProjectViewProjectNode" />
+              <item name="assignment6" type="b2602c69:ProjectViewProjectNode" />
               <item name="assignment6" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Assignment6" type="b2602c69:ProjectViewProjectNode" />
+              <item name="assignment6" type="b2602c69:ProjectViewProjectNode" />
               <item name="assignment6" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Assignment6" type="b2602c69:ProjectViewProjectNode" />
+              <item name="assignment6" type="b2602c69:ProjectViewProjectNode" />
               <item name="assignment6" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="cs5010" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="assignment6" type="b2602c69:ProjectViewProjectNode" />
+              <item name="assignment6" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="assignment6" type="b2602c69:ProjectViewProjectNode" />
+              <item name="assignment6" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+              <item name="site" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scratches" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -430,6 +786,7 @@
       <workItem from="1510257042541" duration="8207000" />
       <workItem from="1510270236351" duration="268000" />
       <workItem from="1510270544424" duration="46383000" />
+      <workItem from="1510605876330" duration="3733000" />
     </task>
     <servers />
   </component>
@@ -466,37 +823,37 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="54858000" />
+    <option name="totallyTimeSpent" value="58591000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-11" y="-11" width="1942" height="1042" extended-state="7" />
+    <frame x="1311" y="-257" width="1851" height="1050" extended-state="0" />
     <layout>
+      <window_info id="PlantUML" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298647" sideWeight="0.49289098" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3287827" sideWeight="0.5151042" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20833333" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3287827" sideWeight="0.48489583" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2554974" sideWeight="0.51741296" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14151464" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2554974" sideWeight="0.48258707" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.14568157" sideWeight="0.49763033" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1828125" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16915423" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3993174" sideWeight="0.51770836" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="PlantUML" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298647" sideWeight="0.49289098" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
@@ -528,8 +885,6 @@
           <caret line="18" column="69" lean-forward="true" selection-start-line="18" selection-start-column="69" selection-end-line="18" selection-end-column="69" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#3476#3477#0" expanded="false" />
-            <element signature="e#3554#3555#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -564,29 +919,12 @@
           <caret line="4" column="25" lean-forward="false" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="25" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#3476#3477#0" expanded="false" />
-            <element signature="e#3554#3555#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs5010/InvalidUserException.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs5010/IIoLibrary.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="17" lean-forward="false" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs5010/InvalidInputException.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs5010/ICmdHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs5010/IIoLibrary.java" />
     <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -594,22 +932,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs5010/IRecommendationSystem.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="8" column="21" lean-forward="true" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/Downloads/junit-4.12.jar!/org/junit/runners/model/FrameworkMethod.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="163">
-          <caret line="49" column="0" lean-forward="false" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar://$USER_HOME$/Downloads/junit-4.12.jar!/org/junit/runners/model/FrameworkMethod.class" />
     <entry file="file://$PROJECT_DIR$/src/test/java/edu/neu/ccs/cs5010/NetworkTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-2179">
@@ -630,7 +953,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-2251">
           <caret line="6" column="20" lean-forward="true" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -638,15 +960,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-40258">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs5010/CmdHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-972">
-          <caret line="71" column="0" lean-forward="false" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -671,27 +984,6 @@
         <state relative-caret-position="-1666">
           <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs5010/RecommendationSystemBonus.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="4" column="25" lean-forward="false" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="25" />
-          <folding>
-            <element signature="e#329#330#0" expanded="true" />
-            <element signature="e#356#357#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs5010/RecommendationSystem.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2741">
-          <caret line="241" column="1" lean-forward="false" selection-start-line="241" selection-start-column="1" selection-end-line="241" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -806,25 +1098,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/output.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/output.csv" />
     <entry file="file://$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs5010/Network.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="324">
           <caret line="24" column="39" lean-forward="false" selection-start-line="24" selection-start-column="39" selection-end-line="24" selection-end-column="39" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1510553857763" expanded="true" signature="2438:2463" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -837,11 +1120,371 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs5010/IRecommendationSystem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="5" lean-forward="false" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs5010/IUser.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
+        <state relative-caret-position="293">
           <caret line="44" column="0" lean-forward="false" selection-start-line="44" selection-start-column="0" selection-end-line="46" selection-end-column="5" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs5010/InvalidInputException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs5010/ICmdHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="900">
+          <caret line="60" column="5" lean-forward="false" selection-start-line="60" selection-start-column="5" selection-end-line="60" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs5010/RecommendationSystem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="211">
+          <caret line="217" column="0" lean-forward="false" selection-start-line="217" selection-start-column="0" selection-end-line="223" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs5010/RecommendationSystemBonus.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="464">
+          <caret line="33" column="0" lean-forward="false" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs5010/CmdHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="3" lean-forward="false" selection-start-line="17" selection-start-column="3" selection-end-line="17" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/edu.neu.ccs.cs5010">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>edu.neu.ccs.cs5010</OriginalElement>
+          <nodes>
+            <node x="419.475" y="80.0">edu.neu.ccs.cs5010.User</node>
+            <node x="767.806205673759" y="360.0">edu.neu.ccs.cs5010.IoLibrary</node>
+            <node x="845.306205673759" y="270.0">edu.neu.ccs.cs5010.IUserGenerator</node>
+            <node x="1240.931205673759" y="360.0">edu.neu.ccs.cs5010.EdgeGenerator</node>
+            <node x="10.5" y="360.0">edu.neu.ccs.cs5010.InvalidInputException</node>
+            <node x="1340.806205673759" y="270.0">edu.neu.ccs.cs5010.IEdgeGenerator</node>
+            <node x="230.22500000000002" y="0.0">edu.neu.ccs.cs5010.InvalidUserGenderException</node>
+            <node x="212.5" y="360.0">edu.neu.ccs.cs5010.IRecommendationSystem</node>
+            <node x="474.225" y="0.0">edu.neu.ccs.cs5010.InvalidUserAgeException</node>
+            <node x="417.975" y="160.0">edu.neu.ccs.cs5010.IUser</node>
+            <node x="485.97500000000014" y="270.0">edu.neu.ccs.cs5010.InvalidUserException</node>
+            <node x="1532.556205673759" y="270.0">edu.neu.ccs.cs5010.ICmdHandler</node>
+            <node x="946.931205673759" y="360.0">edu.neu.ccs.cs5010.UserGenerator</node>
+            <node x="463.3390070921987" y="610.0">edu.neu.ccs.cs5010.RecommendationSystemBonus</node>
+            <node x="473.6750000000001" y="360.0">edu.neu.ccs.cs5010.Network</node>
+            <node x="1139.681205673759" y="270.0">edu.neu.ccs.cs5010.ICsvParser</node>
+            <node x="1107.931205673759" y="360.0">edu.neu.ccs.cs5010.CsvParser</node>
+            <node x="684.9750000000001" y="270.0">edu.neu.ccs.cs5010.INetwork</node>
+            <node x="780.1306737588653" y="520.0">edu.neu.ccs.cs5010.RecommendationSystem</node>
+            <node x="1518.806205673759" y="360.0">edu.neu.ccs.cs5010.CmdHandler</node>
+            <node x="1279.4750000000001" y="160.0">edu.neu.ccs.cs5010.IEdge</node>
+            <node x="1280.9750000000001" y="80.0">edu.neu.ccs.cs5010.Edge</node>
+          </nodes>
+          <notes />
+          <edges>
+            <edge source="edu.neu.ccs.cs5010.RecommendationSystemBonus" target="edu.neu.ccs.cs5010.CmdHandler">
+              <point x="60.25" y="-15.0" />
+              <point x="644.0890070921987" y="580.0" />
+              <point x="1613.306205673759" y="580.0" />
+              <point x="31.5" y="15.0" />
+            </edge>
+            <edge source="edu.neu.ccs.cs5010.UserGenerator" target="edu.neu.ccs.cs5010.ICsvParser">
+              <point x="17.625" y="-15.0" />
+              <point x="1035.056205673759" y="320.0" />
+              <point x="1149.2645390070923" y="320.0" />
+              <point x="-47.916666666666686" y="15.0" />
+            </edge>
+            <edge source="edu.neu.ccs.cs5010.CsvParser" target="edu.neu.ccs.cs5010.ICsvParser">
+              <point x="0.0" y="-15.0" />
+              <point x="1163.931205673759" y="340.0" />
+              <point x="1187.5978723404255" y="340.0" />
+              <point x="-9.583333333333343" y="15.0" />
+            </edge>
+            <edge source="edu.neu.ccs.cs5010.RecommendationSystemBonus" target="edu.neu.ccs.cs5010.IRecommendationSystem">
+              <point x="-20.08333333333337" y="-15.0" />
+              <point x="563.7556737588653" y="570.0" />
+              <point x="249.63067375886533" y="570.0" />
+              <point x="249.63067375886533" y="500.0" />
+              <point x="246.5" y="500.0" />
+              <point x="-68.0" y="15.0" />
+            </edge>
+            <edge source="edu.neu.ccs.cs5010.RecommendationSystem" target="edu.neu.ccs.cs5010.UserGenerator">
+              <point x="16.75" y="-15.0" />
+              <point x="897.3806737588653" y="430.0" />
+              <point x="1017.431205673759" y="430.0" />
+              <point x="0.0" y="15.0" />
+            </edge>
+            <edge source="edu.neu.ccs.cs5010.RecommendationSystem" target="edu.neu.ccs.cs5010.Network">
+              <point x="-39.08333333333334" y="-15.0" />
+              <point x="841.547340425532" y="440.0" />
+              <point x="524.6750000000002" y="440.0" />
+              <point x="0.0" y="15.0" />
+            </edge>
+            <edge source="edu.neu.ccs.cs5010.RecommendationSystem" target="edu.neu.ccs.cs5010.ICsvParser">
+              <point x="39.08333333333334" y="-15.0" />
+              <point x="919.7140070921987" y="450.0" />
+              <point x="1230.431205673759" y="450.0" />
+              <point x="1230.431205673759" y="340.0" />
+              <point x="1206.7645390070923" y="340.0" />
+              <point x="9.583333333333314" y="15.0" />
+            </edge>
+            <edge source="edu.neu.ccs.cs5010.INetwork" target="edu.neu.ccs.cs5010.IEdge">
+              <point x="26.25" y="-15.0" />
+              <point x="763.7250000000001" y="250.0" />
+              <point x="1304.6750000000002" y="250.0" />
+              <point x="-16.80000000000001" y="15.0" />
+            </edge>
+            <edge source="edu.neu.ccs.cs5010.RecommendationSystem" target="edu.neu.ccs.cs5010.IUserGenerator">
+              <point x="5.583333333333329" y="-15.0" />
+              <point x="886.2140070921987" y="500.0" />
+              <point x="881.306205673759" y="500.0" />
+              <point x="-36.0" y="15.0" />
+            </edge>
+            <edge source="edu.neu.ccs.cs5010.RecommendationSystem" target="edu.neu.ccs.cs5010.IUser">
+              <point x="-61.41666666666666" y="-15.0" />
+              <point x="819.2140070921987" y="460.0" />
+              <point x="427.00000000000006" y="460.0" />
+              <point x="427.00000000000006" y="240.0" />
+              <point x="433.35" y="240.0" />
+              <point x="-25.625" y="15.0" />
+            </edge>
+            <edge source="edu.neu.ccs.cs5010.RecommendationSystemBonus" target="edu.neu.ccs.cs5010.InvalidInputException">
+              <point x="-60.25" y="-15.0" />
+              <point x="523.5890070921987" y="580.0" />
+              <point x="56.0" y="580.0" />
+              <point x="-45.5" y="15.0" />
+            </edge>
+            <edge source="edu.neu.ccs.cs5010.IEdge" target="edu.neu.ccs.cs5010.Edge">
+              <point x="-21.0" y="-15.0" />
+              <point x="-20.25" y="15.0" />
+            </edge>
+            <edge source="edu.neu.ccs.cs5010.Network" target="edu.neu.ccs.cs5010.IEdge">
+              <point x="0.0" y="-15.0" />
+              <point x="524.6750000000002" y="320.0" />
+              <point x="475.475" y="320.0" />
+              <point x="475.475" y="240.0" />
+              <point x="1287.875" y="240.0" />
+              <point x="-33.60000000000002" y="15.0" />
+            </edge>
+            <edge source="edu.neu.ccs.cs5010.EdgeGenerator" target="edu.neu.ccs.cs5010.ICsvParser">
+              <point x="-17.875" y="-15.0" />
+              <point x="1294.556205673759" y="320.0" />
+              <point x="1245.0978723404257" y="320.0" />
+              <point x="47.916666666666686" y="15.0" />
+            </edge>
+            <edge source="edu.neu.ccs.cs5010.RecommendationSystem" target="edu.neu.ccs.cs5010.IRecommendationSystem">
+              <point x="-83.74999999999997" y="-15.0" />
+              <point x="796.8806737588653" y="480.0" />
+              <point x="314.5" y="480.0" />
+              <point x="0.0" y="15.0" />
+            </edge>
+            <edge source="edu.neu.ccs.cs5010.RecommendationSystem" target="edu.neu.ccs.cs5010.IEdgeGenerator">
+              <point x="61.41666666666666" y="-15.0" />
+              <point x="942.047340425532" y="470.0" />
+              <point x="1450.306205673759" y="470.0" />
+              <point x="36.5" y="15.0" />
+            </edge>
+            <edge source="edu.neu.ccs.cs5010.RecommendationSystem" target="edu.neu.ccs.cs5010.ICmdHandler">
+              <point x="83.75" y="-15.0" />
+              <point x="964.3806737588653" y="490.0" />
+              <point x="1508.306205673759" y="490.0" />
+              <point x="1508.306205673759" y="340.0" />
+              <point x="1554.056205673759" y="340.0" />
+              <point x="-43.0" y="15.0" />
+            </edge>
+            <edge source="edu.neu.ccs.cs5010.RecommendationSystem" target="edu.neu.ccs.cs5010.CmdHandler">
+              <point x="94.91666666666666" y="-15.0" />
+              <point x="975.547340425532" y="500.0" />
+              <point x="1550.306205673759" y="500.0" />
+              <point x="-31.5" y="15.0" />
+            </edge>
+            <edge source="edu.neu.ccs.cs5010.UserGenerator" target="edu.neu.ccs.cs5010.IUserGenerator">
+              <point x="-52.875" y="-15.0" />
+              <point x="964.556205673759" y="340.0" />
+              <point x="953.306205673759" y="340.0" />
+              <point x="36.0" y="15.0" />
+            </edge>
+            <edge source="edu.neu.ccs.cs5010.IEdgeGenerator" target="edu.neu.ccs.cs5010.IEdge">
+              <point x="0.0" y="-15.0" />
+              <point x="1413.806205673759" y="250.0" />
+              <point x="1338.275" y="250.0" />
+              <point x="16.799999999999955" y="15.0" />
+            </edge>
+            <edge source="edu.neu.ccs.cs5010.EdgeGenerator" target="edu.neu.ccs.cs5010.IEdge">
+              <point x="17.875" y="-15.0" />
+              <point x="1330.306205673759" y="250.0" />
+              <point x="1321.4750000000001" y="250.0" />
+              <point x="0.0" y="15.0" />
+            </edge>
+            <edge source="edu.neu.ccs.cs5010.User" target="edu.neu.ccs.cs5010.InvalidUserAgeException">
+              <point x="19.75" y="-15.0" />
+              <point x="478.725" y="55.0" />
+              <point x="575.725" y="55.0" />
+              <point x="0.0" y="15.0" />
+            </edge>
+            <edge source="edu.neu.ccs.cs5010.User" target="edu.neu.ccs.cs5010.IUser">
+              <point x="0.0" y="15.0" />
+              <point x="0.0" y="-15.0" />
+            </edge>
+            <edge source="edu.neu.ccs.cs5010.RecommendationSystem" target="edu.neu.ccs.cs5010.IoLibrary">
+              <point x="-5.583333333333343" y="-15.0" />
+              <point x="875.047340425532" y="410.0" />
+              <point x="819.306205673759" y="410.0" />
+              <point x="0.0" y="15.0" />
+            </edge>
+            <edge source="edu.neu.ccs.cs5010.IUser" target="edu.neu.ccs.cs5010.User">
+              <point x="-27.33333333333333" y="-15.0" />
+              <point x="-26.333333333333332" y="15.0" />
+            </edge>
+            <edge source="edu.neu.ccs.cs5010.RecommendationSystem" target="edu.neu.ccs.cs5010.IEdge">
+              <point x="72.58333333333331" y="-15.0" />
+              <point x="953.2140070921987" y="480.0" />
+              <point x="1497.306205673759" y="480.0" />
+              <point x="1497.306205673759" y="240.0" />
+              <point x="1355.075" y="240.0" />
+              <point x="33.60000000000002" y="15.0" />
+            </edge>
+            <edge source="edu.neu.ccs.cs5010.Network" target="edu.neu.ccs.cs5010.INetwork">
+              <point x="40.80000000000001" y="-15.0" />
+              <point x="565.4750000000001" y="340.0" />
+              <point x="702.4750000000001" y="340.0" />
+              <point x="-35.0" y="15.0" />
+            </edge>
+            <edge source="edu.neu.ccs.cs5010.RecommendationSystemBonus" target="edu.neu.ccs.cs5010.RecommendationSystem">
+              <point x="20.083333333333314" y="-15.0" />
+              <point x="603.922340425532" y="570.0" />
+              <point x="880.6306737588653" y="570.0" />
+              <point x="0.0" y="15.0" />
+            </edge>
+            <edge source="edu.neu.ccs.cs5010.UserGenerator" target="edu.neu.ccs.cs5010.IUser">
+              <point x="-17.625" y="-15.0" />
+              <point x="999.806205673759" y="210.0" />
+              <point x="494.85" y="210.0" />
+              <point x="35.875" y="15.0" />
+            </edge>
+            <edge source="edu.neu.ccs.cs5010.EdgeGenerator" target="edu.neu.ccs.cs5010.IEdgeGenerator">
+              <point x="53.625" y="-15.0" />
+              <point x="1366.056205673759" y="340.0" />
+              <point x="1377.306205673759" y="340.0" />
+              <point x="-36.5" y="15.0" />
+            </edge>
+            <edge source="edu.neu.ccs.cs5010.Network" target="edu.neu.ccs.cs5010.IUser">
+              <point x="-40.80000000000001" y="-15.0" />
+              <point x="483.8750000000001" y="340.0" />
+              <point x="453.475" y="340.0" />
+              <point x="-5.125" y="15.0" />
+            </edge>
+            <edge source="edu.neu.ccs.cs5010.IUserGenerator" target="edu.neu.ccs.cs5010.IUser">
+              <point x="0.0" y="-15.0" />
+              <point x="917.306205673759" y="220.0" />
+              <point x="484.6" y="220.0" />
+              <point x="25.625" y="15.0" />
+            </edge>
+            <edge source="edu.neu.ccs.cs5010.RecommendationSystemBonus" target="edu.neu.ccs.cs5010.ICmdHandler">
+              <point x="100.41666666666666" y="-15.0" />
+              <point x="684.2556737588653" y="590.0" />
+              <point x="1655.306205673759" y="590.0" />
+              <point x="1655.306205673759" y="340.0" />
+              <point x="1640.056205673759" y="340.0" />
+              <point x="43.0" y="15.0" />
+            </edge>
+            <edge source="edu.neu.ccs.cs5010.Edge" target="edu.neu.ccs.cs5010.IEdge">
+              <point x="20.25" y="15.0" />
+              <point x="21.0" y="-15.0" />
+            </edge>
+            <edge source="edu.neu.ccs.cs5010.INetwork" target="edu.neu.ccs.cs5010.IUser">
+              <point x="-26.25" y="-15.0" />
+              <point x="711.2250000000001" y="230.0" />
+              <point x="474.35" y="230.0" />
+              <point x="15.375" y="15.0" />
+            </edge>
+            <edge source="edu.neu.ccs.cs5010.User" target="edu.neu.ccs.cs5010.InvalidUserGenderException">
+              <point x="-19.75" y="-15.0" />
+              <point x="439.225" y="55.0" />
+              <point x="342.225" y="55.0" />
+              <point x="0.0" y="15.0" />
+            </edge>
+            <edge source="edu.neu.ccs.cs5010.RecommendationSystem" target="edu.neu.ccs.cs5010.INetwork">
+              <point x="-27.916666666666686" y="-15.0" />
+              <point x="852.7140070921987" y="430.0" />
+              <point x="746.306205673759" y="430.0" />
+              <point x="746.306205673759" y="340.0" />
+              <point x="737.4750000000001" y="340.0" />
+              <point x="0.0" y="15.0" />
+            </edge>
+            <edge source="edu.neu.ccs.cs5010.CmdHandler" target="edu.neu.ccs.cs5010.ICmdHandler">
+              <point x="0.0" y="-15.0" />
+              <point x="1581.806205673759" y="340.0" />
+              <point x="1597.056205673759" y="340.0" />
+              <point x="0.0" y="15.0" />
+            </edge>
+            <edge source="edu.neu.ccs.cs5010.Network" target="edu.neu.ccs.cs5010.InvalidUserException">
+              <point x="20.399999999999977" y="-15.0" />
+              <point x="545.075" y="330.0" />
+              <point x="575.4750000000001" y="330.0" />
+              <point x="0.0" y="15.0" />
+            </edge>
+            <edge source="edu.neu.ccs.cs5010.RecommendationSystem" target="edu.neu.ccs.cs5010.InvalidInputException">
+              <point x="-94.91666666666663" y="-15.0" />
+              <point x="785.7140070921987" y="490.0" />
+              <point x="147.0" y="490.0" />
+              <point x="45.5" y="15.0" />
+            </edge>
+            <edge source="edu.neu.ccs.cs5010.RecommendationSystem" target="edu.neu.ccs.cs5010.EdgeGenerator">
+              <point x="50.25" y="-15.0" />
+              <point x="930.8806737588653" y="460.0" />
+              <point x="1312.431205673759" y="460.0" />
+              <point x="0.0" y="15.0" />
+            </edge>
+            <edge source="edu.neu.ccs.cs5010.RecommendationSystemBonus" target="edu.neu.ccs.cs5010.IUser">
+              <point x="-100.41666666666663" y="-15.0" />
+              <point x="483.42234042553207" y="590.0" />
+              <point x="0.0" y="590.0" />
+              <point x="0.0" y="230.0" />
+              <point x="423.1" y="230.0" />
+              <point x="-35.875" y="15.0" />
+            </edge>
+            <edge source="edu.neu.ccs.cs5010.RecommendationSystem" target="edu.neu.ccs.cs5010.CsvParser">
+              <point x="27.916666666666686" y="-15.0" />
+              <point x="908.547340425532" y="440.0" />
+              <point x="1163.931205673759" y="440.0" />
+              <point x="0.0" y="15.0" />
+            </edge>
+          </edges>
+          <settings layout="Hierarchic Group" zoom="0.7413793103448276" x="831.0" y="320.0" />
+          <SelectedNodes />
+          <Categories />
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
         </state>
       </provider>
     </entry>

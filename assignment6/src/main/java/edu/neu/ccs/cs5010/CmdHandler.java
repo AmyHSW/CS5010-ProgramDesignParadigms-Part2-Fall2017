@@ -1,5 +1,21 @@
 package edu.neu.ccs.cs5010;
 
+/**
+ * The CmdHandler class handles the input command-line arguments.
+ *
+ * <p>The required arguments are three csv files, that must be provided in the order of
+ * nodes file, edges file and output file.
+ *
+ * <p>There are three optional arguments: the processing flag, the number of users to process,
+ * and the number of recommendations. If one or more of the optional arguments are missing,
+ * they will be assigned with the corresponding default values.
+ *
+ * <p>If the arguments are not in valid format, an error message will be accumulated and
+ * a usage message will be attached to end of the error message.
+ *
+ * @author
+ * Shuwan Huang, Jingyu Shen
+ */
 public class CmdHandler implements ICmdHandler {
 
   private static final int NUM_RECOMMENDATIONS_LOWER_BOUND = 1;
@@ -45,6 +61,10 @@ public class CmdHandler implements ICmdHandler {
   private int numUsersToProcess = NUM_USERS_TO_PROCESS_DEFAULT;
   private int numRecommendations = NUM_RECOMMENDATIONS_DEFAULT;
 
+  /**
+   * Constructs a new CmdHandler with the input arguments.
+   * @param args the command-line arguments
+   */
   public CmdHandler(String[] args) {
     validate(args);
   }
@@ -179,36 +199,64 @@ public class CmdHandler implements ICmdHandler {
     }
   }
 
+  /**
+   * Returns the nodes csv filename.
+   * @return the nodes csv filename.
+   */
   @Override
   public String getNodeFile() {
     return nodeFile;
   }
 
+  /**
+   * Returns the edges csv filename.
+   * @return the edges csv filename.
+   */
   @Override
   public String getEdgeFile() {
     return edgeFile;
   }
 
+  /**
+   * Returns the output csv filename.
+   * @return the output csv filename.
+   */
   @Override
   public String getOutputFile() {
     return outputFile;
   }
 
+  /**
+   * Returns a character that represents the processing flag.
+   * @return a character that represents the processing flag.
+   */
   @Override
   public char getProcessingFlag() {
     return processingFlag;
   }
 
+  /**
+   * Returns the number of users to process.
+   * @return the number of users to process.
+   */
   @Override
   public int getNumUsersToProcess() {
     return numUsersToProcess;
   }
 
+  /**
+   * Returns the number of recommendations.
+   * @return the number of recommendations.
+   */
   @Override
   public int getNumRecommendations() {
     return numRecommendations;
   }
 
+  /**
+   * Returns the lower bound to be an influencer.
+   * @return the lower bound to be an influencer.
+   */
   @Override
   public int getInfluencerBound() {
     switch (nodeFile) {
@@ -221,11 +269,19 @@ public class CmdHandler implements ICmdHandler {
     }
   }
 
+  /**
+   * Returns if the arguments are in valid format.
+   * @return true if the arguments are valid, false otherwise.
+   */
   @Override
   public boolean isValid() {
     return valid;
   }
 
+  /**
+   * Returns the error message.
+   * @return the error message.
+   */
   @Override
   public String getErrorMessage() {
     if (errorMessage.length() > 0) {
