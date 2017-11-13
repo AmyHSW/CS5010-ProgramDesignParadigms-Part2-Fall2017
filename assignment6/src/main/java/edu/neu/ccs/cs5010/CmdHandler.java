@@ -24,6 +24,16 @@ public class CmdHandler implements ICmdHandler {
   private static final String PROCESSING_FLAG = "--processing-flag";
   private static final String NUM_USERS_TO_PROCESS = "--number-of-users-to-process";
   private static final String NUM_RECOMMENDATIONS = "--number-of-recommendations";
+  private static final String USAGE_MSG =
+      "Usage: \n"
+          + "Please provide 3 csv files in the order of nodes file, edges file and output file.\n"
+          + "For optional input, please provide a flag in front of the input.\n"
+          + "--processing-flag <char>           specifies the processing flag\n"
+          + "--number-of-users-to-process <int>    specifies the number of users to process\n"
+          + "--number-of-recommendations <int>  specifies the number of recommendations\n"
+          + "For example:\n"
+          + "nodes_small.csv edges_small.csv output.csv --processing-flag e\n"
+          + "--number-of-users-to-process 50 --number-of-recommendations 10\n";
   private static final int START_INDEX_OF_OPTIONAL_ARGUMENTS = 3;
 
   private boolean valid = false;
@@ -218,6 +228,9 @@ public class CmdHandler implements ICmdHandler {
 
   @Override
   public String getErrorMessage() {
+    if (errorMessage.length() > 0) {
+      errorMessage.append(USAGE_MSG);
+    }
     return errorMessage.toString();
   }
 

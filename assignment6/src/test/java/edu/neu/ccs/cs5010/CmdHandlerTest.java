@@ -118,6 +118,13 @@ public class CmdHandlerTest {
   }
 
   @Test
+  public void getInfluencerBound() throws Exception {
+    assertTrue(cmdHandler1.getInfluencerBound() == 25);
+    assertTrue(cmdHandler3.getInfluencerBound() == 250);
+    assertTrue(cmdHandler8.getInfluencerBound() == -1);
+  }
+
+  @Test
   public void isValid() throws Exception {
     assertTrue(cmdHandler1.isValid());
     assertTrue(!cmdHandler2.isValid());
@@ -154,6 +161,7 @@ public class CmdHandlerTest {
     assertTrue(!cmdHandler1.equals(cmdHandler13));
     assertTrue(cmdHandler1.equals(new CmdHandler(
         new String[] {"nodes_small.csv", "edges_small.csv", "output.csv"})));
+    assertTrue(!cmdHandler3.equals(cmdHandler11));
   }
 
   @Test
