@@ -157,7 +157,9 @@ public class RecommendationSystem implements IRecommendationSystem {
     Random random = new Random();
     Set<Integer> friendsOfUser = network.getFriendsOfUser(user.getUserId());
     Set<Integer> recommendations = userRecomMap.get(user);
-    while (recommendations.size() < numRecommendations) {
+    int sentinel = Math.min(numRecommendations,
+        allUsers.size() - friendsOfUser.size() - 1);
+    while (recommendations.size() < sentinel) {
       int idFriend = allUsers.get(random.nextInt(allUsers.size())).getUserId();
       if (!friendsOfUser.contains(idFriend) && !recommendations.contains(idFriend)
               && idFriend != user.getUserId()) {
@@ -206,4 +208,35 @@ public class RecommendationSystem implements IRecommendationSystem {
     recommendationSystem.printTopTen();
   }
 
+  @Override
+  public boolean equals(Object other) {
+    if (this == other) {
+      return true;
+    }
+    if (other == null || getClass() != other.getClass()) {
+      return false;
+    }
+
+    RecommendationSystem that = (RecommendationSystem) other;
+
+    if (numRecommendations != that.numRecommendations) {
+      return false;
+    }
+    if (!network.equals(that.network)) {
+      return false;
+    }
+    if (!userRecomMap.equals(that.userRecomMap)) {
+      return false;
+    }
+    return outputDir.equals(that.outputDir);
+  }
+
+  @Override
+  public int hashCode() {
+    int result = network.hashCode();
+    result = 31 * result + numRecommendations;
+    result = 31 * result + userRecomMap.hashCode();
+    result = 31 * result + outputDir.hashCode();
+    return result;
+  }
 }

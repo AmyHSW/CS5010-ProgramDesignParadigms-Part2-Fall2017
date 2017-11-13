@@ -31,7 +31,8 @@ public class Network implements INetwork {
   public void addEdge(IEdge edge) {
     int fromId = edge.getFromId();
     int toId = edge.getToId();
-    if (usersMap.containsKey(fromId) && usersMap.containsKey(toId)) {
+    if (usersMap.containsKey(fromId) && usersMap.containsKey(toId)
+        && !connectionsMap.get(fromId).contains(toId)) {
       IUser destination = usersMap.get(toId);
       destination.addOneFollower();
       connectionsMap.get(fromId).add(toId);
