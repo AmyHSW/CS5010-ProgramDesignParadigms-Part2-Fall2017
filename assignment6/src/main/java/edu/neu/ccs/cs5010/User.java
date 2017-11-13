@@ -2,6 +2,9 @@ package edu.neu.ccs.cs5010;
 
 import java.time.LocalDate;
 
+/**
+ * Represent a concrete User class, storing all its information.
+ */
 public class User implements IUser {
 
   private static final char FEMALE = 'F';
@@ -17,6 +20,17 @@ public class User implements IUser {
   private String city;
   private int numFollowers;
 
+  /**
+   * Constructor of User object.
+   *
+   * @param userId the user's id number
+   * @param createdDate the user account's created date
+   * @param gender the user's gender, a character from M/F/O
+   * @param age the user's age, an integer between 0 to 100
+   * @param city the user's city
+   * @throws InvalidUserGenderException if gender is not a character from M/F/O
+   * @throws InvalidUserAgeException if age is not an integer between 0 to 100
+   */
   public User(int userId, LocalDate createdDate, char gender, int age, String city) {
     validateGender(gender);
     validateAge(age);
@@ -64,7 +78,7 @@ public class User implements IUser {
   @Override
   public int compareTo(IUser that) {
     if (that == null) {
-      throw new InvalidInputException("Should provide IUser for compareTo, not null");
+      throw new NullPointerException("Should provide IUser for compareTo, not null");
     }
     return this.getUserId() - that.getUserId();
   }

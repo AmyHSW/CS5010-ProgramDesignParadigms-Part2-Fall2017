@@ -5,10 +5,18 @@ import java.util.Arrays;
 import java.util.Iterator;
 import java.util.List;
 
+/**
+ * Represent a concrete CSV file parser, parsing each line's information of the file.
+ */
 public class CsvParser implements ICsvParser {
 
   private Iterator<List<String>> iterator;
 
+  /**
+   * Constructor of CsvParser object.
+   *
+   * @param stringLines list of Strings of the csv file
+   */
   public CsvParser(List<String> stringLines) {
     if (stringLines != null) {
       List<List<String>> infoLines = new ArrayList<>();

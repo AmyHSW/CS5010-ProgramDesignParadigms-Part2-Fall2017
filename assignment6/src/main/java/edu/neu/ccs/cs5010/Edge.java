@@ -1,10 +1,19 @@
 package edu.neu.ccs.cs5010;
 
+/**
+ * Represent a concrete Edge class, storing all its information.
+ */
 public class Edge implements IEdge {
 
   private final int fromId;
   private final int toId;
 
+  /**
+   * Static factory method to create an User object with the given parameters.
+   *
+   * @param fromId the edge's source user's id
+   * @param toId the edge's destination user's id
+   */
   public Edge(int fromId, int toId) {
     this.fromId = fromId;
     this.toId = toId;

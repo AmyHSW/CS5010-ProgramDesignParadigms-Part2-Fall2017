@@ -71,7 +71,7 @@ public class UserTest {
     new User(1, LocalDate.now(), 'X', 20, "Hongkong");
   }
 
-  @Test(expected = InvalidInputException.class)
+  @Test(expected = NullPointerException.class)
   public void expectedInvalidInputException() throws Exception {
     user1.compareTo(null);
   }

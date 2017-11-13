@@ -8,12 +8,20 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
+/**
+ * Represent a concrete network.
+ */
 public class Network implements INetwork {
 
   private final Map<Integer, Set<Integer>> connectionsMap;
   private final Map<Integer, IUser> usersMap;
   private final int influencerBound;
 
+  /**
+   * Constructor of Network object.
+   *
+   * @param influencerBound the influencer's followers bound
+   */
   public Network(int influencerBound) {
     connectionsMap = new HashMap<>();
     usersMap = new HashMap<>();

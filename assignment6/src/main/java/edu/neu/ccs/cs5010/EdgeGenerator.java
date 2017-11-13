@@ -3,11 +3,20 @@ package edu.neu.ccs.cs5010;
 import java.util.List;
 import java.util.NoSuchElementException;
 
+/**
+ * Represent a concrete edge generator, generating edge one by one.
+ */
 public class EdgeGenerator implements IEdgeGenerator {
+
   private ICsvParser csvParser;
   private static final int SOURCE_INDEX = 0;
   private static final int DESTINATION_INDEX = 1;
 
+  /**
+   * Constructor of EdgeGenerator object.
+   *
+   * @param csvParser that provides edge information
+   */
   public EdgeGenerator(ICsvParser csvParser) {
     this.csvParser = csvParser;
   }

@@ -5,6 +5,9 @@ import java.time.format.DateTimeFormatter;
 import java.util.List;
 import java.util.NoSuchElementException;
 
+/**
+ * Represent a concrete user generator, generating user one by one.
+ */
 public class UserGenerator implements IUserGenerator {
 
   private ICsvParser csvParser;
@@ -15,6 +18,11 @@ public class UserGenerator implements IUserGenerator {
   private static final int AGE_INDEX = 3;
   private static final int CITY_INDEX = 4;
 
+  /**
+   * Constructor of UserGenerator object.
+   *
+   * @param csvParser that provides user information
+   */
   public UserGenerator(ICsvParser csvParser) {
     this.csvParser = csvParser;
   }
