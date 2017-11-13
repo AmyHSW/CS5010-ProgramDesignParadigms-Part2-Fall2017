@@ -27,14 +27,14 @@
       <file leaf-file-name="CmdHandler.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs5010/CmdHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" column="3" lean-forward="false" selection-start-line="17" selection-start-column="3" selection-end-line="17" selection-end-column="3" />
+            <state relative-caret-position="214">
+              <caret line="51" column="75" lean-forward="false" selection-start-line="51" selection-start-column="13" selection-end-line="51" selection-end-column="75" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="JAVA/edu.neu.ccs.cs5010" pinned="false" current-in-tab="true">
+      <file leaf-file-name="JAVA/edu.neu.ccs.cs5010" pinned="false" current-in-tab="false">
         <entry file="uml://JAVA/edu.neu.ccs.cs5010">
           <provider selected="true" editor-type-id="UmlEditorProvider">
             <state>
@@ -54,7 +54,7 @@
                 <node x="485.97500000000014" y="270.0">edu.neu.ccs.cs5010.InvalidUserException</node>
                 <node x="1532.556205673759" y="270.0">edu.neu.ccs.cs5010.ICmdHandler</node>
                 <node x="946.931205673759" y="360.0">edu.neu.ccs.cs5010.UserGenerator</node>
-                <node x="463.3390070921987" y="610.0">edu.neu.ccs.cs5010.RecommendationSystemBonus</node>
+                <node x="463.33900709219864" y="610.0">edu.neu.ccs.cs5010.RecommendationSystemBonus</node>
                 <node x="473.6750000000001" y="360.0">edu.neu.ccs.cs5010.Network</node>
                 <node x="1139.681205673759" y="270.0">edu.neu.ccs.cs5010.ICsvParser</node>
                 <node x="1107.931205673759" y="360.0">edu.neu.ccs.cs5010.CsvParser</node>
@@ -76,17 +76,17 @@
                   <point x="17.625" y="-15.0" />
                   <point x="1035.056205673759" y="320.0" />
                   <point x="1149.2645390070923" y="320.0" />
-                  <point x="-47.916666666666686" y="15.0" />
+                  <point x="-47.91666666666674" y="15.0" />
                 </edge>
                 <edge source="edu.neu.ccs.cs5010.CsvParser" target="edu.neu.ccs.cs5010.ICsvParser">
                   <point x="0.0" y="-15.0" />
                   <point x="1163.931205673759" y="340.0" />
-                  <point x="1187.5978723404255" y="340.0" />
-                  <point x="-9.583333333333343" y="15.0" />
+                  <point x="1187.5978723404257" y="340.0" />
+                  <point x="-9.583333333333258" y="15.0" />
                 </edge>
                 <edge source="edu.neu.ccs.cs5010.RecommendationSystemBonus" target="edu.neu.ccs.cs5010.IRecommendationSystem">
                   <point x="-20.08333333333337" y="-15.0" />
-                  <point x="563.7556737588653" y="570.0" />
+                  <point x="563.7556737588652" y="570.0" />
                   <point x="249.63067375886533" y="570.0" />
                   <point x="249.63067375886533" y="500.0" />
                   <point x="246.5" y="500.0" />
@@ -99,33 +99,33 @@
                   <point x="0.0" y="15.0" />
                 </edge>
                 <edge source="edu.neu.ccs.cs5010.RecommendationSystem" target="edu.neu.ccs.cs5010.Network">
-                  <point x="-39.08333333333334" y="-15.0" />
+                  <point x="-39.08333333333337" y="-15.0" />
                   <point x="841.547340425532" y="440.0" />
                   <point x="524.6750000000002" y="440.0" />
                   <point x="0.0" y="15.0" />
                 </edge>
                 <edge source="edu.neu.ccs.cs5010.RecommendationSystem" target="edu.neu.ccs.cs5010.ICsvParser">
-                  <point x="39.08333333333334" y="-15.0" />
+                  <point x="39.08333333333337" y="-15.0" />
                   <point x="919.7140070921987" y="450.0" />
                   <point x="1230.431205673759" y="450.0" />
                   <point x="1230.431205673759" y="340.0" />
                   <point x="1206.7645390070923" y="340.0" />
-                  <point x="9.583333333333314" y="15.0" />
+                  <point x="9.583333333333258" y="15.0" />
                 </edge>
                 <edge source="edu.neu.ccs.cs5010.INetwork" target="edu.neu.ccs.cs5010.IEdge">
                   <point x="26.25" y="-15.0" />
                   <point x="763.7250000000001" y="250.0" />
                   <point x="1304.6750000000002" y="250.0" />
-                  <point x="-16.80000000000001" y="15.0" />
+                  <point x="-16.799999999999955" y="15.0" />
                 </edge>
                 <edge source="edu.neu.ccs.cs5010.RecommendationSystem" target="edu.neu.ccs.cs5010.IUserGenerator">
-                  <point x="5.583333333333329" y="-15.0" />
+                  <point x="5.583333333333371" y="-15.0" />
                   <point x="886.2140070921987" y="500.0" />
                   <point x="881.306205673759" y="500.0" />
                   <point x="-36.0" y="15.0" />
                 </edge>
                 <edge source="edu.neu.ccs.cs5010.RecommendationSystem" target="edu.neu.ccs.cs5010.IUser">
-                  <point x="-61.41666666666666" y="-15.0" />
+                  <point x="-61.41666666666663" y="-15.0" />
                   <point x="819.2140070921987" y="460.0" />
                   <point x="427.00000000000006" y="460.0" />
                   <point x="427.00000000000006" y="240.0" />
@@ -147,23 +147,23 @@
                   <point x="524.6750000000002" y="320.0" />
                   <point x="475.475" y="320.0" />
                   <point x="475.475" y="240.0" />
-                  <point x="1287.875" y="240.0" />
-                  <point x="-33.60000000000002" y="15.0" />
+                  <point x="1287.8750000000002" y="240.0" />
+                  <point x="-33.59999999999991" y="15.0" />
                 </edge>
                 <edge source="edu.neu.ccs.cs5010.EdgeGenerator" target="edu.neu.ccs.cs5010.ICsvParser">
                   <point x="-17.875" y="-15.0" />
                   <point x="1294.556205673759" y="320.0" />
                   <point x="1245.0978723404257" y="320.0" />
-                  <point x="47.916666666666686" y="15.0" />
+                  <point x="47.91666666666674" y="15.0" />
                 </edge>
                 <edge source="edu.neu.ccs.cs5010.RecommendationSystem" target="edu.neu.ccs.cs5010.IRecommendationSystem">
-                  <point x="-83.74999999999997" y="-15.0" />
+                  <point x="-83.75" y="-15.0" />
                   <point x="796.8806737588653" y="480.0" />
                   <point x="314.5" y="480.0" />
                   <point x="0.0" y="15.0" />
                 </edge>
                 <edge source="edu.neu.ccs.cs5010.RecommendationSystem" target="edu.neu.ccs.cs5010.IEdgeGenerator">
-                  <point x="61.41666666666666" y="-15.0" />
+                  <point x="61.41666666666663" y="-15.0" />
                   <point x="942.047340425532" y="470.0" />
                   <point x="1450.306205673759" y="470.0" />
                   <point x="36.5" y="15.0" />
@@ -177,7 +177,7 @@
                   <point x="-43.0" y="15.0" />
                 </edge>
                 <edge source="edu.neu.ccs.cs5010.RecommendationSystem" target="edu.neu.ccs.cs5010.CmdHandler">
-                  <point x="94.91666666666666" y="-15.0" />
+                  <point x="94.91666666666663" y="-15.0" />
                   <point x="975.547340425532" y="500.0" />
                   <point x="1550.306205673759" y="500.0" />
                   <point x="-31.5" y="15.0" />
@@ -211,31 +211,31 @@
                   <point x="0.0" y="-15.0" />
                 </edge>
                 <edge source="edu.neu.ccs.cs5010.RecommendationSystem" target="edu.neu.ccs.cs5010.IoLibrary">
-                  <point x="-5.583333333333343" y="-15.0" />
+                  <point x="-5.583333333333371" y="-15.0" />
                   <point x="875.047340425532" y="410.0" />
                   <point x="819.306205673759" y="410.0" />
                   <point x="0.0" y="15.0" />
                 </edge>
                 <edge source="edu.neu.ccs.cs5010.IUser" target="edu.neu.ccs.cs5010.User">
-                  <point x="-27.33333333333333" y="-15.0" />
-                  <point x="-26.333333333333332" y="15.0" />
+                  <point x="-27.333333333333314" y="-15.0" />
+                  <point x="-26.333333333333314" y="15.0" />
                 </edge>
                 <edge source="edu.neu.ccs.cs5010.RecommendationSystem" target="edu.neu.ccs.cs5010.IEdge">
-                  <point x="72.58333333333331" y="-15.0" />
+                  <point x="72.58333333333337" y="-15.0" />
                   <point x="953.2140070921987" y="480.0" />
                   <point x="1497.306205673759" y="480.0" />
                   <point x="1497.306205673759" y="240.0" />
                   <point x="1355.075" y="240.0" />
-                  <point x="33.60000000000002" y="15.0" />
+                  <point x="33.59999999999991" y="15.0" />
                 </edge>
                 <edge source="edu.neu.ccs.cs5010.Network" target="edu.neu.ccs.cs5010.INetwork">
-                  <point x="40.80000000000001" y="-15.0" />
+                  <point x="40.799999999999955" y="-15.0" />
                   <point x="565.4750000000001" y="340.0" />
                   <point x="702.4750000000001" y="340.0" />
                   <point x="-35.0" y="15.0" />
                 </edge>
                 <edge source="edu.neu.ccs.cs5010.RecommendationSystemBonus" target="edu.neu.ccs.cs5010.RecommendationSystem">
-                  <point x="20.083333333333314" y="-15.0" />
+                  <point x="20.08333333333337" y="-15.0" />
                   <point x="603.922340425532" y="570.0" />
                   <point x="880.6306737588653" y="570.0" />
                   <point x="0.0" y="15.0" />
@@ -265,8 +265,8 @@
                   <point x="25.625" y="15.0" />
                 </edge>
                 <edge source="edu.neu.ccs.cs5010.RecommendationSystemBonus" target="edu.neu.ccs.cs5010.ICmdHandler">
-                  <point x="100.41666666666666" y="-15.0" />
-                  <point x="684.2556737588653" y="590.0" />
+                  <point x="100.41666666666663" y="-15.0" />
+                  <point x="684.2556737588652" y="590.0" />
                   <point x="1655.306205673759" y="590.0" />
                   <point x="1655.306205673759" y="340.0" />
                   <point x="1640.056205673759" y="340.0" />
@@ -289,7 +289,7 @@
                   <point x="0.0" y="15.0" />
                 </edge>
                 <edge source="edu.neu.ccs.cs5010.RecommendationSystem" target="edu.neu.ccs.cs5010.INetwork">
-                  <point x="-27.916666666666686" y="-15.0" />
+                  <point x="-27.91666666666663" y="-15.0" />
                   <point x="852.7140070921987" y="430.0" />
                   <point x="746.306205673759" y="430.0" />
                   <point x="746.306205673759" y="340.0" />
@@ -322,20 +322,20 @@
                 </edge>
                 <edge source="edu.neu.ccs.cs5010.RecommendationSystemBonus" target="edu.neu.ccs.cs5010.IUser">
                   <point x="-100.41666666666663" y="-15.0" />
-                  <point x="483.42234042553207" y="590.0" />
+                  <point x="483.422340425532" y="590.0" />
                   <point x="0.0" y="590.0" />
                   <point x="0.0" y="230.0" />
                   <point x="423.1" y="230.0" />
                   <point x="-35.875" y="15.0" />
                 </edge>
                 <edge source="edu.neu.ccs.cs5010.RecommendationSystem" target="edu.neu.ccs.cs5010.CsvParser">
-                  <point x="27.916666666666686" y="-15.0" />
+                  <point x="27.91666666666663" y="-15.0" />
                   <point x="908.547340425532" y="440.0" />
                   <point x="1163.931205673759" y="440.0" />
                   <point x="0.0" y="15.0" />
                 </edge>
               </edges>
-              <settings layout="Hierarchic Group" zoom="0.7413793103448276" x="831.0" y="320.0" />
+              <settings layout="Hierarchic Group" zoom="0.7413793103448276" x="313.72093023255815" y="201.3023255813954" />
               <SelectedNodes />
               <Categories />
               <SCOPE>All</SCOPE>
@@ -344,13 +344,51 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RecommendationSystem.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="RecommendationSystem.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs5010/RecommendationSystem.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="211">
-              <caret line="217" column="0" lean-forward="false" selection-start-line="217" selection-start-column="0" selection-end-line="223" selection-end-column="5" />
+            <state relative-caret-position="93">
+              <caret line="83" column="3" lean-forward="true" selection-start-line="83" selection-start-column="3" selection-end-line="83" selection-end-column="3" />
               <folding>
                 <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Network.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs5010/Network.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="379">
+              <caret line="44" column="37" lean-forward="true" selection-start-line="44" selection-start-column="37" selection-end-line="44" selection-end-column="37" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CsvParser.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs5010/CsvParser.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="14" column="5" lean-forward="true" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserGenerator.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs5010/UserGenerator.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="130">
+              <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#768#769#0" expanded="true" />
+                <element signature="e#804#805#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -426,7 +464,7 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1301" />
+    <option name="x" value="1281" />
     <option name="y" value="-257" />
     <option name="width" value="1851" />
     <option name="height" value="1050" />
@@ -780,7 +818,7 @@
       <workItem from="1510257042541" duration="8207000" />
       <workItem from="1510270236351" duration="268000" />
       <workItem from="1510270544424" duration="46383000" />
-      <workItem from="1510605876330" duration="3911000" />
+      <workItem from="1510605876330" duration="6511000" />
     </task>
     <servers />
   </component>
@@ -817,10 +855,10 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="58769000" />
+    <option name="totallyTimeSpent" value="61369000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1301" y="-257" width="1851" height="1050" extended-state="0" />
+    <frame x="1281" y="-257" width="1851" height="1050" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="PlantUML" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1044,27 +1082,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs5010/CsvParser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="251">
-          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="18" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs5010/UserGenerator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="25" column="46" lean-forward="true" selection-start-line="25" selection-start-column="46" selection-end-line="25" selection-end-column="46" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#804#805#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs5010/IEdgeGenerator.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="513">
@@ -1097,16 +1114,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/output.csv" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs5010/Network.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="24" column="39" lean-forward="false" selection-start-line="24" selection-start-column="39" selection-end-line="24" selection-end-column="39" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs5010/INetwork.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
@@ -1147,16 +1154,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs5010/RecommendationSystem.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="211">
-          <caret line="217" column="0" lean-forward="false" selection-start-line="217" selection-start-column="0" selection-end-line="223" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs5010/RecommendationSystemBonus.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="464">
@@ -1164,14 +1161,6 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs5010/CmdHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="3" lean-forward="false" selection-start-line="17" selection-start-column="3" selection-end-line="17" selection-end-column="3" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1194,7 +1183,7 @@
             <node x="485.97500000000014" y="270.0">edu.neu.ccs.cs5010.InvalidUserException</node>
             <node x="1532.556205673759" y="270.0">edu.neu.ccs.cs5010.ICmdHandler</node>
             <node x="946.931205673759" y="360.0">edu.neu.ccs.cs5010.UserGenerator</node>
-            <node x="463.3390070921987" y="610.0">edu.neu.ccs.cs5010.RecommendationSystemBonus</node>
+            <node x="463.33900709219864" y="610.0">edu.neu.ccs.cs5010.RecommendationSystemBonus</node>
             <node x="473.6750000000001" y="360.0">edu.neu.ccs.cs5010.Network</node>
             <node x="1139.681205673759" y="270.0">edu.neu.ccs.cs5010.ICsvParser</node>
             <node x="1107.931205673759" y="360.0">edu.neu.ccs.cs5010.CsvParser</node>
@@ -1216,17 +1205,17 @@
               <point x="17.625" y="-15.0" />
               <point x="1035.056205673759" y="320.0" />
               <point x="1149.2645390070923" y="320.0" />
-              <point x="-47.916666666666686" y="15.0" />
+              <point x="-47.91666666666674" y="15.0" />
             </edge>
             <edge source="edu.neu.ccs.cs5010.CsvParser" target="edu.neu.ccs.cs5010.ICsvParser">
               <point x="0.0" y="-15.0" />
               <point x="1163.931205673759" y="340.0" />
-              <point x="1187.5978723404255" y="340.0" />
-              <point x="-9.583333333333343" y="15.0" />
+              <point x="1187.5978723404257" y="340.0" />
+              <point x="-9.583333333333258" y="15.0" />
             </edge>
             <edge source="edu.neu.ccs.cs5010.RecommendationSystemBonus" target="edu.neu.ccs.cs5010.IRecommendationSystem">
               <point x="-20.08333333333337" y="-15.0" />
-              <point x="563.7556737588653" y="570.0" />
+              <point x="563.7556737588652" y="570.0" />
               <point x="249.63067375886533" y="570.0" />
               <point x="249.63067375886533" y="500.0" />
               <point x="246.5" y="500.0" />
@@ -1239,33 +1228,33 @@
               <point x="0.0" y="15.0" />
             </edge>
             <edge source="edu.neu.ccs.cs5010.RecommendationSystem" target="edu.neu.ccs.cs5010.Network">
-              <point x="-39.08333333333334" y="-15.0" />
+              <point x="-39.08333333333337" y="-15.0" />
               <point x="841.547340425532" y="440.0" />
               <point x="524.6750000000002" y="440.0" />
               <point x="0.0" y="15.0" />
             </edge>
             <edge source="edu.neu.ccs.cs5010.RecommendationSystem" target="edu.neu.ccs.cs5010.ICsvParser">
-              <point x="39.08333333333334" y="-15.0" />
+              <point x="39.08333333333337" y="-15.0" />
               <point x="919.7140070921987" y="450.0" />
               <point x="1230.431205673759" y="450.0" />
               <point x="1230.431205673759" y="340.0" />
               <point x="1206.7645390070923" y="340.0" />
-              <point x="9.583333333333314" y="15.0" />
+              <point x="9.583333333333258" y="15.0" />
             </edge>
             <edge source="edu.neu.ccs.cs5010.INetwork" target="edu.neu.ccs.cs5010.IEdge">
               <point x="26.25" y="-15.0" />
               <point x="763.7250000000001" y="250.0" />
               <point x="1304.6750000000002" y="250.0" />
-              <point x="-16.80000000000001" y="15.0" />
+              <point x="-16.799999999999955" y="15.0" />
             </edge>
             <edge source="edu.neu.ccs.cs5010.RecommendationSystem" target="edu.neu.ccs.cs5010.IUserGenerator">
-              <point x="5.583333333333329" y="-15.0" />
+              <point x="5.583333333333371" y="-15.0" />
               <point x="886.2140070921987" y="500.0" />
               <point x="881.306205673759" y="500.0" />
               <point x="-36.0" y="15.0" />
             </edge>
             <edge source="edu.neu.ccs.cs5010.RecommendationSystem" target="edu.neu.ccs.cs5010.IUser">
-              <point x="-61.41666666666666" y="-15.0" />
+              <point x="-61.41666666666663" y="-15.0" />
               <point x="819.2140070921987" y="460.0" />
               <point x="427.00000000000006" y="460.0" />
               <point x="427.00000000000006" y="240.0" />
@@ -1287,23 +1276,23 @@
               <point x="524.6750000000002" y="320.0" />
               <point x="475.475" y="320.0" />
               <point x="475.475" y="240.0" />
-              <point x="1287.875" y="240.0" />
-              <point x="-33.60000000000002" y="15.0" />
+              <point x="1287.8750000000002" y="240.0" />
+              <point x="-33.59999999999991" y="15.0" />
             </edge>
             <edge source="edu.neu.ccs.cs5010.EdgeGenerator" target="edu.neu.ccs.cs5010.ICsvParser">
               <point x="-17.875" y="-15.0" />
               <point x="1294.556205673759" y="320.0" />
               <point x="1245.0978723404257" y="320.0" />
-              <point x="47.916666666666686" y="15.0" />
+              <point x="47.91666666666674" y="15.0" />
             </edge>
             <edge source="edu.neu.ccs.cs5010.RecommendationSystem" target="edu.neu.ccs.cs5010.IRecommendationSystem">
-              <point x="-83.74999999999997" y="-15.0" />
+              <point x="-83.75" y="-15.0" />
               <point x="796.8806737588653" y="480.0" />
               <point x="314.5" y="480.0" />
               <point x="0.0" y="15.0" />
             </edge>
             <edge source="edu.neu.ccs.cs5010.RecommendationSystem" target="edu.neu.ccs.cs5010.IEdgeGenerator">
-              <point x="61.41666666666666" y="-15.0" />
+              <point x="61.41666666666663" y="-15.0" />
               <point x="942.047340425532" y="470.0" />
               <point x="1450.306205673759" y="470.0" />
               <point x="36.5" y="15.0" />
@@ -1317,7 +1306,7 @@
               <point x="-43.0" y="15.0" />
             </edge>
             <edge source="edu.neu.ccs.cs5010.RecommendationSystem" target="edu.neu.ccs.cs5010.CmdHandler">
-              <point x="94.91666666666666" y="-15.0" />
+              <point x="94.91666666666663" y="-15.0" />
               <point x="975.547340425532" y="500.0" />
               <point x="1550.306205673759" y="500.0" />
               <point x="-31.5" y="15.0" />
@@ -1351,31 +1340,31 @@
               <point x="0.0" y="-15.0" />
             </edge>
             <edge source="edu.neu.ccs.cs5010.RecommendationSystem" target="edu.neu.ccs.cs5010.IoLibrary">
-              <point x="-5.583333333333343" y="-15.0" />
+              <point x="-5.583333333333371" y="-15.0" />
               <point x="875.047340425532" y="410.0" />
               <point x="819.306205673759" y="410.0" />
               <point x="0.0" y="15.0" />
             </edge>
             <edge source="edu.neu.ccs.cs5010.IUser" target="edu.neu.ccs.cs5010.User">
-              <point x="-27.33333333333333" y="-15.0" />
-              <point x="-26.333333333333332" y="15.0" />
+              <point x="-27.333333333333314" y="-15.0" />
+              <point x="-26.333333333333314" y="15.0" />
             </edge>
             <edge source="edu.neu.ccs.cs5010.RecommendationSystem" target="edu.neu.ccs.cs5010.IEdge">
-              <point x="72.58333333333331" y="-15.0" />
+              <point x="72.58333333333337" y="-15.0" />
               <point x="953.2140070921987" y="480.0" />
               <point x="1497.306205673759" y="480.0" />
               <point x="1497.306205673759" y="240.0" />
               <point x="1355.075" y="240.0" />
-              <point x="33.60000000000002" y="15.0" />
+              <point x="33.59999999999991" y="15.0" />
             </edge>
             <edge source="edu.neu.ccs.cs5010.Network" target="edu.neu.ccs.cs5010.INetwork">
-              <point x="40.80000000000001" y="-15.0" />
+              <point x="40.799999999999955" y="-15.0" />
               <point x="565.4750000000001" y="340.0" />
               <point x="702.4750000000001" y="340.0" />
               <point x="-35.0" y="15.0" />
             </edge>
             <edge source="edu.neu.ccs.cs5010.RecommendationSystemBonus" target="edu.neu.ccs.cs5010.RecommendationSystem">
-              <point x="20.083333333333314" y="-15.0" />
+              <point x="20.08333333333337" y="-15.0" />
               <point x="603.922340425532" y="570.0" />
               <point x="880.6306737588653" y="570.0" />
               <point x="0.0" y="15.0" />
@@ -1405,8 +1394,8 @@
               <point x="25.625" y="15.0" />
             </edge>
             <edge source="edu.neu.ccs.cs5010.RecommendationSystemBonus" target="edu.neu.ccs.cs5010.ICmdHandler">
-              <point x="100.41666666666666" y="-15.0" />
-              <point x="684.2556737588653" y="590.0" />
+              <point x="100.41666666666663" y="-15.0" />
+              <point x="684.2556737588652" y="590.0" />
               <point x="1655.306205673759" y="590.0" />
               <point x="1655.306205673759" y="340.0" />
               <point x="1640.056205673759" y="340.0" />
@@ -1429,7 +1418,7 @@
               <point x="0.0" y="15.0" />
             </edge>
             <edge source="edu.neu.ccs.cs5010.RecommendationSystem" target="edu.neu.ccs.cs5010.INetwork">
-              <point x="-27.916666666666686" y="-15.0" />
+              <point x="-27.91666666666663" y="-15.0" />
               <point x="852.7140070921987" y="430.0" />
               <point x="746.306205673759" y="430.0" />
               <point x="746.306205673759" y="340.0" />
@@ -1462,24 +1451,74 @@
             </edge>
             <edge source="edu.neu.ccs.cs5010.RecommendationSystemBonus" target="edu.neu.ccs.cs5010.IUser">
               <point x="-100.41666666666663" y="-15.0" />
-              <point x="483.42234042553207" y="590.0" />
+              <point x="483.422340425532" y="590.0" />
               <point x="0.0" y="590.0" />
               <point x="0.0" y="230.0" />
               <point x="423.1" y="230.0" />
               <point x="-35.875" y="15.0" />
             </edge>
             <edge source="edu.neu.ccs.cs5010.RecommendationSystem" target="edu.neu.ccs.cs5010.CsvParser">
-              <point x="27.916666666666686" y="-15.0" />
+              <point x="27.91666666666663" y="-15.0" />
               <point x="908.547340425532" y="440.0" />
               <point x="1163.931205673759" y="440.0" />
               <point x="0.0" y="15.0" />
             </edge>
           </edges>
-          <settings layout="Hierarchic Group" zoom="0.7413793103448276" x="831.0" y="320.0" />
+          <settings layout="Hierarchic Group" zoom="0.7413793103448276" x="313.72093023255815" y="201.3023255813954" />
           <SelectedNodes />
           <Categories />
           <SCOPE>All</SCOPE>
           <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs5010/CmdHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="214">
+          <caret line="51" column="75" lean-forward="false" selection-start-line="51" selection-start-column="13" selection-end-line="51" selection-end-column="75" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs5010/UserGenerator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#768#769#0" expanded="true" />
+            <element signature="e#804#805#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs5010/CsvParser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="14" column="5" lean-forward="true" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs5010/Network.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="379">
+          <caret line="44" column="37" lean-forward="true" selection-start-line="44" selection-start-column="37" selection-end-line="44" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs5010/RecommendationSystem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="93">
+          <caret line="83" column="3" lean-forward="true" selection-start-line="83" selection-start-column="3" selection-end-line="83" selection-end-column="3" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
