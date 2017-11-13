@@ -57,13 +57,23 @@ public class UserTest {
   }
 
   @Test(expected = InvalidUserAgeException.class)
-  public void expectedInvalidUserAgeException() throws Exception {
+  public void expectedInvalidUserAgeException1() throws Exception {
+    new User(1, LocalDate.now(), 'F', -1, "Seattle");
+  }
+
+  @Test(expected = InvalidUserAgeException.class)
+  public void expectedInvalidUserAgeException2() throws Exception {
     new User(1, LocalDate.now(), 'F', 200, "Seattle");
   }
 
   @Test(expected = InvalidUserGenderException.class)
   public void expectedInvalidUserGenderException() throws Exception {
     new User(1, LocalDate.now(), 'X', 20, "Hongkong");
+  }
+
+  @Test(expected = InvalidInputException.class)
+  public void expectedInvalidInputException() throws Exception {
+    user1.compareTo(null);
   }
 
 }

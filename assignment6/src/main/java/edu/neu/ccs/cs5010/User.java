@@ -63,6 +63,9 @@ public class User implements IUser {
 
   @Override
   public int compareTo(IUser that) {
+    if (that == null) {
+      throw new InvalidInputException("Should provide IUser for compareTo, not null");
+    }
     return this.getUserId() - that.getUserId();
   }
 

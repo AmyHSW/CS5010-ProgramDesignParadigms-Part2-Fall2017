@@ -5,6 +5,7 @@ import org.junit.Test;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.NoSuchElementException;
 
 import static org.junit.Assert.*;
 
@@ -29,6 +30,12 @@ public class EdgeGeneratorTest {
     edgeGenerator3 = new EdgeGenerator(csvParser2);
     edgeGenerator4 = new EdgeGenerator(null);
     edgeGenerator5 = new EdgeGenerator(null);
+  }
+
+  @Test(expected = NoSuchElementException.class)
+  public void expectedNoSuchElementException() throws Exception {
+    edgeGenerator1.getNextEdge();
+    edgeGenerator1.getNextEdge();
   }
 
   @Test

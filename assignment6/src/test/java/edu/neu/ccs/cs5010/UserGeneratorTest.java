@@ -5,6 +5,7 @@ import org.junit.Test;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.NoSuchElementException;
 
 import static org.junit.Assert.*;
 
@@ -29,6 +30,12 @@ public class UserGeneratorTest {
     userGenerator3 = new UserGenerator(csvParser2);
     userGenerator4 = new UserGenerator(null);
     userGenerator5 = new UserGenerator(null);
+  }
+
+  @Test(expected = NoSuchElementException.class)
+  public void expectedNoSuchElementException() throws Exception {
+    userGenerator1.getNextUser();
+    userGenerator1.getNextUser();
   }
 
   @Test
