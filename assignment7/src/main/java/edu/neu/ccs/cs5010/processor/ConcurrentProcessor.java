@@ -24,7 +24,7 @@ public class ConcurrentProcessor implements Processor {
   private final ConcurrentMap<String, Integer> liftNumRides = new ConcurrentHashMap<>();
   private final ConcurrentMap<Integer, Map<String, Integer>> hourRides = new ConcurrentHashMap<>();
 
-  private final ExecutorService executorService = Executors.newFixedThreadPool(10);;
+  private final ExecutorService executorService = Executors.newFixedThreadPool(5);;
 
   public ConcurrentProcessor(List<String[]> inputData) {
     setupQueues(inputData.subList(1, inputData.size()));
@@ -42,11 +42,11 @@ public class ConcurrentProcessor implements Processor {
   @Override
   public void processInput() {
     long startTime = System.currentTimeMillis();
-    while (!skierQueue.isEmpty()) {
+    for (final Pair pair : skierQueue) {
       executorService.execute(new Runnable() {
         @Override
         public void run() {
-          process();
+          process(pair);
         }
       });
     }
@@ -54,11 +54,7 @@ public class ConcurrentProcessor implements Processor {
     System.out.println("concurrent runs " + (System.currentTimeMillis() - startTime));
   }
 
-  private void process() {
-    Pair pair = skierQueue.poll();
-    if (pair == null) {
-      return;
-    }
+  private void process(Pair pair) {
     String skier = pair.getFirst();
     String lift = pair.getLast();
     skierNumRides.put(skier, skierNumRides.getOrDefault(skier, 0) + 1);
