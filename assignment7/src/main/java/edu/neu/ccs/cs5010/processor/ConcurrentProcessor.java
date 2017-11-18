@@ -34,7 +34,7 @@ public class ConcurrentProcessor extends Processor {
     for (String[] record : inputData) {
       skierQueue.offer(new SkierLiftIdPair(record[SKIER_INDEX], record[LIFT_INDEX]));
       liftQueue.offer(record[LIFT_INDEX]);
-      int hour = Integer.parseInt(record[TIME_INDEX]) / MINUTES_IN_HOUR + 1;
+      int hour = (Integer.parseInt(record[TIME_INDEX]) - 1) / MINUTES_IN_HOUR + 1;
       hourQueue.offer(new HourLiftIdPair(Integer.toString(hour), record[LIFT_INDEX]));
     }
   }

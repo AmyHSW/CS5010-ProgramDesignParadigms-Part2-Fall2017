@@ -27,7 +27,7 @@ public class SequentialProcessor extends Processor {
   private void process(String[] record) {
     String skier = record[SKIER_INDEX];
     String lift = record[LIFT_INDEX];
-    String hour = (Integer.parseInt(record[TIME_INDEX]) / MINUTES_IN_HOUR + 1) + "";
+    String hour = ((Integer.parseInt(record[TIME_INDEX]) - 1) / MINUTES_IN_HOUR + 1) + "";
     processSkier(skier, lift);
     processLift(lift);
     if (!hourRides.containsKey(hour)) {

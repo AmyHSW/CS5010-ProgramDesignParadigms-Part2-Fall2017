@@ -1,5 +1,8 @@
 package edu.neu.ccs.cs5010.processor;
 
+import java.util.ArrayList;
+import java.util.Comparator;
+import java.util.List;
 import java.util.Map;
 
 public abstract class Processor implements IProcessor {
@@ -46,5 +49,50 @@ public abstract class Processor implements IProcessor {
 
   protected void processHour(String hour, String lift) {
     hourRides.get(hour).put(lift, hourRides.get(hour).getOrDefault(lift, 0) + 1);
+  }
+
+  @Override
+  public List<String> getSkierOutput() {
+    List<Map.Entry<String, Integer>> entries = new ArrayList<>(skierVerticalMeters.entrySet());
+    entries.sort((meters1, meters2) -> meters2.getValue().compareTo(meters1.getValue()));
+    List<String> skierVerticalTotals = new ArrayList<>();
+    skierVerticalTotals.add("SkierID,Vertical");
+    for (int i = 0; i < 100; i++) {
+      Map.Entry<String, Integer> verticalMeters = entries.get(i);
+      String line = verticalMeters.getKey() + "," + verticalMeters.getValue();
+      skierVerticalTotals.add(line);
+    }
+    return skierVerticalTotals;
+  }
+
+  @Override
+  public List<String> getLiftOutput() {
+    List<Map.Entry<String, Integer>> entries = new ArrayList<>(liftNumRides.entrySet());
+    entries.sort(Comparator.comparing(Map.Entry::getKey));
+    List<String> liftsRides = new ArrayList<>();
+    liftsRides.add("LiftID, Number of Rides");
+    for (Map.Entry<String, Integer> entry: entries) {
+      String line = entry.getKey() + "," + entry.getValue();
+      liftsRides.add(line);
+    }
+    return liftsRides;
+  }
+
+  @Override
+  public List<String> getHourOutput() {
+    List<Map.Entry<String, Map<String, Integer>>> entries = new ArrayList<>(hourRides.entrySet());
+    entries.sort(Comparator.comparing(Map.Entry::getKey));
+    List<String> hourLiftRides = new ArrayList<>();
+    String header = "Hour,Number of Rides";
+    for (Map.Entry<String, Map<String, Integer>> entry: entries) {
+      List<Map.Entry<String, Integer>> liftsRides = new ArrayList<>(entry.getValue().entrySet());
+      liftsRides.sort((rides1, rides2) -> rides2.getValue().compareTo(rides1.getValue()));
+      hourLiftRides.add(header);
+      for (int i = 0; i < 10; i++) {
+        String line = entry.getKey() + "," + liftsRides.get(i).getValue();
+        hourLiftRides.add(line);
+      }
+    }
+    return hourLiftRides;
   }
 }
