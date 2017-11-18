@@ -18,12 +18,7 @@ public class SkiDataProcessor {
     long startTime = System.currentTimeMillis();
     CsvParserSettings settings = new CsvParserSettings();
     CsvParser parser = new CsvParser(settings);
-    parser.beginParsing(new File(INPUT));
-    List<String[]> inputData = new ArrayList<>();
-    String[] record;
-    while ((record = parser.parseNext()) != null) {
-      inputData.add(record);
-    }
+    List<String[]> inputData = parser.parseAll(new File(INPUT));
     System.out.println(System.currentTimeMillis() - startTime);
 
     List<Processor> processors = new ArrayList<>();
