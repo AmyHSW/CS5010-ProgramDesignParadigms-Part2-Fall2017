@@ -41,22 +41,23 @@ public class ConcurrentProcessor implements Processor {
 
   @Override
   public void processInput() {
+    long startTime = System.currentTimeMillis();
     while (!skierQueue.isEmpty()) {
       executorService.execute(new Runnable() {
         @Override
         public void run() {
-          if (!skierQueue.isEmpty()) {
-            process(skierQueue.poll());
-          }
+          process();
         }
       });
     }
     executorService.shutdown();
+    System.out.println("concurrent runs " + (System.currentTimeMillis() - startTime));
   }
 
-  private void process(Pair pair) {
+  private void process() {
+    Pair pair = skierQueue.poll();
     if (pair == null) {
-      System.out.println("pair is null");
+      return;
     }
     String skier = pair.getFirst();
     String lift = pair.getLast();

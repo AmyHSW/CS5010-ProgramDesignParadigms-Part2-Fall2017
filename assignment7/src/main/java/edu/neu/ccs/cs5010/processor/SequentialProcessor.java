@@ -18,9 +18,11 @@ public class SequentialProcessor implements Processor {
 
   @Override
   public void processInput() {
+    long startTime = System.currentTimeMillis();
     for (String[] record : inputData) {
       process(record);
     }
+    System.out.println("sequential runs " + (System.currentTimeMillis() - startTime));
   }
 
   private void process(String[] record) {
