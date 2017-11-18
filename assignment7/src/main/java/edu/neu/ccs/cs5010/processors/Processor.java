@@ -1,16 +1,13 @@
-package edu.neu.ccs.cs5010.processor;
+package edu.neu.ccs.cs5010.processors;
 
 import java.util.ArrayList;
 import java.util.Comparator;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
 public abstract class Processor implements IProcessor {
 
-  protected Map<String, Integer> skierNumRides;
-  protected Map<String, Integer> skierVerticalMeters;
-  protected Map<String, Integer> liftNumRides;
-  protected Map<String, Map<String, Integer>> hourRides;
   protected static final int SKIER_INDEX = 2;
   protected static final int LIFT_INDEX = 3;
   protected static final int TIME_INDEX = 4;
@@ -22,12 +19,17 @@ public abstract class Processor implements IProcessor {
   protected static final int LIFT_LEVEL2_HEIGHT = 300;
   protected static final int LIFT_LEVEL3_HEIGHT = 400;
   protected static final int LIFT_LEVEL4_HEIGHT = 500;
+  protected Map<String, Integer> skierNumRides;
+  protected Map<String, Integer> skierVerticalMeters;
+  protected Map<String, Integer> liftNumRides;
+  protected Map<String, Map<String, Integer>> hourRides;
 
   @Override
   public abstract void processInput();
 
   protected void processSkier(String skier, String lift) {
     skierNumRides.put(skier, skierNumRides.getOrDefault(skier, 0) + 1);
+
     if (lift.compareTo(LIFT_LEVEL1) <= 0) {
       skierVerticalMeters.put(
               skier, skierVerticalMeters.getOrDefault(skier, 0) + LIFT_LEVEL1_HEIGHT);
@@ -48,6 +50,9 @@ public abstract class Processor implements IProcessor {
   }
 
   protected void processHour(String hour, String lift) {
+    if (!hourRides.containsKey(hour)) {
+      hourRides.put(hour, new HashMap<>());
+    }
     hourRides.get(hour).put(lift, hourRides.get(hour).getOrDefault(lift, 0) + 1);
   }
 

@@ -1,4 +1,4 @@
-package edu.neu.ccs.cs5010.processor;
+package edu.neu.ccs.cs5010.processors;
 
 import edu.neu.ccs.cs5010.pairs.HourLiftIdPair;
 import edu.neu.ccs.cs5010.pairs.Pair;
@@ -7,17 +7,19 @@ import edu.neu.ccs.cs5010.pairs.SkierLiftIdPair;
 import java.util.List;
 import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.ConcurrentHashMap;
-import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executor;
 import java.util.concurrent.Executors;
 import java.util.concurrent.LinkedBlockingDeque;
 
 public class ConcurrentProcessor extends Processor {
 
+  private static final int NUM_THREADS = 5;
+
   private final BlockingQueue<Pair> skierQueue;
   private final BlockingQueue<String> liftQueue;
   private final BlockingQueue<Pair> hourQueue;
 
-  private final ExecutorService executorService = Executors.newFixedThreadPool(5);;
+  private final Executor executor = Executors.newFixedThreadPool(NUM_THREADS);;
 
   public ConcurrentProcessor(List<String[]> inputData) {
     skierQueue = new LinkedBlockingDeque<>();
@@ -42,19 +44,30 @@ public class ConcurrentProcessor extends Processor {
   @Override
   public void processInput() {
     long startTime = System.currentTimeMillis();
-    executorService.execute(this::processSkier);
-    executorService.execute(this::processLift);
-    executorService.execute(this::processHour);
-    executorService.shutdown();
+
+    /*
+    for (final Pair pair : skierQueue) {
+      executorService.execute(new Runnable() {
+        @Override
+        public void run() {
+          processSkier(pair.getFirst(), pair.getLast());
+        }
+      });
+    }
+    */
+
+    executor.execute(this::processSkier);
+    executor.execute(this::processLift);
+    executor.execute(this::processHour);
+
+    //executorService.shutdown();
     System.out.println("concurrent runs " + (System.currentTimeMillis() - startTime));
   }
 
   private void processSkier() {
     while (!skierQueue.isEmpty()) {
       Pair pair = skierQueue.poll();
-      String skier = pair.getFirst();
-      String lift = pair.getLast();
-      processSkier(skier, lift);
+      processSkier(pair.getFirst(), pair.getLast());
     }
   }
 
@@ -68,9 +81,7 @@ public class ConcurrentProcessor extends Processor {
   private void processHour() {
     while (!hourQueue.isEmpty()) {
       Pair pair = hourQueue.poll();
-      String hour = pair.getFirst();
-      String lift = pair.getLast();
-      processSkier(hour, lift);
+      processHour(pair.getFirst(), pair.getLast());
     }
   }
 }
