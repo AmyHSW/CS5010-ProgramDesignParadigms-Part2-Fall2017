@@ -1,12 +1,13 @@
 package edu.neu.ccs.cs5010.processors;
 
+import edu.neu.ccs.cs5010.Hour;
 import edu.neu.ccs.cs5010.consumers.HourQueueConsumer;
 import edu.neu.ccs.cs5010.consumers.LiftQueueConsumer;
 import edu.neu.ccs.cs5010.producers.Producer;
 import edu.neu.ccs.cs5010.consumers.SkierQueueConsumer;
 import edu.neu.ccs.cs5010.pairs.IPair;
 
-import java.util.HashMap;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 import java.util.concurrent.BlockingQueue;
@@ -29,7 +30,7 @@ public class ConcurrentProcessor implements IProcessor {
   private final ConcurrentMap<String, Integer> skierNumRides;
   private final ConcurrentMap<String, Integer> skierVerticalMeters;
   private final ConcurrentMap<String, Integer> liftNumRides;
-  private final ConcurrentMap<String, ConcurrentMap<String, Integer>> hourRides;
+  private final List<ConcurrentMap<String, Integer>> hourRides;
 
   private final ExecutorService executorService = Executors.newFixedThreadPool(NUM_THREADS * 3);
 
@@ -41,7 +42,10 @@ public class ConcurrentProcessor implements IProcessor {
     skierNumRides = new ConcurrentHashMap<>();
     skierVerticalMeters = new ConcurrentHashMap<>();
     liftNumRides = new ConcurrentHashMap<>();
-    hourRides = new ConcurrentHashMap<>();
+    hourRides = new ArrayList<>();
+    for (int i = 0; i < Hour.HOUR_NUM; i++) {
+      hourRides.add(new ConcurrentHashMap<>());
+    }
   }
 
   public void processInput() throws InterruptedException {
@@ -76,10 +80,8 @@ public class ConcurrentProcessor implements IProcessor {
   }
 
   @Override
-  public Map<String, Map<String, Integer>> getHourRides() {
-    Map<String, Map<String, Integer>> temp = new HashMap<>();
-    temp.putAll(hourRides);
-    return temp;
+  public List<Map<String, Integer>> getHourRides() {
+    return new ArrayList<>(hourRides);
   }
 
 }

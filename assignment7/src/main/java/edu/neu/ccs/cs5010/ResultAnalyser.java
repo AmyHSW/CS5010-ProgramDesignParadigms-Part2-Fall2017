@@ -37,18 +37,16 @@ public class ResultAnalyser {
   }
 
 
-  public static List<String> getHourOutput(Map<String, Map<String, Integer>> hourRides) {
-    List<Map.Entry<String, Map<String, Integer>>> entries = new ArrayList<>(hourRides.entrySet());
-    entries.sort(Comparator.comparing(Map.Entry::getKey));
+  public static List<String> getHourOutput(List<Map<String, Integer>> hourRides) {
     List<String> hourLiftRides = new ArrayList<>();
     String header = "LiftID,Number of Rides";
-    for (Map.Entry<String, Map<String, Integer>> entry: entries) {
-      List<Map.Entry<String, Integer>> liftsRides = new ArrayList<>(entry.getValue().entrySet());
+    for (int i = 0; i < Hour.HOUR_NUM; i++) {
+      List<Map.Entry<String, Integer>> liftsRides = new ArrayList<>(hourRides.get(i).entrySet());
       liftsRides.sort((rides1, rides2) -> rides2.getValue().compareTo(rides1.getValue()));
-      hourLiftRides.add("Hour " + entry.getKey());
+      hourLiftRides.add("Hour " + (i + 1));
       hourLiftRides.add(header);
-      for (int i = 0; i < TEN; i++) {
-        String line = liftsRides.get(i).getKey() + "," + liftsRides.get(i).getValue();
+      for (int j = 0; j < TEN; j++) {
+        String line = liftsRides.get(j).getKey() + "," + liftsRides.get(j).getValue();
         hourLiftRides.add(line);
       }
     }

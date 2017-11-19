@@ -1,6 +1,6 @@
 package edu.neu.ccs.cs5010.consumers;
 
-import edu.neu.ccs.cs5010.LiftToHeightConverter;
+import edu.neu.ccs.cs5010.Lift;
 import edu.neu.ccs.cs5010.pairs.IPair;
 import edu.neu.ccs.cs5010.pairs.Pair;
 
@@ -30,7 +30,7 @@ public class SkierQueueConsumer extends Consumer {
     skierNumRides.replace(skier, skierNumRides.get(skier) + 1);
     skierVerticalMeters.putIfAbsent(skier, 0);
     skierVerticalMeters.replace(skier,
-        skierVerticalMeters.get(skier) + LiftToHeightConverter.toHeight(lift));
+        skierVerticalMeters.get(skier) + Lift.toVerticalMeters(lift));
   }
 
 }
