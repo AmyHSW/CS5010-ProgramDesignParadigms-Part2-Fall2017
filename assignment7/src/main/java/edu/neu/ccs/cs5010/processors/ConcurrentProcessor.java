@@ -1,16 +1,22 @@
 package edu.neu.ccs.cs5010.processors;
 
-import edu.neu.ccs.cs5010.Consumers.HourQueueConsumer;
-import edu.neu.ccs.cs5010.Consumers.LiftQueueConsumer;
+import edu.neu.ccs.cs5010.consumers.HourQueueConsumer;
+import edu.neu.ccs.cs5010.consumers.LiftQueueConsumer;
 import edu.neu.ccs.cs5010.producers.Producer;
-import edu.neu.ccs.cs5010.Consumers.SkierQueueConsumer;
-import edu.neu.ccs.cs5010.pairs.Pair;
+import edu.neu.ccs.cs5010.consumers.SkierQueueConsumer;
+import edu.neu.ccs.cs5010.pairs.IPair;
 
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
 import java.util.Map;
-import java.util.concurrent.*;
+import java.util.concurrent.BlockingQueue;
+import java.util.concurrent.ConcurrentHashMap;
+import java.util.concurrent.ConcurrentMap;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+import java.util.concurrent.LinkedBlockingDeque;
+import java.util.concurrent.TimeUnit;
 
 public class ConcurrentProcessor extends Processor {
 
@@ -18,13 +24,13 @@ public class ConcurrentProcessor extends Processor {
   private static final int NUM_SECONDS_WAIT = 5;
 
   private final List<String[]> inputData;
-  private final BlockingQueue<Pair> skierQueue;
+  private final BlockingQueue<IPair> skierQueue;
   private final BlockingQueue<String> liftQueue;
-  private final BlockingQueue<Pair> hourQueue;
-  private ConcurrentMap<String, Integer> skierNumRides;
-  private ConcurrentMap<String, Integer> skierVerticalMeters;
-  private ConcurrentMap<String, Integer> liftNumRides;
-  private ConcurrentMap<String, ConcurrentMap<String, Integer>> hourRides;
+  private final BlockingQueue<IPair> hourQueue;
+  private final ConcurrentMap<String, Integer> skierNumRides;
+  private final ConcurrentMap<String, Integer> skierVerticalMeters;
+  private final ConcurrentMap<String, Integer> liftNumRides;
+  private final ConcurrentMap<String, ConcurrentMap<String, Integer>> hourRides;
 
   private final ExecutorService executorService = Executors.newFixedThreadPool(NUM_THREADS * 3);
 

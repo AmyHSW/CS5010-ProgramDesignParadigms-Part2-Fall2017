@@ -1,7 +1,5 @@
 package edu.neu.ccs.cs5010.processors;
 
-import edu.neu.ccs.cs5010.pairs.Pair;
-
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.HashMap;
@@ -28,10 +26,6 @@ public abstract class Processor implements IProcessor {
 
   @Override
   public abstract void processInput() throws InterruptedException;
-
-  protected void processSkier(Pair pair) {
-    processSkier(pair.getFirst(), pair.getLast());
-  }
 
   protected void processSkier(String skier, String lift) {
     skierNumRides.put(skier, skierNumRides.getOrDefault(skier, 0) + 1);

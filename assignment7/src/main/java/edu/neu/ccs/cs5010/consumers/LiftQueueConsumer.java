@@ -1,4 +1,4 @@
-package edu.neu.ccs.cs5010.Consumers;
+package edu.neu.ccs.cs5010.consumers;
 
 import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.ConcurrentMap;

@@ -27,11 +27,10 @@ public class SkiDataProcessor {
     for (Processor processor : processors) {
       processor.processInput();
     }
-    IoLibrary.generateOutput("skier1.csv", processors.get(0).getSkierOutput());
-    IoLibrary.generateOutput("skier2.csv", processors.get(1).getSkierOutput());
-    IoLibrary.generateOutput("lifts1.csv", processors.get(0).getLiftOutput());
-    IoLibrary.generateOutput("lifts2.csv", processors.get(1).getLiftOutput());
-    IoLibrary.generateOutput("hours1.csv", processors.get(0).getHourOutput());
-    IoLibrary.generateOutput("hours2.csv", processors.get(1).getHourOutput());
+    for (int i = 0; i < processors.size(); i++) {
+      IoLibrary.generateOutput("skiers" + i + ".csv", processors.get(i).getSkierOutput());
+      IoLibrary.generateOutput("lifts" + i + ".csv", processors.get(i).getLiftOutput());
+      IoLibrary.generateOutput("hours" + i + ".csv", processors.get(i).getHourOutput());
+    }
   }
 }

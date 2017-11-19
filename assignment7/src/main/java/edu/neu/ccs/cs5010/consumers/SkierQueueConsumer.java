@@ -1,14 +1,14 @@
-package edu.neu.ccs.cs5010.Consumers;
+package edu.neu.ccs.cs5010.consumers;
 
+import edu.neu.ccs.cs5010.pairs.IPair;
 import edu.neu.ccs.cs5010.pairs.Pair;
-import edu.neu.ccs.cs5010.pairs.SkierLiftIdPair;
 
 import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.ConcurrentMap;
 
 public class SkierQueueConsumer implements Runnable {
 
-  private final BlockingQueue<Pair> skierQueue;
+  private final BlockingQueue<IPair> skierQueue;
   private ConcurrentMap<String, Integer> skierNumRides;
   private ConcurrentMap<String, Integer> skierVerticalMeters;
   private static final String LIFT_LEVEL1 = "10";
@@ -18,9 +18,9 @@ public class SkierQueueConsumer implements Runnable {
   private static final int LIFT_LEVEL2_HEIGHT = 300;
   private static final int LIFT_LEVEL3_HEIGHT = 400;
   private static final int LIFT_LEVEL4_HEIGHT = 500;
-  private static final Pair SKIER_SENTINEL = new SkierLiftIdPair("", "");
+  private static final IPair SKIER_SENTINEL = new Pair("", "");
 
-  public SkierQueueConsumer(BlockingQueue<Pair> skierQueue,
+  public SkierQueueConsumer(BlockingQueue<IPair> skierQueue,
                             ConcurrentMap<String, Integer> skierNumRides,
                             ConcurrentMap<String, Integer> skierVerticalMeters) {
     this.skierQueue = skierQueue;
@@ -32,7 +32,7 @@ public class SkierQueueConsumer implements Runnable {
   public void run() {
     try {
       while (true) {
-        Pair pair = skierQueue.take();
+        IPair pair = skierQueue.take();
         if (pair.equals(SKIER_SENTINEL)) {
           skierQueue.add(SKIER_SENTINEL);
           return;
@@ -44,7 +44,7 @@ public class SkierQueueConsumer implements Runnable {
     }
   }
 
-  private void consume(Pair pair) {
+  private void consume(IPair pair) {
     String skier = pair.getFirst();
     String lift = pair.getLast();
     skierNumRides.putIfAbsent(skier, 0);
