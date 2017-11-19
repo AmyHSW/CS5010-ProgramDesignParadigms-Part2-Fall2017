@@ -41,13 +41,14 @@ public class ResultAnalyser {
     List<Map.Entry<String, Map<String, Integer>>> entries = new ArrayList<>(hourRides.entrySet());
     entries.sort(Comparator.comparing(Map.Entry::getKey));
     List<String> hourLiftRides = new ArrayList<>();
-    String header = "Hour,Number of Rides";
+    String header = "LiftID,Number of Rides";
     for (Map.Entry<String, Map<String, Integer>> entry: entries) {
       List<Map.Entry<String, Integer>> liftsRides = new ArrayList<>(entry.getValue().entrySet());
       liftsRides.sort((rides1, rides2) -> rides2.getValue().compareTo(rides1.getValue()));
+      hourLiftRides.add("Hour " + entry.getKey());
       hourLiftRides.add(header);
       for (int i = 0; i < TEN; i++) {
-        String line = entry.getKey() + "," + liftsRides.get(i).getValue();
+        String line = liftsRides.get(i).getKey() + "," + liftsRides.get(i).getValue();
         hourLiftRides.add(line);
       }
     }
