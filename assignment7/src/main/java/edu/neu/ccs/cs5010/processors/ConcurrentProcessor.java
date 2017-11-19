@@ -6,7 +6,9 @@ import edu.neu.ccs.cs5010.producers.Producer;
 import edu.neu.ccs.cs5010.consumers.SkierQueueConsumer;
 import edu.neu.ccs.cs5010.pairs.IPair;
 
-import java.util.*;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ConcurrentMap;

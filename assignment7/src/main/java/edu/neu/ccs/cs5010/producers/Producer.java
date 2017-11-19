@@ -8,8 +8,7 @@ import java.util.concurrent.BlockingQueue;
 
 public class Producer implements Runnable {
 
-  private static final IPair SKIER_SENTINEL = new Pair("", "");
-  private static final IPair HOUR_SENTINEL = new Pair("", "");
+  private static final IPair SENTINEL = new Pair("", "");
   private static final String LIFT_SENTINEL = "";
   private static final int SKIER_INDEX = 2;
   private static final int LIFT_INDEX = 3;
@@ -36,9 +35,9 @@ public class Producer implements Runnable {
         liftQueue.put(record[LIFT_INDEX]);
         hourQueue.put(produceHourLiftPair(record));
       }
-      skierQueue.put(SKIER_SENTINEL);
+      skierQueue.put(SENTINEL);
       liftQueue.put(LIFT_SENTINEL);
-      hourQueue.put(HOUR_SENTINEL);
+      hourQueue.put(SENTINEL);
     } catch (InterruptedException exception) {
       exception.printStackTrace();
     }

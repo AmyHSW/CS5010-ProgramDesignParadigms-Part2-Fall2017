@@ -7,35 +7,20 @@ import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ConcurrentMap;
 
-public class HourQueueConsumer implements Runnable {
+public class HourQueueConsumer extends Consumer {
 
-  private static final IPair HOUR_SENTINEL = new Pair("", "");
-  private final BlockingQueue<IPair> hourQueue;
   private final ConcurrentMap<String, ConcurrentMap<String, Integer>> hourRides;
 
   public HourQueueConsumer(BlockingQueue<IPair> hourQueue,
                            ConcurrentMap<String, ConcurrentMap<String, Integer>> hourRides) {
-    this.hourQueue = hourQueue;
+    this.queue = hourQueue;
     this.hourRides = hourRides;
+    this.sentinel = new Pair("", "");
   }
 
   @Override
-  public void run() {
-    try {
-      while (true) {
-        IPair pair = hourQueue.take();
-        if (pair.equals(HOUR_SENTINEL)) {
-          hourQueue.add(HOUR_SENTINEL);
-          return;
-        }
-        consume(pair);
-      }
-    } catch (InterruptedException exception) {
-      exception.printStackTrace();
-    }
-  }
-
-  private void consume(IPair pair) {
+  public void consume() {
+    IPair pair = (IPair) item;
     String hour = pair.getFirst();
     String lift = pair.getLast();
     hourRides.putIfAbsent(hour, new ConcurrentHashMap<>());
