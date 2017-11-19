@@ -13,14 +13,15 @@ public class Producer implements Runnable {
   private static final int SKIER_INDEX = 2;
   private static final int LIFT_INDEX = 3;
   private static final int TIME_INDEX = 4;
-  private static final int MINUTES_IN_HOUR = 60;
   private final List<String[]> inputData;
   private final BlockingQueue<IPair> skierQueue;
   private final BlockingQueue<String> liftQueue;
   private final BlockingQueue<IPair> hourQueue;
 
-  public Producer(List<String[]> inputData, BlockingQueue<IPair> skierQueue,
-                  BlockingQueue<String> liftQueue, BlockingQueue<IPair> hourQueue) {
+  public Producer(List<String[]> inputData,
+                  BlockingQueue<IPair> skierQueue,
+                  BlockingQueue<String> liftQueue,
+                  BlockingQueue<IPair> hourQueue) {
     this.inputData = inputData;
     this.skierQueue = skierQueue;
     this.liftQueue = liftQueue;
@@ -48,7 +49,6 @@ public class Producer implements Runnable {
   }
 
   private IPair produceHourLiftPair(String[] record) {
-    int hour = (Integer.parseInt(record[TIME_INDEX]) - 1) / MINUTES_IN_HOUR + 1;
-    return new Pair(Integer.toString(hour), record[LIFT_INDEX]);
+    return new Pair(record[TIME_INDEX], record[LIFT_INDEX]);
   }
 }

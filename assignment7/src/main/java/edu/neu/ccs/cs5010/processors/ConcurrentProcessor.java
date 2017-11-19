@@ -3,10 +3,12 @@ package edu.neu.ccs.cs5010.processors;
 import edu.neu.ccs.cs5010.Hour;
 import edu.neu.ccs.cs5010.consumers.HourQueueConsumer;
 import edu.neu.ccs.cs5010.consumers.LiftQueueConsumer;
+import edu.neu.ccs.cs5010.exceptions.InvalidInputDataException;
 import edu.neu.ccs.cs5010.producers.Producer;
 import edu.neu.ccs.cs5010.consumers.SkierQueueConsumer;
 import edu.neu.ccs.cs5010.pairs.IPair;
 
+import java.time.Duration;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
@@ -23,6 +25,8 @@ public class ConcurrentProcessor implements IProcessor {
   private static final int NUM_THREADS = 1;
   private static final int NUM_SECONDS_WAIT = 5;
 
+  private final ExecutorService executorService = Executors.newCachedThreadPool();
+
   private final List<String[]> inputData;
   private final BlockingQueue<IPair> skierQueue;
   private final BlockingQueue<String> liftQueue;
@@ -32,9 +36,11 @@ public class ConcurrentProcessor implements IProcessor {
   private final ConcurrentMap<String, Integer> liftNumRides;
   private final List<ConcurrentMap<String, Integer>> hourRides;
 
-  private final ExecutorService executorService = Executors.newFixedThreadPool(NUM_THREADS * 3);
+  private Duration runTime;
 
   public ConcurrentProcessor(List<String[]> inputData) {
+    validate(inputData);
+
     this.inputData = inputData.subList(1, inputData.size());
     skierQueue = new LinkedBlockingDeque<>();
     liftQueue = new LinkedBlockingDeque<>();
@@ -43,6 +49,17 @@ public class ConcurrentProcessor implements IProcessor {
     skierVerticalMeters = new ConcurrentHashMap<>();
     liftNumRides = new ConcurrentHashMap<>();
     hourRides = new ArrayList<>();
+    initHourRides();
+  }
+
+  private void validate(List<String[]> input) {
+    if (input == null || input.size() <= 1) {
+      throw new InvalidInputDataException("Input data doesn't contain enough information.");
+    }
+
+  }
+
+  private void initHourRides() {
     for (int i = 0; i < Hour.HOUR_NUM; i++) {
       hourRides.add(new ConcurrentHashMap<>());
     }
@@ -52,21 +69,18 @@ public class ConcurrentProcessor implements IProcessor {
     long startTime = System.currentTimeMillis();
 
     Producer producer = new Producer(inputData, skierQueue, liftQueue, hourQueue);
-    new Thread(producer).start();
+    executorService.execute(producer);
 
     for (int i = 0; i < NUM_THREADS; i++) {
-      SkierQueueConsumer skierQueueConsumer =
-          new SkierQueueConsumer(skierQueue, skierNumRides, skierVerticalMeters);
-      LiftQueueConsumer liftQueueConsumer = new LiftQueueConsumer(liftQueue, liftNumRides);
-      HourQueueConsumer hourQueueConsumer = new HourQueueConsumer(hourQueue, hourRides);
-      executorService.execute(skierQueueConsumer);
-      executorService.execute(liftQueueConsumer);
-      executorService.execute(hourQueueConsumer);
+      executorService.execute(new SkierQueueConsumer(
+          skierQueue, skierNumRides, skierVerticalMeters));
+      executorService.execute(new LiftQueueConsumer(liftQueue, liftNumRides));
+      executorService.execute(new HourQueueConsumer(hourQueue, hourRides));
     }
     executorService.shutdown();
     executorService.awaitTermination(NUM_SECONDS_WAIT, TimeUnit.SECONDS);
 
-    System.out.println("concurrent runs " + (System.currentTimeMillis() - startTime));
+    runTime = Duration.ofMillis(System.currentTimeMillis() - startTime);
   }
 
   @Override
@@ -82,6 +96,35 @@ public class ConcurrentProcessor implements IProcessor {
   @Override
   public List<Map<String, Integer>> getHourRides() {
     return new ArrayList<>(hourRides);
+  }
+
+  @Override
+  public Duration getRunTime() {
+    return runTime;
+  }
+
+  @Override
+  public String toString() {
+    return "Concurrent processor";
+  }
+
+  @Override
+  public boolean equals(Object other) {
+    if (this == other) {
+      return true;
+    }
+    if (other == null || getClass() != other.getClass()) {
+      return false;
+    }
+
+    ConcurrentProcessor that = (ConcurrentProcessor) other;
+
+    return inputData.equals(that.inputData);
+  }
+
+  @Override
+  public int hashCode() {
+    return inputData.hashCode();
   }
 
 }

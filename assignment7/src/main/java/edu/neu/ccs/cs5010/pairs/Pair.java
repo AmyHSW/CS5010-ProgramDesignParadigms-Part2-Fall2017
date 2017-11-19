@@ -6,8 +6,15 @@ public class Pair implements IPair {
   private final String last;
 
   public Pair(String first, String last) {
+    validate(first, last);
     this.first = first;
     this.last = last;
+  }
+
+  private void validate(String str1, String str2) {
+    if (str1 == null || str2 == null) {
+      throw new IllegalArgumentException("One or more of the strings in pair is null.");
+    }
   }
 
   @Override
@@ -22,19 +29,25 @@ public class Pair implements IPair {
 
   @Override
   public boolean equals(Object other) {
-    if (this == other) return true;
-    if (other == null || getClass() != other.getClass()) return false;
+    if (this == other) {
+      return true;
+    }
+    if (other == null || getClass() != other.getClass()) {
+      return false;
+    }
 
     Pair pair = (Pair) other;
 
-    if (!first.equals(pair.first)) return false;
+    if (!first.equals(pair.first)) {
+      return false;
+    }
     return last.equals(pair.last);
   }
 
   @Override
   public int hashCode() {
-    int result = first != null ? first.hashCode() : 0;
-    result = 31 * result + (last != null ? last.hashCode() : 0);
+    int result = first.hashCode();
+    result = 31 * result + last.hashCode();
     return result;
   }
 }

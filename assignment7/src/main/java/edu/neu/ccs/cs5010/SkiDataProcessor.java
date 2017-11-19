@@ -19,13 +19,16 @@ public class SkiDataProcessor {
     CsvParserSettings settings = new CsvParserSettings();
     CsvParser parser = new CsvParser(settings);
     List<String[]> inputData = parser.parseAll(new File(INPUT));
-    System.out.println(System.currentTimeMillis() - startTime);
+    System.out.println("Parsing input csv file took "
+        + (System.currentTimeMillis() - startTime) + " milliseconds");
 
     List<IProcessor> processors = new ArrayList<>();
     processors.add(new SequentialProcessor(inputData));
     processors.add(new ConcurrentProcessor(inputData));
     for (IProcessor processor : processors) {
       processor.processInput();
+      System.out.println(processor + " ran "
+          + processor.getRunTime().toMillis() + " milliseconds");
     }
     for (int i = 0; i < processors.size(); i++) {
       IoLibrary.generateOutput("skiers" + i + ".csv",
