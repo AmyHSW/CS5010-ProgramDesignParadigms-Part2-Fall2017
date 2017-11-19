@@ -1,29 +1,35 @@
 package edu.neu.ccs.cs5010.processors;
 
-import edu.neu.ccs.cs5010.pairs.HourLiftIdPair;
+import edu.neu.ccs.cs5010.Consumers.HourQueueConsumer;
+import edu.neu.ccs.cs5010.Consumers.LiftQueueConsumer;
+import edu.neu.ccs.cs5010.producers.Producer;
+import edu.neu.ccs.cs5010.Consumers.SkierQueueConsumer;
 import edu.neu.ccs.cs5010.pairs.Pair;
-import edu.neu.ccs.cs5010.pairs.SkierLiftIdPair;
 
+import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.List;
-import java.util.concurrent.BlockingQueue;
-import java.util.concurrent.ConcurrentHashMap;
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
-import java.util.concurrent.LinkedBlockingDeque;
-import java.util.concurrent.TimeUnit;
+import java.util.Map;
+import java.util.concurrent.*;
 
 public class ConcurrentProcessor extends Processor {
 
-  private static final int NUM_THREADS = 5;
+  private static final int NUM_THREADS = 1;
   private static final int NUM_SECONDS_WAIT = 5;
 
+  private final List<String[]> inputData;
   private final BlockingQueue<Pair> skierQueue;
   private final BlockingQueue<String> liftQueue;
   private final BlockingQueue<Pair> hourQueue;
+  private ConcurrentMap<String, Integer> skierNumRides;
+  private ConcurrentMap<String, Integer> skierVerticalMeters;
+  private ConcurrentMap<String, Integer> liftNumRides;
+  private ConcurrentMap<String, ConcurrentMap<String, Integer>> hourRides;
 
-  private final ExecutorService executorService = Executors.newFixedThreadPool(NUM_THREADS);
+  private final ExecutorService executorService = Executors.newFixedThreadPool(NUM_THREADS * 3);
 
   public ConcurrentProcessor(List<String[]> inputData) {
+    this.inputData = inputData.subList(1, inputData.size());
     skierQueue = new LinkedBlockingDeque<>();
     liftQueue = new LinkedBlockingDeque<>();
     hourQueue = new LinkedBlockingDeque<>();
@@ -31,63 +37,72 @@ public class ConcurrentProcessor extends Processor {
     skierVerticalMeters = new ConcurrentHashMap<>();
     liftNumRides = new ConcurrentHashMap<>();
     hourRides = new ConcurrentHashMap<>();
-    setupQueues(inputData.subList(1, inputData.size()));
-  }
-
-  private void setupQueues(List<String[]> inputData) {
-    for (String[] record : inputData) {
-      skierQueue.offer(new SkierLiftIdPair(record[SKIER_INDEX], record[LIFT_INDEX]));
-      liftQueue.offer(record[LIFT_INDEX]);
-      int hour = (Integer.parseInt(record[TIME_INDEX]) - 1) / MINUTES_IN_HOUR + 1;
-      hourQueue.offer(new HourLiftIdPair(Integer.toString(hour), record[LIFT_INDEX]));
-    }
   }
 
   @Override
   public void processInput() throws InterruptedException {
     long startTime = System.currentTimeMillis();
 
-    /*
-    for (final Pair pair : skierQueue) {
-      executorService.execute(() -> processSkier(pair.getFirst(), pair.getLast()));
-    }
+    Producer producer = new Producer(inputData, skierQueue, liftQueue, hourQueue);
+    new Thread(producer).start();
 
-    for (final Pair pair : hourQueue) {
-      executorService.execute(() -> processHour(pair.getFirst(), pair.getLast()));
+    for (int i = 0; i < NUM_THREADS; i++) {
+      SkierQueueConsumer skierQueueConsumer =
+          new SkierQueueConsumer(skierQueue, skierNumRides, skierVerticalMeters);
+      LiftQueueConsumer liftQueueConsumer = new LiftQueueConsumer(liftQueue, liftNumRides);
+      HourQueueConsumer hourQueueConsumer = new HourQueueConsumer(hourQueue, hourRides);
+      executorService.execute(skierQueueConsumer);
+      executorService.execute(liftQueueConsumer);
+      executorService.execute(hourQueueConsumer);
     }
-
-    for (final String lift : liftQueue) {
-      executorService.execute(() -> processLift(lift));
-    }
-    */
-
-    executorService.execute(this::processSkier);
-    executorService.execute(this::processLift);
-    executorService.execute(this::processHour);
     executorService.shutdown();
     executorService.awaitTermination(NUM_SECONDS_WAIT, TimeUnit.SECONDS);
 
     System.out.println("concurrent runs " + (System.currentTimeMillis() - startTime));
   }
 
-  private void processSkier() {
-    while (!skierQueue.isEmpty()) {
-      Pair pair = skierQueue.poll();
-      processSkier(pair.getFirst(), pair.getLast());
+  @Override
+  public List<String> getSkierOutput() {
+    List<ConcurrentMap.Entry<String, Integer>> entries = new ArrayList<>(skierVerticalMeters.entrySet());
+    entries.sort((meters1, meters2) -> meters2.getValue().compareTo(meters1.getValue()));
+    List<String> skierVerticalTotals = new ArrayList<>();
+    skierVerticalTotals.add("SkierID,Vertical");
+    for (int i = 0; i < 100; i++) {
+      Map.Entry<String, Integer> verticalMeters = entries.get(i);
+      String line = verticalMeters.getKey() + "," + verticalMeters.getValue();
+      skierVerticalTotals.add(line);
     }
+    return skierVerticalTotals;
   }
 
-  private void processLift() {
-    while (!liftQueue.isEmpty()) {
-      String lift = liftQueue.poll();
-      processLift(lift);
+  @Override
+  public List<String> getLiftOutput() {
+    List<Map.Entry<String, Integer>> entries = new ArrayList<>(liftNumRides.entrySet());
+    entries.sort(Comparator.comparing(Map.Entry::getKey));
+    List<String> liftsRides = new ArrayList<>();
+    liftsRides.add("LiftID, Number of Rides");
+    for (Map.Entry<String, Integer> entry: entries) {
+      String line = entry.getKey() + "," + entry.getValue();
+      liftsRides.add(line);
     }
+    return liftsRides;
   }
 
-  private void processHour() {
-    while (!hourQueue.isEmpty()) {
-      Pair pair = hourQueue.poll();
-      processHour(pair.getFirst(), pair.getLast());
+  @Override
+  public List<String> getHourOutput() {
+    List<ConcurrentMap.Entry<String, ConcurrentMap<String, Integer>>> entries = new ArrayList<>(hourRides.entrySet());
+    entries.sort(Comparator.comparing(Map.Entry::getKey));
+    List<String> hourLiftRides = new ArrayList<>();
+    String header = "Hour,Number of Rides";
+    for (ConcurrentMap.Entry<String, ConcurrentMap<String, Integer>> entry: entries) {
+      List<Map.Entry<String, Integer>> liftsRides = new ArrayList<>(entry.getValue().entrySet());
+      liftsRides.sort((rides1, rides2) -> rides2.getValue().compareTo(rides1.getValue()));
+      hourLiftRides.add(header);
+      for (int i = 0; i < 10; i++) {
+        String line = entry.getKey() + "," + liftsRides.get(i).getValue();
+        hourLiftRides.add(line);
+      }
     }
+    return hourLiftRides;
   }
 }
