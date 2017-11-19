@@ -3,7 +3,7 @@ package edu.neu.ccs.cs5010;
 import com.univocity.parsers.csv.CsvParser;
 import com.univocity.parsers.csv.CsvParserSettings;
 import edu.neu.ccs.cs5010.processors.ConcurrentProcessor;
-import edu.neu.ccs.cs5010.processors.Processor;
+import edu.neu.ccs.cs5010.processors.IProcessor;
 import edu.neu.ccs.cs5010.processors.SequentialProcessor;
 
 import java.io.File;
@@ -21,16 +21,19 @@ public class SkiDataProcessor {
     List<String[]> inputData = parser.parseAll(new File(INPUT));
     System.out.println(System.currentTimeMillis() - startTime);
 
-    List<Processor> processors = new ArrayList<>();
+    List<IProcessor> processors = new ArrayList<>();
     processors.add(new SequentialProcessor(inputData));
     processors.add(new ConcurrentProcessor(inputData));
-    for (Processor processor : processors) {
+    for (IProcessor processor : processors) {
       processor.processInput();
     }
     for (int i = 0; i < processors.size(); i++) {
-      IoLibrary.generateOutput("skiers" + i + ".csv", processors.get(i).getSkierOutput());
-      IoLibrary.generateOutput("lifts" + i + ".csv", processors.get(i).getLiftOutput());
-      IoLibrary.generateOutput("hours" + i + ".csv", processors.get(i).getHourOutput());
+      IoLibrary.generateOutput("skiers" + i + ".csv",
+              ResultAnalyser.getSkierOutput(processors.get(i).getSkierVerticalMeters()));
+      IoLibrary.generateOutput("lifts" + i + ".csv",
+              ResultAnalyser.getLiftOutput(processors.get(i).getLiftNumRides()));
+      IoLibrary.generateOutput("hours" + i + ".csv",
+              ResultAnalyser.getHourOutput(processors.get(i).getHourRides()));
     }
   }
 }

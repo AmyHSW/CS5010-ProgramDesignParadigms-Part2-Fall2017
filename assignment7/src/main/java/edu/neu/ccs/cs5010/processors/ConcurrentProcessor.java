@@ -6,10 +6,7 @@ import edu.neu.ccs.cs5010.producers.Producer;
 import edu.neu.ccs.cs5010.consumers.SkierQueueConsumer;
 import edu.neu.ccs.cs5010.pairs.IPair;
 
-import java.util.ArrayList;
-import java.util.Comparator;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ConcurrentMap;
@@ -18,7 +15,7 @@ import java.util.concurrent.Executors;
 import java.util.concurrent.LinkedBlockingDeque;
 import java.util.concurrent.TimeUnit;
 
-public class ConcurrentProcessor extends Processor {
+public class ConcurrentProcessor implements IProcessor {
 
   private static final int NUM_THREADS = 1;
   private static final int NUM_SECONDS_WAIT = 5;
@@ -45,7 +42,6 @@ public class ConcurrentProcessor extends Processor {
     hourRides = new ConcurrentHashMap<>();
   }
 
-  @Override
   public void processInput() throws InterruptedException {
     long startTime = System.currentTimeMillis();
 
@@ -68,47 +64,20 @@ public class ConcurrentProcessor extends Processor {
   }
 
   @Override
-  public List<String> getSkierOutput() {
-    List<ConcurrentMap.Entry<String, Integer>> entries = new ArrayList<>(skierVerticalMeters.entrySet());
-    entries.sort((meters1, meters2) -> meters2.getValue().compareTo(meters1.getValue()));
-    List<String> skierVerticalTotals = new ArrayList<>();
-    skierVerticalTotals.add("SkierID,Vertical");
-    for (int i = 0; i < 100; i++) {
-      Map.Entry<String, Integer> verticalMeters = entries.get(i);
-      String line = verticalMeters.getKey() + "," + verticalMeters.getValue();
-      skierVerticalTotals.add(line);
-    }
-    return skierVerticalTotals;
+  public Map<String, Integer> getSkierVerticalMeters() {
+    return skierVerticalMeters;
   }
 
   @Override
-  public List<String> getLiftOutput() {
-    List<Map.Entry<String, Integer>> entries = new ArrayList<>(liftNumRides.entrySet());
-    entries.sort(Comparator.comparing(Map.Entry::getKey));
-    List<String> liftsRides = new ArrayList<>();
-    liftsRides.add("LiftID, Number of Rides");
-    for (Map.Entry<String, Integer> entry: entries) {
-      String line = entry.getKey() + "," + entry.getValue();
-      liftsRides.add(line);
-    }
-    return liftsRides;
+  public Map<String, Integer> getLiftNumRides() {
+    return liftNumRides;
   }
 
   @Override
-  public List<String> getHourOutput() {
-    List<ConcurrentMap.Entry<String, ConcurrentMap<String, Integer>>> entries = new ArrayList<>(hourRides.entrySet());
-    entries.sort(Comparator.comparing(Map.Entry::getKey));
-    List<String> hourLiftRides = new ArrayList<>();
-    String header = "Hour,Number of Rides";
-    for (ConcurrentMap.Entry<String, ConcurrentMap<String, Integer>> entry: entries) {
-      List<Map.Entry<String, Integer>> liftsRides = new ArrayList<>(entry.getValue().entrySet());
-      liftsRides.sort((rides1, rides2) -> rides2.getValue().compareTo(rides1.getValue()));
-      hourLiftRides.add(header);
-      for (int i = 0; i < 10; i++) {
-        String line = entry.getKey() + "," + liftsRides.get(i).getValue();
-        hourLiftRides.add(line);
-      }
-    }
-    return hourLiftRides;
+  public Map<String, Map<String, Integer>> getHourRides() {
+    Map<String, Map<String, Integer>> temp = new HashMap<>();
+    temp.putAll(hourRides);
+    return temp;
   }
+
 }
