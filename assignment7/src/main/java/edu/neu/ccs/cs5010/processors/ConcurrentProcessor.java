@@ -56,7 +56,6 @@ public class ConcurrentProcessor implements IProcessor {
     if (input == null || input.size() <= 1) {
       throw new InvalidInputDataException("Input data doesn't contain enough information.");
     }
-
   }
 
   private void initHourRides() {

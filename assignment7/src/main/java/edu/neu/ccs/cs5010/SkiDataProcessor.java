@@ -30,13 +30,14 @@ public class SkiDataProcessor {
       System.out.println(processor + " ran "
           + processor.getRunTime().toMillis() + " milliseconds");
     }
+    IResultAnalyser resultAnalyser = new ResultAnalyser();
     for (int i = 0; i < processors.size(); i++) {
       IoLibrary.generateOutput("skiers" + i + ".csv",
-              ResultAnalyser.getSkierOutput(processors.get(i).getSkierVerticalMeters()));
+              resultAnalyser.getSkierOutput(processors.get(i).getSkierVerticalMeters()));
       IoLibrary.generateOutput("lifts" + i + ".csv",
-              ResultAnalyser.getLiftOutput(processors.get(i).getLiftNumRides()));
+              resultAnalyser.getLiftOutput(processors.get(i).getLiftNumRides()));
       IoLibrary.generateOutput("hours" + i + ".csv",
-              ResultAnalyser.getHourOutput(processors.get(i).getHourRides()));
+              resultAnalyser.getHourOutput(processors.get(i).getHourRides()));
     }
   }
 }
