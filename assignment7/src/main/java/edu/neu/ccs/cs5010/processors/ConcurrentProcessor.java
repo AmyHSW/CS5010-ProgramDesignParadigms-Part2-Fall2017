@@ -7,19 +7,21 @@ import edu.neu.ccs.cs5010.pairs.SkierLiftIdPair;
 import java.util.List;
 import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.ConcurrentHashMap;
-import java.util.concurrent.Executor;
+import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.LinkedBlockingDeque;
+import java.util.concurrent.TimeUnit;
 
 public class ConcurrentProcessor extends Processor {
 
   private static final int NUM_THREADS = 5;
+  private static final int NUM_SECONDS_WAIT = 5;
 
   private final BlockingQueue<Pair> skierQueue;
   private final BlockingQueue<String> liftQueue;
   private final BlockingQueue<Pair> hourQueue;
 
-  private final Executor executor = Executors.newFixedThreadPool(NUM_THREADS);;
+  private final ExecutorService executorService = Executors.newFixedThreadPool(NUM_THREADS);
 
   public ConcurrentProcessor(List<String[]> inputData) {
     skierQueue = new LinkedBlockingDeque<>();
@@ -42,25 +44,29 @@ public class ConcurrentProcessor extends Processor {
   }
 
   @Override
-  public void processInput() {
+  public void processInput() throws InterruptedException {
     long startTime = System.currentTimeMillis();
 
     /*
     for (final Pair pair : skierQueue) {
-      executorService.execute(new Runnable() {
-        @Override
-        public void run() {
-          processSkier(pair.getFirst(), pair.getLast());
-        }
-      });
+      executorService.execute(() -> processSkier(pair.getFirst(), pair.getLast()));
+    }
+
+    for (final Pair pair : hourQueue) {
+      executorService.execute(() -> processHour(pair.getFirst(), pair.getLast()));
+    }
+
+    for (final String lift : liftQueue) {
+      executorService.execute(() -> processLift(lift));
     }
     */
 
-    executor.execute(this::processSkier);
-    executor.execute(this::processLift);
-    executor.execute(this::processHour);
+    executorService.execute(this::processSkier);
+    executorService.execute(this::processLift);
+    executorService.execute(this::processHour);
+    executorService.shutdown();
+    executorService.awaitTermination(NUM_SECONDS_WAIT, TimeUnit.SECONDS);
 
-    //executorService.shutdown();
     System.out.println("concurrent runs " + (System.currentTimeMillis() - startTime));
   }
 

@@ -25,7 +25,7 @@ public abstract class Processor implements IProcessor {
   protected Map<String, Map<String, Integer>> hourRides;
 
   @Override
-  public abstract void processInput();
+  public abstract void processInput() throws InterruptedException;
 
   protected void processSkier(String skier, String lift) {
     skierNumRides.put(skier, skierNumRides.getOrDefault(skier, 0) + 1);
