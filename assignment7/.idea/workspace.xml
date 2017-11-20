@@ -2,29 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2307343e-eed9-426f-bb9e-598739fd9077" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs5010/SkiDataProcessor.java" afterPath="$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs5010/SkiDataProcessor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs5010/consumers/Consumer.java" afterPath="$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs5010/consumers/Consumer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs5010/consumers/HourQueueConsumer.java" afterPath="$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs5010/consumers/HourQueueConsumer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs5010/consumers/LiftQueueConsumer.java" afterPath="$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs5010/consumers/LiftQueueConsumer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs5010/consumers/SkierQueueConsumer.java" afterPath="$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs5010/consumers/SkierQueueConsumer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs5010/exceptions/InvalidInputDataException.java" afterPath="$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs5010/exceptions/InvalidInputDataException.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs5010/lift/Hour.java" afterPath="$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs5010/lift/Hour.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs5010/lift/ILift.java" afterPath="$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs5010/lift/ILift.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs5010/lift/Lift.java" afterPath="$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs5010/lift/Lift.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs5010/pairs/Pair.java" afterPath="$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs5010/pairs/Pair.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs5010/processors/ConcurrentProcessor.java" afterPath="$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs5010/processors/ConcurrentProcessor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs5010/processors/IProcessor.java" afterPath="$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs5010/processors/IProcessor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs5010/processors/Processor.java" afterPath="$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs5010/processors/Processor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs5010/processors/SequentialProcessor.java" afterPath="$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs5010/processors/SequentialProcessor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs5010/producers/HourQueueProducer.java" afterPath="$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs5010/producers/HourQueueProducer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs5010/producers/IProducer.java" afterPath="$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs5010/producers/IProducer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs5010/producers/LiftQueueProducer.java" afterPath="$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs5010/producers/LiftQueueProducer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs5010/producers/Producer.java" afterPath="$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs5010/producers/Producer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs5010/producers/SkierQueueProducer.java" afterPath="$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs5010/producers/SkierQueueProducer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs5010/result/IResultAnalyser.java" afterPath="$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs5010/result/IResultAnalyser.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs5010/skier/ISkier.java" afterPath="$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs5010/skier/ISkier.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs5010/skier/Skier.java" afterPath="$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs5010/skier/Skier.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assignment 7 Writeup.pdf" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -36,46 +14,256 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="LiftQueueConsumer.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs5010/consumers/LiftQueueConsumer.java">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="SequentialProcessor.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs5010/processors/SequentialProcessor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+            <state relative-caret-position="420">
+              <caret line="35" column="0" lean-forward="false" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#805#806#0" expanded="true" />
-                <element signature="e#873#874#0" expanded="true" />
+                <marker date="1511208197895" expanded="true" signature="1044:1048" ph="{...}" />
+                <marker date="1511208197895" expanded="true" signature="1091:1451" ph="{...}" />
+                <marker date="1511208197895" expanded="true" signature="1512:1752" ph="{...}" />
+                <marker date="1511208197895" expanded="true" signature="1795:1802" ph=" { " />
+                <marker date="1511208197895" expanded="true" signature="1855:1859" ph=" }" />
+                <marker date="1511208197895" expanded="true" signature="1917:1924" ph=" { " />
+                <marker date="1511208197895" expanded="true" signature="1982:1986" ph=" }" />
+                <marker date="1511208197895" expanded="false" signature="2042:2049" ph=" { " />
+                <marker date="1511208197895" expanded="false" signature="2065:2069" ph=" }" />
+                <marker date="1511208197895" expanded="false" signature="2109:2116" ph=" { " />
+                <marker date="1511208197895" expanded="false" signature="2146:2150" ph=" }" />
+                <marker date="1511208197895" expanded="true" signature="2202:2449" ph="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ISkier.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs5010/skier/ISkier.java">
+      <file leaf-file-name="SkiDataProcessor.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs5010/SkiDataProcessor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="54">
-              <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="6" selection-end-column="3" />
-              <folding />
+            <state relative-caret-position="390">
+              <caret line="35" column="0" lean-forward="false" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <marker date="1511208197889" expanded="true" signature="876:2098" ph="{...}" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="HourQueueProducer.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs5010/producers/HourQueueProducer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="243">
-              <caret line="19" column="42" lean-forward="true" selection-start-line="19" selection-start-column="42" selection-end-line="19" selection-end-column="42" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ConcurrentProcessor.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ConcurrentProcessor.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs5010/processors/ConcurrentProcessor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
-              <caret line="55" column="58" lean-forward="true" selection-start-line="55" selection-start-column="58" selection-end-line="55" selection-end-column="58" />
+            <state relative-caret-position="337">
+              <caret line="62" column="43" lean-forward="true" selection-start-line="62" selection-start-column="43" selection-end-line="62" selection-end-column="43" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <marker date="1511208197894" expanded="false" signature="2816:2823" ph=" { " />
+                <marker date="1511208197894" expanded="false" signature="2839:2843" ph=" }" />
+                <marker date="1511208197894" expanded="false" signature="2883:2890" ph=" { " />
+                <marker date="1511208197894" expanded="false" signature="2920:2924" ph=" }" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="JAVA/edu.neu.ccs.cs5010" pinned="false" current-in-tab="false">
+        <entry file="uml://JAVA/edu.neu.ccs.cs5010">
+          <provider selected="true" editor-type-id="UmlEditorProvider">
+            <state>
+              <ID>JAVA</ID>
+              <OriginalElement>edu.neu.ccs.cs5010</OriginalElement>
+              <nodes>
+                <node x="655.3308840282525" y="202.6328125">edu.neu.ccs.cs5010.result</node>
+                <node x="397.4856459330144" y="12.6328125">edu.neu.ccs.cs5010.skier</node>
+                <node x="479.33088402825246" y="202.6328125">edu.neu.ccs.cs5010.exceptions</node>
+                <node x="295.91666666666663" y="322.6328125">edu.neu.ccs.cs5010.processors</node>
+                <node x="31.75" y="12.6328125">edu.neu.ccs.cs5010.pairs</node>
+                <node x="251.91666666666669" y="202.6328125">edu.neu.ccs.cs5010.consumers</node>
+                <node x="210.75" y="12.6328125">edu.neu.ccs.cs5010.lift</node>
+                <node x="20.09210526315792" y="202.6328125">edu.neu.ccs.cs5010.producers</node>
+                <node x="479.58333333333337" y="432.6328125">edu.neu.ccs.cs5010.SkiDataProcessor</node>
+              </nodes>
+              <notes />
+              <edges>
+                <edge source="edu.neu.ccs.cs5010.processors" target="edu.neu.ccs.cs5010.processors">
+                  <point x="-19.75" y="15.0" />
+                  <point x="355.16666666666663" y="382.6328125" />
+                  <point x="265.91666666666663" y="382.6328125" />
+                  <point x="265.91666666666663" y="330.1328125" />
+                  <point x="-79.0" y="-7.5" />
+                </edge>
+                <edge source="edu.neu.ccs.cs5010.consumers" target="edu.neu.ccs.cs5010.skier">
+                  <point x="22.428571428571416" y="-15.0" />
+                  <point x="352.8452380952381" y="122.6328125" />
+                  <point x="435.03110047846894" y="122.6328125" />
+                  <point x="-21.45454545454544" y="15.0" />
+                </edge>
+                <edge source="edu.neu.ccs.cs5010.SkiDataProcessor" target="edu.neu.ccs.cs5010.processors">
+                  <point x="-19.75" y="-26.0" />
+                  <point x="538.8333333333334" y="402.6328125" />
+                  <point x="434.16666666666663" y="402.6328125" />
+                  <point x="59.25" y="15.0" />
+                </edge>
+                <edge source="edu.neu.ccs.cs5010.skier" target="edu.neu.ccs.cs5010.skier">
+                  <point x="-53.63636363636363" y="15.0" />
+                  <point x="402.84928229665076" y="62.6328125" />
+                  <point x="377.4856459330144" y="62.6328125" />
+                  <point x="377.4856459330144" y="37.6328125" />
+                  <point x="-59.0" y="10.0" />
+                </edge>
+                <edge source="edu.neu.ccs.cs5010.processors" target="edu.neu.ccs.cs5010.exceptions">
+                  <point x="59.25" y="-15.0" />
+                  <point x="434.16666666666663" y="292.6328125" />
+                  <point x="518.3308840282525" y="292.6328125" />
+                  <point x="-39.0" y="15.0" />
+                </edge>
+                <edge source="edu.neu.ccs.cs5010.result" target="edu.neu.ccs.cs5010.skier">
+                  <point x="31.0" y="-15.0" />
+                  <point x="748.3308840282525" y="102.6328125" />
+                  <point x="510.12200956937806" y="102.6328125" />
+                  <point x="53.63636363636368" y="15.0" />
+                </edge>
+                <edge source="edu.neu.ccs.cs5010.consumers" target="edu.neu.ccs.cs5010.lift">
+                  <point x="-1.4210854715202004E-14" y="-15.0" />
+                  <point x="330.4166666666667" y="122.6328125" />
+                  <point x="298.25" y="122.6328125" />
+                  <point x="34.99999999999997" y="15.0" />
+                </edge>
+                <edge source="edu.neu.ccs.cs5010.producers" target="edu.neu.ccs.cs5010.pairs">
+                  <point x="-38.0" y="-15.0" />
+                  <point x="58.09210526315792" y="182.6328125" />
+                  <point x="91.25" y="182.6328125" />
+                  <point x="0.0" y="15.0" />
+                </edge>
+                <edge source="edu.neu.ccs.cs5010.pairs" target="edu.neu.ccs.cs5010.pairs">
+                  <point x="-34.0" y="15.0" />
+                  <point x="57.25" y="72.6328125" />
+                  <point x="1.75" y="72.6328125" />
+                  <point x="1.75" y="20.1328125" />
+                  <point x="-59.5" y="-7.5" />
+                </edge>
+                <edge source="edu.neu.ccs.cs5010.processors" target="edu.neu.ccs.cs5010.pairs">
+                  <point x="-72.4166666666666" y="-15.0" />
+                  <point x="302.50000000000006" y="302.6328125" />
+                  <point x="9.592105263157919" y="302.6328125" />
+                  <point x="9.592105263157919" y="172.6328125" />
+                  <point x="74.25" y="172.6328125" />
+                  <point x="-17.0" y="15.0" />
+                </edge>
+                <edge source="edu.neu.ccs.cs5010.processors" target="edu.neu.ccs.cs5010.lift">
+                  <point x="-19.75" y="-15.0" />
+                  <point x="355.16666666666663" y="262.6328125" />
+                  <point x="241.41666666666669" y="262.6328125" />
+                  <point x="241.41666666666669" y="182.6328125" />
+                  <point x="274.91666666666663" y="182.6328125" />
+                  <point x="11.666666666666657" y="15.0" />
+                </edge>
+                <edge source="edu.neu.ccs.cs5010.consumers" target="edu.neu.ccs.cs5010.pairs">
+                  <point x="-67.2857142857143" y="-15.0" />
+                  <point x="263.1309523809524" y="152.6328125" />
+                  <point x="125.25" y="152.6328125" />
+                  <point x="34.0" y="15.0" />
+                </edge>
+                <edge source="edu.neu.ccs.cs5010.processors" target="edu.neu.ccs.cs5010.skier">
+                  <point x="46.083333333333314" y="-15.0" />
+                  <point x="421.0" y="282.6328125" />
+                  <point x="468.83088402825246" y="282.6328125" />
+                  <point x="468.83088402825246" y="182.6328125" />
+                  <point x="499.3947368421053" y="182.6328125" />
+                  <point x="42.909090909090935" y="15.0" />
+                </edge>
+                <edge source="edu.neu.ccs.cs5010.SkiDataProcessor" target="edu.neu.ccs.cs5010.result">
+                  <point x="19.75" y="-26.0" />
+                  <point x="578.3333333333334" y="402.6328125" />
+                  <point x="716.0434039644565" y="402.6328125" />
+                  <point x="716.0434039644565" y="302.6328125" />
+                  <point x="686.3308840282525" y="302.6328125" />
+                  <point x="-31.0" y="15.0" />
+                </edge>
+                <edge source="edu.neu.ccs.cs5010.lift" target="edu.neu.ccs.cs5010.lift">
+                  <point x="-23.333333333333343" y="15.0" />
+                  <point x="239.91666666666666" y="82.6328125" />
+                  <point x="170.75" y="82.6328125" />
+                  <point x="170.75" y="17.6328125" />
+                  <point x="-52.5" y="-10.0" />
+                </edge>
+                <edge source="edu.neu.ccs.cs5010.processors" target="edu.neu.ccs.cs5010.producers">
+                  <point x="-59.24999999999994" y="-15.0" />
+                  <point x="315.66666666666674" y="292.6328125" />
+                  <point x="96.09210526315792" y="292.6328125" />
+                  <point x="0.0" y="15.0" />
+                </edge>
+                <edge source="edu.neu.ccs.cs5010.processors" target="edu.neu.ccs.cs5010.consumers">
+                  <point x="-6.583333333333314" y="-15.0" />
+                  <point x="368.33333333333337" y="252.6328125" />
+                  <point x="330.4166666666667" y="252.6328125" />
+                  <point x="0.0" y="15.0" />
+                </edge>
+                <edge source="edu.neu.ccs.cs5010.result" target="edu.neu.ccs.cs5010.lift">
+                  <point x="-31.0" y="-15.0" />
+                  <point x="686.3308840282525" y="112.6328125" />
+                  <point x="309.91666666666663" y="112.6328125" />
+                  <point x="46.66666666666663" y="15.0" />
+                </edge>
+              </edges>
+              <settings layout="Hierarchic Group" zoom="1.0" x="-63.0" y="-849.0" />
+              <SelectedNodes />
+              <Categories>
+                <Category>Fields</Category>
+                <Category>Constructors</Category>
+              </Categories>
+              <SCOPE>All</SCOPE>
+              <VISIBILITY>private</VISIBILITY>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Lift.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs5010/lift/Lift.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-235">
+              <caret line="9" column="14" lean-forward="false" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
+              <folding>
+                <marker date="1511208197893" expanded="true" signature="1750:2060" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Processor.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs5010/processors/Processor.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="15">
+              <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+              <folding>
+                <marker date="1511208197895" expanded="true" signature="1162:1276" ph="{...}" />
+                <marker date="1511208197895" expanded="true" signature="1308:1398" ph="{...}" />
+                <marker date="1511208197895" expanded="true" signature="1431:1658" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Hour.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs5010/lift/Hour.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="16" column="40" lean-forward="false" selection-start-line="16" selection-start-column="40" selection-end-line="16" selection-end-column="40" />
+              <folding>
+                <element signature="e#378#379#0" expanded="true" />
+                <element signature="e#441#442#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ResultAnalyser.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs5010/result/ResultAnalyser.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-159">
+              <caret line="16" column="13" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -83,14 +271,28 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Skier.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs5010/skier/Skier.java">
+      <file leaf-file-name="Producer.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs5010/producers/Producer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="16" column="30" lean-forward="false" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="30" />
+            <state relative-caret-position="330">
+              <caret line="36" column="0" lean-forward="false" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
               <folding>
-                <element signature="e#882#883#0" expanded="true" />
-                <element signature="e#923#924#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HourQueueConsumer.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs5010/consumers/HourQueueConsumer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="227">
+              <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <marker date="1511208197891" expanded="true" signature="506:700" ph="/**...*/" />
+                <marker date="1511208197891" expanded="true" signature="815:918" ph="{...}" />
+                <marker date="1511208197891" expanded="true" signature="956:1185" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -205,10 +407,10 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="51" />
-    <option name="y" value="68" />
-    <option name="width" value="1934" />
-    <option name="height" value="1030" />
+    <option name="x" value="1297" />
+    <option name="y" value="-257" />
+    <option name="width" value="1759" />
+    <option name="height" value="1057" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -226,6 +428,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -267,6 +471,15 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="cs5010" type="462c0819:PsiDirectoryNode" />
               <item name="consumers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="assignment7" type="b2602c69:ProjectViewProjectNode" />
+              <item name="assignment7" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="cs5010" type="462c0819:PsiDirectoryNode" />
+              <item name="exceptions" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="assignment7" type="b2602c69:ProjectViewProjectNode" />
@@ -343,41 +556,12 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="cs5010" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="assignment7" type="b2602c69:ProjectViewProjectNode" />
-              <item name="assignment7" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="cs5010" type="462c0819:PsiDirectoryNode" />
-              <item name="pairs" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="assignment7" type="b2602c69:ProjectViewProjectNode" />
-              <item name="assignment7" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="cs5010" type="462c0819:PsiDirectoryNode" />
-              <item name="processors" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="assignment7" type="b2602c69:ProjectViewProjectNode" />
-              <item name="assignment7" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="cs5010" type="462c0819:PsiDirectoryNode" />
-              <item name="skier" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="AndroidView" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -397,14 +581,14 @@
       <recent name="edu.neu.ccs.cs5010.processors" />
       <recent name="edu.neu.ccs.cs5010.pairs" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Jingyu\Documents\GitHub\pdp-amyhsw-shenjingyu\assignment7\src\main\java\edu\neu\ccs\cs5010" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Jingyu\Documents\GitHub\pdp-amyhsw-shenjingyu\assignment7\src\main\java\edu\neu\ccs\cs5010" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -686,34 +870,35 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="106615000" />
+    <option name="totallyTimeSpent" value="106784000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-11" y="-11" width="1942" height="1042" extended-state="6" />
+    <frame x="1297" y="-257" width="1759" height="1057" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="PlantUML" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297619" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.184375" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2809524" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32990867" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32776618" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.12914285" sideWeight="0.14" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32964474" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3087318" sideWeight="0.86" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1927781" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26715177" sideWeight="0.4914325" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39979124" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="PlantUML" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -735,8 +920,8 @@
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2780269" sideWeight="0.5633446" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2981419" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2682927" sideWeight="0.494003" order="1" side_tool="false" content_ui="tabs" />
@@ -790,7 +975,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs5010/HourThread.java" />
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="367">
@@ -852,7 +1036,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="5" column="7" lean-forward="true" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="7" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -900,7 +1083,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -924,7 +1106,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs5010/result/ResultAnalyser.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="178">
+        <state relative-caret-position="-159">
           <caret line="16" column="13" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -944,24 +1126,33 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs5010/SkiDataProcessor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="211">
-          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="19" selection-end-column="3" />
+        <state relative-caret-position="390">
+          <caret line="35" column="0" lean-forward="false" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <marker date="1511208197889" expanded="true" signature="876:2098" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs5010/processors/SequentialProcessor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="319">
-          <caret line="35" column="3" lean-forward="true" selection-start-line="35" selection-start-column="3" selection-end-line="35" selection-end-column="3" />
+        <state relative-caret-position="420">
+          <caret line="35" column="0" lean-forward="false" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1796#1797#0" expanded="true" />
-            <element signature="e#1858#1859#0" expanded="true" />
-            <element signature="e#1918#1919#0" expanded="true" />
-            <element signature="e#1985#1986#0" expanded="true" />
+            <marker date="1511208197895" expanded="true" signature="1044:1048" ph="{...}" />
+            <marker date="1511208197895" expanded="true" signature="1091:1451" ph="{...}" />
+            <marker date="1511208197895" expanded="true" signature="1512:1752" ph="{...}" />
+            <marker date="1511208197895" expanded="true" signature="1795:1802" ph=" { " />
+            <marker date="1511208197895" expanded="true" signature="1855:1859" ph=" }" />
+            <marker date="1511208197895" expanded="true" signature="1917:1924" ph=" { " />
+            <marker date="1511208197895" expanded="true" signature="1982:1986" ph=" }" />
+            <marker date="1511208197895" expanded="false" signature="2042:2049" ph=" { " />
+            <marker date="1511208197895" expanded="false" signature="2065:2069" ph=" }" />
+            <marker date="1511208197895" expanded="false" signature="2109:2116" ph=" { " />
+            <marker date="1511208197895" expanded="false" signature="2146:2150" ph=" }" />
+            <marker date="1511208197895" expanded="true" signature="2202:2449" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -978,10 +1169,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs5010/processors/Processor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="594">
-          <caret line="22" column="46" lean-forward="true" selection-start-line="22" selection-start-column="46" selection-end-line="22" selection-end-column="46" />
+        <state relative-caret-position="15">
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <marker date="1511208197895" expanded="true" signature="1162:1276" ph="{...}" />
+            <marker date="1511208197895" expanded="true" signature="1308:1398" ph="{...}" />
+            <marker date="1511208197895" expanded="true" signature="1431:1658" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -1017,8 +1210,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs5010/lift/Hour.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="14" column="39" lean-forward="true" selection-start-line="14" selection-start-column="39" selection-end-line="14" selection-end-column="39" />
+        <state relative-caret-position="90">
+          <caret line="16" column="40" lean-forward="false" selection-start-line="16" selection-start-column="40" selection-end-line="16" selection-end-column="40" />
           <folding>
             <element signature="e#378#379#0" expanded="true" />
             <element signature="e#441#442#0" expanded="true" />
@@ -1044,9 +1237,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs5010/lift/Lift.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-788">
-          <caret line="63" column="54" lean-forward="false" selection-start-line="63" selection-start-column="54" selection-end-line="63" selection-end-column="54" />
-          <folding />
+        <state relative-caret-position="-235">
+          <caret line="9" column="14" lean-forward="false" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
+          <folding>
+            <marker date="1511208197893" expanded="true" signature="1750:2060" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1070,10 +1265,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs5010/consumers/HourQueueConsumer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="23" column="62" lean-forward="true" selection-start-line="23" selection-start-column="22" selection-end-line="23" selection-end-column="62" />
+        <state relative-caret-position="227">
+          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <marker date="1511208197891" expanded="true" signature="506:700" ph="/**...*/" />
+            <marker date="1511208197891" expanded="true" signature="815:918" ph="{...}" />
+            <marker date="1511208197891" expanded="true" signature="956:1185" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -1110,12 +1308,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs5010/producers/Producer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="567">
-          <caret line="24" column="0" lean-forward="true" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+        <state relative-caret-position="330">
+          <caret line="36" column="0" lean-forward="false" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#521#522#0" expanded="true" />
-            <element signature="e#557#558#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1159,21 +1355,175 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs5010/processors/ConcurrentProcessor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="55" column="58" lean-forward="true" selection-start-line="55" selection-start-column="58" selection-end-line="55" selection-end-column="58" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs5010/producers/HourQueueProducer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="243">
           <caret line="19" column="42" lean-forward="true" selection-start-line="19" selection-start-column="42" selection-end-line="19" selection-end-column="42" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/edu.neu.ccs.cs5010">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>edu.neu.ccs.cs5010</OriginalElement>
+          <nodes>
+            <node x="655.3308840282525" y="202.6328125">edu.neu.ccs.cs5010.result</node>
+            <node x="397.4856459330144" y="12.6328125">edu.neu.ccs.cs5010.skier</node>
+            <node x="479.33088402825246" y="202.6328125">edu.neu.ccs.cs5010.exceptions</node>
+            <node x="295.91666666666663" y="322.6328125">edu.neu.ccs.cs5010.processors</node>
+            <node x="31.75" y="12.6328125">edu.neu.ccs.cs5010.pairs</node>
+            <node x="251.91666666666669" y="202.6328125">edu.neu.ccs.cs5010.consumers</node>
+            <node x="210.75" y="12.6328125">edu.neu.ccs.cs5010.lift</node>
+            <node x="20.09210526315792" y="202.6328125">edu.neu.ccs.cs5010.producers</node>
+            <node x="479.58333333333337" y="432.6328125">edu.neu.ccs.cs5010.SkiDataProcessor</node>
+          </nodes>
+          <notes />
+          <edges>
+            <edge source="edu.neu.ccs.cs5010.processors" target="edu.neu.ccs.cs5010.processors">
+              <point x="-19.75" y="15.0" />
+              <point x="355.16666666666663" y="382.6328125" />
+              <point x="265.91666666666663" y="382.6328125" />
+              <point x="265.91666666666663" y="330.1328125" />
+              <point x="-79.0" y="-7.5" />
+            </edge>
+            <edge source="edu.neu.ccs.cs5010.consumers" target="edu.neu.ccs.cs5010.skier">
+              <point x="22.428571428571416" y="-15.0" />
+              <point x="352.8452380952381" y="122.6328125" />
+              <point x="435.03110047846894" y="122.6328125" />
+              <point x="-21.45454545454544" y="15.0" />
+            </edge>
+            <edge source="edu.neu.ccs.cs5010.SkiDataProcessor" target="edu.neu.ccs.cs5010.processors">
+              <point x="-19.75" y="-26.0" />
+              <point x="538.8333333333334" y="402.6328125" />
+              <point x="434.16666666666663" y="402.6328125" />
+              <point x="59.25" y="15.0" />
+            </edge>
+            <edge source="edu.neu.ccs.cs5010.skier" target="edu.neu.ccs.cs5010.skier">
+              <point x="-53.63636363636363" y="15.0" />
+              <point x="402.84928229665076" y="62.6328125" />
+              <point x="377.4856459330144" y="62.6328125" />
+              <point x="377.4856459330144" y="37.6328125" />
+              <point x="-59.0" y="10.0" />
+            </edge>
+            <edge source="edu.neu.ccs.cs5010.processors" target="edu.neu.ccs.cs5010.exceptions">
+              <point x="59.25" y="-15.0" />
+              <point x="434.16666666666663" y="292.6328125" />
+              <point x="518.3308840282525" y="292.6328125" />
+              <point x="-39.0" y="15.0" />
+            </edge>
+            <edge source="edu.neu.ccs.cs5010.result" target="edu.neu.ccs.cs5010.skier">
+              <point x="31.0" y="-15.0" />
+              <point x="748.3308840282525" y="102.6328125" />
+              <point x="510.12200956937806" y="102.6328125" />
+              <point x="53.63636363636368" y="15.0" />
+            </edge>
+            <edge source="edu.neu.ccs.cs5010.consumers" target="edu.neu.ccs.cs5010.lift">
+              <point x="-1.4210854715202004E-14" y="-15.0" />
+              <point x="330.4166666666667" y="122.6328125" />
+              <point x="298.25" y="122.6328125" />
+              <point x="34.99999999999997" y="15.0" />
+            </edge>
+            <edge source="edu.neu.ccs.cs5010.producers" target="edu.neu.ccs.cs5010.pairs">
+              <point x="-38.0" y="-15.0" />
+              <point x="58.09210526315792" y="182.6328125" />
+              <point x="91.25" y="182.6328125" />
+              <point x="0.0" y="15.0" />
+            </edge>
+            <edge source="edu.neu.ccs.cs5010.pairs" target="edu.neu.ccs.cs5010.pairs">
+              <point x="-34.0" y="15.0" />
+              <point x="57.25" y="72.6328125" />
+              <point x="1.75" y="72.6328125" />
+              <point x="1.75" y="20.1328125" />
+              <point x="-59.5" y="-7.5" />
+            </edge>
+            <edge source="edu.neu.ccs.cs5010.processors" target="edu.neu.ccs.cs5010.pairs">
+              <point x="-72.4166666666666" y="-15.0" />
+              <point x="302.50000000000006" y="302.6328125" />
+              <point x="9.592105263157919" y="302.6328125" />
+              <point x="9.592105263157919" y="172.6328125" />
+              <point x="74.25" y="172.6328125" />
+              <point x="-17.0" y="15.0" />
+            </edge>
+            <edge source="edu.neu.ccs.cs5010.processors" target="edu.neu.ccs.cs5010.lift">
+              <point x="-19.75" y="-15.0" />
+              <point x="355.16666666666663" y="262.6328125" />
+              <point x="241.41666666666669" y="262.6328125" />
+              <point x="241.41666666666669" y="182.6328125" />
+              <point x="274.91666666666663" y="182.6328125" />
+              <point x="11.666666666666657" y="15.0" />
+            </edge>
+            <edge source="edu.neu.ccs.cs5010.consumers" target="edu.neu.ccs.cs5010.pairs">
+              <point x="-67.2857142857143" y="-15.0" />
+              <point x="263.1309523809524" y="152.6328125" />
+              <point x="125.25" y="152.6328125" />
+              <point x="34.0" y="15.0" />
+            </edge>
+            <edge source="edu.neu.ccs.cs5010.processors" target="edu.neu.ccs.cs5010.skier">
+              <point x="46.083333333333314" y="-15.0" />
+              <point x="421.0" y="282.6328125" />
+              <point x="468.83088402825246" y="282.6328125" />
+              <point x="468.83088402825246" y="182.6328125" />
+              <point x="499.3947368421053" y="182.6328125" />
+              <point x="42.909090909090935" y="15.0" />
+            </edge>
+            <edge source="edu.neu.ccs.cs5010.SkiDataProcessor" target="edu.neu.ccs.cs5010.result">
+              <point x="19.75" y="-26.0" />
+              <point x="578.3333333333334" y="402.6328125" />
+              <point x="716.0434039644565" y="402.6328125" />
+              <point x="716.0434039644565" y="302.6328125" />
+              <point x="686.3308840282525" y="302.6328125" />
+              <point x="-31.0" y="15.0" />
+            </edge>
+            <edge source="edu.neu.ccs.cs5010.lift" target="edu.neu.ccs.cs5010.lift">
+              <point x="-23.333333333333343" y="15.0" />
+              <point x="239.91666666666666" y="82.6328125" />
+              <point x="170.75" y="82.6328125" />
+              <point x="170.75" y="17.6328125" />
+              <point x="-52.5" y="-10.0" />
+            </edge>
+            <edge source="edu.neu.ccs.cs5010.processors" target="edu.neu.ccs.cs5010.producers">
+              <point x="-59.24999999999994" y="-15.0" />
+              <point x="315.66666666666674" y="292.6328125" />
+              <point x="96.09210526315792" y="292.6328125" />
+              <point x="0.0" y="15.0" />
+            </edge>
+            <edge source="edu.neu.ccs.cs5010.processors" target="edu.neu.ccs.cs5010.consumers">
+              <point x="-6.583333333333314" y="-15.0" />
+              <point x="368.33333333333337" y="252.6328125" />
+              <point x="330.4166666666667" y="252.6328125" />
+              <point x="0.0" y="15.0" />
+            </edge>
+            <edge source="edu.neu.ccs.cs5010.result" target="edu.neu.ccs.cs5010.lift">
+              <point x="-31.0" y="-15.0" />
+              <point x="686.3308840282525" y="112.6328125" />
+              <point x="309.91666666666663" y="112.6328125" />
+              <point x="46.66666666666663" y="15.0" />
+            </edge>
+          </edges>
+          <settings layout="Hierarchic Group" zoom="1.0" x="-63.0" y="-849.0" />
+          <SelectedNodes />
+          <Categories>
+            <Category>Fields</Category>
+            <Category>Constructors</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs5010/processors/ConcurrentProcessor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="337">
+          <caret line="62" column="43" lean-forward="true" selection-start-line="62" selection-start-column="43" selection-end-line="62" selection-end-column="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <marker date="1511208197894" expanded="false" signature="2816:2823" ph=" { " />
+            <marker date="1511208197894" expanded="false" signature="2839:2843" ph=" }" />
+            <marker date="1511208197894" expanded="false" signature="2883:2890" ph=" { " />
+            <marker date="1511208197894" expanded="false" signature="2920:2924" ph=" }" />
+          </folding>
         </state>
       </provider>
     </entry>
