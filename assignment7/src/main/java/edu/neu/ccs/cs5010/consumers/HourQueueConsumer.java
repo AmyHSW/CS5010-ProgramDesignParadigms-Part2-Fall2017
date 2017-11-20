@@ -8,7 +8,6 @@ import edu.neu.ccs.cs5010.pairs.Pair;
 
 import java.util.List;
 import java.util.concurrent.BlockingQueue;
-import java.util.concurrent.ConcurrentMap;
 
 /**
  * The HourQueueConsumer represents a consumer for hour queue.

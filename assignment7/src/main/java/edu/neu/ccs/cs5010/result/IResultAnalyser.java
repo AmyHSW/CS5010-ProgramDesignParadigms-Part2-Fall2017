@@ -1,9 +1,7 @@
 package edu.neu.ccs.cs5010.result;
 
 import edu.neu.ccs.cs5010.lift.ILift;
-import edu.neu.ccs.cs5010.lift.Lift;
 import edu.neu.ccs.cs5010.skier.ISkier;
-import edu.neu.ccs.cs5010.skier.Skier;
 
 import java.util.List;
 import java.util.Map;

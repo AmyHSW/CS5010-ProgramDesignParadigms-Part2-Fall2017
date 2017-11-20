@@ -1,8 +1,5 @@
 package edu.neu.ccs.cs5010.lift;
 
-import edu.neu.ccs.cs5010.skier.ISkier;
-import edu.neu.ccs.cs5010.skier.Skier;
-
 import java.util.concurrent.atomic.AtomicInteger;
 
 public class Lift implements ILift {
@@ -18,14 +15,6 @@ public class Lift implements ILift {
 
   private final String liftId;
   private AtomicInteger number;
-
-  public Lift(String liftId) {
-    if (liftId == null) {
-      throw new IllegalArgumentException("Lift id is null.");
-    }
-    this.liftId = liftId;
-    number = new AtomicInteger(0);
-  }
 
   public Lift(int liftIndex) {
     if (liftIndex >= LIFT_NUM) {

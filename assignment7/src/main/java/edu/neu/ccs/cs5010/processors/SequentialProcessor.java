@@ -1,14 +1,12 @@
 package edu.neu.ccs.cs5010.processors;
 
+import edu.neu.ccs.cs5010.exceptions.InvalidInputDataException;
 import edu.neu.ccs.cs5010.lift.Hour;
-import edu.neu.ccs.cs5010.lift.ILift;
 import edu.neu.ccs.cs5010.lift.Lift;
 import edu.neu.ccs.cs5010.skier.ISkier;
 import edu.neu.ccs.cs5010.skier.Skier;
-import edu.neu.ccs.cs5010.exceptions.InvalidInputDataException;
 
 import java.time.Duration;
-import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;

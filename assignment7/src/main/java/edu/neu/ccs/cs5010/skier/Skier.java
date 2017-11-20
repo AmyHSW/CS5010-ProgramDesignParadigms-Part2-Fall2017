@@ -37,6 +37,11 @@ public class Skier implements ISkier {
   }
 
   @Override
+  public int getNumRides() {
+    return numRides.get();
+  }
+
+  @Override
   public int getVerticalMeters() {
     return verticalMeters.get();
   }

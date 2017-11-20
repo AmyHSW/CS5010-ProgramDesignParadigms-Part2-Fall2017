@@ -2,7 +2,6 @@ package edu.neu.ccs.cs5010.result;
 
 import edu.neu.ccs.cs5010.lift.Hour;
 import edu.neu.ccs.cs5010.lift.ILift;
-import edu.neu.ccs.cs5010.lift.Lift;
 import edu.neu.ccs.cs5010.skier.ISkier;
 
 import java.util.ArrayList;

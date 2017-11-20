@@ -1,12 +1,12 @@
 package edu.neu.ccs.cs5010.processors;
 
-import edu.neu.ccs.cs5010.skier.ISkier;
 import edu.neu.ccs.cs5010.consumers.HourQueueConsumer;
 import edu.neu.ccs.cs5010.consumers.LiftQueueConsumer;
 import edu.neu.ccs.cs5010.consumers.SkierQueueConsumer;
 import edu.neu.ccs.cs5010.exceptions.InvalidInputDataException;
 import edu.neu.ccs.cs5010.pairs.IPair;
 import edu.neu.ccs.cs5010.producers.Producer;
+import edu.neu.ccs.cs5010.skier.ISkier;
 
 import java.time.Duration;
 import java.util.List;
