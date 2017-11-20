@@ -22,6 +22,7 @@ public class SkierQueueConsumer extends Consumer {
    * The constructor of SkierQueueConsumer
    *
    * @param skierQueue BlockingQueue that stores all skiers info
+   * @param skierMap the map that stores each skier's information
    */
   public SkierQueueConsumer(BlockingQueue<IPair> skierQueue,
                             ConcurrentMap<String, ISkier> skierMap) {

@@ -13,10 +13,19 @@ import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * The SkiDataProcessor is a class to analyze ski resort data.
+ *
+ * @author Shuwan Huang, Jingyu Shen
+ */
 public class SkiDataProcessor {
 
   private static final String INPUT = "PDPAssignment.csv";
 
+  /**
+   * Reads ski resort data and analyze in both sequential and concurrent ways.
+   *
+   */
   public static void main(String[] args) throws InterruptedException {
     long startTime = System.currentTimeMillis();
     CsvParserSettings settings = new CsvParserSettings();

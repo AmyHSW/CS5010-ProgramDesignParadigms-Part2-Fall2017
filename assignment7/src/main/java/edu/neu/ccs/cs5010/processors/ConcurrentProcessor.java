@@ -21,6 +21,11 @@ import java.util.concurrent.Executors;
 import java.util.concurrent.LinkedBlockingDeque;
 import java.util.concurrent.TimeUnit;
 
+/**
+ * The ConcurrentProcessor represents a concrete concurrent processor.
+ *
+ * @author Shuwan Huang, Jingyu Shen
+ */
 public class ConcurrentProcessor extends Processor {
 
   private static final int NUM_THREADS = 1;
@@ -28,28 +33,26 @@ public class ConcurrentProcessor extends Processor {
 
   private final ExecutorService executorService = Executors.newCachedThreadPool();
 
-  private final List<String[]> inputData;
   private final BlockingQueue<IPair> skierQueue;
   private final BlockingQueue<String> liftQueue;
   private final BlockingQueue<IPair> hourQueue;
   private final ConcurrentMap<String, ISkier> skierMap;
 
+  /**
+   * The constructor of ConcurrentProcessor.
+   *
+   * @param  inputData the list of string array parsing from the csv file
+   * @throws InvalidInputDataException when given data doesn't contain enough information
+   */
   public ConcurrentProcessor(List<String[]> inputData) {
-    super();
-    validate(inputData);
-    this.inputData = inputData.subList(1, inputData.size());
+    super(inputData);
     skierQueue = new LinkedBlockingDeque<>();
     liftQueue = new LinkedBlockingDeque<>();
     hourQueue = new LinkedBlockingDeque<>();
     skierMap = new ConcurrentHashMap<>();
   }
 
-  private void validate(List<String[]> input) {
-    if (input == null || input.size() <= 1) {
-      throw new InvalidInputDataException("Input data doesn't contain enough information.");
-    }
-  }
-
+  @Override
   public void processInput() throws InterruptedException {
     final long startTime = System.currentTimeMillis();
 

@@ -2,12 +2,22 @@ package edu.neu.ccs.cs5010.skier;
 
 import java.util.concurrent.atomic.AtomicInteger;
 
+/**
+ * The Skier represents a concrete skier .
+ *
+ * @author Shuwan Huang, Jingyu Shen
+ */
 public class Skier implements ISkier {
 
   private final String skierId;
   private AtomicInteger numRides;
   private AtomicInteger verticalMeters;
 
+  /**
+   * The constructor of Skier.
+   *
+   * @param skierId the skier id represented by a string
+   */
   public Skier(String skierId) {
     validate(skierId);
     this.skierId = skierId;

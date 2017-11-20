@@ -15,6 +15,7 @@ public class Pair implements IPair {
    *
    * @param first the first String
    * @param last the last String
+   * @throws IllegalArgumentException if one or more of the strings in pair is null
    */
   public Pair(String first, String last) {
     validate(first, last);

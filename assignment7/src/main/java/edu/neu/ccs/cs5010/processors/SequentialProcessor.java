@@ -11,26 +11,28 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+/**
+ * The SequentialProcessor represents a concrete sequential processor.
+ *
+ * @author Shuwan Huang, Jingyu Shen
+ */
 public class SequentialProcessor extends Processor {
 
   private static final int SKIER_INDEX = 2;
   private static final int LIFT_INDEX = 3;
   private static final int TIME_INDEX = 4;
 
-  private final List<String[]> inputData;
   private final Map<String, ISkier> skierMap;
 
+  /**
+   * The constructor of SequentialProcessor.
+   *
+   * @param  inputData the list of string array parsing from the csv file
+   * @throws InvalidInputDataException when given data doesn't contain enough information
+   */
   public SequentialProcessor(List<String[]> inputData) {
-    super();
-    validate(inputData);
-    this.inputData = inputData.subList(1, inputData.size());
+    super(inputData);
     skierMap = new HashMap<>();
-  }
-
-  private void validate(List<String[]> input) {
-    if (input == null || input.size() <= 1) {
-      throw new InvalidInputDataException("Input data doesn't contain enough information.");
-    }
   }
 
   @Override

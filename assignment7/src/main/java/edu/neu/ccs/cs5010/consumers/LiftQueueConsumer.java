@@ -18,6 +18,8 @@ public class LiftQueueConsumer extends Consumer {
   /**
    * The constructor of LiftQueueConsumer
    *
+   * @param liftQueue BlockingQueue that stores all lifts info
+   * @param liftList the list that stores each lift's information
    */
   public LiftQueueConsumer(BlockingQueue<String> liftQueue,
                            List<ILift> liftList) {

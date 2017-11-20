@@ -2,6 +2,11 @@ package edu.neu.ccs.cs5010.lift;
 
 import java.util.concurrent.atomic.AtomicInteger;
 
+/**
+ * The ILift represents a concrete lift.
+ *
+ * @author Shuwan Huang, Jingyu Shen
+ */
 public class Lift implements ILift {
 
   private static final int LIFT_LEVEL1 = 10;
@@ -16,6 +21,12 @@ public class Lift implements ILift {
   private final String liftId;
   private AtomicInteger number;
 
+  /**
+   * The constructor of Lift object.
+   *
+   * @param liftIndex the lift index in the list
+   * @throws IllegalArgumentException if the index is out of bound
+   */
   public Lift(int liftIndex) {
     if (liftIndex >= LIFT_NUM) {
       throw new IllegalArgumentException("Lift index out of bound.");
@@ -39,10 +50,22 @@ public class Lift implements ILift {
     return number.get();
   }
 
+  /**
+   * Converts the lift ID to the lift index in the list.
+   *
+   * @param liftId the lift ID represented by a string
+   * @return the lift index in the list
+   */
   public static int toIndex(String liftId) {
     return Integer.parseInt(liftId) - 1;
   }
 
+  /**
+   * Converts the lift ID to the lift vertical meters.
+   *
+   * @param lift the lift ID represented by a string
+   * @return the lift vertical meters
+   */
   public static int toVerticalMeters(String lift) {
     int liftId = Integer.parseInt(lift);
     if (liftId <= LIFT_LEVEL1) {

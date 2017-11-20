@@ -22,7 +22,7 @@ public class HourQueueConsumer extends Consumer {
    * The constructor of HourQueueConsumer
    *
    * @param hourQueue BlockingQueue that stores all hours info
-   * @param hourRides ConcurrentMap that stores each hour's each lift's number of rides
+   * @param hourRides list that stores each hour's each lift's information
    */
   public HourQueueConsumer(BlockingQueue<IPair> hourQueue,
                           List<List<ILift>> hourRides) {

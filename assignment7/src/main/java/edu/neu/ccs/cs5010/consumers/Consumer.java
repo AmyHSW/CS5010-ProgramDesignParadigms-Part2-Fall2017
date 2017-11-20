@@ -3,7 +3,7 @@ package edu.neu.ccs.cs5010.consumers;
 import java.util.concurrent.BlockingQueue;
 
 /**
- * The Consumer represents a concrete consumer interface.
+ * The Consumer represents a concrete consumer.
  *
  * @author Shuwan Huang, Jingyu Shen
  */
