@@ -16,6 +16,10 @@ public class SkierTest {
     iSkier2 = new Skier("123");
     iSkier3 = new Skier("234");
   }
+  @Test(expected = IllegalArgumentException.class)
+  public void expectedIllegalArgumentException() throws Exception {
+    new Skier(null);
+  }
 
   @Test
   public void incrementNumRides() throws Exception {
