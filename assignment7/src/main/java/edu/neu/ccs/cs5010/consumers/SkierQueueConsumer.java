@@ -1,6 +1,7 @@
 package edu.neu.ccs.cs5010.consumers;
 
 import edu.neu.ccs.cs5010.lift.Lift;
+import edu.neu.ccs.cs5010.skier.ISkier;
 import edu.neu.ccs.cs5010.skier.Skier;
 import edu.neu.ccs.cs5010.pairs.IPair;
 import edu.neu.ccs.cs5010.pairs.Pair;
@@ -15,7 +16,7 @@ import java.util.concurrent.ConcurrentMap;
  */
 public class SkierQueueConsumer extends Consumer {
 
-  private ConcurrentMap<String, Skier> skierMap;
+  private ConcurrentMap<String, ISkier> skierMap;
 
   /**
    * The constructor of SkierQueueConsumer
@@ -23,7 +24,7 @@ public class SkierQueueConsumer extends Consumer {
    * @param skierQueue BlockingQueue that stores all skiers info
    */
   public SkierQueueConsumer(BlockingQueue<IPair> skierQueue,
-                            ConcurrentMap<String, Skier> skierMap) {
+                            ConcurrentMap<String, ISkier> skierMap) {
     this.queue = skierQueue;
     this.skierMap = skierMap;
     this.sentinel = new Pair("", "");

@@ -1,5 +1,6 @@
 package edu.neu.ccs.cs5010.consumers;
 
+import edu.neu.ccs.cs5010.lift.ILift;
 import edu.neu.ccs.cs5010.lift.Lift;
 
 import java.util.List;
@@ -12,14 +13,14 @@ import java.util.concurrent.BlockingQueue;
  */
 public class LiftQueueConsumer extends Consumer {
 
-  private final List<Lift> liftList;
+  private final List<ILift> liftList;
 
   /**
    * The constructor of LiftQueueConsumer
    *
    */
   public LiftQueueConsumer(BlockingQueue<String> liftQueue,
-                           List<Lift> liftList) {
+                           List<ILift> liftList) {
     this.queue = liftQueue;
     this.liftList = liftList;
     this.sentinel = "";
@@ -27,7 +28,6 @@ public class LiftQueueConsumer extends Consumer {
 
   @Override
   public void consume() {
-    int liftId = Integer.parseInt((String) item);
-    liftList.get(liftId).incrementNumber();
+    liftList.get(Lift.toIndex((String)item)).incrementNumber();
   }
 }

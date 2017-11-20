@@ -2,7 +2,9 @@ package edu.neu.ccs.cs5010.processors;
 
 import com.univocity.parsers.csv.CsvParser;
 import com.univocity.parsers.csv.CsvParserSettings;
+import edu.neu.ccs.cs5010.lift.ILift;
 import edu.neu.ccs.cs5010.lift.Lift;
+import edu.neu.ccs.cs5010.skier.ISkier;
 import edu.neu.ccs.cs5010.skier.Skier;
 import edu.neu.ccs.cs5010.exceptions.InvalidInputDataException;
 import org.junit.Before;
@@ -33,26 +35,26 @@ public class ConcurrentProcessorTest {
 
   @Test
   public void getSkierVerticalMeters() throws Exception {
-    Map<String, Skier> map = processor.getSkierMap();
+    Map<String, ISkier> map = processor.getSkierMap();
     assertTrue(map.get("1").getVerticalMeters() == 5300);
     assertTrue(map.get("9").getVerticalMeters() == 7600);
   }
 
   @Test
   public void getLiftNumRides() throws Exception {
-    List<Lift> list = processor.getLiftList();
+    List<ILift> list = processor.getLiftList();
     assertTrue(list.get(0).getNumber() == 8);
     assertTrue(list.get(8).getNumber() == 3);
   }
 
   @Test
   public void getHourRides() throws Exception {
-    List<Map<String, Integer>> list = processor.getHourRides();
-    assertTrue(list.get(0).get("1") == 2);
-    assertTrue(list.get(0).get("19") == 1);
-    assertTrue(list.get(5).get("24") == 2);
-    assertTrue(list.get(0).get("27") == 2);
-    assertTrue(list.get(1).get("27") == 1);
+    List<List<ILift>> list = processor.getHourRides();
+    assertTrue(list.get(0).get(0).getNumber() == 2);
+    assertTrue(list.get(0).get(18).getNumber() == 1);
+    assertTrue(list.get(5).get(23).getNumber() == 2);
+    assertTrue(list.get(0).get(26).getNumber() == 2);
+    assertTrue(list.get(1).get(26).getNumber() == 1);
   }
 
   @Test

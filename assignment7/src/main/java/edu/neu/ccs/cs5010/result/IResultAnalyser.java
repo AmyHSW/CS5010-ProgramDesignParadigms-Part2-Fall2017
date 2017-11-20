@@ -1,6 +1,8 @@
 package edu.neu.ccs.cs5010.result;
 
+import edu.neu.ccs.cs5010.lift.ILift;
 import edu.neu.ccs.cs5010.lift.Lift;
+import edu.neu.ccs.cs5010.skier.ISkier;
 import edu.neu.ccs.cs5010.skier.Skier;
 
 import java.util.List;
@@ -17,14 +19,14 @@ public interface IResultAnalyser {
    *
    * @return list of strings of the result that will be written to the csv file
    */
-  List<String> getSkierOutput(Map<String, Skier> skierMap);
+  List<String> getSkierOutput(Map<String, ISkier> skierMap);
 
   /**
    * Gets all lifts' rides number results, analyzing based on given information.
    *
    * @return list of strings of the result that will be written to the csv file
    */
-  List<String> getLiftOutput(List<Lift> liftList);
+  List<String> getLiftOutput(List<ILift> liftList);
 
   /**
    * Gets all lifts' rides number in 6 separate hours results, analyzing based on given information.
@@ -32,5 +34,5 @@ public interface IResultAnalyser {
    * @param hourRides the list stores lifts' rides number in 6 separate hours
    * @return list of strings of the result that will be written to the csv file
    */
-  List<String> getHourOutput(List<Map<String, Integer>> hourRides);
+  List<String> getHourOutput(List<List<ILift>> hourRides);
 }

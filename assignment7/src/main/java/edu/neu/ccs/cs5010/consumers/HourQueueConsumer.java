@@ -1,6 +1,8 @@
 package edu.neu.ccs.cs5010.consumers;
 
 import edu.neu.ccs.cs5010.lift.Hour;
+import edu.neu.ccs.cs5010.lift.ILift;
+import edu.neu.ccs.cs5010.lift.Lift;
 import edu.neu.ccs.cs5010.pairs.IPair;
 import edu.neu.ccs.cs5010.pairs.Pair;
 
@@ -15,7 +17,7 @@ import java.util.concurrent.ConcurrentMap;
  */
 public class HourQueueConsumer extends Consumer {
 
-  private final List<ConcurrentMap<String, Integer>> hourRides;
+  private final List<List<ILift>> hourRides;
 
   /**
    * The constructor of HourQueueConsumer
@@ -24,7 +26,7 @@ public class HourQueueConsumer extends Consumer {
    * @param hourRides ConcurrentMap that stores each hour's each lift's number of rides
    */
   public HourQueueConsumer(BlockingQueue<IPair> hourQueue,
-                          List<ConcurrentMap<String, Integer>> hourRides) {
+                          List<List<ILift>> hourRides) {
     this.queue = hourQueue;
     this.hourRides = hourRides;
     this.sentinel = new Pair("", "");
@@ -34,15 +36,9 @@ public class HourQueueConsumer extends Consumer {
   public void consume() {
     IPair pair = (IPair) item;
     int hourIndex = Hour.toIndex(pair.getFirst());
-    String lift = pair.getLast();
-    ConcurrentMap<String, Integer> map = hourRides.get(hourIndex);
-    map.putIfAbsent(lift, 0);
-    while (true) {
-      if (map.replace(lift, map.get(lift),map.get(lift) + 1)) {
-        return;
-      }
-    }
-
+    int liftIndex = Lift.toIndex(pair.getLast());
+    ILift theLift = hourRides.get(hourIndex).get(liftIndex);
+    theLift.incrementNumber();
   }
 
 }

@@ -1,8 +1,6 @@
 package edu.neu.ccs.cs5010.processors;
 
-import edu.neu.ccs.cs5010.lift.Hour;
-import edu.neu.ccs.cs5010.lift.Lift;
-import edu.neu.ccs.cs5010.skier.Skier;
+import edu.neu.ccs.cs5010.skier.ISkier;
 import edu.neu.ccs.cs5010.consumers.HourQueueConsumer;
 import edu.neu.ccs.cs5010.consumers.LiftQueueConsumer;
 import edu.neu.ccs.cs5010.consumers.SkierQueueConsumer;
@@ -11,7 +9,6 @@ import edu.neu.ccs.cs5010.pairs.IPair;
 import edu.neu.ccs.cs5010.producers.Producer;
 
 import java.time.Duration;
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 import java.util.concurrent.BlockingQueue;
@@ -22,7 +19,7 @@ import java.util.concurrent.Executors;
 import java.util.concurrent.LinkedBlockingDeque;
 import java.util.concurrent.TimeUnit;
 
-public class ConcurrentProcessor implements IProcessor {
+public class ConcurrentProcessor extends Processor {
 
   private static final int NUM_THREADS = 2;
   private static final int NUM_SECONDS_WAIT = 5;
@@ -33,41 +30,21 @@ public class ConcurrentProcessor implements IProcessor {
   private final BlockingQueue<IPair> skierQueue;
   private final BlockingQueue<String> liftQueue;
   private final BlockingQueue<IPair> hourQueue;
-  private final ConcurrentMap<String, Skier> skierMap;
-  private final List<Lift> liftList;
-  private final List<ConcurrentMap<String, Integer>> hourRides;
-
-  private Duration runTime;
+  private final ConcurrentMap<String, ISkier> skierMap;
 
   public ConcurrentProcessor(List<String[]> inputData) {
+    super();
     validate(inputData);
-
     this.inputData = inputData.subList(1, inputData.size());
     skierQueue = new LinkedBlockingDeque<>();
     liftQueue = new LinkedBlockingDeque<>();
     hourQueue = new LinkedBlockingDeque<>();
     skierMap = new ConcurrentHashMap<>();
-    liftList = new ArrayList<>();
-    hourRides = new ArrayList<>();
-    initHourRides();
-    initLiftList();
   }
 
   private void validate(List<String[]> input) {
     if (input == null || input.size() <= 1) {
       throw new InvalidInputDataException("Input data doesn't contain enough information.");
-    }
-  }
-
-  private void initLiftList() {
-    for (int i = 0; i <= 40; i++) {
-      liftList.add(new Lift(Integer.toString(i)));
-    }
-  }
-
-  private void initHourRides() {
-    for (int i = 0; i < Hour.HOUR_NUM; i++) {
-      hourRides.add(new ConcurrentHashMap<>());
     }
   }
 
@@ -90,23 +67,8 @@ public class ConcurrentProcessor implements IProcessor {
   }
 
   @Override
-  public Map<String, Skier> getSkierMap() {
+  public Map<String, ISkier> getSkierMap() {
     return skierMap;
-  }
-
-  @Override
-  public List<Lift> getLiftList() {
-    return liftList.subList(1, liftList.size());
-  }
-
-  @Override
-  public List<Map<String, Integer>> getHourRides() {
-    return new ArrayList<>(hourRides);
-  }
-
-  @Override
-  public Duration getRunTime() {
-    return runTime;
   }
 
   @Override

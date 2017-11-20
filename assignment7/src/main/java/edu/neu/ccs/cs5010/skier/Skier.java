@@ -43,9 +43,10 @@ public class Skier implements ISkier {
 
   @Override
   public int compareTo(ISkier that) {
-    int thisTotal = this.verticalMeters.get();
-    int thatTotal = that.getVerticalMeters();
-    return thatTotal - thisTotal;
+    if (that == null) {
+      throw new NullPointerException("Given Skier is null");
+    }
+    return that.getVerticalMeters() - verticalMeters.get();
   }
 
   @Override
