@@ -1,4 +1,7 @@
-package edu.neu.ccs.cs5010;
+package edu.neu.ccs.cs5010.result;
+
+import edu.neu.ccs.cs5010.lift.Lift;
+import edu.neu.ccs.cs5010.skier.Skier;
 
 import java.util.List;
 import java.util.Map;
@@ -12,18 +15,16 @@ public interface IResultAnalyser {
   /**
    * Gets all skiers' vertical meters' results, analyzing based on given information.
    *
-   * @param skierVerticalMeters the map stores all skiers's vertical meters in one day
    * @return list of strings of the result that will be written to the csv file
    */
-  List<String> getSkierOutput(Map<String, Integer> skierVerticalMeters);
+  List<String> getSkierOutput(Map<String, Skier> skierMap);
 
   /**
    * Gets all lifts' rides number results, analyzing based on given information.
    *
-   * @param liftNumRides the map stores all lifts's rides number in one day
    * @return list of strings of the result that will be written to the csv file
    */
-  List<String> getLiftOutput(Map<String, Integer> liftNumRides);
+  List<String> getLiftOutput(List<Lift> liftList);
 
   /**
    * Gets all lifts' rides number in 6 separate hours results, analyzing based on given information.

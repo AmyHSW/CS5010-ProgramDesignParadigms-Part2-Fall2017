@@ -2,6 +2,8 @@ package edu.neu.ccs.cs5010.processors;
 
 import com.univocity.parsers.csv.CsvParser;
 import com.univocity.parsers.csv.CsvParserSettings;
+import edu.neu.ccs.cs5010.lift.Lift;
+import edu.neu.ccs.cs5010.skier.Skier;
 import edu.neu.ccs.cs5010.exceptions.InvalidInputDataException;
 import org.junit.Before;
 import org.junit.Test;
@@ -31,16 +33,16 @@ public class SequentialProcessorTest {
 
   @Test
   public void getSkierVerticalMeters() throws Exception {
-    Map<String, Integer> map = processor.getSkierVerticalMeters();
-    assertTrue(map.get("1") == 5300);
-    assertTrue(map.get("9") == 7600);
+    Map<String, Skier> map = processor.getSkierMap();
+    assertTrue(map.get("1").getVerticalMeters() == 5300);
+    assertTrue(map.get("9").getVerticalMeters() == 7600);
   }
 
   @Test
   public void getLiftNumRides() throws Exception {
-    Map<String, Integer> map = processor.getLiftNumRides();
-    assertTrue(map.get("1") == 8);
-    assertTrue(map.get("9") == 3);
+    List<Lift> list = processor.getLiftList();
+    assertTrue(list.get(0).getNumber() == 8);
+    assertTrue(list.get(8).getNumber() == 3);
   }
 
   @Test

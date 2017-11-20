@@ -1,7 +1,8 @@
 package edu.neu.ccs.cs5010.processors;
 
-import edu.neu.ccs.cs5010.Hour;
-import edu.neu.ccs.cs5010.Lift;
+import edu.neu.ccs.cs5010.lift.Hour;
+import edu.neu.ccs.cs5010.lift.Lift;
+import edu.neu.ccs.cs5010.skier.Skier;
 import edu.neu.ccs.cs5010.exceptions.InvalidInputDataException;
 
 import java.time.Duration;
@@ -17,9 +18,8 @@ public class SequentialProcessor implements IProcessor {
   private static final int TIME_INDEX = 4;
 
   private final List<String[]> inputData;
-  private final Map<String, Integer> skierNumRides;
-  private final Map<String, Integer> skierVerticalMeters;
-  private final Map<String, Integer> liftNumRides;
+  private final Map<String, Skier> skierMap;
+  private final List<Lift> liftList;
   private final List<Map<String, Integer>> hourRides;
 
   private Duration runTime;
@@ -28,16 +28,22 @@ public class SequentialProcessor implements IProcessor {
     validate(inputData);
 
     this.inputData = inputData.subList(1, inputData.size());
-    skierNumRides = new HashMap<>();
-    skierVerticalMeters = new HashMap<>();
-    liftNumRides = new HashMap<>();
+    skierMap = new HashMap<>();
+    liftList = new ArrayList<>();
     hourRides = new ArrayList<>();
+    initLiftList();
     initHourRides();
   }
 
   private void validate(List<String[]> input) {
     if (input == null || input.size() <= 1) {
       throw new InvalidInputDataException("Input data doesn't contain enough information.");
+    }
+  }
+
+  private void initLiftList() {
+    for (int i = 0; i <= 40; i++) {
+      liftList.add(new Lift(Integer.toString(i)));
     }
   }
 
@@ -58,14 +64,17 @@ public class SequentialProcessor implements IProcessor {
     runTime = Duration.ofMillis(System.currentTimeMillis() - startTime);
   }
 
-  private void processSkier(String skier, String lift) {
-    skierNumRides.put(skier, skierNumRides.getOrDefault(skier, 0) + 1);
-    int verticalMeters = Lift.toVerticalMeters(lift);
-    skierVerticalMeters.put(skier, skierVerticalMeters.getOrDefault(skier, 0) + verticalMeters);
+  private void processSkier(String skierId, String liftId) {
+    if (!skierMap.containsKey(skierId)) {
+      skierMap.put(skierId, new Skier(skierId));
+    }
+    Skier skier = skierMap.get(skierId);
+    skier.incrementNumRides();
+    skier.increaseVerticalMeters(Lift.toVerticalMeters(liftId));
   }
 
-  private void processLift(String lift) {
-    liftNumRides.put(lift, liftNumRides.getOrDefault(lift, 0) + 1);
+  private void processLift(String liftId) {
+    liftList.get(Integer.parseInt(liftId)).incrementNumber();
   }
 
   private void processHour(int hourIndex, String lift) {
@@ -73,13 +82,14 @@ public class SequentialProcessor implements IProcessor {
   }
 
   @Override
-  public Map<String, Integer> getSkierVerticalMeters() {
-    return skierVerticalMeters;
+  public Map<String, Skier> getSkierMap() {
+    return skierMap;
   }
 
   @Override
-  public Map<String, Integer> getLiftNumRides() {
-    return liftNumRides;
+  public List<Lift> getLiftList() {
+    // removes the element at index-0
+    return liftList.subList(1, liftList.size());
   }
 
   @Override

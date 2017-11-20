@@ -1,7 +1,11 @@
-package edu.neu.ccs.cs5010;
+package edu.neu.ccs.cs5010.result;
+
+import edu.neu.ccs.cs5010.lift.Hour;
+import edu.neu.ccs.cs5010.lift.Lift;
+import edu.neu.ccs.cs5010.skier.Skier;
 
 import java.util.ArrayList;
-import java.util.Comparator;
+import java.util.Collections;
 import java.util.List;
 import java.util.Map;
 
@@ -18,28 +22,24 @@ public class ResultAnalyser implements IResultAnalyser {
   private static final String LIFT_RIDES_HEADER = "LiftID,Number of Rides";
 
   @Override
-  public List<String> getSkierOutput(Map<String, Integer> skierVerticalMeters) {
-    List<Map.Entry<String, Integer>> entries = new ArrayList<>(skierVerticalMeters.entrySet());
-    entries.sort((meters1, meters2) -> meters2.getValue().compareTo(meters1.getValue()));
+  public List<String> getSkierOutput(Map<String, Skier> skierMap) {
+    List<Skier> skiers = new ArrayList<>(skierMap.values());
+    Collections.sort(skiers);
     List<String> skierVerticalTotals = new ArrayList<>();
     skierVerticalTotals.add(SKIER_VERTICAL_HEADER);
-    for (int i = 0; i < Math.min(HUNDRED, entries.size()); i++) {
-      Map.Entry<String, Integer> verticalMeters = entries.get(i);
-      String line = verticalMeters.getKey() + "," + verticalMeters.getValue();
+    for (int i = 0; i < Math.min(HUNDRED, skiers.size()); i++) {
+      String line = skiers.get(i).getSkierId() + "," + skiers.get(i).getVerticalMeters();
       skierVerticalTotals.add(line);
     }
     return skierVerticalTotals;
   }
 
   @Override
-  public List<String> getLiftOutput(Map<String, Integer> liftNumRides) {
-    List<Map.Entry<String, Integer>> entries = new ArrayList<>(liftNumRides.entrySet());
-    entries.sort(Comparator.comparingInt(lift -> Integer.parseInt(lift.getKey())));
+  public List<String> getLiftOutput(List<Lift> liftList) {
     List<String> liftsRides = new ArrayList<>();
     liftsRides.add(LIFT_RIDES_HEADER);
-    for (Map.Entry<String, Integer> entry: entries) {
-      String line = entry.getKey() + "," + entry.getValue();
-      liftsRides.add(line);
+    for (Lift lift : liftList) {
+      liftsRides.add(lift.getLiftId() + "," + lift.getNumber());
     }
     return liftsRides;
   }

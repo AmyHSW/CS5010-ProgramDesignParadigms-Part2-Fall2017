@@ -1,6 +1,6 @@
 package edu.neu.ccs.cs5010.consumers;
 
-import edu.neu.ccs.cs5010.Hour;
+import edu.neu.ccs.cs5010.lift.Hour;
 import edu.neu.ccs.cs5010.pairs.IPair;
 import edu.neu.ccs.cs5010.pairs.Pair;
 

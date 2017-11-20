@@ -5,6 +5,9 @@ import com.univocity.parsers.csv.CsvParserSettings;
 import edu.neu.ccs.cs5010.processors.ConcurrentProcessor;
 import edu.neu.ccs.cs5010.processors.IProcessor;
 import edu.neu.ccs.cs5010.processors.SequentialProcessor;
+import edu.neu.ccs.cs5010.result.IResultAnalyser;
+import edu.neu.ccs.cs5010.result.IoLibrary;
+import edu.neu.ccs.cs5010.result.ResultAnalyser;
 
 import java.io.File;
 import java.util.ArrayList;
@@ -33,9 +36,9 @@ public class SkiDataProcessor {
     IResultAnalyser resultAnalyser = new ResultAnalyser();
     for (int i = 0; i < processors.size(); i++) {
       IoLibrary.generateOutput("skiers" + i + ".csv",
-              resultAnalyser.getSkierOutput(processors.get(i).getSkierVerticalMeters()));
+              resultAnalyser.getSkierOutput(processors.get(i).getSkierMap()));
       IoLibrary.generateOutput("lifts" + i + ".csv",
-              resultAnalyser.getLiftOutput(processors.get(i).getLiftNumRides()));
+              resultAnalyser.getLiftOutput(processors.get(i).getLiftList()));
       IoLibrary.generateOutput("hours" + i + ".csv",
               resultAnalyser.getHourOutput(processors.get(i).getHourRides()));
     }

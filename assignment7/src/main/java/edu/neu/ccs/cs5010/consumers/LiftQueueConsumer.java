@@ -1,7 +1,9 @@
 package edu.neu.ccs.cs5010.consumers;
 
+import edu.neu.ccs.cs5010.lift.Lift;
+
+import java.util.List;
 import java.util.concurrent.BlockingQueue;
-import java.util.concurrent.ConcurrentMap;
 
 /**
  * The LiftQueueConsumer represents a consumer for lift queue.
@@ -10,29 +12,22 @@ import java.util.concurrent.ConcurrentMap;
  */
 public class LiftQueueConsumer extends Consumer {
 
-  private final ConcurrentMap<String, Integer> liftNumRides;
+  private final List<Lift> liftList;
 
   /**
    * The constructor of LiftQueueConsumer
    *
-   * @param liftQueue BlockingQueue that stores all lifts info
-   * @param liftNumRides ConcurrentMap that stores each lift's number of rides
    */
   public LiftQueueConsumer(BlockingQueue<String> liftQueue,
-                           ConcurrentMap<String, Integer> liftNumRides) {
+                           List<Lift> liftList) {
     this.queue = liftQueue;
-    this.liftNumRides = liftNumRides;
+    this.liftList = liftList;
     this.sentinel = "";
   }
 
   @Override
   public void consume() {
-    String lift = (String) item;
-    liftNumRides.putIfAbsent(lift, 0);
-    while (true) {
-      if (liftNumRides.replace(lift, liftNumRides.get(lift), liftNumRides.get(lift) + 1)) {
-        return;
-      }
-    }
+    int liftId = Integer.parseInt((String) item);
+    liftList.get(liftId).incrementNumber();
   }
 }

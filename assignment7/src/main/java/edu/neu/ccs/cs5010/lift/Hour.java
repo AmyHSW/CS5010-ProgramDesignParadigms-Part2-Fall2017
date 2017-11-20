@@ -1,4 +1,4 @@
-package edu.neu.ccs.cs5010;
+package edu.neu.ccs.cs5010.lift;
 
 public class Hour {
   private static final int MINUTES_IN_HOUR = 60;

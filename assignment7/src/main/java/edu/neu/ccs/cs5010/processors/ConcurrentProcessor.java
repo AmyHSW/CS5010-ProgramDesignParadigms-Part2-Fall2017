@@ -1,6 +1,8 @@
 package edu.neu.ccs.cs5010.processors;
 
-import edu.neu.ccs.cs5010.Hour;
+import edu.neu.ccs.cs5010.lift.Hour;
+import edu.neu.ccs.cs5010.lift.Lift;
+import edu.neu.ccs.cs5010.skier.Skier;
 import edu.neu.ccs.cs5010.consumers.HourQueueConsumer;
 import edu.neu.ccs.cs5010.consumers.LiftQueueConsumer;
 import edu.neu.ccs.cs5010.consumers.SkierQueueConsumer;
@@ -22,7 +24,7 @@ import java.util.concurrent.TimeUnit;
 
 public class ConcurrentProcessor implements IProcessor {
 
-  private static final int NUM_THREADS = 3;
+  private static final int NUM_THREADS = 2;
   private static final int NUM_SECONDS_WAIT = 5;
 
   private final ExecutorService executorService = Executors.newCachedThreadPool();
@@ -31,9 +33,8 @@ public class ConcurrentProcessor implements IProcessor {
   private final BlockingQueue<IPair> skierQueue;
   private final BlockingQueue<String> liftQueue;
   private final BlockingQueue<IPair> hourQueue;
-  private final ConcurrentMap<String, Integer> skierNumRides;
-  private final ConcurrentMap<String, Integer> skierVerticalMeters;
-  private final ConcurrentMap<String, Integer> liftNumRides;
+  private final ConcurrentMap<String, Skier> skierMap;
+  private final List<Lift> liftList;
   private final List<ConcurrentMap<String, Integer>> hourRides;
 
   private Duration runTime;
@@ -45,16 +46,22 @@ public class ConcurrentProcessor implements IProcessor {
     skierQueue = new LinkedBlockingDeque<>();
     liftQueue = new LinkedBlockingDeque<>();
     hourQueue = new LinkedBlockingDeque<>();
-    skierNumRides = new ConcurrentHashMap<>();
-    skierVerticalMeters = new ConcurrentHashMap<>();
-    liftNumRides = new ConcurrentHashMap<>();
+    skierMap = new ConcurrentHashMap<>();
+    liftList = new ArrayList<>();
     hourRides = new ArrayList<>();
     initHourRides();
+    initLiftList();
   }
 
   private void validate(List<String[]> input) {
     if (input == null || input.size() <= 1) {
       throw new InvalidInputDataException("Input data doesn't contain enough information.");
+    }
+  }
+
+  private void initLiftList() {
+    for (int i = 0; i <= 40; i++) {
+      liftList.add(new Lift(Integer.toString(i)));
     }
   }
 
@@ -72,8 +79,8 @@ public class ConcurrentProcessor implements IProcessor {
 
     for (int i = 0; i < NUM_THREADS; i++) {
       executorService.execute(new SkierQueueConsumer(
-          skierQueue, skierNumRides, skierVerticalMeters));
-      executorService.execute(new LiftQueueConsumer(liftQueue, liftNumRides));
+          skierQueue, skierMap));
+      executorService.execute(new LiftQueueConsumer(liftQueue, liftList));
       executorService.execute(new HourQueueConsumer(hourQueue, hourRides));
     }
     executorService.shutdown();
@@ -83,13 +90,13 @@ public class ConcurrentProcessor implements IProcessor {
   }
 
   @Override
-  public Map<String, Integer> getSkierVerticalMeters() {
-    return skierVerticalMeters;
+  public Map<String, Skier> getSkierMap() {
+    return skierMap;
   }
 
   @Override
-  public Map<String, Integer> getLiftNumRides() {
-    return liftNumRides;
+  public List<Lift> getLiftList() {
+    return liftList.subList(1, liftList.size());
   }
 
   @Override
