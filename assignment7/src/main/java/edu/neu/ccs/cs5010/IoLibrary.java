@@ -7,6 +7,11 @@ import java.io.OutputStreamWriter;
 import java.nio.charset.StandardCharsets;
 import java.util.List;
 
+/**
+ * The IoLibrary represents a IO library.
+ *
+ * @author Shuwan Huang, Jingyu Shen
+ */
 public class IoLibrary {
   /**
    * Generates an output file with the given filename and content.

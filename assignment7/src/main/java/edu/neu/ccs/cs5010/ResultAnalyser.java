@@ -5,6 +5,11 @@ import java.util.Comparator;
 import java.util.List;
 import java.util.Map;
 
+/**
+ * The ResultAnalyser represents a concrete result analyser.
+ *
+ * @author Shuwan Huang, Jingyu Shen
+ */
 public class ResultAnalyser implements IResultAnalyser {
 
   private static final int HUNDRED = 100;

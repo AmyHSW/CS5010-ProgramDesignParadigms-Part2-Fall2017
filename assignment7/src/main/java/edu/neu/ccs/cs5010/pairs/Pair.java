@@ -1,10 +1,21 @@
 package edu.neu.ccs.cs5010.pairs;
 
+/**
+ * The Pair represents a concrete pair.
+ *
+ * @author Shuwan Huang, Jingyu Shen
+ */
 public class Pair implements IPair {
 
   private final String first;
   private final String last;
 
+  /**
+   * The constructor of Pair.
+   *
+   * @param first the first String
+   * @param last the last String
+   */
   public Pair(String first, String last) {
     validate(first, last);
     this.first = first;

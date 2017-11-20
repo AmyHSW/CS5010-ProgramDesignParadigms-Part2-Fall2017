@@ -3,10 +3,10 @@ package edu.neu.ccs.cs5010.processors;
 import edu.neu.ccs.cs5010.Hour;
 import edu.neu.ccs.cs5010.consumers.HourQueueConsumer;
 import edu.neu.ccs.cs5010.consumers.LiftQueueConsumer;
-import edu.neu.ccs.cs5010.exceptions.InvalidInputDataException;
-import edu.neu.ccs.cs5010.producers.Producer;
 import edu.neu.ccs.cs5010.consumers.SkierQueueConsumer;
+import edu.neu.ccs.cs5010.exceptions.InvalidInputDataException;
 import edu.neu.ccs.cs5010.pairs.IPair;
+import edu.neu.ccs.cs5010.producers.Producer;
 
 import java.time.Duration;
 import java.util.ArrayList;
@@ -22,7 +22,7 @@ import java.util.concurrent.TimeUnit;
 
 public class ConcurrentProcessor implements IProcessor {
 
-  private static final int NUM_THREADS = 1;
+  private static final int NUM_THREADS = 3;
   private static final int NUM_SECONDS_WAIT = 5;
 
   private final ExecutorService executorService = Executors.newCachedThreadPool();
@@ -65,7 +65,7 @@ public class ConcurrentProcessor implements IProcessor {
   }
 
   public void processInput() throws InterruptedException {
-    long startTime = System.currentTimeMillis();
+    final long startTime = System.currentTimeMillis();
 
     Producer producer = new Producer(inputData, skierQueue, liftQueue, hourQueue);
     executorService.execute(producer);

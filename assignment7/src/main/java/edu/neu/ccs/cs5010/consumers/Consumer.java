@@ -2,6 +2,11 @@ package edu.neu.ccs.cs5010.consumers;
 
 import java.util.concurrent.BlockingQueue;
 
+/**
+ * The Consumer represents a concrete consumer interface.
+ *
+ * @author Shuwan Huang, Jingyu Shen
+ */
 public abstract class Consumer<T> implements IConsumer {
 
   protected T sentinel;
