@@ -19,7 +19,7 @@ public class HourQueueConsumer extends Consumer {
   private final List<List<ILift>> hourRides;
 
   /**
-   * The constructor of HourQueueConsumer
+   * The constructor of HourQueueConsumer.
    *
    * @param hourQueue BlockingQueue that stores all hours info
    * @param hourRides list that stores each hour's each lift's information

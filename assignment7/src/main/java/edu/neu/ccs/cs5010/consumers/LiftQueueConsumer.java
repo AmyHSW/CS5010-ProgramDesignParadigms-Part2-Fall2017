@@ -16,7 +16,7 @@ public class LiftQueueConsumer extends Consumer {
   private final List<ILift> liftList;
 
   /**
-   * The constructor of LiftQueueConsumer
+   * The constructor of LiftQueueConsumer.
    *
    * @param liftQueue BlockingQueue that stores all lifts info
    * @param liftList the list that stores each lift's information

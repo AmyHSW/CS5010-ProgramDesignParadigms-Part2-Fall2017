@@ -19,7 +19,7 @@ public class SkierQueueConsumer extends Consumer {
   private ConcurrentMap<String, ISkier> skierMap;
 
   /**
-   * The constructor of SkierQueueConsumer
+   * The constructor of SkierQueueConsumer.
    *
    * @param skierQueue BlockingQueue that stores all skiers info
    * @param skierMap the map that stores each skier's information
