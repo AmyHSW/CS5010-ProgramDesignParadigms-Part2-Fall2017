@@ -5,7 +5,9 @@ import edu.neu.ccs.cs5010.consumers.LiftQueueConsumer;
 import edu.neu.ccs.cs5010.consumers.SkierQueueConsumer;
 import edu.neu.ccs.cs5010.exceptions.InvalidInputDataException;
 import edu.neu.ccs.cs5010.pairs.IPair;
-import edu.neu.ccs.cs5010.producers.Producer;
+import edu.neu.ccs.cs5010.producers.HourQueueProducer;
+import edu.neu.ccs.cs5010.producers.LiftQueueProducer;
+import edu.neu.ccs.cs5010.producers.SkierQueueProducer;
 import edu.neu.ccs.cs5010.skier.ISkier;
 
 import java.time.Duration;
@@ -21,7 +23,7 @@ import java.util.concurrent.TimeUnit;
 
 public class ConcurrentProcessor extends Processor {
 
-  private static final int NUM_THREADS = 2;
+  private static final int NUM_THREADS = 1;
   private static final int NUM_SECONDS_WAIT = 5;
 
   private final ExecutorService executorService = Executors.newCachedThreadPool();
@@ -51,8 +53,9 @@ public class ConcurrentProcessor extends Processor {
   public void processInput() throws InterruptedException {
     final long startTime = System.currentTimeMillis();
 
-    Producer producer = new Producer(inputData, skierQueue, liftQueue, hourQueue);
-    executorService.execute(producer);
+    executorService.execute(new SkierQueueProducer(inputData, skierQueue));
+    executorService.execute(new LiftQueueProducer(inputData, liftQueue));
+    executorService.execute(new HourQueueProducer(inputData, hourQueue));
 
     for (int i = 0; i < NUM_THREADS; i++) {
       executorService.execute(new SkierQueueConsumer(
@@ -60,6 +63,7 @@ public class ConcurrentProcessor extends Processor {
       executorService.execute(new LiftQueueConsumer(liftQueue, liftList));
       executorService.execute(new HourQueueConsumer(hourQueue, hourRides));
     }
+
     executorService.shutdown();
     executorService.awaitTermination(NUM_SECONDS_WAIT, TimeUnit.SECONDS);
 
