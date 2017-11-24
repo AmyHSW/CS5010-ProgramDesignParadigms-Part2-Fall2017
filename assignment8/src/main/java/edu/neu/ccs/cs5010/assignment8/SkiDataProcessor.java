@@ -2,8 +2,8 @@ package edu.neu.ccs.cs5010.assignment8;
 
 import com.univocity.parsers.csv.CsvParser;
 import com.univocity.parsers.csv.CsvParserSettings;
-import edu.neu.ccs.cs5010.assignment8.processors.IProcessor;
-import edu.neu.ccs.cs5010.assignment8.processors.SequentialProcessor;
+import edu.neu.ccs.cs5010.assignment8.dataProcessor.IDataProcessor;
+import edu.neu.ccs.cs5010.assignment8.dataProcessor.SequentialDataProcessor;
 import edu.neu.ccs.cs5010.assignment8.result.IResultAnalyser;
 import edu.neu.ccs.cs5010.assignment8.result.IoLibrary;
 import edu.neu.ccs.cs5010.assignment8.result.ResultAnalyser;
@@ -34,7 +34,7 @@ public class SkiDataProcessor {
         + (System.currentTimeMillis() - startTime) + " milliseconds");
 
     // processes data sequentially
-    IProcessor processor = new SequentialProcessor(inputData);
+    IDataProcessor processor = new SequentialDataProcessor(inputData);
     processor.processInput();
     System.out.println(processor + " ran "
         + processor.getRunTime().toMillis() + " milliseconds");

@@ -6,8 +6,9 @@ package edu.neu.ccs.cs5010.assignment8.hour;
  * @author Shuwan Huang, Jingyu Shen
  */
 public class Hour {
-  private static final int MINUTES_IN_HOUR = 60;
+
   public static final int HOUR_TOTAL = 6;
+  private static final int MINUTES_IN_HOUR = 60;
 
   /**
    * Converts the time to hour index in the list.

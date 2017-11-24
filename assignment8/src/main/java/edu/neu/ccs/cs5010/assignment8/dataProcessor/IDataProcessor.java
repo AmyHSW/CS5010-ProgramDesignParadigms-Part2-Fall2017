@@ -1,18 +1,17 @@
-package edu.neu.ccs.cs5010.assignment8.processors;
+package edu.neu.ccs.cs5010.assignment8.dataProcessor;
 
 import edu.neu.ccs.cs5010.assignment8.lift.ILift;
 import edu.neu.ccs.cs5010.assignment8.skier.ISkier;
 
 import java.time.Duration;
 import java.util.List;
-import java.util.Map;
 
 /**
- * The IProcessor represents a processor interface.
+ * The IDataProcessor represents a processor interface.
  *
  * @author Shuwan Huang, Jingyu Shen
  */
-public interface IProcessor {
+public interface IDataProcessor {
   /**
    * Processes input and stores all information .
    *

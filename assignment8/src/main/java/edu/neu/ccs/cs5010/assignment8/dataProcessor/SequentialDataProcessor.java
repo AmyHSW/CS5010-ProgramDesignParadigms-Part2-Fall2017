@@ -1,4 +1,4 @@
-package edu.neu.ccs.cs5010.assignment8.processors;
+package edu.neu.ccs.cs5010.assignment8.dataProcessor;
 
 import edu.neu.ccs.cs5010.assignment8.exceptions.InvalidInputDataException;
 import edu.neu.ccs.cs5010.assignment8.hour.Hour;
@@ -12,11 +12,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * The SequentialProcessor represents a concrete sequential processor.
+ * The SequentialDataProcessor represents a concrete sequential processor.
  *
  * @author Shuwan Huang, Jingyu Shen
  */
-public class SequentialProcessor implements IProcessor {
+public class SequentialDataProcessor implements IDataProcessor {
 
   private static final int SKIER_INDEX = 2;
   private static final int LIFT_INDEX = 3;
@@ -29,12 +29,12 @@ public class SequentialProcessor implements IProcessor {
   private Duration runTime;
 
   /**
-   * The constructor of SequentialProcessor.
+   * The constructor of SequentialDataProcessor.
    *
    * @param  inputData the list of string array parsing from the csv file
    * @throws InvalidInputDataException when given data doesn't contain enough information
    */
-  public SequentialProcessor(List<String[]> inputData) {
+  public SequentialDataProcessor(List<String[]> inputData) {
     if (inputData == null || inputData.size() <= 1) {
       throw new InvalidInputDataException("Input data doesn't contain enough information.");
     }
@@ -128,7 +128,7 @@ public class SequentialProcessor implements IProcessor {
       return false;
     }
 
-    SequentialProcessor that = (SequentialProcessor) other;
+    SequentialDataProcessor that = (SequentialDataProcessor) other;
 
     return inputData.equals(that.inputData);
   }
