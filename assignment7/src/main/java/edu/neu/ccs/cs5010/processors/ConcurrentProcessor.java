@@ -61,8 +61,7 @@ public class ConcurrentProcessor extends Processor {
     executorService.execute(new HourQueueProducer(inputData, hourQueue));
 
     for (int i = 0; i < NUM_THREADS; i++) {
-      executorService.execute(new SkierQueueConsumer(
-          skierQueue, skierMap));
+      executorService.execute(new SkierQueueConsumer(skierQueue, skierMap));
       executorService.execute(new LiftQueueConsumer(liftQueue, liftList));
       executorService.execute(new HourQueueConsumer(hourQueue, hourRides));
     }

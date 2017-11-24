@@ -14,13 +14,13 @@ public class SkiDataProcessorTest {
     SkiDataProcessor.main(args);
     Assert.assertEquals(new String(Files.readAllBytes(Paths.get
         ("hours0.csv"))), new String(Files.readAllBytes(Paths.get
-        ("hours1.csv"))));
+        ("hours.csv"))));
     Assert.assertEquals(new String(Files.readAllBytes(Paths.get
         ("lifts0.csv"))), new String(Files.readAllBytes(Paths.get
-        ("lifts1.csv"))));
+        ("lifts.csv"))));
     Assert.assertEquals(new String(Files.readAllBytes(Paths.get
         ("skiers0.csv"))), new String(Files.readAllBytes(Paths.get
-        ("skiers1.csv"))));
+        ("skier.csv"))));
   }
 
 }

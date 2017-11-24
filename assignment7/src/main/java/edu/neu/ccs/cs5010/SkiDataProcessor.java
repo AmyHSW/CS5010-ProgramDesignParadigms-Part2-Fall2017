@@ -27,6 +27,7 @@ public class SkiDataProcessor {
    *
    */
   public static void main(String[] args) throws InterruptedException {
+    // reads csv file to List<String[]>
     long startTime = System.currentTimeMillis();
     CsvParserSettings settings = new CsvParserSettings();
     CsvParser parser = new CsvParser(settings);
@@ -34,6 +35,7 @@ public class SkiDataProcessor {
     System.out.println("Parsing input csv file took "
         + (System.currentTimeMillis() - startTime) + " milliseconds");
 
+    // processes data using two processors: sequential and concurrent
     List<IProcessor> processors = new ArrayList<>();
     processors.add(new SequentialProcessor(inputData));
     processors.add(new ConcurrentProcessor(inputData));
@@ -42,6 +44,8 @@ public class SkiDataProcessor {
       System.out.println(processor + " ran "
           + processor.getRunTime().toMillis() + " milliseconds");
     }
+
+    // generates the output csv files
     IResultAnalyser resultAnalyser = new ResultAnalyser();
     for (int i = 0; i < processors.size(); i++) {
       IoLibrary.generateOutput("skiers" + i + ".csv",
