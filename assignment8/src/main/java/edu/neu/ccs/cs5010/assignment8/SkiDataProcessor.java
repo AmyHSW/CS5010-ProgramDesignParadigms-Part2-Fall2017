@@ -22,7 +22,6 @@ public class SkiDataProcessor {
 
   /**
    * Reads ski resort data and analyze in a sequential way.
-   *
    */
   public static void main(String[] args) throws InterruptedException {
     // reads csv file to List<String[]>

@@ -2,26 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0a953c63-e6e3-4cea-8e66-2ea49230c373" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PDPAssignment8.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs5010/assignment8/SkiQueryProcessor.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs5010/assignment8/cmdHandler/CmdHandler.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs5010/assignment8/cmdHandler/ICmdHandler.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs5010/assignment8/exceptions/InvalidInputArgumentException.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs5010/assignment8/query/IQuery.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs5010/assignment8/query/IQueryDataReader.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs5010/assignment8/query/Query.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs5010/assignment8/query/QueryDataReader.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs5010/assignment8/queryProcessor/IQueryProcessor.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs5010/assignment8/queryProcessor/QueryProcessor.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs5010/assignment8/reader/HoursReader.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs5010/assignment8/reader/LiftsReader.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs5010/assignment8/reader/SkiersReader.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs5010/assignment8/writer/SkiersWriter.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs5010/assignment8/processors/IProcessor.java" afterPath="$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs5010/assignment8/dataProcessor/IDataProcessor.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs5010/assignment8/processors/SequentialProcessor.java" afterPath="$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs5010/assignment8/dataProcessor/SequentialDataProcessor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/skiers.dat" afterPath="$PROJECT_DIR$/skiers.dat" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs5010/assignment8/SkiDataProcessor.java" afterPath="$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs5010/assignment8/SkiDataProcessor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs5010/assignment8/hour/Hour.java" afterPath="$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs5010/assignment8/hour/Hour.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs5010/assignment8/result/ResultAnalyser.java" afterPath="$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs5010/assignment8/result/ResultAnalyser.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -37,8 +20,8 @@
       <file leaf-file-name="SkiQueryProcessor.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs5010/assignment8/SkiQueryProcessor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="346">
-              <caret line="26" column="0" lean-forward="true" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+            <state relative-caret-position="315">
+              <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -46,11 +29,53 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SkiersWriter.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="SkiersWriter.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs5010/assignment8/writer/SkiersWriter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+            <state relative-caret-position="135">
+              <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SkiDataProcessor.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs5010/assignment8/SkiDataProcessor.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="134">
+              <caret line="18" column="13" lean-forward="false" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PDPAssignment8.csv" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/PDPAssignment8.csv">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="7" lean-forward="true" selection-start-line="0" selection-start-column="7" selection-end-line="0" selection-end-column="7" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ResultAnalyser.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs5010/assignment8/result/ResultAnalyser.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="450">
+              <caret line="36" column="0" lean-forward="true" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PDPAssignment.csv" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/PDPAssignment.csv">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="4" column="11" lean-forward="true" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="11" />
               <folding />
             </state>
           </provider>
@@ -85,8 +110,6 @@
         <option value="$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs5010/assignment8/lift/Lift.java" />
         <option value="$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs5010/assignment8/skier/Skier.java" />
         <option value="$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs5010/assignment8/result/IResultAnalyser.java" />
-        <option value="$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs5010/assignment8/result/ResultAnalyser.java" />
-        <option value="$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs5010/assignment8/SkiDataProcessor.java" />
         <option value="$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs5010/assignment8/hour/Hour.java" />
         <option value="$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs5010/assignment8/query/IQuery.java" />
         <option value="$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs5010/assignment8/query/Query.java" />
@@ -106,6 +129,8 @@
         <option value="$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs5010/assignment8/queryProcessor/QueryProcessor.java" />
         <option value="$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs5010/assignment8/queryProcessor/IQueryProcessor.java" />
         <option value="$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs5010/assignment8/SkiQueryProcessor.java" />
+        <option value="$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs5010/assignment8/SkiDataProcessor.java" />
+        <option value="$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs5010/assignment8/result/ResultAnalyser.java" />
       </list>
     </option>
   </component>
@@ -128,10 +153,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1328" />
+    <option name="x" value="1308" />
     <option name="y" value="-257" />
-    <option name="width" value="1768" />
-    <option name="height" value="998" />
+    <option name="width" value="1604" />
+    <option name="height" value="997" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -181,6 +206,87 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="assignment8" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="assignment8" type="b2602c69:ProjectViewProjectNode" />
+              <item name="assignment8" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="assignment8" type="462c0819:PsiDirectoryNode" />
+              <item name="cmdHandler" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="assignment8" type="b2602c69:ProjectViewProjectNode" />
+              <item name="assignment8" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="assignment8" type="462c0819:PsiDirectoryNode" />
+              <item name="dataProcessor" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="assignment8" type="b2602c69:ProjectViewProjectNode" />
+              <item name="assignment8" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="assignment8" type="462c0819:PsiDirectoryNode" />
+              <item name="exceptions" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="assignment8" type="b2602c69:ProjectViewProjectNode" />
+              <item name="assignment8" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="assignment8" type="462c0819:PsiDirectoryNode" />
+              <item name="hour" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="assignment8" type="b2602c69:ProjectViewProjectNode" />
+              <item name="assignment8" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="assignment8" type="462c0819:PsiDirectoryNode" />
+              <item name="lift" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="assignment8" type="b2602c69:ProjectViewProjectNode" />
+              <item name="assignment8" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="assignment8" type="462c0819:PsiDirectoryNode" />
+              <item name="query" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="assignment8" type="b2602c69:ProjectViewProjectNode" />
+              <item name="assignment8" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="assignment8" type="462c0819:PsiDirectoryNode" />
+              <item name="reader" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="assignment8" type="b2602c69:ProjectViewProjectNode" />
+              <item name="assignment8" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="assignment8" type="462c0819:PsiDirectoryNode" />
+              <item name="result" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="assignment8" type="b2602c69:ProjectViewProjectNode" />
+              <item name="assignment8" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="assignment8" type="462c0819:PsiDirectoryNode" />
+              <item name="skier" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="assignment8" type="b2602c69:ProjectViewProjectNode" />
@@ -240,7 +346,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.SkiQueryProcessor">
+  <component name="RunManager" selected="Application.SkiDataProcessor">
     <configuration name="SkiDataProcessor" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -366,8 +472,8 @@
     </list>
     <recent_temporary>
       <list size="2">
-        <item index="0" class="java.lang.String" itemvalue="Application.SkiQueryProcessor" />
-        <item index="1" class="java.lang.String" itemvalue="Application.SkiDataProcessor" />
+        <item index="0" class="java.lang.String" itemvalue="Application.SkiDataProcessor" />
+        <item index="1" class="java.lang.String" itemvalue="Application.SkiQueryProcessor" />
       </list>
     </recent_temporary>
   </component>
@@ -381,15 +487,16 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1511485430208</updated>
-      <workItem from="1511485434086" duration="8304000" />
+      <workItem from="1511485434086" duration="9300000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8304000" />
+    <option name="totallyTimeSpent" value="9300000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1328" y="-257" width="1768" height="998" extended-state="0" />
+    <frame x="1308" y="-257" width="1604" height="997" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="PlantUML" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -398,16 +505,16 @@
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32890365" sideWeight="0.5052144" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16407983" sideWeight="0.38476312" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16500553" sideWeight="0.6181924" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16407983" sideWeight="0.6152369" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20567787" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22727273" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32890365" sideWeight="0.49478564" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3292683" sideWeight="0.49487835" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -480,14 +587,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/PDPAssignment.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/hours.dat">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -512,14 +611,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/skiers.dat">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs5010/assignment8/exceptions/InvalidInputDataException.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
@@ -533,8 +624,8 @@
         <state relative-caret-position="452">
           <caret line="52" column="0" lean-forward="false" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
           <folding>
-            <element signature="e#1122#1123#0" expanded="true" />
-            <element signature="e#1167#1168#0" expanded="true" />
+            <element signature="e#1122#1123#0" expanded="false" />
+            <element signature="e#1167#1168#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -544,18 +635,8 @@
         <state relative-caret-position="689">
           <caret line="61" column="0" lean-forward="true" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
           <folding>
-            <element signature="e#1505#1506#0" expanded="true" />
-            <element signature="e#1550#1551#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs5010/assignment8/result/ResultAnalyser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-136">
-          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#1505#1506#0" expanded="false" />
+            <element signature="e#1550#1551#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -565,17 +646,9 @@
         <state relative-caret-position="315">
           <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
           <folding>
-            <element signature="e#393#394#0" expanded="true" />
-            <element signature="e#456#457#0" expanded="true" />
+            <element signature="e#393#394#0" expanded="false" />
+            <element signature="e#456#457#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PDPAssignment8.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -695,8 +768,8 @@
         <state relative-caret-position="165">
           <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
           <folding>
-            <element signature="e#363#364#0" expanded="true" />
-            <element signature="e#389#390#0" expanded="true" />
+            <element signature="e#363#364#0" expanded="false" />
+            <element signature="e#389#390#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -706,7 +779,7 @@
         <state relative-caret-position="210">
           <caret line="14" column="4" lean-forward="false" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="4" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -716,37 +789,69 @@
         <state relative-caret-position="225">
           <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
           <folding>
-            <element signature="e#244#245#0" expanded="true" />
-            <element signature="e#265#266#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs5010/assignment8/SkiDataProcessor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="645">
-          <caret line="43" column="0" lean-forward="false" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs5010/assignment8/SkiQueryProcessor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="346">
-          <caret line="26" column="0" lean-forward="true" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#244#245#0" expanded="false" />
+            <element signature="e#265#266#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs5010/assignment8/writer/SkiersWriter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        <state relative-caret-position="135">
+          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PDPAssignment.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="11" lean-forward="true" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PDPAssignment8.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="7" lean-forward="true" selection-start-line="0" selection-start-column="7" selection-end-line="0" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/skiers.dat">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs5010/assignment8/result/ResultAnalyser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="36" column="0" lean-forward="true" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs5010/assignment8/SkiQueryProcessor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs5010/assignment8/SkiDataProcessor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="134">
+          <caret line="18" column="13" lean-forward="false" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
