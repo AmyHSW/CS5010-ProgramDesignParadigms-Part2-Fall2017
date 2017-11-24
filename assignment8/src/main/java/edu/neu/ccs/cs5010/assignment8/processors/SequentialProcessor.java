@@ -9,9 +9,7 @@ import edu.neu.ccs.cs5010.assignment8.skier.Skier;
 
 import java.time.Duration;
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
 /**
  * The SequentialProcessor represents a concrete sequential processor.
@@ -25,11 +23,10 @@ public class SequentialProcessor implements IProcessor {
   private static final int TIME_INDEX = 4;
 
   private final List<String[]> inputData;
+  private final List<ISkier> skierList;
   private final List<ILift> liftList;
-  private final List<List<ILift>> hourRides;
+  private final List<List<ILift>> hourList;
   private Duration runTime;
-
-  private final Map<String, ISkier> skierMap;
 
   /**
    * The constructor of SequentialProcessor.
@@ -43,25 +40,32 @@ public class SequentialProcessor implements IProcessor {
     }
     this.inputData = inputData.subList(1, inputData.size());
     liftList = new ArrayList<>();
-    hourRides = new ArrayList<>();
+    hourList = new ArrayList<>();
+    skierList = new ArrayList<>();
     initHourRides();
     initLiftList();
-    skierMap = new HashMap<>();
+    initSkierList();
   }
 
   private void initLiftList() {
-    for (int i = 0; i < Lift.LIFT_NUM; i++) {
+    for (int i = 0; i < Lift.LIFT_TOTAL; i++) {
       liftList.add(new Lift(i));
     }
   }
 
   private void initHourRides() {
-    for (int i = 0; i < Hour.HOUR_NUM; i++) {
+    for (int i = 0; i < Hour.HOUR_TOTAL; i++) {
       List<ILift> tempList = new ArrayList<>();
-      for (int j = 0; j < Lift.LIFT_NUM; j++) {
+      for (int j = 0; j < Lift.LIFT_TOTAL; j++) {
         tempList.add(new Lift(j));
       }
-      hourRides.add(tempList);
+      hourList.add(tempList);
+    }
+  }
+
+  private void initSkierList() {
+    for (int i = 0; i < Skier.SKIER_TOTAL; i++) {
+      skierList.add(new Skier(i));
     }
   }
 
@@ -77,10 +81,7 @@ public class SequentialProcessor implements IProcessor {
   }
 
   private void processSkier(String skierId, String liftId) {
-    if (!skierMap.containsKey(skierId)) {
-      skierMap.put(skierId, new Skier(skierId));
-    }
-    ISkier skier = skierMap.get(skierId);
+    ISkier skier = skierList.get(Skier.toIndex(skierId));
     skier.incrementNumRides();
     skier.increaseVerticalMeters(Lift.toVerticalMeters(liftId));
   }
@@ -90,12 +91,12 @@ public class SequentialProcessor implements IProcessor {
   }
 
   private void processHour(int hourIndex, int liftIndex) {
-    hourRides.get(hourIndex).get(liftIndex).incrementNumber();
+    hourList.get(hourIndex).get(liftIndex).incrementNumber();
   }
 
   @Override
-  public Map<String, ISkier> getSkierMap() {
-    return skierMap;
+  public List<ISkier> getSkierList() {
+    return skierList;
   }
 
   @Override
@@ -105,7 +106,7 @@ public class SequentialProcessor implements IProcessor {
 
   @Override
   public List<List<ILift>> getHourRides() {
-    return hourRides;
+    return hourList;
   }
 
   @Override

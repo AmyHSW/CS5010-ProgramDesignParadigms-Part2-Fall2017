@@ -25,7 +25,7 @@ public interface IProcessor {
    *
    * @return the map stores all skiers' information
    */
-  Map<String, ISkier> getSkierMap();
+  List<ISkier> getSkierList();
 
   /**
    * Gets all lifts' information.

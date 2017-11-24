@@ -9,6 +9,7 @@ import java.util.concurrent.atomic.AtomicInteger;
  */
 public class Skier implements ISkier {
 
+  public static final int SKIER_TOTAL = 40000;
   private final String skierId;
   private AtomicInteger numRides;
   private AtomicInteger verticalMeters;
@@ -16,19 +17,12 @@ public class Skier implements ISkier {
   /**
    * The constructor of Skier.
    *
-   * @param skierId the skier id represented by a string
+   * @param skierIndex the index of Skier object in skierList
    */
-  public Skier(String skierId) {
-    validate(skierId);
-    this.skierId = skierId;
+  public Skier(int skierIndex) {
+    this.skierId = Integer.toString(skierIndex + 1);
     numRides = new AtomicInteger(0);
     verticalMeters = new AtomicInteger(0);
-  }
-
-  private void validate(String input) {
-    if (input == null) {
-      throw new IllegalArgumentException("Skier id is null.");
-    }
   }
 
   @Override
@@ -54,6 +48,10 @@ public class Skier implements ISkier {
   @Override
   public int getVerticalMeters() {
     return verticalMeters.get();
+  }
+
+  public static int toIndex(String string) {
+    return Integer.parseInt(string) - 1;
   }
 
   @Override

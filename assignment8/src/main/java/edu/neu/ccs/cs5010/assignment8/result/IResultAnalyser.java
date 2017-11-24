@@ -15,10 +15,10 @@ public interface IResultAnalyser {
   /**
    * Gets all skiers' vertical meters' results, analyzing based on given information.
    *
-   * @param  skierMap the map stores all skiers' information
+   * @param  skierList the list that stores all skiers' information
    * @return list of strings of the result that will be written to the csv file
    */
-  List<String> getSkierOutput(Map<String, ISkier> skierMap);
+  List<String> getSkierOutput(List<ISkier> skierList);
 
   /**
    * Gets all lifts' rides number results, analyzing based on given information.

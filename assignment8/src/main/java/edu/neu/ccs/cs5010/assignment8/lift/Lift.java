@@ -9,6 +9,7 @@ import java.util.concurrent.atomic.AtomicInteger;
  */
 public class Lift implements ILift {
 
+  public static final int LIFT_TOTAL = 40;
   private static final int LIFT_LEVEL1 = 10;
   private static final int LIFT_LEVEL2 = 20;
   private static final int LIFT_LEVEL3 = 30;
@@ -16,7 +17,6 @@ public class Lift implements ILift {
   private static final int LIFT_LEVEL2_HEIGHT = 300;
   private static final int LIFT_LEVEL3_HEIGHT = 400;
   private static final int LIFT_LEVEL4_HEIGHT = 500;
-  public static final int LIFT_NUM = 40;
 
   private final String liftId;
   private AtomicInteger number;
@@ -28,7 +28,7 @@ public class Lift implements ILift {
    * @throws IllegalArgumentException if the index is out of bound
    */
   public Lift(int liftIndex) {
-    if (liftIndex >= LIFT_NUM) {
+    if (liftIndex >= LIFT_TOTAL) {
       throw new IllegalArgumentException("Lift index out of bound.");
     }
     liftId = Integer.toString(liftIndex + 1);

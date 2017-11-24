@@ -21,7 +21,7 @@ public class SkiDataProcessor {
   private static final String INPUT = "PDPAssignment.csv";
 
   /**
-   * Reads ski resort data and analyze in both sequential and concurrent ways.
+   * Reads ski resort data and analyze in a sequential way.
    *
    */
   public static void main(String[] args) throws InterruptedException {
@@ -33,16 +33,16 @@ public class SkiDataProcessor {
     System.out.println("Parsing input csv file took "
         + (System.currentTimeMillis() - startTime) + " milliseconds");
 
-    // processes data using two processors: sequential and concurrent
+    // processes data sequentially
     IProcessor processor = new SequentialProcessor(inputData);
     processor.processInput();
     System.out.println(processor + " ran "
         + processor.getRunTime().toMillis() + " milliseconds");
 
-    // generates the output csv files
+    // generates the output dat files
     IResultAnalyser resultAnalyser = new ResultAnalyser();
     IoLibrary.generateOutput("skiers.dat",
-              resultAnalyser.getSkierOutput(processor.getSkierMap()));
+              resultAnalyser.getSkierOutput(processor.getSkierList()));
     IoLibrary.generateOutput("lifts.dat",
               resultAnalyser.getLiftOutput(processor.getLiftList()));
     IoLibrary.generateOutput("hours.dat",
