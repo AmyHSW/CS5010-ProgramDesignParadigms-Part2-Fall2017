@@ -3,7 +3,7 @@ package edu.neu.ccs.cs5010.assignment8.lift;
 import java.util.concurrent.atomic.AtomicInteger;
 
 /**
- * The ILift represents a concrete lift.
+ * The Lift represents a concrete lift.
  *
  * @author Shuwan Huang, Jingyu Shen
  */
