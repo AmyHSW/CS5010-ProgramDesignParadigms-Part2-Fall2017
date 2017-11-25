@@ -16,16 +16,20 @@ import java.util.List;
 public class ResultAnalyser implements IResultAnalyser {
 
   private static final int TEN = 10;
-  private static final String SKIERS_HEADER = "SkierID,Number of Rides,Vertical";
+  private static final String SKIERS_HEADER =
+      "SkierID,Number of Rides,Total Vertical Meters,Number of Views";
   private static final String LIFTS_HEADER = "LiftID,Number of Rides";
+  private static final int INITIAL_NUM_VIEWS = 0;
 
   @Override
   public List<String> getSkierOutput(List<ISkier> skierList) {
     List<String> output = new ArrayList<>();
     output.add(SKIERS_HEADER);
-    for (int i = 0; i < skierList.size(); i++) {
-      ISkier skier = skierList.get(i);
-      String line = skier.getSkierId() + "," + skier.getNumRides() + "," + skier.getVerticalMeters();
+    for (ISkier skier : skierList) {
+      String line = skier.getSkierId() + ","
+          + skier.getNumRides() + ","
+          + skier.getVerticalMeters() + ","
+          + INITIAL_NUM_VIEWS;
       output.add(line);
     }
     return output;
