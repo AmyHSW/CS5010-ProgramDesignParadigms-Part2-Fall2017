@@ -19,4 +19,5 @@ public class Query implements IQuery {
   public int getParameter() {
     return parameter;
   }
+
 }
