@@ -1,8 +1,6 @@
 package edu.neu.ccs.cs5010.assignment8.dataProcessor;
 
 import edu.neu.ccs.cs5010.assignment8.Record.IRecord;
-import edu.neu.ccs.cs5010.assignment8.lift.ILift;
-import edu.neu.ccs.cs5010.assignment8.skier.ISkier;
 
 import java.time.Duration;
 import java.util.List;
