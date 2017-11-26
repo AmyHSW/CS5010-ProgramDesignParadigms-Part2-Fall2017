@@ -1,7 +1,6 @@
 package edu.neu.ccs.cs5010.assignment8.writer;
 
 import edu.neu.ccs.cs5010.assignment8.Database.Database;
-import edu.neu.ccs.cs5010.assignment8.Database.HourDatabase;
 import edu.neu.ccs.cs5010.assignment8.Record.HourRecord;
 import edu.neu.ccs.cs5010.assignment8.Record.IRecord;
 import edu.neu.ccs.cs5010.assignment8.Record.LiftRecord;
@@ -20,7 +19,7 @@ public class HourWriter {
       for (int j = 0; j < HourRecord.TEN; j++) {
         topTenList.add(liftList.get(j).getParameter());
       }
-      database.insertRecord(new HourRecord(i, topTenList));
+      database.addRecord(new HourRecord(i, topTenList));
     }
   }
 

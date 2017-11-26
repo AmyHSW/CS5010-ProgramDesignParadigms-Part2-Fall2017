@@ -22,10 +22,7 @@ public class LiftDatabase extends Database {
     return record;
   }
 
-  public void insertRecord(IRecord record) throws IOException {
-    //if (getRecord(record.getParameter()).getParameter() != 0) {
-      //throw new InvalidInputArgumentException("Cannot add new. Record already exists.");
-    //}
+  public void addRecord(IRecord record) throws IOException {
     file.seek((record.getParameter() - 1) * LiftRecord.SIZE);
     record.writeToFile(file);
   }

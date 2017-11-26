@@ -6,6 +6,7 @@ import java.io.IOException;
 import java.io.RandomAccessFile;
 
 public abstract class Database {
+
   protected RandomAccessFile file;
 
   public Database(String fileString) throws IOException {
@@ -19,7 +20,7 @@ public abstract class Database {
 
   public abstract IRecord getRecord(int id) throws IOException;
 
-  public abstract void insertRecord(IRecord record) throws IOException;
+  public abstract void addRecord(IRecord record) throws IOException;
 
 
 }

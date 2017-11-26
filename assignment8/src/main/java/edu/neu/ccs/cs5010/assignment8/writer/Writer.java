@@ -10,7 +10,7 @@ public class Writer {
 
   public static void writeToData(List<IRecord> list, Database database) throws IOException {
     for (IRecord record: list) {
-      database.insertRecord(record);
+      database.addRecord(record);
     }
   }
 }

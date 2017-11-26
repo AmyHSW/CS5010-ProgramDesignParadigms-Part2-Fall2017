@@ -46,16 +46,6 @@ public class RawRecord implements IRecord {
     file.writeInt(liftId);
   }
 
-  public int compareTo(RawRecord that) {
-    if (that == null) {
-      throw new NullPointerException("Given RawRecord is null");
-    }
-    if (skierId != that.skierId) {
-      return this.skierId - that.skierId;
-    }
-    return this.time - that.time;
-  }
-
   @Override
   public boolean equals(Object other) {
     if (this == other) return true;

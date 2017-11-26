@@ -35,7 +35,7 @@ public class SequentialDataProcessor implements IDataProcessor {
       throw new InvalidInputDataException("Input data doesn't contain enough information.");
     }
     this.inputData = inputData.subList(1, inputData.size());
-    rawList = new ArrayList<>(inputData.size());
+    rawList = new ArrayList<>(this.inputData.size());
     skierList = new ArrayList<>(SkierRecord.SKIER_TOTAL);
     liftList = new ArrayList<>(LiftRecord.LIFT_TOTAL);
     hourList = new ArrayList<>(HourRecord.HOUR_TOTAL);
@@ -105,11 +105,12 @@ public class SequentialDataProcessor implements IDataProcessor {
 
   @Override
   public List<IRecord> getRawList() {
-    rawList.sort((raw1, raw2) -> {
-      if (raw1.getParameter() != raw2.getParameter()) {
-        return raw1.getParameter() - raw2.getParameter();
+    rawList.sort((record1, record2) -> {
+      if (record1.getParameter() != record2.getParameter()) {
+        return record1.getParameter() - record2.getParameter();
+      } else {
+        return ((RawRecord)record1).getTime() - ((RawRecord)record2).getTime();
       }
-      return ((RawRecord)raw1).getTime() - ((RawRecord)raw2).getTime();
     });
     return rawList;
   }

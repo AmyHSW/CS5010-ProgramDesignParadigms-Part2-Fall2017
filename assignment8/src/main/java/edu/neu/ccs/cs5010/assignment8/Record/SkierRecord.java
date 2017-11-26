@@ -82,7 +82,6 @@ public class SkierRecord implements IRecord {
     file.writeInt(numberOfViews);
   }
 
-
   @Override
   public boolean equals(Object other) {
     if (this == other) {

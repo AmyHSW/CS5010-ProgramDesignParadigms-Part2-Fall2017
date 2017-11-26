@@ -85,13 +85,6 @@ public class LiftRecord implements IRecord {
     }
   }
 
-  public int compareTo(LiftRecord that) {
-    if (that == null) {
-      throw new NullPointerException("Given Lift is null");
-    }
-    return that.getNumber() - number;
-  }
-
   @Override
   public boolean equals(Object other) {
     if (this == other) {
