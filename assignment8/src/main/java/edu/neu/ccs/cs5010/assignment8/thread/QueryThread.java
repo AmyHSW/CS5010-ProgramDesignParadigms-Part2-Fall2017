@@ -37,7 +37,7 @@ public class QueryThread extends Thread {
       int queryId = query.getQueryId();
       int parameter = query.getParameter();
       try {
-        IRecord record = databasePool.getDatabase(queryId).getRecord(parameter);
+        IRecord record = databasePool.read(queryId, parameter);
         record.writeToFile(randomAccessFile);
       } catch (IOException ioe) {
         System.out.println("Something went wrong! : " + ioe.getMessage());

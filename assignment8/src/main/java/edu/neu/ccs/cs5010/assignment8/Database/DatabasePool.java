@@ -21,8 +21,4 @@ public class DatabasePool {
   public IRecord read(int queryId, int parameter) throws IOException {
     return databaseList.get(queryId - 1).getRecord(parameter);
   }
-
-  public Database getDatabase(int queryId) {
-    return databaseList.get(queryId - 1);
-  }
 }

@@ -31,7 +31,6 @@ public class SkiQueryProcessor {
     if (!cmdHandler.isValid()) {
       throw new InvalidInputArgumentException(cmdHandler.getErrorMessage());
     }
-
     // creates queries based on test data file
     long queryStart = System.currentTimeMillis();
     CsvParserSettings settings = new CsvParserSettings();
