@@ -23,9 +23,9 @@ public class LiftDatabase extends Database {
   }
 
   public void insertRecord(IRecord record) throws IOException {
-    if (getRecord(record.getParameter()).getParameter() != 0) {
-      throw new InvalidInputArgumentException("Cannot add new. Record already exists.");
-    }
+    //if (getRecord(record.getParameter()).getParameter() != 0) {
+      //throw new InvalidInputArgumentException("Cannot add new. Record already exists.");
+    //}
     file.seek((record.getParameter() - 1) * LiftRecord.SIZE);
     record.writeToFile(file);
   }

@@ -10,7 +10,7 @@ public class SkierRecord implements IRecord {
   private int numberOfViews;
 
   public static final int SIZE = Integer.BYTES * 4;
-  public static final int POS_TO_VIEWS = Integer.BYTES * 3;
+  private static final int POS_TO_VIEWS = Integer.BYTES * 3;
   public static final int SKIER_TOTAL = 40000;
 
   /**

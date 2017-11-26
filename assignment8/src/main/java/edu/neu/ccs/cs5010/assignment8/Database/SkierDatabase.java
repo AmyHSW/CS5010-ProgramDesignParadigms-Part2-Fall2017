@@ -24,15 +24,14 @@ public class SkierDatabase extends Database {
   }
 
   public void insertRecord(IRecord record) throws IOException {
-    if (getRecord(record.getParameter()).getParameter() != 0) {
-      throw new InvalidInputArgumentException("Cannot add new. Record already exists.");
-    }
+    //if (getRecord(record.getParameter()).getParameter() != 0) {
+      //throw new InvalidInputArgumentException("Cannot add new. Record already exists.");
+    //}
     file.seek((record.getParameter() - 1) * SkierRecord.SIZE);
     record.writeToFile(file);
   }
 
-  public void updateNumberOfViews(SkierRecord record)
-          throws IllegalArgumentException, IOException {
+  public void updateNumberOfViews(SkierRecord record) throws IOException {
     if (record.getParameter() == 0) {
       throw new InvalidInputArgumentException("Cannot update. Record does not exist.");
     }
