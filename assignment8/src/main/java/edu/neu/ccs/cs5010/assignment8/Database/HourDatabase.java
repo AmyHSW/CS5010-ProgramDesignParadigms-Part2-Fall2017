@@ -11,7 +11,7 @@ public class HourDatabase extends Database {
   public HourDatabase(String fileString) throws IOException {
     super(fileString);
   }
-
+/*
   @Override
   public synchronized IRecord getRecord(int id) throws IOException {
     IRecord record = new HourRecord();
@@ -21,7 +21,7 @@ public class HourDatabase extends Database {
     file.seek((id - 1) * HourRecord.SIZE);
     record.readFromFile(file);
     return record;
-  }
+  }*/
 
   @Override
   public void addRecord(IRecord record) throws IOException {

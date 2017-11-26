@@ -10,7 +10,7 @@ public class RawDatabase extends Database {
   public RawDatabase(String fileString) throws IOException {
     super(fileString);
   }
-
+/*
   public synchronized IRecord getRecord(int id) throws IOException {
     if (id < 1) {
       throw new InvalidInputArgumentException("invalid ID!!");
@@ -19,7 +19,7 @@ public class RawDatabase extends Database {
     file.seek((id - 1) * RawRecord.SIZE);
     record.readFromFile(file);
     return record;
-  }
+  }*/
 
   public void addRecord(IRecord record) throws IOException {
     file.seek((record.getParameter() - 1) * RawRecord.SIZE);

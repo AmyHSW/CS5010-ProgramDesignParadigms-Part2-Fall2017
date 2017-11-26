@@ -2,31 +2,41 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2307343e-eed9-426f-bb9e-598739fd9077" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../assignment8/src/main/java/edu/neu/ccs/cs5010/assignment8/ioUtil/IoLibrary.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../assignment8/src/main/java/edu/neu/ccs/cs5010/assignment8/Database/DatabasePool.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../assignment8/thread1.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../assignment8/thread10.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../assignment8/thread11.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../assignment8/thread12.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../assignment8/thread13.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../assignment8/thread14.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../assignment8/thread15.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../assignment8/thread16.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../assignment8/thread17.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../assignment8/thread18.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../assignment8/thread19.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../assignment8/thread2.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../assignment8/thread20.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../assignment8/thread3.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../assignment8/thread4.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../assignment8/thread5.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../assignment8/thread6.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../assignment8/thread7.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../assignment8/thread8.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../assignment8/thread9.txt" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../assignment8/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../assignment8/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../assignment8/src/main/java/edu/neu/ccs/cs5010/assignment8/Database/DatabasePool.java" afterPath="$PROJECT_DIR$/../assignment8/src/main/java/edu/neu/ccs/cs5010/assignment8/Database/DatabasePool.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../assignment8/skiers.dat" afterPath="$PROJECT_DIR$/../assignment8/skiers.dat" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../assignment8/src/main/java/edu/neu/ccs/cs5010/assignment8/SkiQueryProcessor.java" afterPath="$PROJECT_DIR$/../assignment8/src/main/java/edu/neu/ccs/cs5010/assignment8/SkiQueryProcessor.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../assignment8/src/main/java/edu/neu/ccs/cs5010/assignment8/queryProcessor/IQueryProcessor.java" afterPath="$PROJECT_DIR$/../assignment8/src/main/java/edu/neu/ccs/cs5010/assignment8/queryProcessor/IQueryProcessor.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../assignment8/src/main/java/edu/neu/ccs/cs5010/assignment8/queryProcessor/QueryProcessor.java" afterPath="$PROJECT_DIR$/../assignment8/src/main/java/edu/neu/ccs/cs5010/assignment8/queryProcessor/QueryProcessor.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../assignment8/src/main/java/edu/neu/ccs/cs5010/assignment8/reader/HoursReader.java" afterPath="$PROJECT_DIR$/../assignment8/src/main/java/edu/neu/ccs/cs5010/assignment8/reader/HoursReader.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../assignment8/src/main/java/edu/neu/ccs/cs5010/assignment8/reader/IReader.java" afterPath="$PROJECT_DIR$/../assignment8/src/main/java/edu/neu/ccs/cs5010/assignment8/reader/IReader.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../assignment8/src/main/java/edu/neu/ccs/cs5010/assignment8/reader/LiftsReader.java" afterPath="$PROJECT_DIR$/../assignment8/src/main/java/edu/neu/ccs/cs5010/assignment8/reader/LiftsReader.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../assignment8/src/main/java/edu/neu/ccs/cs5010/assignment8/reader/RawReader.java" afterPath="$PROJECT_DIR$/../assignment8/src/main/java/edu/neu/ccs/cs5010/assignment8/reader/RawReader.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../assignment8/src/main/java/edu/neu/ccs/cs5010/assignment8/reader/ReaderFactory.java" afterPath="$PROJECT_DIR$/../assignment8/src/main/java/edu/neu/ccs/cs5010/assignment8/reader/ReaderFactory.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../assignment8/src/main/java/edu/neu/ccs/cs5010/assignment8/reader/SkiersReader.java" afterPath="$PROJECT_DIR$/../assignment8/src/main/java/edu/neu/ccs/cs5010/assignment8/reader/SkiersReader.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../assignment8/src/main/java/edu/neu/ccs/cs5010/assignment8/thread/QueryThread.java" afterPath="$PROJECT_DIR$/../assignment8/src/main/java/edu/neu/ccs/cs5010/assignment8/thread/QueryThread.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../assignment8/thread1.txt" afterPath="$PROJECT_DIR$/../assignment8/thread1.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../assignment8/thread10.txt" afterPath="$PROJECT_DIR$/../assignment8/thread10.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../assignment8/thread11.txt" afterPath="$PROJECT_DIR$/../assignment8/thread11.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../assignment8/thread12.txt" afterPath="$PROJECT_DIR$/../assignment8/thread12.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../assignment8/thread13.txt" afterPath="$PROJECT_DIR$/../assignment8/thread13.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../assignment8/thread14.txt" afterPath="$PROJECT_DIR$/../assignment8/thread14.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../assignment8/thread15.txt" afterPath="$PROJECT_DIR$/../assignment8/thread15.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../assignment8/thread16.txt" afterPath="$PROJECT_DIR$/../assignment8/thread16.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../assignment8/thread17.txt" afterPath="$PROJECT_DIR$/../assignment8/thread17.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../assignment8/thread18.txt" afterPath="$PROJECT_DIR$/../assignment8/thread18.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../assignment8/thread19.txt" afterPath="$PROJECT_DIR$/../assignment8/thread19.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../assignment8/thread2.txt" afterPath="$PROJECT_DIR$/../assignment8/thread2.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../assignment8/thread20.txt" afterPath="$PROJECT_DIR$/../assignment8/thread20.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../assignment8/thread3.txt" afterPath="$PROJECT_DIR$/../assignment8/thread3.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../assignment8/thread4.txt" afterPath="$PROJECT_DIR$/../assignment8/thread4.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../assignment8/thread5.txt" afterPath="$PROJECT_DIR$/../assignment8/thread5.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../assignment8/thread6.txt" afterPath="$PROJECT_DIR$/../assignment8/thread6.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../assignment8/thread7.txt" afterPath="$PROJECT_DIR$/../assignment8/thread7.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../assignment8/thread8.txt" afterPath="$PROJECT_DIR$/../assignment8/thread8.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../assignment8/thread9.txt" afterPath="$PROJECT_DIR$/../assignment8/thread9.txt" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -208,7 +218,7 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1377" />
+    <option name="x" value="1332" />
     <option name="y" value="-257" />
     <option name="width" value="1503" />
     <option name="height" value="1020" />
@@ -613,7 +623,7 @@
       <workItem from="1511304811227" duration="6788000" />
       <workItem from="1511324597396" duration="407000" />
       <workItem from="1511485474193" duration="1003000" />
-      <workItem from="1511681792077" duration="1562000" />
+      <workItem from="1511681792077" duration="2112000" />
     </task>
     <servers />
   </component>
@@ -650,11 +660,10 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="116992000" />
+    <option name="totallyTimeSpent" value="117542000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1377" y="-257" width="1503" height="1020" extended-state="0" />
-    <editor active="true" />
+    <frame x="1332" y="-257" width="1503" height="1020" extended-state="0" />
     <layout>
       <window_info id="PlantUML" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -669,7 +678,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2991102" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2991102" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />

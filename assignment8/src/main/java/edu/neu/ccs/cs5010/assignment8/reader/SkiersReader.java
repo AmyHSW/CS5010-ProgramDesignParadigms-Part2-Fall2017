@@ -1,32 +1,26 @@
 package edu.neu.ccs.cs5010.assignment8.reader;
 
-import edu.neu.ccs.cs5010.assignment8.Database.Database;
 import edu.neu.ccs.cs5010.assignment8.Record.IRecord;
+import edu.neu.ccs.cs5010.assignment8.Record.SkierRecord;
 
-import java.io.BufferedWriter;
 import java.io.IOException;
+import java.io.RandomAccessFile;
 
 public class SkiersReader implements IReader {
 
-  private final Database database;
   private final int parameter;
-  private final BufferedWriter bufferedWriter;
+  private final RandomAccessFile file;
 
-  public SkiersReader(Database database, int parameter, BufferedWriter bufferedWriter) {
-    this.database = database;
+  public SkiersReader(int parameter) throws IOException {
     this.parameter = parameter;
-    this.bufferedWriter = bufferedWriter;
+    file = new RandomAccessFile("skiers.dat", "rw");
   }
 
   @Override
-  public void run() {
-    try {
-      IRecord record = database.getRecord(parameter);
-      System.out.println(record);
-      bufferedWriter.write(record.toString() + "\n");
-    } catch (IOException ioe) {
-      System.out.println("Something went wrong! : " + ioe.getMessage());
-      ioe.printStackTrace();
-    }
+  public String read() throws IOException {
+    IRecord record = new SkierRecord();
+    file.seek((parameter - 1) * SkierRecord.SIZE);
+    record.readFromFile(file);
+    return record.toString();
   }
 }

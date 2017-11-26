@@ -8,6 +8,7 @@ import edu.neu.ccs.cs5010.assignment8.cmdHandler.ICmdHandler;
 import edu.neu.ccs.cs5010.assignment8.dataProcessor.IDataProcessor;
 import edu.neu.ccs.cs5010.assignment8.dataProcessor.SequentialDataProcessor;
 import edu.neu.ccs.cs5010.assignment8.exceptions.InvalidInputArgumentException;
+import edu.neu.ccs.cs5010.assignment8.ioUtil.IoLibrary;
 import edu.neu.ccs.cs5010.assignment8.query.IQuery;
 import edu.neu.ccs.cs5010.assignment8.query.IQueryGenerator;
 import edu.neu.ccs.cs5010.assignment8.query.QueryGenerator;
@@ -45,48 +46,17 @@ public class SkiQueryProcessor {
     System.out.println("Creating queries from test data file took "
         + (System.currentTimeMillis() - queryStart) + " milliseconds");
 
-    // reads csv file to List<String[]>
-    long inputStart = System.currentTimeMillis();
-    CsvParser inputParser = new CsvParser(settings);
-    List<String[]> inputData = inputParser.parseAll(new File(INPUT));
-    System.out.println("Parsing raw input csv file took "
-        + (System.currentTimeMillis() - inputStart) + " milliseconds");
-
-    // processes data sequentially
-    IDataProcessor processor = new SequentialDataProcessor(inputData);
-    processor.processInput();
-    System.out.println("Processing raw input file took "
-        + processor.getRunTime().toMillis() + " milliseconds (sequentially)");
-
-    // generates the output dat files
-    long datStart = System.currentTimeMillis();
-    Database rawDatabase = new RawDatabase("liftRides.dat");
-    Database skierDatabase = new SkierDatabase("skiers.dat");
-    Database liftDatabase = new LiftDatabase("lifts.dat");
-    Database hourDatabase = new HourDatabase("hours.dat");
-    Writer.writeToData(processor.getRawList(), rawDatabase);
-    Writer.writeToData(processor.getSkierList(), skierDatabase);
-    Writer.writeToData(processor.getLiftList(), liftDatabase);
-    HourWriter.writeToHourData(processor.getHourRides(), hourDatabase);
-    System.out.println("Building dat files took "
-        + (System.currentTimeMillis() - datStart) + " milliseconds");
-
     // processes queries
-    DatabasePool databasePool = new DatabasePool();
-    databasePool.addDatabase(skierDatabase);
-    databasePool.addDatabase(rawDatabase);
-    databasePool.addDatabase(hourDatabase);
-    databasePool.addDatabase(liftDatabase);
-    IQueryProcessor queryProcessor = new QueryProcessor(databasePool, queries);
+    IQueryProcessor queryProcessor = new QueryProcessor(queries);
     queryProcessor.processQueries();
     System.out.println("Processing queries took "
         + queryProcessor.getRuntime().toMillis() + " milliseconds");
 
-    rawDatabase.close();
-    skierDatabase.close();
-    liftDatabase.close();
-    hourDatabase.close();
-
     //output
+    List<List<String>> threadsOutput = queryProcessor.getOutputList();
+    int i = 1;
+    for (List<String> output : threadsOutput) {
+      IoLibrary.generateOutput("thread" + i++ + ".txt", output);
+    }
   }
 }

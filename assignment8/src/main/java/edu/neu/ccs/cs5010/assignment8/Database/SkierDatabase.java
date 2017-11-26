@@ -8,13 +8,10 @@ import java.io.IOException;
 
 public class SkierDatabase extends Database {
 
-  private int readers;
-
   public SkierDatabase(String fileString) throws IOException {
     super(fileString);
-    this.readers = 0;
   }
-
+/*
   public synchronized IRecord getRecord(int id) throws IOException {
     if (id < 1) {
       throw new InvalidInputArgumentException("invalid ID!!");
@@ -24,7 +21,7 @@ public class SkierDatabase extends Database {
     record.readFromFile(file);
     updateNumberOfViews((SkierRecord) record);
     return record;
-  }
+  }*/
 
   public void addRecord(IRecord record) throws IOException {
     file.seek((record.getParameter() - 1) * SkierRecord.SIZE);

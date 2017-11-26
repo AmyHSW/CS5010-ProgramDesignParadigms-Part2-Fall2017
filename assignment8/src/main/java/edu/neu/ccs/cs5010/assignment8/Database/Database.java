@@ -18,7 +18,7 @@ public abstract class Database {
       file.close();
   }
 
-  public abstract IRecord getRecord(int id) throws IOException;
+  //public abstract IRecord getRecord(int id) throws IOException;
 
   public abstract void addRecord(IRecord record) throws IOException;
 
