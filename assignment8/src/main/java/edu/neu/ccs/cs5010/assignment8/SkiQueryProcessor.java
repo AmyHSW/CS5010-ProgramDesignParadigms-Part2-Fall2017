@@ -2,11 +2,7 @@ package edu.neu.ccs.cs5010.assignment8;
 
 import com.univocity.parsers.csv.CsvParser;
 import com.univocity.parsers.csv.CsvParserSettings;
-import edu.neu.ccs.cs5010.assignment8.Database.Database;
-import edu.neu.ccs.cs5010.assignment8.Database.HourDatabase;
-import edu.neu.ccs.cs5010.assignment8.Database.LiftDatabase;
-import edu.neu.ccs.cs5010.assignment8.Database.RawDatabase;
-import edu.neu.ccs.cs5010.assignment8.Database.SkierDatabase;
+import edu.neu.ccs.cs5010.assignment8.Database.*;
 import edu.neu.ccs.cs5010.assignment8.cmdHandler.CmdHandler;
 import edu.neu.ccs.cs5010.assignment8.cmdHandler.ICmdHandler;
 import edu.neu.ccs.cs5010.assignment8.dataProcessor.IDataProcessor;
@@ -73,16 +69,24 @@ public class SkiQueryProcessor {
     Writer.writeToData(processor.getSkierList(), skierDatabase);
     Writer.writeToData(processor.getLiftList(), liftDatabase);
     HourWriter.writeToHourData(processor.getHourRides(), hourDatabase);
-    rawDatabase.close();
-    skierDatabase.close();
-    liftDatabase.close();
-    hourDatabase.close();
     System.out.println("Building dat files took "
         + (System.currentTimeMillis() - datStart) + " milliseconds");
 
     // processes queries
-    IQueryProcessor queryProcessor = new QueryProcessor(queries);
+    DatabasePool databasePool = new DatabasePool();
+    databasePool.addDatabase(skierDatabase);
+    databasePool.addDatabase(rawDatabase);
+    databasePool.addDatabase(hourDatabase);
+    databasePool.addDatabase(liftDatabase);
+    IQueryProcessor queryProcessor = new QueryProcessor(databasePool, queries);
     queryProcessor.processQueries();
+    System.out.println("Processing queries took "
+        + queryProcessor.getRuntime().toMillis() + " milliseconds");
+
+    rawDatabase.close();
+    skierDatabase.close();
+    liftDatabase.close();
+    hourDatabase.close();
 
     //output
   }

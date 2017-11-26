@@ -71,4 +71,5 @@ public class RawRecord implements IRecord {
     result = 31 * result + liftId;
     return result;
   }
+
 }

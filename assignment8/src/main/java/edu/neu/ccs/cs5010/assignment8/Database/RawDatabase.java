@@ -11,7 +11,7 @@ public class RawDatabase extends Database {
     super(fileString);
   }
 
-  public IRecord getRecord(int id) throws IOException {
+  public synchronized IRecord getRecord(int id) throws IOException {
     if (id < 1) {
       throw new InvalidInputArgumentException("invalid ID!!");
     }

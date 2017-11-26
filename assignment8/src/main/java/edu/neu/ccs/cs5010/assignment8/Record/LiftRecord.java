@@ -103,4 +103,9 @@ public class LiftRecord implements IRecord {
   public int hashCode() {
     return liftId;
   }
+
+  @Override
+  public String toString() {
+    return Integer.toString(liftId) + "," + Integer.toString(number);
+  }
 }

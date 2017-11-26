@@ -6,13 +6,13 @@ import edu.neu.ccs.cs5010.assignment8.Record.IRecord;
 import java.io.BufferedWriter;
 import java.io.IOException;
 
-public class SkiersReader implements IReader {
+public class RawReader implements IReader {
 
   private final Database database;
   private final int parameter;
   private final BufferedWriter bufferedWriter;
 
-  public SkiersReader(Database database, int parameter, BufferedWriter bufferedWriter) {
+  public RawReader(Database database, int parameter, BufferedWriter bufferedWriter) {
     this.database = database;
     this.parameter = parameter;
     this.bufferedWriter = bufferedWriter;
@@ -23,7 +23,7 @@ public class SkiersReader implements IReader {
     try {
       IRecord record = database.getRecord(parameter);
       System.out.println(record);
-      bufferedWriter.write(record.toString() + "\n");
+      bufferedWriter.write(record.toString());
     } catch (IOException ioe) {
       System.out.println("Something went wrong! : " + ioe.getMessage());
       ioe.printStackTrace();

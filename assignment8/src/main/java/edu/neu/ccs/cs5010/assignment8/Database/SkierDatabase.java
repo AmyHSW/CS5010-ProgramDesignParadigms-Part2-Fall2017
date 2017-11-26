@@ -8,15 +8,18 @@ import java.io.IOException;
 
 public class SkierDatabase extends Database {
 
+  private int readers;
+
   public SkierDatabase(String fileString) throws IOException {
     super(fileString);
+    this.readers = 0;
   }
 
-  public IRecord getRecord(int id) throws IOException {
+  public synchronized IRecord getRecord(int id) throws IOException {
     if (id < 1) {
       throw new InvalidInputArgumentException("invalid ID!!");
     }
-    IRecord record = new SkierRecord();
+    IRecord record = new SkierRecord(id - 1);
     file.seek((id - 1) * SkierRecord.SIZE);
     record.readFromFile(file);
     updateNumberOfViews((SkierRecord) record);
@@ -30,9 +33,9 @@ public class SkierDatabase extends Database {
 
   public void updateNumberOfViews(SkierRecord record) throws IOException {
     if (record.getParameter() == 0) {
-      throw new InvalidInputArgumentException("Cannot update. Record does not exist.");
+      throw new InvalidInputArgumentException("Cannot update. Record does not exist: "
+          + record.getParameter());
     }
     record.updateNumberOfViewsToFile(file);
   }
-
 }

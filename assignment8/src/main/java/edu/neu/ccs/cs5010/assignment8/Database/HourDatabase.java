@@ -13,7 +13,7 @@ public class HourDatabase extends Database {
   }
 
   @Override
-  public IRecord getRecord(int id) throws IOException {
+  public synchronized IRecord getRecord(int id) throws IOException {
     IRecord record = new HourRecord();
     if (id < 1) {
       throw new InvalidInputArgumentException("invalid ID!!");

@@ -44,7 +44,6 @@ public class SequentialDataProcessor implements IDataProcessor {
     initHourRides();
   }
 
-
   private void initLiftList() {
     for (int i = 0; i < LiftRecord.LIFT_TOTAL; i++) {
       liftList.add(new LiftRecord(i));

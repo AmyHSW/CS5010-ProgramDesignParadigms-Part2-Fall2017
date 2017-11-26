@@ -7,7 +7,7 @@ public class SkierRecord implements IRecord {
   private int skierId;
   private int numRides;
   private int totalVertical;
-  private int numberOfViews;
+  private int numViews;
 
   public static final int SIZE = Integer.BYTES * 4;
   private static final int POS_TO_VIEWS = Integer.BYTES * 3;
@@ -20,7 +20,7 @@ public class SkierRecord implements IRecord {
     skierId = 0;
     numRides = 0;
     totalVertical = 0;
-    numberOfViews = 0;
+    numViews = 0;
   }
 
   /**
@@ -32,7 +32,7 @@ public class SkierRecord implements IRecord {
     skierId = skierIndex + 1;
     numRides = 0;
     totalVertical = 0;
-    numberOfViews = 0;
+    numViews = 0;
   }
 
   public void incrementNumRides() {
@@ -57,7 +57,7 @@ public class SkierRecord implements IRecord {
   }
 
   public int getNumberOfViews() {
-    return numberOfViews;
+    return numViews;
   }
 
   @Override
@@ -65,7 +65,7 @@ public class SkierRecord implements IRecord {
     skierId = file.readInt();
     numRides = file.readInt();
     totalVertical = file.readInt();
-    numberOfViews = file.readInt() + 1;
+    numViews = file.readInt() + 1;
   }
 
   @Override
@@ -73,13 +73,13 @@ public class SkierRecord implements IRecord {
     file.writeInt(skierId);
     file.writeInt(numRides);
     file.writeInt(totalVertical);
-    file.writeInt(numberOfViews);
+    file.writeInt(numViews);
   }
 
   public void updateNumberOfViewsToFile(RandomAccessFile file)
           throws IOException {
     file.seek((skierId - 1) * SkierRecord.SIZE + POS_TO_VIEWS);
-    file.writeInt(numberOfViews);
+    file.writeInt(numViews);
   }
 
   @Override
@@ -99,5 +99,13 @@ public class SkierRecord implements IRecord {
   @Override
   public int hashCode() {
     return skierId;
+  }
+
+  @Override
+  public String toString() {
+    return Integer.toString(skierId) + ","
+        + Integer.toString(numRides) + ","
+        + Integer.toString(totalVertical) + ","
+        + Integer.toString(numViews);
   }
 }
