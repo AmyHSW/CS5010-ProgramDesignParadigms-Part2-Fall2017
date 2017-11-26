@@ -2,16 +2,9 @@ package edu.neu.ccs.cs5010.assignment8.dataProcessor;
 
 import edu.neu.ccs.cs5010.assignment8.Record.*;
 import edu.neu.ccs.cs5010.assignment8.exceptions.InvalidInputDataException;
-import edu.neu.ccs.cs5010.assignment8.hour.Hour;
-import edu.neu.ccs.cs5010.assignment8.lift.ILift;
-import edu.neu.ccs.cs5010.assignment8.lift.Lift;
-import edu.neu.ccs.cs5010.assignment8.skier.ISkier;
-import edu.neu.ccs.cs5010.assignment8.skier.Skier;
-
 import java.time.Duration;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.concurrent.RecursiveAction;
 
 /**
  * The SequentialDataProcessor represents a concrete sequential processor.

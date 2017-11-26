@@ -3,7 +3,6 @@ package edu.neu.ccs.cs5010.assignment8.Database;
 import edu.neu.ccs.cs5010.assignment8.Record.IRecord;
 import edu.neu.ccs.cs5010.assignment8.Record.RawRecord;
 import edu.neu.ccs.cs5010.assignment8.exceptions.InvalidInputArgumentException;
-
 import java.io.IOException;
 
 public class RawDatabase extends Database {

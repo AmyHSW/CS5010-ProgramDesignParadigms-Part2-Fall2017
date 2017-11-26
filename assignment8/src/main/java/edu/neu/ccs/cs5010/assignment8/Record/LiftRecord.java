@@ -46,6 +46,7 @@ public class LiftRecord implements IRecord {
     number++;
   }
 
+  @Override
   public int getParameter() {
     return liftId;
   }

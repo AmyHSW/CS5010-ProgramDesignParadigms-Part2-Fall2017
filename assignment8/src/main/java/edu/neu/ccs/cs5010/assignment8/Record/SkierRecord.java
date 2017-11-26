@@ -43,6 +43,7 @@ public class SkierRecord implements IRecord {
     totalVertical += delta;
   }
 
+  @Override
   public int getParameter() {
     return skierId;
   }
