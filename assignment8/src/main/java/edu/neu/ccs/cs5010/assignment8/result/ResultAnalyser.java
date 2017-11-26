@@ -1,5 +1,7 @@
 package edu.neu.ccs.cs5010.assignment8.result;
 
+import edu.neu.ccs.cs5010.assignment8.Record.IRecord;
+import edu.neu.ccs.cs5010.assignment8.Record.RawRecord;
 import edu.neu.ccs.cs5010.assignment8.hour.Hour;
 import edu.neu.ccs.cs5010.assignment8.lift.ILift;
 import edu.neu.ccs.cs5010.assignment8.skier.ISkier;
@@ -20,6 +22,7 @@ public class ResultAnalyser implements IResultAnalyser {
       "SkierID,Number of Rides,Total Vertical Meters,Number of Views";
   private static final String LIFTS_HEADER = "LiftID,Number of Rides";
   private static final int INITIAL_NUM_VIEWS = 0;
+
 
   @Override
   public List<String> getSkierOutput(List<ISkier> skierList) {

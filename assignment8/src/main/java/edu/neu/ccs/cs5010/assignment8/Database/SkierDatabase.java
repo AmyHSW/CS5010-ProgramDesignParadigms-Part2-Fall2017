@@ -19,6 +19,7 @@ public class SkierDatabase extends Database {
     IRecord record = new SkierRecord();
     file.seek((id - 1) * SkierRecord.SIZE);
     record.readFromFile(file);
+    updateNumberOfViews((SkierRecord) record);
     return record;
   }
 

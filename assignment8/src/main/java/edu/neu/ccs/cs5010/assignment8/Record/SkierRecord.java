@@ -11,6 +11,7 @@ public class SkierRecord implements IRecord {
 
   public static final int SIZE = Integer.BYTES * 4;
   public static final int POS_TO_VIEWS = Integer.BYTES * 3;
+  public static final int SKIER_TOTAL = 40000;
 
   /**
    * The default constructor of SkierRecord.
@@ -63,7 +64,7 @@ public class SkierRecord implements IRecord {
     skierId = file.readInt();
     numRides = file.readInt();
     totalVertical = file.readInt();
-    numberOfViews = file.readInt();
+    numberOfViews = file.readInt() + 1;
   }
 
   @Override
@@ -77,7 +78,7 @@ public class SkierRecord implements IRecord {
   public void updateNumberOfViewsToFile(RandomAccessFile file)
           throws IOException {
     file.seek((skierId - 1) * SkierRecord.SIZE + POS_TO_VIEWS);
-    file.writeInt(numberOfViews + 1);
+    file.writeInt(numberOfViews);
   }
 
 

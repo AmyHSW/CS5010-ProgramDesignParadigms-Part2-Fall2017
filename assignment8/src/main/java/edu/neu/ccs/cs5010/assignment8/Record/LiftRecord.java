@@ -69,11 +69,10 @@ public class LiftRecord implements IRecord {
   /**
    * Converts the lift ID to the lift vertical meters.
    *
-   * @param lift the lift ID represented by a string
+   * @param liftId the lift ID
    * @return the lift vertical meters
    */
-  public static int toVerticalMeters(String lift) {
-    int liftId = Integer.parseInt(lift);
+  public static int toVerticalMeters(int liftId) {
     if (liftId <= LIFT_LEVEL1) {
       return LIFT_LEVEL1_HEIGHT;
     } else if (liftId <= LIFT_LEVEL2) {

@@ -13,7 +13,7 @@ public class HourRecord implements IRecord {
   public static final int HOUR_TOTAL = 6;
   public static final int SIZE = Integer.BYTES * 11;
 
-  private static final int Ten = 10;
+  public static final int TEN = 10;
   private static final int MINUTES_IN_HOUR = 60;
 
   /**
@@ -21,12 +21,12 @@ public class HourRecord implements IRecord {
    */
   public HourRecord() {
     hourId = 0;
-    topTenLifts = new ArrayList<>(Ten);
+    topTenLifts = new ArrayList<>(TEN);
   }
 
-  public HourRecord(int hourIndex) {
+  public HourRecord(int hourIndex, List<Integer> liftList) {
     hourId = hourIndex + 1;
-    topTenLifts = new ArrayList<>(Ten);
+    topTenLifts = liftList;
   }
 
   @Override
@@ -37,7 +37,7 @@ public class HourRecord implements IRecord {
   @Override
   public void readFromFile(RandomAccessFile file) throws IOException {
     hourId = file.readInt();
-    for (int i = 0; i < Ten; i++) {
+    for (int i = 0; i < TEN; i++) {
       topTenLifts.add(file.readInt());
     }
   }
@@ -55,7 +55,7 @@ public class HourRecord implements IRecord {
    *
    * @param time the minutes after 9 am
    */
-  public static int toIndex(String time) {
-    return (Integer.parseInt(time) - 1) / MINUTES_IN_HOUR;
+  public static int toIndex(int time) {
+    return (time - 1) / MINUTES_IN_HOUR;
   }
 }

@@ -1,5 +1,6 @@
 package edu.neu.ccs.cs5010.assignment8.dataProcessor;
 
+import edu.neu.ccs.cs5010.assignment8.Record.*;
 import edu.neu.ccs.cs5010.assignment8.exceptions.InvalidInputDataException;
 import edu.neu.ccs.cs5010.assignment8.hour.Hour;
 import edu.neu.ccs.cs5010.assignment8.lift.ILift;
@@ -10,6 +11,7 @@ import edu.neu.ccs.cs5010.assignment8.skier.Skier;
 import java.time.Duration;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.concurrent.RecursiveAction;
 
 /**
  * The SequentialDataProcessor represents a concrete sequential processor.
@@ -23,9 +25,10 @@ public class SequentialDataProcessor implements IDataProcessor {
   private static final int TIME_INDEX = 4;
 
   private final List<String[]> inputData;
-  private final List<ISkier> skierList;
-  private final List<ILift> liftList;
-  private final List<List<ILift>> hourList;
+  private final List<IRecord> rawList;
+  private final List<IRecord> skierList;
+  private final List<IRecord> liftList;
+  private final List<List<IRecord>> hourList;
   private Duration runTime;
 
   /**
@@ -39,33 +42,35 @@ public class SequentialDataProcessor implements IDataProcessor {
       throw new InvalidInputDataException("Input data doesn't contain enough information.");
     }
     this.inputData = inputData.subList(1, inputData.size());
-    liftList = new ArrayList<>();
-    hourList = new ArrayList<>();
-    skierList = new ArrayList<>();
-    initHourRides();
-    initLiftList();
+    rawList = new ArrayList<>(inputData.size());
+    skierList = new ArrayList<>(SkierRecord.SKIER_TOTAL);
+    liftList = new ArrayList<>(LiftRecord.LIFT_TOTAL);
+    hourList = new ArrayList<>(HourRecord.HOUR_TOTAL);
     initSkierList();
+    initLiftList();
+    initHourRides();
   }
 
+
   private void initLiftList() {
-    for (int i = 0; i < Lift.LIFT_TOTAL; i++) {
-      liftList.add(new Lift(i));
+    for (int i = 0; i < LiftRecord.LIFT_TOTAL; i++) {
+      liftList.add(new LiftRecord(i));
     }
   }
 
   private void initHourRides() {
-    for (int i = 0; i < Hour.HOUR_TOTAL; i++) {
-      List<ILift> tempList = new ArrayList<>();
-      for (int j = 0; j < Lift.LIFT_TOTAL; j++) {
-        tempList.add(new Lift(j));
+    for (int i = 0; i < HourRecord.HOUR_TOTAL; i++) {
+      List<IRecord> tempList = new ArrayList<>();
+      for (int j = 0; j < LiftRecord.LIFT_TOTAL; j++) {
+        tempList.add(new LiftRecord(j));
       }
       hourList.add(tempList);
     }
   }
 
   private void initSkierList() {
-    for (int i = 0; i < Skier.SKIER_TOTAL; i++) {
-      skierList.add(new Skier(i));
+    for (int i = 0; i < SkierRecord.SKIER_TOTAL; i++) {
+      skierList.add(new SkierRecord(i));
     }
   }
 
@@ -73,39 +78,61 @@ public class SequentialDataProcessor implements IDataProcessor {
   public void processInput() {
     long startTime = System.currentTimeMillis();
     for (String[] record : inputData) {
-      processSkier(record[SKIER_INDEX], record[LIFT_INDEX]);
-      processLift(record[LIFT_INDEX]);
-      processHour(Hour.toIndex(record[TIME_INDEX]), Lift.toIndex(record[LIFT_INDEX]));
+      int skierId = Integer.parseInt(record[SKIER_INDEX]);
+      int liftId = Integer.parseInt(record[LIFT_INDEX]);
+      int time = Integer.parseInt(record[TIME_INDEX]);
+      processRaw(skierId, time, liftId);
+      processSkier(skierId, liftId);
+      processLift(liftId);
+      processHour(time, liftId);
     }
     runTime = Duration.ofMillis(System.currentTimeMillis() - startTime);
   }
 
-  private void processSkier(String skierId, String liftId) {
-    ISkier skier = skierList.get(Skier.toIndex(skierId));
+  private void processRaw(int skierId, int time, int liftId) {
+    IRecord raw = new RawRecord(skierId, time, liftId);
+    rawList.add(raw);
+  }
+
+  private void processSkier(int skierId, int liftId) {
+    SkierRecord skier = (SkierRecord) skierList.get(skierId - 1);
     skier.incrementNumRides();
-    skier.increaseVerticalMeters(Lift.toVerticalMeters(liftId));
+    skier.increaseTotalVertical(LiftRecord.toVerticalMeters(liftId));
   }
 
-  private void processLift(String liftId) {
-    liftList.get(Lift.toIndex(liftId)).incrementNumber();
+  private void processLift(int liftId) {
+    LiftRecord lift = (LiftRecord) liftList.get(liftId - 1);
+    lift.incrementNumber();
   }
 
-  private void processHour(int hourIndex, int liftIndex) {
-    hourList.get(hourIndex).get(liftIndex).incrementNumber();
+  private void processHour(int time, int liftId) {
+    LiftRecord lift = (LiftRecord) hourList.get(HourRecord.toIndex(time)).get(liftId - 1);
+    lift.incrementNumber();
   }
 
   @Override
-  public List<ISkier> getSkierList() {
+  public List<IRecord> getRawList() {
+    rawList.sort((raw1, raw2) -> {
+      if (raw1.getParameter() != raw2.getParameter()) {
+        return raw1.getParameter() - raw2.getParameter();
+      }
+      return ((RawRecord)raw1).getTime() - ((RawRecord)raw2).getTime();
+    });
+    return rawList;
+  }
+
+  @Override
+  public List<IRecord> getSkierList() {
     return skierList;
   }
 
   @Override
-  public List<ILift> getLiftList() {
+  public List<IRecord> getLiftList() {
     return liftList;
   }
 
   @Override
-  public List<List<ILift>> getHourRides() {
+  public List<List<IRecord>> getHourRides() {
     return hourList;
   }
 

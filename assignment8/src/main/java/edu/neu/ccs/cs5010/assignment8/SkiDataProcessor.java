@@ -2,13 +2,14 @@ package edu.neu.ccs.cs5010.assignment8;
 
 import com.univocity.parsers.csv.CsvParser;
 import com.univocity.parsers.csv.CsvParserSettings;
+import edu.neu.ccs.cs5010.assignment8.Database.*;
 import edu.neu.ccs.cs5010.assignment8.dataProcessor.IDataProcessor;
 import edu.neu.ccs.cs5010.assignment8.dataProcessor.SequentialDataProcessor;
-import edu.neu.ccs.cs5010.assignment8.result.IResultAnalyser;
-import edu.neu.ccs.cs5010.assignment8.result.IoLibrary;
-import edu.neu.ccs.cs5010.assignment8.result.ResultAnalyser;
+import edu.neu.ccs.cs5010.assignment8.writer.HourWriter;
+import edu.neu.ccs.cs5010.assignment8.writer.Writer;
 
 import java.io.File;
+import java.io.IOException;
 import java.util.List;
 
 /**
@@ -23,7 +24,7 @@ public class SkiDataProcessor {
   /**
    * Reads ski resort data and analyze in a sequential way.
    */
-  public static void main(String[] args) throws InterruptedException {
+  public static void main(String[] args) throws InterruptedException, IOException {
     // reads csv file to List<String[]>
     long startTime = System.currentTimeMillis();
     CsvParserSettings settings = new CsvParserSettings();
@@ -39,12 +40,17 @@ public class SkiDataProcessor {
         + processor.getRunTime().toMillis() + " milliseconds");
 
     // generates the output dat files
-    IResultAnalyser resultAnalyser = new ResultAnalyser();
-    IoLibrary.generateOutput("skiers.dat",
-              resultAnalyser.getSkierOutput(processor.getSkierList()));
-    IoLibrary.generateOutput("lifts.dat",
-              resultAnalyser.getLiftOutput(processor.getLiftList()));
-    IoLibrary.generateOutput("hours.dat",
-              resultAnalyser.getHourOutput(processor.getHourRides()));
+    Database rawDatabase = new RawDatabase("liftRides.dat");
+    Database skierDatabase = new SkierDatabase("skiers.dat");
+    Database liftDatabase = new LiftDatabase("lifts.dat");
+    Database hourDatabase = new HourDatabase("hours.dat");
+    Writer.writeToData(processor.getRawList(), rawDatabase);
+    Writer.writeToData(processor.getSkierList(), skierDatabase);
+    Writer.writeToData(processor.getLiftList(), liftDatabase);
+    HourWriter.writeToHourData(processor.getHourRides(), hourDatabase);
+    rawDatabase.close();
+    skierDatabase.close();
+    liftDatabase.close();
+    hourDatabase.close();
   }
 }

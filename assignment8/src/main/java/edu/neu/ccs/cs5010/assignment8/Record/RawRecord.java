@@ -11,9 +11,25 @@ public class RawRecord implements IRecord {
 
   public static final int SIZE = Integer.BYTES * 3;
 
+  public RawRecord() {
+    skierId = 0;
+    time = 0;
+    liftId = 0;
+  }
+
+  public RawRecord(int skierId, int time, int liftId) {
+    this.skierId = skierId;
+    this.time = time;
+    this.liftId = liftId;
+  }
+
   @Override
   public int getParameter() {
     return skierId;
+  }
+
+  public int getTime() {
+    return time;
   }
 
   @Override
