@@ -48,6 +48,10 @@ public class SkierRecord implements IRecord {
     return skierId;
   }
 
+  public int getNumRides() {
+    return numRides;
+  }
+
   @Override
   public void readFromFile(RandomAccessFile file) throws IOException {
     skierId = file.readInt();

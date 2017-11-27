@@ -61,6 +61,6 @@ public class HourRecord implements IRecord {
 
   @Override
   public String toString() {
-    return topTenLifts.toString();
+    return hourId + ":" + topTenLifts.toString();
   }
 }

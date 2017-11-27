@@ -5,7 +5,7 @@ import edu.neu.ccs.cs5010.assignment8.Record.IRecord;
 import java.io.IOException;
 import java.io.RandomAccessFile;
 
-public abstract class Database {
+public class Database {
 
   protected RandomAccessFile file;
 
@@ -20,7 +20,9 @@ public abstract class Database {
 
   //public abstract IRecord getRecord(int id) throws IOException;
 
-  public abstract void addRecord(IRecord record) throws IOException;
+  public void addRecord(IRecord record) throws IOException {
+    record.writeToFile(file);
+  }
 
 
 }

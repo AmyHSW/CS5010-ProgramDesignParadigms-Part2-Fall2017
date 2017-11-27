@@ -22,6 +22,7 @@ public class SequentialDataProcessor implements IDataProcessor {
   private final List<IRecord> skierList;
   private final List<IRecord> liftList;
   private final List<List<IRecord>> hourList;
+  private final List<IRecord> skierRowList;
   private Duration runTime;
 
   /**
@@ -39,6 +40,7 @@ public class SequentialDataProcessor implements IDataProcessor {
     skierList = new ArrayList<>(SkierRecord.SKIER_TOTAL);
     liftList = new ArrayList<>(LiftRecord.LIFT_TOTAL);
     hourList = new ArrayList<>(HourRecord.HOUR_TOTAL);
+    skierRowList = new ArrayList<>(SkierRecord.SKIER_TOTAL);
     initSkierList();
     initLiftList();
     initHourRides();
@@ -78,6 +80,7 @@ public class SequentialDataProcessor implements IDataProcessor {
       processLift(liftId);
       processHour(time, liftId);
     }
+    processSkierRowIndex();
     runTime = Duration.ofMillis(System.currentTimeMillis() - startTime);
   }
 
@@ -102,8 +105,7 @@ public class SequentialDataProcessor implements IDataProcessor {
     lift.incrementNumber();
   }
 
-  @Override
-  public List<IRecord> getRawList() {
+  private void processSkierRowIndex() {
     rawList.sort((record1, record2) -> {
       if (record1.getParameter() != record2.getParameter()) {
         return record1.getParameter() - record2.getParameter();
@@ -111,6 +113,16 @@ public class SequentialDataProcessor implements IDataProcessor {
         return ((RawRecord)record1).getTime() - ((RawRecord)record2).getTime();
       }
     });
+    int index = 0;
+    for (IRecord record: skierList) {
+      SkierRecord skier = (SkierRecord)record;
+      skierRowList.add(new SkierRowRecord(skier.getParameter(), index));
+      index += skier.getNumRides();
+    }
+  }
+
+  @Override
+  public List<IRecord> getRawList() {
     return rawList;
   }
 
@@ -127,6 +139,11 @@ public class SequentialDataProcessor implements IDataProcessor {
   @Override
   public List<List<IRecord>> getHourRides() {
     return hourList;
+  }
+
+  @Override
+  public List<IRecord> getSkierRowList() {
+    return skierRowList;
   }
 
   @Override

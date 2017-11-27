@@ -47,6 +47,13 @@ public interface IDataProcessor {
   List<List<IRecord>> getHourRides();
 
   /**
+   * Gets all skiers' row indices information.
+   *
+   * @return the map stores all skiers' row indices information
+   */
+  List<IRecord> getSkierRowList();
+
+  /**
    * Gets the processor's runtime.
    *
    * @return Duration the actual runtime

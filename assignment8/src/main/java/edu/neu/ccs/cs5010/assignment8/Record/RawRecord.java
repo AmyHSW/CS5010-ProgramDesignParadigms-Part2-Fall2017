@@ -72,4 +72,8 @@ public class RawRecord implements IRecord {
     return result;
   }
 
+  @Override
+  public String toString() {
+    return "[" + time + "," + liftId + "]";
+  }
 }
