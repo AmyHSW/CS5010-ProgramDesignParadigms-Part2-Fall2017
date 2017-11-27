@@ -48,18 +48,6 @@ public class SkierRecord implements IRecord {
     return skierId;
   }
 
-  public int getNumRides() {
-    return numRides;
-  }
-
-  public int getTotalVertical() {
-    return totalVertical;
-  }
-
-  public int getNumberOfViews() {
-    return numViews;
-  }
-
   @Override
   public void readFromFile(RandomAccessFile file) throws IOException {
     skierId = file.readInt();
@@ -78,8 +66,10 @@ public class SkierRecord implements IRecord {
 
   public void updateNumberOfViewsToFile(RandomAccessFile file)
           throws IOException {
-    file.seek((skierId - 1) * SkierRecord.SIZE + POS_TO_VIEWS);
-    file.writeInt(numViews);
+    synchronized (this) {
+      file.seek((skierId - 1) * SkierRecord.SIZE + POS_TO_VIEWS);
+      file.writeInt(numViews);
+    }
   }
 
   @Override

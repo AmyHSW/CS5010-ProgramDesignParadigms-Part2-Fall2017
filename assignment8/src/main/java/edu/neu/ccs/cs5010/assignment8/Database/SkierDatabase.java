@@ -2,7 +2,6 @@ package edu.neu.ccs.cs5010.assignment8.Database;
 
 import edu.neu.ccs.cs5010.assignment8.Record.IRecord;
 import edu.neu.ccs.cs5010.assignment8.Record.SkierRecord;
-import edu.neu.ccs.cs5010.assignment8.exceptions.InvalidInputArgumentException;
 
 import java.io.IOException;
 
@@ -27,12 +26,12 @@ public class SkierDatabase extends Database {
     file.seek((record.getParameter() - 1) * SkierRecord.SIZE);
     record.writeToFile(file);
   }
-
+/*
   public void updateNumberOfViews(SkierRecord record) throws IOException {
     if (record.getParameter() == 0) {
       throw new InvalidInputArgumentException("Cannot update. Record does not exist: "
           + record.getParameter());
     }
     record.updateNumberOfViewsToFile(file);
-  }
+  }*/
 }
