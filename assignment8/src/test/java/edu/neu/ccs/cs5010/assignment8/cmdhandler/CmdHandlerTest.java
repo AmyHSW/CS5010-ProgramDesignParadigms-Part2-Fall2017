@@ -1,4 +1,4 @@
-package edu.neu.ccs.cs5010.assignment8.cmdHandler;
+package edu.neu.ccs.cs5010.assignment8.cmdhandler;
 
 import org.junit.Before;
 import org.junit.Test;

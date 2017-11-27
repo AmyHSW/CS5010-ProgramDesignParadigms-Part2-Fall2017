@@ -1,4 +1,4 @@
-package edu.neu.ccs.cs5010.assignment8.dataProcessor;
+package edu.neu.ccs.cs5010.assignment8.dataprocessor;
 
 import edu.neu.ccs.cs5010.assignment8.record.IRecord;
 

@@ -2,7 +2,7 @@ package edu.neu.ccs.cs5010.assignment8.query;
 
 import com.univocity.parsers.csv.CsvParser;
 import com.univocity.parsers.csv.CsvParserSettings;
-import edu.neu.ccs.cs5010.assignment8.exceptions.NoMoreQueriesException;
+import edu.neu.ccs.cs5010.assignment8.exception.NoMoreQueriesException;
 import org.junit.Before;
 import org.junit.Test;
 

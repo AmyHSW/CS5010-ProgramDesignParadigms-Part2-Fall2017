@@ -2,15 +2,15 @@ package edu.neu.ccs.cs5010.assignment8;
 
 import com.univocity.parsers.csv.CsvParser;
 import com.univocity.parsers.csv.CsvParserSettings;
-import edu.neu.ccs.cs5010.assignment8.cmdHandler.CmdHandler;
-import edu.neu.ccs.cs5010.assignment8.cmdHandler.ICmdHandler;
-import edu.neu.ccs.cs5010.assignment8.exceptions.InvalidInputArgumentException;
-import edu.neu.ccs.cs5010.assignment8.ioUtil.IoLibrary;
+import edu.neu.ccs.cs5010.assignment8.cmdhandler.CmdHandler;
+import edu.neu.ccs.cs5010.assignment8.cmdhandler.ICmdHandler;
+import edu.neu.ccs.cs5010.assignment8.exception.InvalidInputArgumentException;
+import edu.neu.ccs.cs5010.assignment8.output.IoLibrary;
 import edu.neu.ccs.cs5010.assignment8.query.IQuery;
 import edu.neu.ccs.cs5010.assignment8.query.IQueryGenerator;
 import edu.neu.ccs.cs5010.assignment8.query.QueryGenerator;
-import edu.neu.ccs.cs5010.assignment8.queryProcessor.IQueryProcessor;
-import edu.neu.ccs.cs5010.assignment8.queryProcessor.QueryProcessor;
+import edu.neu.ccs.cs5010.assignment8.queryprocessor.IQueryProcessor;
+import edu.neu.ccs.cs5010.assignment8.queryprocessor.QueryProcessor;
 
 import java.io.File;
 import java.io.IOException;
@@ -47,9 +47,9 @@ public class SkiQueryProcessor {
 
     //output
     List<List<String>> threadsOutput = queryProcessor.getOutputList();
-    int i = 1;
+    int threadId = 1;
     for (List<String> output : threadsOutput) {
-      IoLibrary.generateOutput("thread" + i++ + ".txt", output);
+      IoLibrary.generateOutput("thread" + threadId++ + ".txt", output);
     }
   }
 }

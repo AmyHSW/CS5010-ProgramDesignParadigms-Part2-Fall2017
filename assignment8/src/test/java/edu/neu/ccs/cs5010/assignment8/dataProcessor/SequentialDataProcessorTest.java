@@ -1,8 +1,8 @@
-package edu.neu.ccs.cs5010.assignment8.dataProcessor;
+package edu.neu.ccs.cs5010.assignment8.dataprocessor;
 
 import com.univocity.parsers.csv.CsvParser;
 import com.univocity.parsers.csv.CsvParserSettings;
-import edu.neu.ccs.cs5010.assignment8.exceptions.InvalidInputDataException;
+import edu.neu.ccs.cs5010.assignment8.exception.InvalidInputDataException;
 import edu.neu.ccs.cs5010.assignment8.record.IRecord;
 import edu.neu.ccs.cs5010.assignment8.record.LiftRecord;
 import edu.neu.ccs.cs5010.assignment8.record.SkierRecord;

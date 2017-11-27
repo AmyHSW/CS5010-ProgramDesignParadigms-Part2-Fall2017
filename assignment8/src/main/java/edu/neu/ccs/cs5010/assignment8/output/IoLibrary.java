@@ -1,4 +1,4 @@
-package edu.neu.ccs.cs5010.assignment8.ioUtil;
+package edu.neu.ccs.cs5010.assignment8.output;
 
 import java.io.BufferedWriter;
 import java.io.FileOutputStream;

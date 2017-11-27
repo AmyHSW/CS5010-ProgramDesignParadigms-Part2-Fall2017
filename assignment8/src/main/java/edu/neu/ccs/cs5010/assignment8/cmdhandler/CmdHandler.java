@@ -1,4 +1,4 @@
-package edu.neu.ccs.cs5010.assignment8.cmdHandler;
+package edu.neu.ccs.cs5010.assignment8.cmdhandler;
 
 /**
  * The CmdHandler class handles the input command-line arguments.

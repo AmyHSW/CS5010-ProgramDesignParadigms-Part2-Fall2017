@@ -2,9 +2,10 @@ package edu.neu.ccs.cs5010.assignment8;
 
 import com.univocity.parsers.csv.CsvParser;
 import com.univocity.parsers.csv.CsvParserSettings;
-import edu.neu.ccs.cs5010.assignment8.editor.*;
-import edu.neu.ccs.cs5010.assignment8.dataProcessor.IDataProcessor;
-import edu.neu.ccs.cs5010.assignment8.dataProcessor.SequentialDataProcessor;
+import edu.neu.ccs.cs5010.assignment8.dataprocessor.IDataProcessor;
+import edu.neu.ccs.cs5010.assignment8.dataprocessor.SequentialDataProcessor;
+import edu.neu.ccs.cs5010.assignment8.editor.DatFileEditor;
+import edu.neu.ccs.cs5010.assignment8.editor.IDatFileEditor;
 
 import java.io.File;
 import java.io.IOException;
@@ -19,7 +20,7 @@ public class SkiDataProcessor {
   private static final String HOUR_DATA_FILE = "hours.dat";
   private static final String SKIER_ROW_FILE = "skierRow.dat";
 
-  public static void main(String[] args) throws InterruptedException, IOException{
+  public static void main(String[] args) throws InterruptedException, IOException {
     // reads csv file to List<String[]>
     long inputStart = System.currentTimeMillis();
     CsvParserSettings settings = new CsvParserSettings();
@@ -35,12 +36,12 @@ public class SkiDataProcessor {
         + processor.getRunTime().toMillis() + " milliseconds (sequentially)");
 
     // generates the output dat files
-    long datStart = System.currentTimeMillis();
-    IDatFileEditor rawFileEditor = new DatFileEditor(RAW_DATA_FILE);
-    IDatFileEditor skierFileEditor = new DatFileEditor(SKIER_DATA_FILE);
-    IDatFileEditor liftFileEditor = new DatFileEditor(LIFT_DATA_FILE);
-    IDatFileEditor hourFileEditor = new DatFileEditor(HOUR_DATA_FILE);
-    IDatFileEditor skierRowFileEditor = new DatFileEditor(SKIER_ROW_FILE);
+    final long datStart = System.currentTimeMillis();
+    final IDatFileEditor rawFileEditor = new DatFileEditor(RAW_DATA_FILE);
+    final IDatFileEditor skierFileEditor = new DatFileEditor(SKIER_DATA_FILE);
+    final IDatFileEditor liftFileEditor = new DatFileEditor(LIFT_DATA_FILE);
+    final IDatFileEditor hourFileEditor = new DatFileEditor(HOUR_DATA_FILE);
+    final IDatFileEditor skierRowFileEditor = new DatFileEditor(SKIER_ROW_FILE);
 
     rawFileEditor.writeRecordsToFile(processor.getRawList());
     skierFileEditor.writeRecordsToFile(processor.getSkierList());

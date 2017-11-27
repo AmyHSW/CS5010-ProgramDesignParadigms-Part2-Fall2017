@@ -1,7 +1,13 @@
-package edu.neu.ccs.cs5010.assignment8.dataProcessor;
+package edu.neu.ccs.cs5010.assignment8.dataprocessor;
 
-import edu.neu.ccs.cs5010.assignment8.record.*;
-import edu.neu.ccs.cs5010.assignment8.exceptions.InvalidInputDataException;
+import edu.neu.ccs.cs5010.assignment8.exception.InvalidInputDataException;
+import edu.neu.ccs.cs5010.assignment8.record.HourRecord;
+import edu.neu.ccs.cs5010.assignment8.record.IRecord;
+import edu.neu.ccs.cs5010.assignment8.record.LiftRecord;
+import edu.neu.ccs.cs5010.assignment8.record.RawRecord;
+import edu.neu.ccs.cs5010.assignment8.record.SkierRecord;
+import edu.neu.ccs.cs5010.assignment8.record.SkierRowRecord;
+
 import java.time.Duration;
 import java.util.ArrayList;
 import java.util.List;

@@ -1,6 +1,6 @@
 package edu.neu.ccs.cs5010.assignment8.record;
 
-import edu.neu.ccs.cs5010.assignment8.exceptions.InvalidLiftIdException;
+import edu.neu.ccs.cs5010.assignment8.exception.InvalidLiftIdException;
 
 import java.io.IOException;
 import java.io.RandomAccessFile;

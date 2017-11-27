@@ -1,6 +1,6 @@
 package edu.neu.ccs.cs5010.assignment8.reader;
 
-import edu.neu.ccs.cs5010.assignment8.exceptions.InvalidQueryIdException;
+import edu.neu.ccs.cs5010.assignment8.exception.InvalidQueryIdException;
 
 import java.io.IOException;
 

@@ -16,8 +16,9 @@ public class DatFileEditor implements IDatFileEditor {
 
   @Override
   public void close() throws IOException {
-    if (file != null)
+    if (file != null) {
       file.close();
+    }
   }
 
   @Override

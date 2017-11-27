@@ -1,4 +1,4 @@
-package edu.neu.ccs.cs5010.assignment8.queryProcessor;
+package edu.neu.ccs.cs5010.assignment8.queryprocessor;
 
 import edu.neu.ccs.cs5010.assignment8.query.IQuery;
 
@@ -12,8 +12,8 @@ import java.util.concurrent.Executors;
 
 public class QueryProcessor implements IQueryProcessor {
 
-  static CyclicBarrier barrier;
   private static final int NUM_THREADS = 20;
+  static CyclicBarrier barrier = new CyclicBarrier(NUM_THREADS + 1);
   private final List<IQuery> queries;
   private final ExecutorService executorService = Executors.newFixedThreadPool(NUM_THREADS);
   private Duration runtime;
@@ -22,7 +22,6 @@ public class QueryProcessor implements IQueryProcessor {
   public QueryProcessor(List<IQuery> queryList) {
     queries = queryList;
     initOutputList();
-    barrier = new CyclicBarrier(NUM_THREADS + 1);
   }
 
   private void initOutputList() {

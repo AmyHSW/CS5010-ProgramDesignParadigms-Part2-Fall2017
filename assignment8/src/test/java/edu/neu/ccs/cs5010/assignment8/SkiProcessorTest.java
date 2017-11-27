@@ -1,9 +1,7 @@
 package edu.neu.ccs.cs5010.assignment8;
 
-import edu.neu.ccs.cs5010.assignment8.exceptions.InvalidInputArgumentException;
+import edu.neu.ccs.cs5010.assignment8.exception.InvalidInputArgumentException;
 import org.junit.Test;
-
-import static org.junit.Assert.*;
 
 public class SkiProcessorTest {
 

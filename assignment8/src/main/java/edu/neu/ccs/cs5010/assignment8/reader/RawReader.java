@@ -24,10 +24,10 @@ public class RawReader implements IReader {
     StringBuilder stringBuilder = new StringBuilder();
     file1.seek((parameter - 1) * SkierRowRecord.SIZE);
     skierRowRecord.readFromFile(file1);
-    int row1 = skierRowRecord.getRowIndex();
+    final int row1 = skierRowRecord.getRowIndex();
     stringBuilder.append(skierRowRecord.getParameter()).append(":");
     skierRowRecord.readFromFile(file1);
-    int row2 = skierRowRecord.getRowIndex();
+    final int row2 = skierRowRecord.getRowIndex();
     file1.close();
 
     RawRecord rawRecord = new RawRecord();

@@ -31,7 +31,9 @@ public class Query implements IQuery {
 
     Query query = (Query) other;
 
-    if (queryId != query.queryId) return false;
+    if (queryId != query.queryId) {
+      return false;
+    }
     return parameter == query.parameter;
   }
 

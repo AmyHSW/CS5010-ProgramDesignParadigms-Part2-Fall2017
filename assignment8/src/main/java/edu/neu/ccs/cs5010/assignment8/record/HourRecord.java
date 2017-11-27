@@ -63,7 +63,8 @@ public class HourRecord implements IRecord {
     List<IRecord> hourRecords = new ArrayList<>();
     for (int i = 0; i < HourRecord.HOUR_TOTAL; i++) {
       List<IRecord> liftList = hourLiftsList.get(i);
-      liftList.sort((lift1, lift2) -> ((LiftRecord)lift2).getNumber() - ((LiftRecord)lift1).getNumber());
+      liftList.sort((lift1, lift2) ->
+          ((LiftRecord)lift2).getNumber() - ((LiftRecord)lift1).getNumber());
       List<Integer> topTenList = new ArrayList<>();
       for (int j = 0; j < HourRecord.TEN; j++) {
         topTenList.add(liftList.get(j).getParameter());

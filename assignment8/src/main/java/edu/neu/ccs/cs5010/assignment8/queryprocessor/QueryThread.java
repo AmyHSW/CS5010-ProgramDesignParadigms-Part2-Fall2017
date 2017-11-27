@@ -1,4 +1,4 @@
-package edu.neu.ccs.cs5010.assignment8.queryProcessor;
+package edu.neu.ccs.cs5010.assignment8.queryprocessor;
 
 import edu.neu.ccs.cs5010.assignment8.query.IQuery;
 import edu.neu.ccs.cs5010.assignment8.reader.IReader;
@@ -38,8 +38,8 @@ public class QueryThread implements Runnable {
       }
       QueryProcessor.barrier.await();
     } catch (Exception exception) {
-        System.out.println("Something went wrong! : " + exception.getMessage());
-        exception.printStackTrace();
+      System.out.println("Something went wrong! : " + exception.getMessage());
+      exception.printStackTrace();
     }
   }
 

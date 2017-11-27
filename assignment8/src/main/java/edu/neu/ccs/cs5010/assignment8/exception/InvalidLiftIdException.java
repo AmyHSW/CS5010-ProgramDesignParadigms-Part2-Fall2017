@@ -1,4 +1,4 @@
-package edu.neu.ccs.cs5010.assignment8.exceptions;
+package edu.neu.ccs.cs5010.assignment8.exception;
 
 public class InvalidLiftIdException extends RuntimeException {
 

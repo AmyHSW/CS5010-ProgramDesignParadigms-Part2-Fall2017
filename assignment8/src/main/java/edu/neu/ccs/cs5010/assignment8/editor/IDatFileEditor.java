@@ -8,5 +8,6 @@ import java.util.List;
 public interface IDatFileEditor {
 
   void close() throws IOException;
+
   void writeRecordsToFile(List<IRecord> recordList) throws IOException;
 }

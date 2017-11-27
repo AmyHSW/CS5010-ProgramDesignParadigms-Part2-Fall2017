@@ -73,8 +73,8 @@ public class SkierRecord implements IRecord {
   }
 
   public void updateNumberOfViewsToFile(RandomAccessFile file) throws IOException {
-      file.seek((skierId - 1) * SkierRecord.SIZE + POS_TO_VIEWS);
-      file.writeInt(++numViews);
+    file.seek((skierId - 1) * SkierRecord.SIZE + POS_TO_VIEWS);
+    file.writeInt(++numViews);
   }
 
   @Override
