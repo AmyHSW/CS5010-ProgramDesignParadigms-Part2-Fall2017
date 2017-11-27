@@ -13,7 +13,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * The SequentialDataProcessor represents a concrete sequential processor.
+ * The SequentialDataProcessor represents a concrete sequential data processor.
  *
  * @author Shuwan Huang, Jingyu Shen
  */
@@ -54,7 +54,7 @@ public class SequentialDataProcessor implements IDataProcessor {
 
   private void initLiftList() {
     for (int i = 0; i < LiftRecord.LIFT_TOTAL; i++) {
-      liftList.add(new LiftRecord(i));
+      liftList.add(new LiftRecord(i + 1));
     }
   }
 
@@ -62,7 +62,7 @@ public class SequentialDataProcessor implements IDataProcessor {
     for (int i = 0; i < HourRecord.HOUR_TOTAL; i++) {
       List<IRecord> tempList = new ArrayList<>();
       for (int j = 0; j < LiftRecord.LIFT_TOTAL; j++) {
-        tempList.add(new LiftRecord(j));
+        tempList.add(new LiftRecord(j + 1));
       }
       hourLiftsList.add(tempList);
     }
@@ -70,10 +70,13 @@ public class SequentialDataProcessor implements IDataProcessor {
 
   private void initSkierList() {
     for (int i = 0; i < SkierRecord.SKIER_TOTAL; i++) {
-      skierList.add(new SkierRecord(i));
+      skierList.add(new SkierRecord(i + 1));
     }
   }
 
+  /**
+   * Processes input and stores all information .
+   */
   @Override
   public void processInput() {
     long startTime = System.currentTimeMillis();
@@ -127,31 +130,61 @@ public class SequentialDataProcessor implements IDataProcessor {
     }
   }
 
+  /**
+   * Gets all skiers' detailed information.
+   *
+   * @return the list that stores all skiers' detailed information
+   */
   @Override
   public List<IRecord> getRawList() {
     return rawList;
   }
 
+  /**
+   * Gets all skiers' summary information.
+   *
+   * @return the list that stores all skiers' summary information
+   */
   @Override
   public List<IRecord> getSkierList() {
     return skierList;
   }
 
+  /**
+   * Gets all lifts' information.
+   *
+   * @return the list that stores all lifts' information
+   */
   @Override
   public List<IRecord> getLiftList() {
     return liftList;
   }
 
+  /**
+   * Gets all hours' information.
+   *
+   * @return the list that stores all hours' information
+   */
   @Override
   public List<IRecord> getHourList() {
     return HourRecord.toHourRecordList(hourLiftsList);
   }
 
+  /**
+   * Gets all skiers' row indices information.
+   *
+   * @return the list stores all skiers' row indices information
+   */
   @Override
   public List<IRecord> getSkierRowList() {
     return skierRowList;
   }
 
+  /**
+   * Gets the processor's runtime.
+   *
+   * @return Duration the actual runtime
+   */
   @Override
   public Duration getRunTime() {
     return runTime;

@@ -3,11 +3,13 @@ package edu.neu.ccs.cs5010.assignment8.reader;
 import edu.neu.ccs.cs5010.assignment8.exception.InvalidQueryIdException;
 import org.junit.Test;
 
-public class ReaderFactoryTest {
+import static org.junit.Assert.*;
+
+public class IReaderTest {
 
   @Test(expected = InvalidQueryIdException.class)
   public void expectedInvalidQueryIdException() throws Exception {
-    ReaderFactory.getReader(5, 5);
+    IReader.getReader(5, 5);
   }
 
 }

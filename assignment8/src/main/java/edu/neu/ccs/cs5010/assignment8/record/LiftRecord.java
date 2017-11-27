@@ -5,13 +5,21 @@ import edu.neu.ccs.cs5010.assignment8.exception.InvalidLiftIdException;
 import java.io.IOException;
 import java.io.RandomAccessFile;
 
+/**
+ * The LiftRecord class represents a lift record.
+ *
+ * @author Shuwan Huang, Jingyu Shen
+ */
 public class LiftRecord implements IRecord {
 
-  private int liftId;
-  private int number;
-
-  public static final int LIFT_TOTAL = 40;
+  /**
+   * The size of each lift record in the dat file.
+   */
   public static final int SIZE = Integer.BYTES * 2;
+  /**
+   * The total number of lifts.
+   */
+  public static final int LIFT_TOTAL = 40;
 
   private static final int LIFT_LEVEL1 = 10;
   private static final int LIFT_LEVEL2 = 20;
@@ -21,6 +29,8 @@ public class LiftRecord implements IRecord {
   private static final int LIFT_LEVEL3_HEIGHT = 400;
   private static final int LIFT_LEVEL4_HEIGHT = 500;
 
+  private int liftId;
+  private int number;
 
   /**
    * The default constructor of LiftRecord object.
@@ -33,36 +43,57 @@ public class LiftRecord implements IRecord {
   /**
    * The constructor of LiftRecord object.
    *
-   * @param liftIndex the lift index in the list
+   * @param liftId the lift id
    * @throws IllegalArgumentException if the index is out of bound
    */
-  public LiftRecord(int liftIndex) {
-    if (liftIndex < 0 || liftIndex >= LIFT_TOTAL) {
+  public LiftRecord(int liftId) {
+    if (liftId <= 0 || liftId > LIFT_TOTAL) {
       throw new InvalidLiftIdException("Lift index out of bound.");
     }
-    liftId = liftIndex + 1;
+    this.liftId = liftId;
     number = 0;
   }
 
+  /**
+   * Increments the number of rides by one.
+   */
   public void incrementNumber() {
     number++;
   }
 
+  /**
+   * Returns the lift id.
+   * @return the lift id.
+   */
   @Override
   public int getParameter() {
     return liftId;
   }
 
+  /**
+   * Returns the number of rides.
+   * @return the number of rides.
+   */
   public int getNumber() {
     return number;
   }
 
+  /**
+   * Reads from the dat file to update the fields of this record.
+   * @param file the dat file
+   * @throws IOException if there is an I/O failure
+   */
   @Override
   public void readFromFile(RandomAccessFile file) throws IOException {
     liftId = file.readInt();
     number = file.readInt();
   }
 
+  /**
+   * Writes the information of this record to the file.
+   * @param file the dat file.
+   * @throws IOException if there is an I/O failure.
+   */
   @Override
   public void writeToFile(RandomAccessFile file) throws IOException {
     file.writeInt(liftId);

@@ -31,11 +31,11 @@ public class LiftRecordTest {
 
   @Test(expected = InvalidLiftIdException.class)
   public void expectedInvalidLiftIdException() throws Exception {
-    new LiftRecord(50);
+    new LiftRecord(41);
   }
 
   @Test(expected = InvalidLiftIdException.class)
   public void expectedInvalidLiftIdException2() throws Exception {
-    new LiftRecord(-1);
+    new LiftRecord(0);
   }
 }

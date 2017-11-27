@@ -8,11 +8,12 @@ import java.nio.charset.StandardCharsets;
 import java.util.List;
 
 /**
- * The IoLibrary represents a IO library.
+ * The IoLibrary is responsible for writing the list of strings to an output file.
  *
  * @author Shuwan Huang, Jingyu Shen
  */
 public class IoLibrary {
+
   /**
    * Generates an output file with the given filename and content.
    *

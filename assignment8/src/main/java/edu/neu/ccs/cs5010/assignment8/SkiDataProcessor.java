@@ -11,6 +11,12 @@ import java.io.File;
 import java.io.IOException;
 import java.util.List;
 
+/**
+ * The SkiDataProcessor processes the raw input csv file and stores the information in
+ * four dat files.
+ *
+ * @author Shuwan Huang, Jingyu Shen
+ */
 public class SkiDataProcessor {
 
   private static final String INPUT = "PDPAssignment.csv";
@@ -20,7 +26,16 @@ public class SkiDataProcessor {
   private static final String HOUR_DATA_FILE = "hours.dat";
   private static final String SKIER_ROW_FILE = "skierRow.dat";
 
+  /**
+   * Parses the input csv using a CsvParser, processes the raw lift rides information
+   * sequentially, saves the information in four dat files.
+   *
+   * @param args the command-line arguments
+   * @throws InterruptedException if the thread is interrupted
+   * @throws IOException if there is an I/O failure
+   */
   public static void main(String[] args) throws InterruptedException, IOException {
+
     // reads csv file to List<String[]>
     long inputStart = System.currentTimeMillis();
     CsvParserSettings settings = new CsvParserSettings();
@@ -33,7 +48,7 @@ public class SkiDataProcessor {
     IDataProcessor processor = new SequentialDataProcessor(inputData);
     processor.processInput();
     System.out.println("Processing raw input file took "
-        + processor.getRunTime().toMillis() + " milliseconds (sequentially)");
+        + processor.getRunTime().toMillis() + " milliseconds");
 
     // generates the output dat files
     final long datStart = System.currentTimeMillis();

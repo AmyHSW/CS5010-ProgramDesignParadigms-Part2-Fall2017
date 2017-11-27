@@ -2,62 +2,34 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2307343e-eed9-426f-bb9e-598739fd9077" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/../assignment8/src/main/java/edu/neu/ccs/cs5010/assignment8/cmdHandler/CmdHandler.java" afterPath="$PROJECT_DIR$/../assignment8/src/main/java/edu/neu/ccs/cs5010/assignment8/cmdhandler/CmdHandler.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/../assignment8/src/main/java/edu/neu/ccs/cs5010/assignment8/cmdHandler/ICmdHandler.java" afterPath="$PROJECT_DIR$/../assignment8/src/main/java/edu/neu/ccs/cs5010/assignment8/cmdhandler/ICmdHandler.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/../assignment8/src/main/java/edu/neu/ccs/cs5010/assignment8/dataProcessor/IDataProcessor.java" afterPath="$PROJECT_DIR$/../assignment8/src/main/java/edu/neu/ccs/cs5010/assignment8/dataprocessor/IDataProcessor.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/../assignment8/src/main/java/edu/neu/ccs/cs5010/assignment8/dataProcessor/SequentialDataProcessor.java" afterPath="$PROJECT_DIR$/../assignment8/src/main/java/edu/neu/ccs/cs5010/assignment8/dataprocessor/SequentialDataProcessor.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/../assignment8/src/main/java/edu/neu/ccs/cs5010/assignment8/exceptions/InvalidInputArgumentException.java" afterPath="$PROJECT_DIR$/../assignment8/src/main/java/edu/neu/ccs/cs5010/assignment8/exception/InvalidInputArgumentException.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/../assignment8/src/main/java/edu/neu/ccs/cs5010/assignment8/exceptions/InvalidInputDataException.java" afterPath="$PROJECT_DIR$/../assignment8/src/main/java/edu/neu/ccs/cs5010/assignment8/exception/InvalidInputDataException.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/../assignment8/src/main/java/edu/neu/ccs/cs5010/assignment8/exceptions/InvalidLiftIdException.java" afterPath="$PROJECT_DIR$/../assignment8/src/main/java/edu/neu/ccs/cs5010/assignment8/exception/InvalidLiftIdException.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/../assignment8/src/main/java/edu/neu/ccs/cs5010/assignment8/exceptions/InvalidQueryIdException.java" afterPath="$PROJECT_DIR$/../assignment8/src/main/java/edu/neu/ccs/cs5010/assignment8/exception/InvalidQueryIdException.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/../assignment8/src/main/java/edu/neu/ccs/cs5010/assignment8/exceptions/NoMoreQueriesException.java" afterPath="$PROJECT_DIR$/../assignment8/src/main/java/edu/neu/ccs/cs5010/assignment8/exception/NoMoreQueriesException.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/../assignment8/src/main/java/edu/neu/ccs/cs5010/assignment8/ioUtil/IoLibrary.java" afterPath="$PROJECT_DIR$/../assignment8/src/main/java/edu/neu/ccs/cs5010/assignment8/output/IoLibrary.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/../assignment8/src/main/java/edu/neu/ccs/cs5010/assignment8/queryProcessor/IQueryProcessor.java" afterPath="$PROJECT_DIR$/../assignment8/src/main/java/edu/neu/ccs/cs5010/assignment8/queryprocessor/IQueryProcessor.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/../assignment8/src/main/java/edu/neu/ccs/cs5010/assignment8/queryProcessor/QueryProcessor.java" afterPath="$PROJECT_DIR$/../assignment8/src/main/java/edu/neu/ccs/cs5010/assignment8/queryprocessor/QueryProcessor.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/../assignment8/src/main/java/edu/neu/ccs/cs5010/assignment8/queryProcessor/QueryThread.java" afterPath="$PROJECT_DIR$/../assignment8/src/main/java/edu/neu/ccs/cs5010/assignment8/queryprocessor/QueryThread.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/../assignment8/src/test/java/edu/neu/ccs/cs5010/assignment8/cmdHandler/CmdHandlerTest.java" afterPath="$PROJECT_DIR$/../assignment8/src/test/java/edu/neu/ccs/cs5010/assignment8/cmdhandler/CmdHandlerTest.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../assignment8/src/main/java/edu/neu/ccs/cs5010/assignment8/reader/ReaderFactory.java" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../assignment8/src/test/java/edu/neu/ccs/cs5010/assignment8/dataProcessor/SequentialDataProcessorTest.java" afterPath="$PROJECT_DIR$/../assignment8/src/test/java/edu/neu/ccs/cs5010/assignment8/dataprocessor/SequentialDataProcessorTest.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../assignment8/src/test/java/edu/neu/ccs/cs5010/assignment8/reader/ReaderFactoryTest.java" afterPath="$PROJECT_DIR$/../assignment8/src/test/java/edu/neu/ccs/cs5010/assignment8/reader/IReaderTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../assignment8/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../assignment8/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../assignment8/skiers.dat" afterPath="$PROJECT_DIR$/../assignment8/skiers.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../assignment8/src/main/java/edu/neu/ccs/cs5010/assignment8/SkiDataProcessor.java" afterPath="$PROJECT_DIR$/../assignment8/src/main/java/edu/neu/ccs/cs5010/assignment8/SkiDataProcessor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../assignment8/src/main/java/edu/neu/ccs/cs5010/assignment8/SkiQueryProcessor.java" afterPath="$PROJECT_DIR$/../assignment8/src/main/java/edu/neu/ccs/cs5010/assignment8/SkiQueryProcessor.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../assignment8/src/main/java/edu/neu/ccs/cs5010/assignment8/cmdhandler/CmdHandler.java" afterPath="$PROJECT_DIR$/../assignment8/src/main/java/edu/neu/ccs/cs5010/assignment8/cmdhandler/CmdHandler.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../assignment8/src/main/java/edu/neu/ccs/cs5010/assignment8/dataprocessor/IDataProcessor.java" afterPath="$PROJECT_DIR$/../assignment8/src/main/java/edu/neu/ccs/cs5010/assignment8/dataprocessor/IDataProcessor.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../assignment8/src/main/java/edu/neu/ccs/cs5010/assignment8/dataprocessor/SequentialDataProcessor.java" afterPath="$PROJECT_DIR$/../assignment8/src/main/java/edu/neu/ccs/cs5010/assignment8/dataprocessor/SequentialDataProcessor.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../assignment8/src/main/java/edu/neu/ccs/cs5010/assignment8/editor/DatFileEditor.java" afterPath="$PROJECT_DIR$/../assignment8/src/main/java/edu/neu/ccs/cs5010/assignment8/editor/DatFileEditor.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../assignment8/src/main/java/edu/neu/ccs/cs5010/assignment8/editor/IDatFileEditor.java" afterPath="$PROJECT_DIR$/../assignment8/src/main/java/edu/neu/ccs/cs5010/assignment8/editor/IDatFileEditor.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../assignment8/src/main/java/edu/neu/ccs/cs5010/assignment8/exception/InvalidInputArgumentException.java" afterPath="$PROJECT_DIR$/../assignment8/src/main/java/edu/neu/ccs/cs5010/assignment8/exception/InvalidInputArgumentException.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../assignment8/src/main/java/edu/neu/ccs/cs5010/assignment8/exception/InvalidInputDataException.java" afterPath="$PROJECT_DIR$/../assignment8/src/main/java/edu/neu/ccs/cs5010/assignment8/exception/InvalidInputDataException.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../assignment8/src/main/java/edu/neu/ccs/cs5010/assignment8/exception/InvalidLiftIdException.java" afterPath="$PROJECT_DIR$/../assignment8/src/main/java/edu/neu/ccs/cs5010/assignment8/exception/InvalidLiftIdException.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../assignment8/src/main/java/edu/neu/ccs/cs5010/assignment8/exception/InvalidQueryIdException.java" afterPath="$PROJECT_DIR$/../assignment8/src/main/java/edu/neu/ccs/cs5010/assignment8/exception/InvalidQueryIdException.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../assignment8/src/main/java/edu/neu/ccs/cs5010/assignment8/exception/NoMoreQueriesException.java" afterPath="$PROJECT_DIR$/../assignment8/src/main/java/edu/neu/ccs/cs5010/assignment8/exception/NoMoreQueriesException.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../assignment8/src/main/java/edu/neu/ccs/cs5010/assignment8/output/IoLibrary.java" afterPath="$PROJECT_DIR$/../assignment8/src/main/java/edu/neu/ccs/cs5010/assignment8/output/IoLibrary.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../assignment8/src/main/java/edu/neu/ccs/cs5010/assignment8/query/IQuery.java" afterPath="$PROJECT_DIR$/../assignment8/src/main/java/edu/neu/ccs/cs5010/assignment8/query/IQuery.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../assignment8/src/main/java/edu/neu/ccs/cs5010/assignment8/query/IQueryGenerator.java" afterPath="$PROJECT_DIR$/../assignment8/src/main/java/edu/neu/ccs/cs5010/assignment8/query/IQueryGenerator.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../assignment8/src/main/java/edu/neu/ccs/cs5010/assignment8/query/Query.java" afterPath="$PROJECT_DIR$/../assignment8/src/main/java/edu/neu/ccs/cs5010/assignment8/query/Query.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../assignment8/src/main/java/edu/neu/ccs/cs5010/assignment8/query/QueryGenerator.java" afterPath="$PROJECT_DIR$/../assignment8/src/main/java/edu/neu/ccs/cs5010/assignment8/query/QueryGenerator.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../assignment8/src/main/java/edu/neu/ccs/cs5010/assignment8/queryprocessor/IQueryProcessor.java" afterPath="$PROJECT_DIR$/../assignment8/src/main/java/edu/neu/ccs/cs5010/assignment8/queryprocessor/IQueryProcessor.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../assignment8/src/main/java/edu/neu/ccs/cs5010/assignment8/queryprocessor/QueryProcessor.java" afterPath="$PROJECT_DIR$/../assignment8/src/main/java/edu/neu/ccs/cs5010/assignment8/queryprocessor/QueryProcessor.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../assignment8/src/main/java/edu/neu/ccs/cs5010/assignment8/queryprocessor/QueryThread.java" afterPath="$PROJECT_DIR$/../assignment8/src/main/java/edu/neu/ccs/cs5010/assignment8/queryprocessor/QueryThread.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../assignment8/src/main/java/edu/neu/ccs/cs5010/assignment8/reader/HoursReader.java" afterPath="$PROJECT_DIR$/../assignment8/src/main/java/edu/neu/ccs/cs5010/assignment8/reader/HoursReader.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../assignment8/src/main/java/edu/neu/ccs/cs5010/assignment8/reader/IReader.java" afterPath="$PROJECT_DIR$/../assignment8/src/main/java/edu/neu/ccs/cs5010/assignment8/reader/IReader.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../assignment8/src/main/java/edu/neu/ccs/cs5010/assignment8/reader/LiftsReader.java" afterPath="$PROJECT_DIR$/../assignment8/src/main/java/edu/neu/ccs/cs5010/assignment8/reader/LiftsReader.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../assignment8/src/main/java/edu/neu/ccs/cs5010/assignment8/reader/RawReader.java" afterPath="$PROJECT_DIR$/../assignment8/src/main/java/edu/neu/ccs/cs5010/assignment8/reader/RawReader.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../assignment8/src/main/java/edu/neu/ccs/cs5010/assignment8/reader/ReaderFactory.java" afterPath="$PROJECT_DIR$/../assignment8/src/main/java/edu/neu/ccs/cs5010/assignment8/reader/ReaderFactory.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../assignment8/src/main/java/edu/neu/ccs/cs5010/assignment8/record/HourRecord.java" afterPath="$PROJECT_DIR$/../assignment8/src/main/java/edu/neu/ccs/cs5010/assignment8/record/HourRecord.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../assignment8/src/main/java/edu/neu/ccs/cs5010/assignment8/record/IRecord.java" afterPath="$PROJECT_DIR$/../assignment8/src/main/java/edu/neu/ccs/cs5010/assignment8/record/IRecord.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../assignment8/src/main/java/edu/neu/ccs/cs5010/assignment8/record/LiftRecord.java" afterPath="$PROJECT_DIR$/../assignment8/src/main/java/edu/neu/ccs/cs5010/assignment8/record/LiftRecord.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../assignment8/src/main/java/edu/neu/ccs/cs5010/assignment8/record/SkierRecord.java" afterPath="$PROJECT_DIR$/../assignment8/src/main/java/edu/neu/ccs/cs5010/assignment8/record/SkierRecord.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../assignment8/src/test/java/edu/neu/ccs/cs5010/assignment8/SkiProcessorTest.java" afterPath="$PROJECT_DIR$/../assignment8/src/test/java/edu/neu/ccs/cs5010/assignment8/SkiProcessorTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../assignment8/src/test/java/edu/neu/ccs/cs5010/assignment8/dataProcessor/SequentialDataProcessorTest.java" afterPath="$PROJECT_DIR$/../assignment8/src/test/java/edu/neu/ccs/cs5010/assignment8/dataProcessor/SequentialDataProcessorTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../assignment8/src/test/java/edu/neu/ccs/cs5010/assignment8/query/QueryGeneratorTest.java" afterPath="$PROJECT_DIR$/../assignment8/src/test/java/edu/neu/ccs/cs5010/assignment8/query/QueryGeneratorTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../assignment8/src/test/java/edu/neu/ccs/cs5010/assignment8/reader/ReaderFactoryTest.java" afterPath="$PROJECT_DIR$/../assignment8/src/test/java/edu/neu/ccs/cs5010/assignment8/reader/ReaderFactoryTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../assignment8/src/test/java/edu/neu/ccs/cs5010/assignment8/record/LiftRecordTest.java" afterPath="$PROJECT_DIR$/../assignment8/src/test/java/edu/neu/ccs/cs5010/assignment8/record/LiftRecordTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../assignment8/thread1.txt" afterPath="$PROJECT_DIR$/../assignment8/thread1.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../assignment8/thread10.txt" afterPath="$PROJECT_DIR$/../assignment8/thread10.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../assignment8/thread11.txt" afterPath="$PROJECT_DIR$/../assignment8/thread11.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../assignment8/thread12.txt" afterPath="$PROJECT_DIR$/../assignment8/thread12.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../assignment8/thread13.txt" afterPath="$PROJECT_DIR$/../assignment8/thread13.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../assignment8/thread14.txt" afterPath="$PROJECT_DIR$/../assignment8/thread14.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../assignment8/thread15.txt" afterPath="$PROJECT_DIR$/../assignment8/thread15.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../assignment8/thread16.txt" afterPath="$PROJECT_DIR$/../assignment8/thread16.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../assignment8/thread17.txt" afterPath="$PROJECT_DIR$/../assignment8/thread17.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../assignment8/thread18.txt" afterPath="$PROJECT_DIR$/../assignment8/thread18.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../assignment8/thread19.txt" afterPath="$PROJECT_DIR$/../assignment8/thread19.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../assignment8/thread2.txt" afterPath="$PROJECT_DIR$/../assignment8/thread2.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../assignment8/thread20.txt" afterPath="$PROJECT_DIR$/../assignment8/thread20.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../assignment8/thread3.txt" afterPath="$PROJECT_DIR$/../assignment8/thread3.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../assignment8/thread4.txt" afterPath="$PROJECT_DIR$/../assignment8/thread4.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../assignment8/thread5.txt" afterPath="$PROJECT_DIR$/../assignment8/thread5.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../assignment8/thread6.txt" afterPath="$PROJECT_DIR$/../assignment8/thread6.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../assignment8/thread7.txt" afterPath="$PROJECT_DIR$/../assignment8/thread7.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../assignment8/thread8.txt" afterPath="$PROJECT_DIR$/../assignment8/thread8.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../assignment8/thread9.txt" afterPath="$PROJECT_DIR$/../assignment8/thread9.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../assignment8/src/main/java/edu/neu/ccs/cs5010/assignment8/reader/SkiersReader.java" afterPath="$PROJECT_DIR$/../assignment8/src/main/java/edu/neu/ccs/cs5010/assignment8/reader/SkiersReader.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -73,8 +45,18 @@
       <file leaf-file-name="ConcurrentProcessor.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs5010/processors/ConcurrentProcessor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="585">
+            <state relative-caret-position="274">
               <caret line="58" column="75" lean-forward="false" selection-start-line="58" selection-start-column="75" selection-end-line="58" selection-end-column="75" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="IProcessor.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs5010/processors/IProcessor.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="74">
+              <caret line="10" column="51" lean-forward="true" selection-start-line="10" selection-start-column="51" selection-end-line="10" selection-end-column="51" />
               <folding />
             </state>
           </provider>
@@ -93,8 +75,18 @@
       <file leaf-file-name="SkiDataProcessor.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs5010/SkiDataProcessor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="720">
-              <caret line="59" column="0" lean-forward="false" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
+            <state relative-caret-position="240">
+              <caret line="27" column="5" lean-forward="true" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SequentialProcessor.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs5010/processors/SequentialProcessor.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="390">
+              <caret line="35" column="3" lean-forward="true" selection-start-line="35" selection-start-column="3" selection-end-line="35" selection-end-column="3" />
               <folding />
             </state>
           </provider>
@@ -123,7 +115,7 @@
       <file leaf-file-name="Skier.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs5010/skier/Skier.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="413">
+            <state relative-caret-position="765">
               <caret line="61" column="60" lean-forward="false" selection-start-line="61" selection-start-column="60" selection-end-line="61" selection-end-column="60" />
               <folding />
             </state>
@@ -259,10 +251,10 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1373" />
-    <option name="y" value="-257" />
+    <option name="x" value="1348" />
+    <option name="y" value="-112" />
     <option name="width" value="1503" />
-    <option name="height" value="1020" />
+    <option name="height" value="941" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -313,6 +305,15 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="cs5010" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="assignment7" type="b2602c69:ProjectViewProjectNode" />
+              <item name="assignment7" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="cs5010" type="462c0819:PsiDirectoryNode" />
+              <item name="processors" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="assignment7" type="b2602c69:ProjectViewProjectNode" />
@@ -674,7 +675,7 @@
       <workItem from="1511324597396" duration="407000" />
       <workItem from="1511485474193" duration="1003000" />
       <workItem from="1511681792077" duration="2112000" />
-      <workItem from="1511812723147" duration="1354000" />
+      <workItem from="1511812723147" duration="1997000" />
     </task>
     <servers />
   </component>
@@ -711,10 +712,10 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="118896000" />
+    <option name="totallyTimeSpent" value="119539000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1373" y="-257" width="1503" height="1020" extended-state="0" />
+    <frame x="1348" y="-112" width="1503" height="941" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="PlantUML" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -723,7 +724,7 @@
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1427027" sideWeight="0.35933807" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15602838" sideWeight="0.35933807" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30334488" sideWeight="0.64066195" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -1044,20 +1045,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs5010/processors/IProcessor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="585">
-          <caret line="44" column="34" lean-forward="false" selection-start-line="44" selection-start-column="34" selection-end-line="44" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs5010/processors/SequentialProcessor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="423">
-          <caret line="45" column="72" lean-forward="true" selection-start-line="45" selection-start-column="72" selection-end-line="45" selection-end-column="72" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs5010/processors/Processor.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -1126,26 +1113,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs5010/processors/ConcurrentProcessor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="585">
-          <caret line="58" column="75" lean-forward="false" selection-start-line="58" selection-start-column="75" selection-end-line="58" selection-end-column="75" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/edu/neu/ccs/cs5010/SkiDataProcessorTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs5010/SkiDataProcessor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="720">
-          <caret line="59" column="0" lean-forward="false" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1166,9 +1137,41 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs5010/SkiDataProcessor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="27" column="5" lean-forward="true" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs5010/processors/SequentialProcessor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="35" column="3" lean-forward="true" selection-start-line="35" selection-start-column="3" selection-end-line="35" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs5010/processors/ConcurrentProcessor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="274">
+          <caret line="58" column="75" lean-forward="false" selection-start-line="58" selection-start-column="75" selection-end-line="58" selection-end-column="75" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs5010/processors/IProcessor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="74">
+          <caret line="10" column="51" lean-forward="true" selection-start-line="10" selection-start-column="51" selection-end-line="10" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs5010/skier/Skier.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="413">
+        <state relative-caret-position="765">
           <caret line="61" column="60" lean-forward="false" selection-start-line="61" selection-start-column="60" selection-end-line="61" selection-end-column="60" />
           <folding />
         </state>

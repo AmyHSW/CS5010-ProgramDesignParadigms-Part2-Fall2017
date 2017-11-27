@@ -78,11 +78,19 @@ public class CmdHandler implements ICmdHandler {
     return valid;
   }
 
+  /**
+   * Returns the test file name.
+   * @return the test file name.
+   */
   @Override
   public String getTestFilename() {
     return testFilename;
   }
 
+  /**
+   * Returns the number of queries.
+   * @return the number of queries.
+   */
   @Override
   public int getNumQueries() {
     return numQueries;

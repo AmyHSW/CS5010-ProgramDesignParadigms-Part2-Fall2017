@@ -17,14 +17,31 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * The SkiQueryProcessor class processes the queries in the original query file and
+ * saves the results in 20 txt files.
+ *
+ * @author Shuwan Huang, Jingyu Shen
+ */
 public class SkiQueryProcessor {
 
+  /**
+   * Reads in the query file name and number of queries through command-line arguments. Parses
+   * the csv file using a CsvParser and generates queries using a query generator. Processes the
+   * queries and saves the results in 20 txt files.
+   *
+   * @param args the command-line arguments
+   * @throws InterruptedException if the thread is interrupted
+   * @throws IOException if there is an I/O failure
+   */
   public static void main(String[] args) throws InterruptedException, IOException {
+
     // validates and parses command-line arguments
     ICmdHandler cmdHandler = new CmdHandler(args);
     if (!cmdHandler.isValid()) {
       throw new InvalidInputArgumentException(cmdHandler.getErrorMessage());
     }
+
     // creates queries based on test data file
     long queryStart = System.currentTimeMillis();
     CsvParserSettings settings = new CsvParserSettings();
@@ -45,7 +62,7 @@ public class SkiQueryProcessor {
     System.out.println("Processing queries took "
         + queryProcessor.getRuntime().toMillis() + " milliseconds");
 
-    //output
+    //output the txt files
     List<List<String>> threadsOutput = queryProcessor.getOutputList();
     int threadId = 1;
     for (List<String> output : threadsOutput) {
