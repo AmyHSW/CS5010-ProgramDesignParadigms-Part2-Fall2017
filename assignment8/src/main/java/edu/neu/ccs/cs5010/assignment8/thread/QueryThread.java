@@ -32,7 +32,7 @@ public class QueryThread extends Thread {
       int parameter = query.getParameter();
       try {
         IReader reader = ReaderFactory.getReader(queryId, parameter);
-        String recordInfo = reader.read();
+        String recordInfo = reader.read() + "\n";
         output.add(recordInfo);
       } catch (IOException exception) {
         System.out.println("Something went wrong! : " + exception.getMessage());

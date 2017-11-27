@@ -1,1 +1,2000 @@
-18016,20,6400,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@10858b0edu.neu.ccs.cs5010.assignment8.Record.HourRecord@7f1561b928,200056098,20,6800,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@5995fcedu.neu.ccs.cs5010.assignment8.Record.HourRecord@71d2902b15,198064217,20,6700,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@3e0156edu.neu.ccs.cs5010.assignment8.Record.HourRecord@75ed0ac933,2011639532,20,6600,5edu.neu.ccs.cs5010.assignment8.Record.RawRecord@243daabedu.neu.ccs.cs5010.assignment8.Record.HourRecord@30ef9a1023,2019938256,20,6500,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@2312498edu.neu.ccs.cs5010.assignment8.Record.HourRecord@64233d1d19,2006329114,20,6900,5edu.neu.ccs.cs5010.assignment8.Record.RawRecord@1ab14eeedu.neu.ccs.cs5010.assignment8.Record.HourRecord@115aa7a34,1989113628,20,6700,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@c801b9edu.neu.ccs.cs5010.assignment8.Record.HourRecord@1c3353d31,200545578,20,6500,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@51f5f1edu.neu.ccs.cs5010.assignment8.Record.HourRecord@50c0655f18,2023822662,20,7000,5edu.neu.ccs.cs5010.assignment8.Record.RawRecord@14c7a8eedu.neu.ccs.cs5010.assignment8.Record.HourRecord@2d76718f34,1989139434,20,6900,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@2426976edu.neu.ccs.cs5010.assignment8.Record.HourRecord@19c482126,2015715520,20,7200,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@e3bfbdedu.neu.ccs.cs5010.assignment8.Record.HourRecord@7373e0a40,1993421583,20,6700,5edu.neu.ccs.cs5010.assignment8.Record.RawRecord@13ca738edu.neu.ccs.cs5010.assignment8.Record.HourRecord@548e592e39,2026936193,20,6800,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@212e36cedu.neu.ccs.cs5010.assignment8.Record.HourRecord@4aeab0397,2011121277,20,7000,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@1382af8edu.neu.ccs.cs5010.assignment8.Record.HourRecord@295424055,200051714,20,6600,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@194cebedu.neu.ccs.cs5010.assignment8.Record.HourRecord@17ad884b24,2030428976,20,7200,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@1a9101fedu.neu.ccs.cs5010.assignment8.Record.HourRecord@314ce4b934,1989128462,20,7700,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@1a1857bedu.neu.ccs.cs5010.assignment8.Record.HourRecord@2e38e1d122,2014633029,20,7500,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@1e47e2fedu.neu.ccs.cs5010.assignment8.Record.HourRecord@26c48c1f12,2007435241,20,6800,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@204ee15edu.neu.ccs.cs5010.assignment8.Record.HourRecord@5d50b75c26,2015723402,20,6200,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@1575345edu.neu.ccs.cs5010.assignment8.Record.HourRecord@beff96317,2004810070,20,7400,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@93d3dcedu.neu.ccs.cs5010.assignment8.Record.HourRecord@62b0b7a67,2011124296,20,7200,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@1646e89edu.neu.ccs.cs5010.assignment8.Record.HourRecord@60167b9b20,1992339574,20,6800,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@24476d9edu.neu.ccs.cs5010.assignment8.Record.HourRecord@3824da925,2000518512,20,7200,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@10f9f8fedu.neu.ccs.cs5010.assignment8.Record.HourRecord@4cf4181414,195887904,20,8100,6edu.neu.ccs.cs5010.assignment8.Record.RawRecord@74121dedu.neu.ccs.cs5010.assignment8.Record.HourRecord@2b9e8bab11,1995728543,20,7600,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@1a2b56bedu.neu.ccs.cs5010.assignment8.Record.HourRecord@7807f7e06,199102228,20,7400,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@20d63fedu.neu.ccs.cs5010.assignment8.Record.HourRecord@66e9523821,2003134263,20,6300,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@1f695dfedu.neu.ccs.cs5010.assignment8.Record.HourRecord@ab1c24925,1992017519,20,7500,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@1010fafedu.neu.ccs.cs5010.assignment8.Record.HourRecord@552dc36713,1981330908,20,7100,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@1c56556edu.neu.ccs.cs5010.assignment8.Record.HourRecord@125296d531,1982738650,20,7300,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@236eac1edu.neu.ccs.cs5010.assignment8.Record.HourRecord@3e867e356,1991037048,20,6500,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@21f6d6cedu.neu.ccs.cs5010.assignment8.Record.HourRecord@3a21402617,2004813103,20,7500,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@c04de7edu.neu.ccs.cs5010.assignment8.Record.HourRecord@1ac9afe32,2016333485,20,5900,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@1eb2e10edu.neu.ccs.cs5010.assignment8.Record.HourRecord@7ce40205,2000532729,20,7300,5edu.neu.ccs.cs5010.assignment8.Record.RawRecord@1e018e5edu.neu.ccs.cs5010.assignment8.Record.HourRecord@a34f13a23,2019910643,20,6900,5edu.neu.ccs.cs5010.assignment8.Record.RawRecord@9c3b2bedu.neu.ccs.cs5010.assignment8.Record.HourRecord@3aa4a02a7,2011114725,20,7200,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@d817a0edu.neu.ccs.cs5010.assignment8.Record.HourRecord@5fbaa6ea23,2019911930,20,7000,7edu.neu.ccs.cs5010.assignment8.Record.RawRecord@af1b95edu.neu.ccs.cs5010.assignment8.Record.HourRecord@2a80327d12,2007416579,20,6600,5edu.neu.ccs.cs5010.assignment8.Record.RawRecord@f345bbedu.neu.ccs.cs5010.assignment8.Record.HourRecord@790ab3624,203045178,20,7600,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@4c1786edu.neu.ccs.cs5010.assignment8.Record.HourRecord@18aaee1e2,199937453,20,7000,5edu.neu.ccs.cs5010.assignment8.Record.RawRecord@6d7367edu.neu.ccs.cs5010.assignment8.Record.HourRecord@122d961715,1980616109,20,7200,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@ec6206edu.neu.ccs.cs5010.assignment8.Record.HourRecord@39155df55,2000517926,20,7400,5edu.neu.ccs.cs5010.assignment8.Record.RawRecord@10707e5edu.neu.ccs.cs5010.assignment8.Record.HourRecord@3bde88fa32,201639254,20,6700,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@87dcc3edu.neu.ccs.cs5010.assignment8.Record.HourRecord@744b4b8135,1994332603,20,6900,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@1de3f25edu.neu.ccs.cs5010.assignment8.Record.HourRecord@aa8f6312,1999331072,20,7500,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@1c7cc79edu.neu.ccs.cs5010.assignment8.Record.HourRecord@19c1f86440,1993432706,20,6600,5edu.neu.ccs.cs5010.assignment8.Record.RawRecord@1dfc209edu.neu.ccs.cs5010.assignment8.Record.HourRecord@56972afe17,2004812769,20,7200,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@bb691dedu.neu.ccs.cs5010.assignment8.Record.HourRecord@78ae74ee19,2006331479,20,7200,5edu.neu.ccs.cs5010.assignment8.Record.RawRecord@1cdc4b5edu.neu.ccs.cs5010.assignment8.Record.HourRecord@35fa1cb43,1985422871,20,6700,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@14f8a9dedu.neu.ccs.cs5010.assignment8.Record.HourRecord@236ec0b714,1958835693,20,7100,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@20b8e48edu.neu.ccs.cs5010.assignment8.Record.HourRecord@4c41cefe13,1981318297,20,7500,9edu.neu.ccs.cs5010.assignment8.Record.RawRecord@10c7826edu.neu.ccs.cs5010.assignment8.Record.HourRecord@4743ca9c31,198275451,20,7000,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@5019dcedu.neu.ccs.cs5010.assignment8.Record.HourRecord@22b9617c20,1992323453,20,7300,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@158133eedu.neu.ccs.cs5010.assignment8.Record.HourRecord@770766e431,1982714736,20,6600,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@d83f3cedu.neu.ccs.cs5010.assignment8.Record.HourRecord@357360c439,2026930779,20,7900,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@1c37f88edu.neu.ccs.cs5010.assignment8.Record.HourRecord@6c3d5bdc17,2004810374,20,5600,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@98498bedu.neu.ccs.cs5010.assignment8.Record.HourRecord@5e665a65,2000524243,20,6100,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@163a7e2edu.neu.ccs.cs5010.assignment8.Record.HourRecord@499a13b816,1991829236,20,7300,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@1acdf64edu.neu.ccs.cs5010.assignment8.Record.HourRecord@67412f0f2,1999339667,20,7500,5edu.neu.ccs.cs5010.assignment8.Record.RawRecord@245d3fcedu.neu.ccs.cs5010.assignment8.Record.HourRecord@61246b8037,198662547,20,7400,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@2584a7edu.neu.ccs.cs5010.assignment8.Record.HourRecord@57d9f95718,2023819584,20,6900,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@11f56d6edu.neu.ccs.cs5010.assignment8.Record.HourRecord@4e4727c722,201464044,20,6400,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@3b77afedu.neu.ccs.cs5010.assignment8.Record.HourRecord@2090505714,1958821861,20,6900,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@140bbcdedu.neu.ccs.cs5010.assignment8.Record.HourRecord@62aa47ae29,2018735911,20,7300,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@20ec1a9edu.neu.ccs.cs5010.assignment8.Record.HourRecord@7a2119ed18,202388361,20,6100,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@7ac582edu.neu.ccs.cs5010.assignment8.Record.HourRecord@daf60716,199104931,20,7000,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@48782eedu.neu.ccs.cs5010.assignment8.Record.HourRecord@2f1f9b7b20,1992324432,20,7200,5edu.neu.ccs.cs5010.assignment8.Record.RawRecord@1666d3aedu.neu.ccs.cs5010.assignment8.Record.HourRecord@1fb82e0139,2026926658,20,7500,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@1871180edu.neu.ccs.cs5010.assignment8.Record.HourRecord@6da4a26a35,199438349,20,7700,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@7a979dedu.neu.ccs.cs5010.assignment8.Record.HourRecord@1b7eeb4738,201008339,20,6700,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@7a7177edu.neu.ccs.cs5010.assignment8.Record.HourRecord@48e96f106,199105989,20,7200,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@57fc7eedu.neu.ccs.cs5010.assignment8.Record.HourRecord@167f882a26,2015723079,20,7000,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@15296cfedu.neu.ccs.cs5010.assignment8.Record.HourRecord@5e80cf7d38,2010019581,20,6700,5edu.neu.ccs.cs5010.assignment8.Record.RawRecord@11f4c64edu.neu.ccs.cs5010.assignment8.Record.HourRecord@324833393,1985422684,20,6700,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@14ccc28edu.neu.ccs.cs5010.assignment8.Record.HourRecord@31da5b8f20,1992335599,20,6600,5edu.neu.ccs.cs5010.assignment8.Record.RawRecord@20a2de3edu.neu.ccs.cs5010.assignment8.Record.HourRecord@5b0eab468,1978015776,20,7500,5edu.neu.ccs.cs5010.assignment8.Record.RawRecord@e77fa6edu.neu.ccs.cs5010.assignment8.Record.HourRecord@3ad7c7d25,1992034052,20,6700,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@1f37e32edu.neu.ccs.cs5010.assignment8.Record.HourRecord@708f56ca3,1985418600,20,7800,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@110e9cdedu.neu.ccs.cs5010.assignment8.Record.HourRecord@13ea6d7719,2006321234,20,6300,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@13789a9edu.neu.ccs.cs5010.assignment8.Record.HourRecord@3d90b0d715,198062620,20,7300,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@2694ebedu.neu.ccs.cs5010.assignment8.Record.HourRecord@55b67d8c8,1978011829,20,6100,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@ad9f7aedu.neu.ccs.cs5010.assignment8.Record.HourRecord@5f0558f67,2011111752,20,7300,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@ac7e82edu.neu.ccs.cs5010.assignment8.Record.HourRecord@1f4407b433,2011624680,20,6600,7edu.neu.ccs.cs5010.assignment8.Record.RawRecord@16a11f9edu.neu.ccs.cs5010.assignment8.Record.HourRecord@276a0a8314,1958812775,20,7000,5edu.neu.ccs.cs5010.assignment8.Record.RawRecord@bb7e8aedu.neu.ccs.cs5010.assignment8.Record.HourRecord@415659ff31,1982716976,20,6400,5edu.neu.ccs.cs5010.assignment8.Record.RawRecord@f918b5edu.neu.ccs.cs5010.assignment8.Record.HourRecord@34e16bcb30,200736055,20,7500,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@58f3fcedu.neu.ccs.cs5010.assignment8.Record.HourRecord@b27a3443,1985426982,20,7000,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@18bd364edu.neu.ccs.cs5010.assignment8.Record.HourRecord@7cee8eb13,1985434714,20,7700,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@1fd331eedu.neu.ccs.cs5010.assignment8.Record.HourRecord@f04a97234,1989116038,20,7600,7edu.neu.ccs.cs5010.assignment8.Record.RawRecord@eb58a7edu.neu.ccs.cs5010.assignment8.Record.HourRecord@3004346a39,2026924422,20,8000,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@166485bedu.neu.ccs.cs5010.assignment8.Record.HourRecord@60f8cad31,1982730720,20,7800,5edu.neu.ccs.cs5010.assignment8.Record.RawRecord@1c2a30cedu.neu.ccs.cs5010.assignment8.Record.HourRecord@e1c11db37,1986612355,20,6900,5edu.neu.ccs.cs5010.assignment8.Record.RawRecord@b5565cedu.neu.ccs.cs5010.assignment8.Record.HourRecord@24f976535,2000530569,20,7400,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@1c06b70edu.neu.ccs.cs5010.assignment8.Record.HourRecord@354fb1c219,200638231,20,7900,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@78dc13edu.neu.ccs.cs5010.assignment8.Record.HourRecord@4f5f392231,198273394,20,7400,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@31ee6dedu.neu.ccs.cs5010.assignment8.Record.HourRecord@21a36bdb7,2011133206,20,6500,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@1e71653edu.neu.ccs.cs5010.assignment8.Record.HourRecord@4e07ca5228,2000517899,20,7500,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@106a2c4edu.neu.ccs.cs5010.assignment8.Record.HourRecord@68eb3f118,20238467,20,6400,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@702a3edu.neu.ccs.cs5010.assignment8.Record.HourRecord@30ae1c2b18,2023827528,20,7600,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@193d531edu.neu.ccs.cs5010.assignment8.Record.HourRecord@a69545614,1958837362,20,7300,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@22408ebedu.neu.ccs.cs5010.assignment8.Record.HourRecord@7acc5a1336,2012627471,20,7100,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@192fd71edu.neu.ccs.cs5010.assignment8.Record.HourRecord@92e6f8039,202699693,20,7800,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@8e4e05edu.neu.ccs.cs5010.assignment8.Record.HourRecord@492165ca6,1991028975,20,7400,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@1a90c32edu.neu.ccs.cs5010.assignment8.Record.HourRecord@9aa435c16,199183387,20,7100,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@31d578edu.neu.ccs.cs5010.assignment8.Record.HourRecord@112e9cb83,198542984,20,7900,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@2beb87edu.neu.ccs.cs5010.assignment8.Record.HourRecord@6b06b37227,1991611151,20,8000,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@a3adbaedu.neu.ccs.cs5010.assignment8.Record.HourRecord@294b94ed11,1995729765,20,6200,5edu.neu.ccs.cs5010.assignment8.Record.RawRecord@1b4a12dedu.neu.ccs.cs5010.assignment8.Record.HourRecord@72a0923b25,1992016348,20,7100,6edu.neu.ccs.cs5010.assignment8.Record.RawRecord@efe2aaedu.neu.ccs.cs5010.assignment8.Record.HourRecord@178e1b8b14,1958813264,20,7100,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@c2aa5bedu.neu.ccs.cs5010.assignment8.Record.HourRecord@49cda72b31,1982726344,20,5900,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@18277afedu.neu.ccs.cs5010.assignment8.Record.HourRecord@3cd4ae0340,1993421405,20,7800,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@13a0a29edu.neu.ccs.cs5010.assignment8.Record.HourRecord@4a13d2e831,198278481,20,6700,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@7c87c4edu.neu.ccs.cs5010.assignment8.Record.HourRecord@2d26da6235,1994336397,20,7100,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@215e1b0edu.neu.ccs.cs5010.assignment8.Record.HourRecord@976c41219,2006316145,20,6800,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@ece9adedu.neu.ccs.cs5010.assignment8.Record.HourRecord@104bd78931,1982729010,20,5900,5edu.neu.ccs.cs5010.assignment8.Record.RawRecord@1a98f7eedu.neu.ccs.cs5010.assignment8.Record.HourRecord@449bd3fa6,1991015803,20,7000,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@e7e55eedu.neu.ccs.cs5010.assignment8.Record.HourRecord@5ff5f4c18,1978026164,20,7000,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@17fd31eedu.neu.ccs.cs5010.assignment8.Record.HourRecord@601cfd7930,2007326475,20,7200,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@1846442edu.neu.ccs.cs5010.assignment8.Record.HourRecord@2e25896c34,1989123384,20,6500,5edu.neu.ccs.cs5010.assignment8.Record.RawRecord@15710bcedu.neu.ccs.cs5010.assignment8.Record.HourRecord@343b8b5127,199165411,20,6300,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@4f82f7edu.neu.ccs.cs5010.assignment8.Record.HourRecord@449822eb27,1991611294,20,6700,5edu.neu.ccs.cs5010.assignment8.Record.RawRecord@a5c7ecedu.neu.ccs.cs5010.assignment8.Record.HourRecord@4368f8343,1985431089,20,6900,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@1c80bbaedu.neu.ccs.cs5010.assignment8.Record.HourRecord@410467dc23,2019929214,20,6300,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@1ac8cebedu.neu.ccs.cs5010.assignment8.Record.HourRecord@298d1dae8,1978014268,20,6800,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@d16269edu.neu.ccs.cs5010.assignment8.Record.HourRecord@2c07ed0e4,1981510807,20,6500,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@9ea3cfedu.neu.ccs.cs5010.assignment8.Record.HourRecord@282a19e220,1992332993,20,7000,5edu.neu.ccs.cs5010.assignment8.Record.RawRecord@1e3f705edu.neu.ccs.cs5010.assignment8.Record.HourRecord@4af2b1bc20,199232493,20,6600,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@24b95fedu.neu.ccs.cs5010.assignment8.Record.HourRecord@bd3b52139,202693310,20,6200,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@30b4d8edu.neu.ccs.cs5010.assignment8.Record.HourRecord@18af46c833,2011637701,20,6700,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@229008dedu.neu.ccs.cs5010.assignment8.Record.HourRecord@60b2a93618,2023835786,20,7400,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@20ceb1bedu.neu.ccs.cs5010.assignment8.Record.HourRecord@3f129bcd2,1999313041,20,6300,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@bf64f9edu.neu.ccs.cs5010.assignment8.Record.HourRecord@29fe5bb315,19806739,20,6500,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@affecedu.neu.ccs.cs5010.assignment8.Record.HourRecord@4b05d14236,2012617111,20,6800,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@fb1420edu.neu.ccs.cs5010.assignment8.Record.HourRecord@3e8b2a0d5,2000529841,20,7000,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@1b5be06edu.neu.ccs.cs5010.assignment8.Record.HourRecord@15ec02e227,1991632273,20,7800,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@1d96840edu.neu.ccs.cs5010.assignment8.Record.HourRecord@4e94e02f13,1981332993,20,7000,6edu.neu.ccs.cs5010.assignment8.Record.RawRecord@1e3f705edu.neu.ccs.cs5010.assignment8.Record.HourRecord@2bfea77e32,201637787,20,7100,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@725af5edu.neu.ccs.cs5010.assignment8.Record.HourRecord@4cc22b4e27,1991618510,20,6500,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@10f965cedu.neu.ccs.cs5010.assignment8.Record.HourRecord@394ccb263,1985410824,20,5800,5edu.neu.ccs.cs5010.assignment8.Record.RawRecord@9ee274edu.neu.ccs.cs5010.assignment8.Record.HourRecord@5030c1b821,2003118845,20,7400,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@114817fedu.neu.ccs.cs5010.assignment8.Record.HourRecord@eab499733,2011622320,20,7900,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@147768aedu.neu.ccs.cs5010.assignment8.Record.HourRecord@536e9b572,1999313770,20,6900,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@ca1545edu.neu.ccs.cs5010.assignment8.Record.HourRecord@c246fe725,1992017141,20,7400,7edu.neu.ccs.cs5010.assignment8.Record.RawRecord@fb855dedu.neu.ccs.cs5010.assignment8.Record.HourRecord@5a4f42da8,1978011146,20,6800,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@a39b45edu.neu.ccs.cs5010.assignment8.Record.HourRecord@e7c4ff523,201991388,20,7100,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@1485e5edu.neu.ccs.cs5010.assignment8.Record.HourRecord@296fd94e21,2003136155,20,6600,6edu.neu.ccs.cs5010.assignment8.Record.RawRecord@212551fedu.neu.ccs.cs5010.assignment8.Record.HourRecord@69bc0d313,1981310349,20,5900,8edu.neu.ccs.cs5010.assignment8.Record.RawRecord@97ebc6edu.neu.ccs.cs5010.assignment8.Record.HourRecord@26620b4840,1993426242,20,6700,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@180f821edu.neu.ccs.cs5010.assignment8.Record.HourRecord@4a8dfb9640,1993413872,20,7100,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@cb94efedu.neu.ccs.cs5010.assignment8.Record.HourRecord@1dfffe209,199723323,20,6700,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@30e51aedu.neu.ccs.cs5010.assignment8.Record.HourRecord@45ba281422,201465708,20,7500,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@53dd75edu.neu.ccs.cs5010.assignment8.Record.HourRecord@733453a039,2026928660,20,6800,5edu.neu.ccs.cs5010.assignment8.Record.RawRecord@1a46cb9edu.neu.ccs.cs5010.assignment8.Record.HourRecord@5640571b29,2018720146,20,7200,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@1279414edu.neu.ccs.cs5010.assignment8.Record.HourRecord@342cbd0d4,1981526432,20,6600,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@183c0ecedu.neu.ccs.cs5010.assignment8.Record.HourRecord@2042d91411,199576990,20,6800,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@66aa45edu.neu.ccs.cs5010.assignment8.Record.HourRecord@71ba27ef25,199201706,20,7600,5edu.neu.ccs.cs5010.assignment8.Record.RawRecord@192f87edu.neu.ccs.cs5010.assignment8.Record.HourRecord@25965e4c39,2026910008,20,7200,5edu.neu.ccs.cs5010.assignment8.Record.RawRecord@92eb45edu.neu.ccs.cs5010.assignment8.Record.HourRecord@74835b2632,201632087,20,6800,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@1ec602edu.neu.ccs.cs5010.assignment8.Record.HourRecord@423fa6db39,2026922175,20,7000,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@1455622edu.neu.ccs.cs5010.assignment8.Record.HourRecord@621a742c27,1991635512,20,7700,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@208e73eedu.neu.ccs.cs5010.assignment8.Record.HourRecord@7569321d8,1978018356,20,6400,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@10d5574edu.neu.ccs.cs5010.assignment8.Record.HourRecord@1b5d1dfd35,199439327,20,6400,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@88efb3edu.neu.ccs.cs5010.assignment8.Record.HourRecord@24eb793316,1991818998,20,7000,5edu.neu.ccs.cs5010.assignment8.Record.RawRecord@116bedcedu.neu.ccs.cs5010.assignment8.Record.HourRecord@1561d29616,1991823612,20,6700,5edu.neu.ccs.cs5010.assignment8.Record.RawRecord@15a6878edu.neu.ccs.cs5010.assignment8.Record.HourRecord@2924f3fd35,1994326498,20,6900,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@184ba81edu.neu.ccs.cs5010.assignment8.Record.HourRecord@5ae5a1d13,1985423815,20,7100,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@15d6227edu.neu.ccs.cs5010.assignment8.Record.HourRecord@25b8795f38,201009655,20,6600,5edu.neu.ccs.cs5010.assignment8.Record.RawRecord@8dbdcfedu.neu.ccs.cs5010.assignment8.Record.HourRecord@3e56fa1c22,2014618454,20,7000,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@10ec554edu.neu.ccs.cs5010.assignment8.Record.HourRecord@30634d3022,2014639701,20,7400,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@246536dedu.neu.ccs.cs5010.assignment8.Record.HourRecord@477f89c439,2026934242,20,6900,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@1f646fdedu.neu.ccs.cs5010.assignment8.Record.HourRecord@216b62f520,1992333959,20,6800,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@1f220d8edu.neu.ccs.cs5010.assignment8.Record.HourRecord@28e4eade23,2019926243,20,6600,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@180fcb1edu.neu.ccs.cs5010.assignment8.Record.HourRecord@2c4383f6,1991010069,20,6500,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@93d034edu.neu.ccs.cs5010.assignment8.Record.HourRecord@39ceb00a36,201265184,20,6700,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@4c2eddedu.neu.ccs.cs5010.assignment8.Record.HourRecord@4348110c13,1981319074,20,7200,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@117dcc1edu.neu.ccs.cs5010.assignment8.Record.HourRecord@4c75b1a110,1990527167,20,7200,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@18e8842edu.neu.ccs.cs5010.assignment8.Record.HourRecord@6fd36dd034,198916876,20,7200,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@64fe6cedu.neu.ccs.cs5010.assignment8.Record.HourRecord@2351cec030,2007332082,20,6700,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@1d69c8eedu.neu.ccs.cs5010.assignment8.Record.HourRecord@20926bd740,1993411195,20,7400,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@a453faedu.neu.ccs.cs5010.assignment8.Record.HourRecord@410b3edd18,2023831689,20,6200,5edu.neu.ccs.cs5010.assignment8.Record.RawRecord@1d0d75bedu.neu.ccs.cs5010.assignment8.Record.HourRecord@354276c11,2005439058,20,7400,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@23ce65aedu.neu.ccs.cs5010.assignment8.Record.HourRecord@184899677,2011110225,20,6400,5edu.neu.ccs.cs5010.assignment8.Record.RawRecord@961a08edu.neu.ccs.cs5010.assignment8.Record.HourRecord@2bb7856a40,1993431266,20,7800,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@1caa507edu.neu.ccs.cs5010.assignment8.Record.HourRecord@33d2ab171,2005419426,20,7000,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@11d0702edu.neu.ccs.cs5010.assignment8.Record.HourRecord@150037d233,2011610400,20,7500,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@98ab85edu.neu.ccs.cs5010.assignment8.Record.HourRecord@49df07b413,1981328548,20,6200,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@1a2c947edu.neu.ccs.cs5010.assignment8.Record.HourRecord@5ed4573020,1992329545,20,6700,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@1b16717edu.neu.ccs.cs5010.assignment8.Record.HourRecord@7878c5ee6,1991011528,20,8400,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@a93576edu.neu.ccs.cs5010.assignment8.Record.HourRecord@6c52d39439,2026934794,20,7200,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@1fe604fedu.neu.ccs.cs5010.assignment8.Record.HourRecord@5d818b0d40,1993435445,20,7200,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@207ebdeedu.neu.ccs.cs5010.assignment8.Record.HourRecord@21102a5a38,201005709,20,7000,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@53e174edu.neu.ccs.cs5010.assignment8.Record.HourRecord@1ff9cc2322,2014616652,20,6300,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@f457adedu.neu.ccs.cs5010.assignment8.Record.HourRecord@654d623b39,2026920861,20,7100,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@1321082edu.neu.ccs.cs5010.assignment8.Record.HourRecord@3445447c20,1992317185,20,6500,5edu.neu.ccs.cs5010.assignment8.Record.RawRecord@fc2a41edu.neu.ccs.cs5010.assignment8.Record.HourRecord@14a7fa5414,1958828632,20,7700,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@1a4058bedu.neu.ccs.cs5010.assignment8.Record.HourRecord@456ea43738,2010029230,20,7500,5edu.neu.ccs.cs5010.assignment8.Record.RawRecord@1acca20edu.neu.ccs.cs5010.assignment8.Record.HourRecord@4bbc5a1b24,2030423704,20,7300,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@15bc199edu.neu.ccs.cs5010.assignment8.Record.HourRecord@55c491b430,2007338605,20,6900,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@236422dedu.neu.ccs.cs5010.assignment8.Record.HourRecord@7e1ab40214,1958821499,20,6000,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@13b6cbeedu.neu.ccs.cs5010.assignment8.Record.HourRecord@4ee5f8ea6,199103886,20,6100,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@3926c3edu.neu.ccs.cs5010.assignment8.Record.HourRecord@67201faf16,1991811099,20,7500,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@a2eb0fedu.neu.ccs.cs5010.assignment8.Record.HourRecord@16187bce9,1997225469,20,6800,6edu.neu.ccs.cs5010.assignment8.Record.RawRecord@175a1ecedu.neu.ccs.cs5010.assignment8.Record.HourRecord@3d8977ab18,2023826945,20,6600,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@18b470aedu.neu.ccs.cs5010.assignment8.Record.HourRecord@5ccaea5817,2004837458,20,7000,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@22570adedu.neu.ccs.cs5010.assignment8.Record.HourRecord@3bf04b0912,2007437661,20,6800,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@2286ab3edu.neu.ccs.cs5010.assignment8.Record.HourRecord@6e6381b232,201636252,20,6300,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@5bd704edu.neu.ccs.cs5010.assignment8.Record.HourRecord@18a197fa4,198151465,20,6500,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@15a597edu.neu.ccs.cs5010.assignment8.Record.HourRecord@13b2369c22,2014626546,20,7200,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@1856e73edu.neu.ccs.cs5010.assignment8.Record.HourRecord@2aa39fe010,1990537756,20,7200,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@229ceccedu.neu.ccs.cs5010.assignment8.Record.HourRecord@58bff51739,2026919656,20,6200,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@120654eedu.neu.ccs.cs5010.assignment8.Record.HourRecord@4c35b7bd22,2014615839,20,6800,6edu.neu.ccs.cs5010.assignment8.Record.RawRecord@e86d21edu.neu.ccs.cs5010.assignment8.Record.HourRecord@4eb16e7125,1992031151,20,6700,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@1c8f5a2edu.neu.ccs.cs5010.assignment8.Record.HourRecord@785bb4d833,2011620857,20,7400,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@13201d2edu.neu.ccs.cs5010.assignment8.Record.HourRecord@5f6be18912,2007438413,20,6900,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@2337190edu.neu.ccs.cs5010.assignment8.Record.HourRecord@3e023d8616,1991832672,20,7500,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@1df412eedu.neu.ccs.cs5010.assignment8.Record.HourRecord@7b850ed118,2023813636,20,7200,5edu.neu.ccs.cs5010.assignment8.Record.RawRecord@c81ec6edu.neu.ccs.cs5010.assignment8.Record.HourRecord@5edd980d39,2026929854,20,6500,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@1b5efa3edu.neu.ccs.cs5010.assignment8.Record.HourRecord@5eba5df62,1999332780,20,7100,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@1e0d81fedu.neu.ccs.cs5010.assignment8.Record.HourRecord@71fbb5aa9,1997222301,20,6700,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@1472e50edu.neu.ccs.cs5010.assignment8.Record.HourRecord@22dbdec21,2005414828,20,7100,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@d99a1eedu.neu.ccs.cs5010.assignment8.Record.HourRecord@1074376414,1958839423,20,6800,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@242417bedu.neu.ccs.cs5010.assignment8.Record.HourRecord@1cad9d7114,1958838398,20,7200,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@2333958edu.neu.ccs.cs5010.assignment8.Record.HourRecord@30d72dab28,2000525078,20,7300,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@16fe62aedu.neu.ccs.cs5010.assignment8.Record.HourRecord@4c06c8bd19,200634143,20,6200,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@3cebd7edu.neu.ccs.cs5010.assignment8.Record.HourRecord@7df8094e6,1991021583,20,6700,6edu.neu.ccs.cs5010.assignment8.Record.RawRecord@13ca738edu.neu.ccs.cs5010.assignment8.Record.HourRecord@dce45957,201119043,20,7800,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@84c5d0edu.neu.ccs.cs5010.assignment8.Record.HourRecord@4fd9bf25,200056830,20,7100,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@6451f8edu.neu.ccs.cs5010.assignment8.Record.HourRecord@7e44f8f02,1999331001,20,7600,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@1c6c273edu.neu.ccs.cs5010.assignment8.Record.HourRecord@43cb2c0f20,1992335174,20,6700,5edu.neu.ccs.cs5010.assignment8.Record.RawRecord@203f29dedu.neu.ccs.cs5010.assignment8.Record.HourRecord@3cd63b0e36,2012614550,20,6900,9edu.neu.ccs.cs5010.assignment8.Record.RawRecord@d5869bedu.neu.ccs.cs5010.assignment8.Record.HourRecord@541c156d4,1981524273,20,6300,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@16418dbedu.neu.ccs.cs5010.assignment8.Record.HourRecord@d46f46621,200317505,20,7400,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@6e386dedu.neu.ccs.cs5010.assignment8.Record.HourRecord@17770a9513,1981326052,20,6000,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@17e2f70edu.neu.ccs.cs5010.assignment8.Record.HourRecord@1af45d3e12,200749679,20,7000,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@8e1886edu.neu.ccs.cs5010.assignment8.Record.HourRecord@2e7794704,1981511781,20,7500,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@aceb28edu.neu.ccs.cs5010.assignment8.Record.HourRecord@14a8b01c11,1995716079,20,8000,5edu.neu.ccs.cs5010.assignment8.Record.RawRecord@ebf237edu.neu.ccs.cs5010.assignment8.Record.HourRecord@3ba433be12,2007413862,20,6900,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@cb6e48edu.neu.ccs.cs5010.assignment8.Record.HourRecord@30184593,1985415844,20,5900,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@e87f99edu.neu.ccs.cs5010.assignment8.Record.HourRecord@1147545d15,1980612138,20,6900,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@b226a8edu.neu.ccs.cs5010.assignment8.Record.HourRecord@403e2e3918,2023819253,20,6700,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@11a7c88edu.neu.ccs.cs5010.assignment8.Record.HourRecord@5a1ddc4313,1981325557,20,6700,6edu.neu.ccs.cs5010.assignment8.Record.RawRecord@176ed27edu.neu.ccs.cs5010.assignment8.Record.HourRecord@55b1b81520,1992317372,20,7100,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@fee81fedu.neu.ccs.cs5010.assignment8.Record.HourRecord@7e7ffb4233,2011628993,20,7400,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@1a94f9eedu.neu.ccs.cs5010.assignment8.Record.HourRecord@4f814d5215,1980623312,20,7200,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@1560176edu.neu.ccs.cs5010.assignment8.Record.HourRecord@7bca7f2528,2000519925,20,7700,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@1245742edu.neu.ccs.cs5010.assignment8.Record.HourRecord@23e301591,2005415833,20,6400,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@e85706edu.neu.ccs.cs5010.assignment8.Record.HourRecord@22475b8c24,203045364,20,7400,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@4ed23dedu.neu.ccs.cs5010.assignment8.Record.HourRecord@67e9794b1,2005416682,20,7000,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@f4c85cedu.neu.ccs.cs5010.assignment8.Record.HourRecord@4f7201c432,2016322013,20,7300,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@142f645edu.neu.ccs.cs5010.assignment8.Record.HourRecord@742028ba22,201469766,20,6800,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@8f5edfedu.neu.ccs.cs5010.assignment8.Record.HourRecord@6c23968932,2016320153,20,6300,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@127ae23edu.neu.ccs.cs5010.assignment8.Record.HourRecord@40ac996733,2011637920,20,6600,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@22c36a8edu.neu.ccs.cs5010.assignment8.Record.HourRecord@1f0fdc9740,1993417962,20,7400,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@1078e89edu.neu.ccs.cs5010.assignment8.Record.HourRecord@6a9f42344,1981511902,20,7100,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@aeb278edu.neu.ccs.cs5010.assignment8.Record.HourRecord@1a78163040,1993411595,20,6900,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@aa3204edu.neu.ccs.cs5010.assignment8.Record.HourRecord@3ebbc3b934,198912315,20,6900,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@221d89edu.neu.ccs.cs5010.assignment8.Record.HourRecord@5f314b9d18,202389031,20,7200,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@849900edu.neu.ccs.cs5010.assignment8.Record.HourRecord@4faf2cad35,1994333093,20,5900,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@1e56d96edu.neu.ccs.cs5010.assignment8.Record.HourRecord@153c7afe9,1997212446,20,7000,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@b6ac81edu.neu.ccs.cs5010.assignment8.Record.HourRecord@757ad5eb14,1958835815,20,7400,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@20d57b7edu.neu.ccs.cs5010.assignment8.Record.HourRecord@20c2057a16,1991819048,20,7200,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@1177ab2edu.neu.ccs.cs5010.assignment8.Record.HourRecord@163e8f8b8,1978039132,20,7400,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@23dfba7edu.neu.ccs.cs5010.assignment8.Record.HourRecord@6023ec3827,1991617257,20,6900,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@fd3805edu.neu.ccs.cs5010.assignment8.Record.HourRecord@43d5a85a15,1980624719,20,6600,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@16aa32eedu.neu.ccs.cs5010.assignment8.Record.HourRecord@730c8c8f32,201636630,20,6500,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@616227edu.neu.ccs.cs5010.assignment8.Record.HourRecord@11ac07b222,2014625869,20,7100,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@17b80eaedu.neu.ccs.cs5010.assignment8.Record.HourRecord@6e116b937,2011121909,20,6200,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@1416f3aedu.neu.ccs.cs5010.assignment8.Record.HourRecord@e8997332,201632072,20,8000,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@1e8c3eedu.neu.ccs.cs5010.assignment8.Record.HourRecord@171715153,1985424095,20,6800,6edu.neu.ccs.cs5010.assignment8.Record.RawRecord@1617d41edu.neu.ccs.cs5010.assignment8.Record.HourRecord@66f711d217,2004817856,20,7200,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@10600d4edu.neu.ccs.cs5010.assignment8.Record.HourRecord@3dfa36c2,199934164,20,7200,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@3d39c9edu.neu.ccs.cs5010.assignment8.Record.HourRecord@4738816517,2004826808,20,6800,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@189452aedu.neu.ccs.cs5010.assignment8.Record.HourRecord@68289b2a29,201875487,20,5600,6edu.neu.ccs.cs5010.assignment8.Record.RawRecord@50a110edu.neu.ccs.cs5010.assignment8.Record.HourRecord@368f6e7c31,198278522,20,7300,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@7d218dedu.neu.ccs.cs5010.assignment8.Record.HourRecord@48b57f0211,19957549,20,7100,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@83730edu.neu.ccs.cs5010.assignment8.Record.HourRecord@4b85ecd837,1986634414,20,6000,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@1f8cd30edu.neu.ccs.cs5010.assignment8.Record.HourRecord@6758df4938,2010022172,20,6400,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@1454a86edu.neu.ccs.cs5010.assignment8.Record.HourRecord@2a69a15031,198271187,20,5500,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@119347edu.neu.ccs.cs5010.assignment8.Record.HourRecord@49c796701,2005436749,20,6200,6edu.neu.ccs.cs5010.assignment8.Record.RawRecord@21b0b2eedu.neu.ccs.cs5010.assignment8.Record.HourRecord@2d4050bc34,1989121857,20,6700,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@140aaebedu.neu.ccs.cs5010.assignment8.Record.HourRecord@c4360ca34,198911385,20,6800,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@147a65edu.neu.ccs.cs5010.assignment8.Record.HourRecord@6bc7333322,201468950,20,6100,6edu.neu.ccs.cs5010.assignment8.Record.RawRecord@836705edu.neu.ccs.cs5010.assignment8.Record.HourRecord@1ec65c2d33,2011610784,20,6300,5edu.neu.ccs.cs5010.assignment8.Record.RawRecord@9e4d9fedu.neu.ccs.cs5010.assignment8.Record.HourRecord@312c2af927,1991624417,20,7400,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@166363eedu.neu.ccs.cs5010.assignment8.Record.HourRecord@26fe59263,1985436296,20,7100,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@214659dedu.neu.ccs.cs5010.assignment8.Record.HourRecord@74f2b86138,2010031010,20,6900,6edu.neu.ccs.cs5010.assignment8.Record.RawRecord@1c6e3c1edu.neu.ccs.cs5010.assignment8.Record.HourRecord@58f9b5e613,198135946,20,7400,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@575be8edu.neu.ccs.cs5010.assignment8.Record.HourRecord@8d237e212,2007437642,20,6600,5edu.neu.ccs.cs5010.assignment8.Record.RawRecord@228232eedu.neu.ccs.cs5010.assignment8.Record.HourRecord@5cb178b77,201115432,20,6400,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@4fd1bbedu.neu.ccs.cs5010.assignment8.Record.HourRecord@3de1e2f09,1997232740,20,6100,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@1e04145edu.neu.ccs.cs5010.assignment8.Record.HourRecord@28a2262f6,1991022311,20,7200,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@14754e4edu.neu.ccs.cs5010.assignment8.Record.HourRecord@31d679fe22,2014633373,20,8100,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@1e98a86edu.neu.ccs.cs5010.assignment8.Record.HourRecord@66f5dbb324,203042844,20,7500,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@29de93edu.neu.ccs.cs5010.assignment8.Record.HourRecord@54b153ff24,2030410623,20,7100,6edu.neu.ccs.cs5010.assignment8.Record.RawRecord@9bf0f5edu.neu.ccs.cs5010.assignment8.Record.HourRecord@6d9b94186,1991023756,20,7100,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@15c852fedu.neu.ccs.cs5010.assignment8.Record.HourRecord@6f8019dc31,1982715880,20,7400,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@e90630edu.neu.ccs.cs5010.assignment8.Record.HourRecord@27e06fdc6,199104206,20,7200,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@3dd6bdedu.neu.ccs.cs5010.assignment8.Record.HourRecord@7910fe744,1981524696,20,7400,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@16a4c34edu.neu.ccs.cs5010.assignment8.Record.HourRecord@481a9e1a38,2010024526,20,6200,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@167cec3edu.neu.ccs.cs5010.assignment8.Record.HourRecord@27bb203c12,2007436505,20,7600,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@217762eedu.neu.ccs.cs5010.assignment8.Record.HourRecord@381259835,1994318858,20,6900,6edu.neu.ccs.cs5010.assignment8.Record.RawRecord@114b291edu.neu.ccs.cs5010.assignment8.Record.HourRecord@7d9c98c29,1997238851,20,6900,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@239dcd0edu.neu.ccs.cs5010.assignment8.Record.HourRecord@61ea232529,2018710353,20,7300,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@97fabdedu.neu.ccs.cs5010.assignment8.Record.HourRecord@1f2e55e414,1958821910,20,5900,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@1417240edu.neu.ccs.cs5010.assignment8.Record.HourRecord@15891e7c12,200748932,20,7100,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@83248bedu.neu.ccs.cs5010.assignment8.Record.HourRecord@ccace8721,2003122313,20,7000,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@1475bcdedu.neu.ccs.cs5010.assignment8.Record.HourRecord@3c09373014,1958819238,20,7500,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@11a4398edu.neu.ccs.cs5010.assignment8.Record.HourRecord@51e5c42031,198273614,20,7100,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@352888edu.neu.ccs.cs5010.assignment8.Record.HourRecord@cc24a9e20,1992328615,20,7900,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@1a3c3a0edu.neu.ccs.cs5010.assignment8.Record.HourRecord@5626037710,1990536499,20,6500,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@2176022edu.neu.ccs.cs5010.assignment8.Record.HourRecord@23e30e346,1991031420,20,6200,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@1cce607edu.neu.ccs.cs5010.assignment8.Record.HourRecord@5c580aac23,20199723,20,7500,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@ac4a1edu.neu.ccs.cs5010.assignment8.Record.HourRecord@42d02d0314,1958812181,20,7700,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@b2c7ffedu.neu.ccs.cs5010.assignment8.Record.HourRecord@248ba39531,1982728858,20,6800,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@1a755ebedu.neu.ccs.cs5010.assignment8.Record.HourRecord@1f229b9e27,1991620008,20,6800,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@1258f6eedu.neu.ccs.cs5010.assignment8.Record.HourRecord@3b3ffbc38,2010012060,20,7700,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@b1029fedu.neu.ccs.cs5010.assignment8.Record.HourRecord@40c862fc15,1980628467,20,7100,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@1a19848edu.neu.ccs.cs5010.assignment8.Record.HourRecord@3926f67b2,1999316103,20,7100,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@ec4c89edu.neu.ccs.cs5010.assignment8.Record.HourRecord@32d364aa35,1994334525,20,6800,5edu.neu.ccs.cs5010.assignment8.Record.RawRecord@1fa6f58edu.neu.ccs.cs5010.assignment8.Record.HourRecord@2e81335333,2011625632,20,7600,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@1780642edu.neu.ccs.cs5010.assignment8.Record.HourRecord@2d5d6bfd32,201636027,20,7000,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@588b98edu.neu.ccs.cs5010.assignment8.Record.HourRecord@23c6d5037,201119943,20,6900,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@91f83cedu.neu.ccs.cs5010.assignment8.Record.HourRecord@a9913e51,2005421953,20,6500,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@14214ededu.neu.ccs.cs5010.assignment8.Record.HourRecord@2da5b24e27,199166608,20,6600,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@611033edu.neu.ccs.cs5010.assignment8.Record.HourRecord@6b61268419,2006313967,20,7400,5edu.neu.ccs.cs5010.assignment8.Record.RawRecord@ccfa8eedu.neu.ccs.cs5010.assignment8.Record.HourRecord@7e1a882634,1989127555,20,7000,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@1943933edu.neu.ccs.cs5010.assignment8.Record.HourRecord@3c5eba3b14,19588107,20,6600,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@1bbddedu.neu.ccs.cs5010.assignment8.Record.HourRecord@3ce9483c14,1958816748,20,7100,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@f5c04fedu.neu.ccs.cs5010.assignment8.Record.HourRecord@5ede0c2316,199186532,20,6200,6edu.neu.ccs.cs5010.assignment8.Record.RawRecord@5ff36bedu.neu.ccs.cs5010.assignment8.Record.HourRecord@742ff46635,1994314881,20,6700,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@da5fecedu.neu.ccs.cs5010.assignment8.Record.HourRecord@3d6917ba27,1991614072,20,6100,5edu.neu.ccs.cs5010.assignment8.Record.RawRecord@ce8411edu.neu.ccs.cs5010.assignment8.Record.HourRecord@4b37008312,2007437033,20,6500,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@21f358dedu.neu.ccs.cs5010.assignment8.Record.HourRecord@65a6a2d29,19972293,20,6500,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@475d4edu.neu.ccs.cs5010.assignment8.Record.HourRecord@6e21e6c410,199056974,20,6900,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@666e90edu.neu.ccs.cs5010.assignment8.Record.HourRecord@1b00f87d30,200736569,20,6100,6edu.neu.ccs.cs5010.assignment8.Record.RawRecord@607e56edu.neu.ccs.cs5010.assignment8.Record.HourRecord@68c0c08629,2018711614,20,7700,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@aa78ecedu.neu.ccs.cs5010.assignment8.Record.HourRecord@38204f7e36,2012611580,20,6600,5edu.neu.ccs.cs5010.assignment8.Record.RawRecord@a9f9e4edu.neu.ccs.cs5010.assignment8.Record.HourRecord@595699781,2005421650,20,6800,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@13da34dedu.neu.ccs.cs5010.assignment8.Record.HourRecord@4509413f16,1991811858,20,5900,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@ae0bd6edu.neu.ccs.cs5010.assignment8.Record.HourRecord@2ba36de826,2015738312,20,7500,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@231f59bedu.neu.ccs.cs5010.assignment8.Record.HourRecord@11c29c5d20,1992338496,20,6900,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@234a9e9edu.neu.ccs.cs5010.assignment8.Record.HourRecord@7cb24a4420,1992318338,20,7400,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@10d11b5edu.neu.ccs.cs5010.assignment8.Record.HourRecord@733dfc5436,201262455,20,6300,5edu.neu.ccs.cs5010.assignment8.Record.RawRecord@242978edu.neu.ccs.cs5010.assignment8.Record.HourRecord@434103f619,2006322111,20,6800,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@144651bedu.neu.ccs.cs5010.assignment8.Record.HourRecord@46e45fb729,2018733465,20,6800,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@1eae2cdedu.neu.ccs.cs5010.assignment8.Record.HourRecord@28eacd4529,2018712959,20,6600,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@be313dedu.neu.ccs.cs5010.assignment8.Record.HourRecord@34294b503,1985426361,20,6800,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@182b79cedu.neu.ccs.cs5010.assignment8.Record.HourRecord@7f3ca09036,201267122,20,6600,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@689a87edu.neu.ccs.cs5010.assignment8.Record.HourRecord@1bc1512713,1981339730,20,6400,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@246c236edu.neu.ccs.cs5010.assignment8.Record.HourRecord@653f27ff33,2011620964,20,6400,6edu.neu.ccs.cs5010.assignment8.Record.RawRecord@13393cdedu.neu.ccs.cs5010.assignment8.Record.HourRecord@1b3283c322,2014628529,20,7400,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@1a28114edu.neu.ccs.cs5010.assignment8.Record.HourRecord@190881524,2030435426,20,6600,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@207a520edu.neu.ccs.cs5010.assignment8.Record.HourRecord@1049a96922,2014624743,20,7300,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@16afe29edu.neu.ccs.cs5010.assignment8.Record.HourRecord@c55644038,2010024815,20,7300,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@16c0b17edu.neu.ccs.cs5010.assignment8.Record.HourRecord@376c29223,201992519,20,5600,6edu.neu.ccs.cs5010.assignment8.Record.RawRecord@251a48edu.neu.ccs.cs5010.assignment8.Record.HourRecord@62322c934,1989111702,20,6700,6edu.neu.ccs.cs5010.assignment8.Record.RawRecord@abc201edu.neu.ccs.cs5010.assignment8.Record.HourRecord@5bfcc18512,2007429941,20,6400,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@1b7356dedu.neu.ccs.cs5010.assignment8.Record.HourRecord@7cacc9de16,1991834016,20,8200,6edu.neu.ccs.cs5010.assignment8.Record.RawRecord@1f2f843edu.neu.ccs.cs5010.assignment8.Record.HourRecord@49fbe68b28,200059993,20,6900,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@92b430edu.neu.ccs.cs5010.assignment8.Record.HourRecord@56d1a01728,2000536199,20,6600,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@212fa93edu.neu.ccs.cs5010.assignment8.Record.HourRecord@6b1ca3a19,199724111,20,6900,7edu.neu.ccs.cs5010.assignment8.Record.RawRecord@3c72cbedu.neu.ccs.cs5010.assignment8.Record.HourRecord@7164652526,201579362,20,6600,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@8971d8edu.neu.ccs.cs5010.assignment8.Record.HourRecord@67bd1a3c21,2003134485,20,6900,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@1f9d87aedu.neu.ccs.cs5010.assignment8.Record.HourRecord@3c37dfc419,2006329227,20,7400,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@1acbd06edu.neu.ccs.cs5010.assignment8.Record.HourRecord@3238724830,2007337939,20,7100,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@22c7ed2edu.neu.ccs.cs5010.assignment8.Record.HourRecord@6027746738,2010035014,20,6400,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@201998dedu.neu.ccs.cs5010.assignment8.Record.HourRecord@6fc4eea526,2015712082,20,6500,6edu.neu.ccs.cs5010.assignment8.Record.RawRecord@b155aaedu.neu.ccs.cs5010.assignment8.Record.HourRecord@6d8fc56611,1995725934,20,7900,5edu.neu.ccs.cs5010.assignment8.Record.RawRecord@17c7423edu.neu.ccs.cs5010.assignment8.Record.HourRecord@1cd450ad2,1999338928,20,6700,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@23afe56edu.neu.ccs.cs5010.assignment8.Record.HourRecord@470b8b1c20,1992323842,20,7100,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@15dc82eedu.neu.ccs.cs5010.assignment8.Record.HourRecord@f72e49e6,199104884,20,7400,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@47c9c5edu.neu.ccs.cs5010.assignment8.Record.HourRecord@1cc5b4e36,1991024864,20,6300,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@16cc30dedu.neu.ccs.cs5010.assignment8.Record.HourRecord@22aadeee27,199168451,20,7300,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@7c16f6edu.neu.ccs.cs5010.assignment8.Record.HourRecord@3962e2cc4,198154374,20,7100,5edu.neu.ccs.cs5010.assignment8.Record.RawRecord@404e28edu.neu.ccs.cs5010.assignment8.Record.HourRecord@21acb76a31,198278892,20,6800,6edu.neu.ccs.cs5010.assignment8.Record.RawRecord@828da8edu.neu.ccs.cs5010.assignment8.Record.HourRecord@10ff7d1034,198919853,20,7600,5edu.neu.ccs.cs5010.assignment8.Record.RawRecord@90a6d0edu.neu.ccs.cs5010.assignment8.Record.HourRecord@64d68c4f6,199109985,20,6600,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@92959cedu.neu.ccs.cs5010.assignment8.Record.HourRecord@4a0c769b16,1991820460,20,7200,6edu.neu.ccs.cs5010.assignment8.Record.RawRecord@12c300cedu.neu.ccs.cs5010.assignment8.Record.HourRecord@e5f9f573,198542472,20,7300,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@24699dedu.neu.ccs.cs5010.assignment8.Record.HourRecord@65a364716,1991035971,20,7600,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@20fa1a4edu.neu.ccs.cs5010.assignment8.Record.HourRecord@35c7287e4,1981517990,20,7400,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@107f77cedu.neu.ccs.cs5010.assignment8.Record.HourRecord@1cd628f337,1986624196,20,6600,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@162f719edu.neu.ccs.cs5010.assignment8.Record.HourRecord@6e01a91924,2030427599,20,7000,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@194df16edu.neu.ccs.cs5010.assignment8.Record.HourRecord@10ffc84414,195884524,20,6800,5edu.neu.ccs.cs5010.assignment8.Record.RawRecord@4281f0edu.neu.ccs.cs5010.assignment8.Record.HourRecord@1cf796fd18,20238958,20,6700,6edu.neu.ccs.cs5010.assignment8.Record.RawRecord@e36e7edu.neu.ccs.cs5010.assignment8.Record.HourRecord@31cba4201,200548123,20,6700,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@77479bedu.neu.ccs.cs5010.assignment8.Record.HourRecord@52e18a6124,2030439909,20,7200,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@2496235edu.neu.ccs.cs5010.assignment8.Record.HourRecord@3cb2d59123,2019917483,20,6800,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@1008736edu.neu.ccs.cs5010.assignment8.Record.HourRecord@1cd2fc8413,1981325580,20,6800,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@17743d8edu.neu.ccs.cs5010.assignment8.Record.HourRecord@7054a19a8,197802972,20,6700,6edu.neu.ccs.cs5010.assignment8.Record.RawRecord@2bc028edu.neu.ccs.cs5010.assignment8.Record.HourRecord@2eb88f7326,2015735086,20,6600,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@202a7bfedu.neu.ccs.cs5010.assignment8.Record.HourRecord@48cd96835,1994333844,20,6700,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@1f072bfedu.neu.ccs.cs5010.assignment8.Record.HourRecord@fb123a120,199235833,20,7400,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@55b23aedu.neu.ccs.cs5010.assignment8.Record.HourRecord@5abc1bbc22,201465644,20,7300,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@52ed87edu.neu.ccs.cs5010.assignment8.Record.HourRecord@3015d48f20,199239233,20,7200,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@878e27edu.neu.ccs.cs5010.assignment8.Record.HourRecord@52b01c7c31,1982729697,20,7000,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@1b3a345edu.neu.ccs.cs5010.assignment8.Record.HourRecord@541a91a021,2003120739,20,7400,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@130473fedu.neu.ccs.cs5010.assignment8.Record.HourRecord@6e4101646,199108416,20,7500,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@7b943dedu.neu.ccs.cs5010.assignment8.Record.HourRecord@70ee118f19,200636973,20,7200,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@666b42edu.neu.ccs.cs5010.assignment8.Record.HourRecord@226fb0122,199933662,20,7200,5edu.neu.ccs.cs5010.assignment8.Record.RawRecord@35dc86edu.neu.ccs.cs5010.assignment8.Record.HourRecord@2278a26e13,1981331690,20,7200,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@1d0dbc6edu.neu.ccs.cs5010.assignment8.Record.HourRecord@4454cd642,199935004,20,7400,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@498a80edu.neu.ccs.cs5010.assignment8.Record.HourRecord@4436ce0833,2011615106,20,6700,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@ddac1cedu.neu.ccs.cs5010.assignment8.Record.HourRecord@1b0609bc35,19943515,20,7000,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@7b89cedu.neu.ccs.cs5010.assignment8.Record.HourRecord@7c8aa36012,200749506,20,6500,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@8b9038edu.neu.ccs.cs5010.assignment8.Record.HourRecord@1e577e789,1997230470,20,7200,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@1bef8e6edu.neu.ccs.cs5010.assignment8.Record.HourRecord@6ce3a53430,2007337058,20,7400,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@21f91f7edu.neu.ccs.cs5010.assignment8.Record.HourRecord@47030afd9,199722412,20,6300,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@23891fedu.neu.ccs.cs5010.assignment8.Record.HourRecord@6ebb20de33,201169971,20,6500,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@926144edu.neu.ccs.cs5010.assignment8.Record.HourRecord@4b3a27cf37,1986620875,20,7100,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@1324614edu.neu.ccs.cs5010.assignment8.Record.HourRecord@3a81f19923,2019914212,20,7400,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@d09073edu.neu.ccs.cs5010.assignment8.Record.HourRecord@650a50d639,202697928,20,7000,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@746b24edu.neu.ccs.cs5010.assignment8.Record.HourRecord@528031797,2011128949,20,7000,6edu.neu.ccs.cs5010.assignment8.Record.RawRecord@1a8ab12edu.neu.ccs.cs5010.assignment8.Record.HourRecord@489e60b928,2000522823,20,6700,6edu.neu.ccs.cs5010.assignment8.Record.RawRecord@14ed6a9edu.neu.ccs.cs5010.assignment8.Record.HourRecord@7d265d0a32,201633670,20,7300,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@35fb96edu.neu.ccs.cs5010.assignment8.Record.HourRecord@4a9d2e9814,1958828893,20,6700,6edu.neu.ccs.cs5010.assignment8.Record.RawRecord@1a7d821edu.neu.ccs.cs5010.assignment8.Record.HourRecord@19c5c54b30,200732095,20,6900,9edu.neu.ccs.cs5010.assignment8.Record.RawRecord@1ee401edu.neu.ccs.cs5010.assignment8.Record.HourRecord@22e5e56216,1991834788,20,7200,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@1fe4946edu.neu.ccs.cs5010.assignment8.Record.HourRecord@6de4223940,1993434088,20,6700,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@1f405a0edu.neu.ccs.cs5010.assignment8.Record.HourRecord@4e2e38f340,199349584,20,6800,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@8cb505edu.neu.ccs.cs5010.assignment8.Record.HourRecord@797653e029,201879673,20,7400,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@8e0235edu.neu.ccs.cs5010.assignment8.Record.HourRecord@74b5675931,1982715517,20,7500,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@e3b37dedu.neu.ccs.cs5010.assignment8.Record.HourRecord@388c761c24,203046618,20,7100,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@613511edu.neu.ccs.cs5010.assignment8.Record.HourRecord@7da285e11,1995734394,20,6900,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@1f881acedu.neu.ccs.cs5010.assignment8.Record.HourRecord@4cf892169,1997211575,20,7300,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@a9e529edu.neu.ccs.cs5010.assignment8.Record.HourRecord@13a8ab7f32,2016336708,20,7400,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@21a7132edu.neu.ccs.cs5010.assignment8.Record.HourRecord@484f03803,1985425034,20,6600,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@16f4140edu.neu.ccs.cs5010.assignment8.Record.HourRecord@1e015a0f28,2000519605,20,6600,5edu.neu.ccs.cs5010.assignment8.Record.RawRecord@11fa69cedu.neu.ccs.cs5010.assignment8.Record.HourRecord@166113fb10,199059560,20,6200,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@8c5947edu.neu.ccs.cs5010.assignment8.Record.HourRecord@40c4b11b2,1999315918,20,7000,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@e9952aedu.neu.ccs.cs5010.assignment8.Record.HourRecord@7027e98040,1993426144,20,6900,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@17f88deedu.neu.ccs.cs5010.assignment8.Record.HourRecord@64e204a914,1958827629,20,6800,5edu.neu.ccs.cs5010.assignment8.Record.RawRecord@1954fb3edu.neu.ccs.cs5010.assignment8.Record.HourRecord@7a022d0518,2023830948,20,6800,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@1c5fae4edu.neu.ccs.cs5010.assignment8.Record.HourRecord@1f2b17376,1991035227,20,6100,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@204b8a4edu.neu.ccs.cs5010.assignment8.Record.HourRecord@508f86bb39,2026936876,20,7400,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@21ce730edu.neu.ccs.cs5010.assignment8.Record.HourRecord@24bc074f33,201166469,20,7200,5edu.neu.ccs.cs5010.assignment8.Record.RawRecord@5f068cedu.neu.ccs.cs5010.assignment8.Record.HourRecord@4f3d7cd815,198063108,20,7200,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@2dbcfeedu.neu.ccs.cs5010.assignment8.Record.HourRecord@86848a711,1995730557,20,7200,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@1c03ec0edu.neu.ccs.cs5010.assignment8.Record.HourRecord@24febd4f15,198067188,20,6800,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@699252edu.neu.ccs.cs5010.assignment8.Record.HourRecord@603c50e01,2005415503,20,6800,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@e37edeedu.neu.ccs.cs5010.assignment8.Record.HourRecord@44432b8313,1981324506,20,7500,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@16783feedu.neu.ccs.cs5010.assignment8.Record.HourRecord@ea47edc40,199344198,20,7200,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@3db953edu.neu.ccs.cs5010.assignment8.Record.HourRecord@5fe1be8216,1991823953,20,7200,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@15f6709edu.neu.ccs.cs5010.assignment8.Record.HourRecord@5d584ece8,197807969,20,7800,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@75069aedu.neu.ccs.cs5010.assignment8.Record.HourRecord@1a79d534,1989110216,20,7000,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@95f89bedu.neu.ccs.cs5010.assignment8.Record.HourRecord@2de5a59426,2015726293,20,7000,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@181b7bcedu.neu.ccs.cs5010.assignment8.Record.HourRecord@7f221b0413,1981332109,20,7100,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@1d700bfedu.neu.ccs.cs5010.assignment8.Record.HourRecord@6013141035,1994318034,20,7200,6edu.neu.ccs.cs5010.assignment8.Record.RawRecord@1089cb8edu.neu.ccs.cs5010.assignment8.Record.HourRecord@33940d1621,2003127860,20,7300,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@198b26eedu.neu.ccs.cs5010.assignment8.Record.HourRecord@335dd7f519,200631191,20,6700,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@11a198edu.neu.ccs.cs5010.assignment8.Record.HourRecord@5c4800a124,2030431388,20,7000,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@1cc6de6edu.neu.ccs.cs5010.assignment8.Record.HourRecord@24832cac14,1958822711,20,7100,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@14d31ededu.neu.ccs.cs5010.assignment8.Record.HourRecord@376c699712,2007415170,20,7700,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@de9e63edu.neu.ccs.cs5010.assignment8.Record.HourRecord@6ad3f2f019,200633882,20,6900,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@3916b0edu.neu.ccs.cs5010.assignment8.Record.HourRecord@7682ba0336,2012631779,20,6600,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@1d22948edu.neu.ccs.cs5010.assignment8.Record.HourRecord@4b591e3318,2023812785,20,6500,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@bba3f5edu.neu.ccs.cs5010.assignment8.Record.HourRecord@1f2de61e39,2026937981,20,6600,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@22d1caaedu.neu.ccs.cs5010.assignment8.Record.HourRecord@6a9cd37915,1980626486,20,7000,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@1848d97edu.neu.ccs.cs5010.assignment8.Record.HourRecord@9ad3e8b11,1995723935,20,6700,6edu.neu.ccs.cs5010.assignment8.Record.RawRecord@15f2558edu.neu.ccs.cs5010.assignment8.Record.HourRecord@a86010b31,1982713118,20,7200,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@c086bfedu.neu.ccs.cs5010.assignment8.Record.HourRecord@7aeb0b5317,2004821648,20,7200,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@13d9a87edu.neu.ccs.cs5010.assignment8.Record.HourRecord@76e0186c22,2014636207,20,7900,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@2131939edu.neu.ccs.cs5010.assignment8.Record.HourRecord@1659295d38,2010011249,20,6800,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@a51e2fedu.neu.ccs.cs5010.assignment8.Record.HourRecord@2cedecc419,200633852,20,7700,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@38a721edu.neu.ccs.cs5010.assignment8.Record.HourRecord@e7edb9931,198273863,20,6500,6edu.neu.ccs.cs5010.assignment8.Record.RawRecord@38d03bedu.neu.ccs.cs5010.assignment8.Record.HourRecord@782b91425,2000518207,20,8200,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@10b25c2edu.neu.ccs.cs5010.assignment8.Record.HourRecord@27675cdb39,202694867,20,6900,6edu.neu.ccs.cs5010.assignment8.Record.RawRecord@478873edu.neu.ccs.cs5010.assignment8.Record.HourRecord@642f0f3f33,2011617568,20,7800,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@101c7e2edu.neu.ccs.cs5010.assignment8.Record.HourRecord@1cf5b23024,203046410,20,7300,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@5e285bedu.neu.ccs.cs5010.assignment8.Record.HourRecord@38f0916d1,2005437689,20,7300,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@228d3faedu.neu.ccs.cs5010.assignment8.Record.HourRecord@25ec832c28,2000516820,20,8100,5edu.neu.ccs.cs5010.assignment8.Record.RawRecord@f6cf18edu.neu.ccs.cs5010.assignment8.Record.HourRecord@39a6265911,1995725820,20,6800,6edu.neu.ccs.cs5010.assignment8.Record.RawRecord@17ac805edu.neu.ccs.cs5010.assignment8.Record.HourRecord@873776f22,201469874,20,6400,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@90f56dedu.neu.ccs.cs5010.assignment8.Record.HourRecord@3434e4f532,2016335791,20,7200,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@20cfed5edu.neu.ccs.cs5010.assignment8.Record.HourRecord@7580e4bc8,1978028016,20,7100,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@19afce2edu.neu.ccs.cs5010.assignment8.Record.HourRecord@7d1c80bb30,2007316735,20,7700,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@f59084edu.neu.ccs.cs5010.assignment8.Record.HourRecord@6ec7587817,2004825257,20,7200,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@17286efedu.neu.ccs.cs5010.assignment8.Record.HourRecord@7dc71a1916,199188462,20,6900,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@7c3f6dedu.neu.ccs.cs5010.assignment8.Record.HourRecord@f90a4198,1978018579,20,7200,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@1109a29edu.neu.ccs.cs5010.assignment8.Record.HourRecord@1690e40828,200059717,20,7600,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@8ea715edu.neu.ccs.cs5010.assignment8.Record.HourRecord@42407a3a24,2030436206,20,6600,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@21315a3edu.neu.ccs.cs5010.assignment8.Record.HourRecord@792a7b96,1991034350,20,6700,6edu.neu.ccs.cs5010.assignment8.Record.RawRecord@1f7dd79edu.neu.ccs.cs5010.assignment8.Record.HourRecord@da87b3e3,1985421562,20,6500,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@13c58f7edu.neu.ccs.cs5010.assignment8.Record.HourRecord@1c897e277,2011110561,20,6200,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@9b079dedu.neu.ccs.cs5010.assignment8.Record.HourRecord@5dd946267,2011132167,20,7600,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@1d7d9d3edu.neu.ccs.cs5010.assignment8.Record.HourRecord@4fe49d4b16,1991814109,20,7600,6edu.neu.ccs.cs5010.assignment8.Record.RawRecord@cf0efbedu.neu.ccs.cs5010.assignment8.Record.HourRecord@15b6e0230,2007325490,20,6500,6edu.neu.ccs.cs5010.assignment8.Record.RawRecord@175f22aedu.neu.ccs.cs5010.assignment8.Record.HourRecord@567440489,1997216579,20,6600,6edu.neu.ccs.cs5010.assignment8.Record.RawRecord@f345bbedu.neu.ccs.cs5010.assignment8.Record.HourRecord@418bc4d627,199168661,20,6800,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@7f2c32edu.neu.ccs.cs5010.assignment8.Record.HourRecord@2aee176912,2007416483,20,6600,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@f1dd44edu.neu.ccs.cs5010.assignment8.Record.HourRecord@709f57483,1985419752,20,6600,5edu.neu.ccs.cs5010.assignment8.Record.RawRecord@121cee2edu.neu.ccs.cs5010.assignment8.Record.HourRecord@49d3f1329,2018716188,20,6400,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@ed8a27edu.neu.ccs.cs5010.assignment8.Record.HourRecord@1baff62216,1991819819,20,7400,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@122c858edu.neu.ccs.cs5010.assignment8.Record.HourRecord@4120ff6112,200744793,20,6900,6edu.neu.ccs.cs5010.assignment8.Record.RawRecord@4672beedu.neu.ccs.cs5010.assignment8.Record.HourRecord@4b0fd51a29,2018720871,20,6200,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@13236caedu.neu.ccs.cs5010.assignment8.Record.HourRecord@26070ecf34,1989123391,20,6900,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@1572abcedu.neu.ccs.cs5010.assignment8.Record.HourRecord@427de2cb7,201119326,20,6100,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@88ea8bedu.neu.ccs.cs5010.assignment8.Record.HourRecord@460d61227,1991617242,20,6200,6edu.neu.ccs.cs5010.assignment8.Record.RawRecord@fcffe9edu.neu.ccs.cs5010.assignment8.Record.HourRecord@3172748112,2007430132,20,7600,3edu.neu.ccs.cs5010.assignment8.Record.RawRecord@1ba02dbedu.neu.ccs.cs5010.assignment8.Record.HourRecord@2f9d651623,20199
+18016,20,6400,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@10858b0
+[18, 24, 20, 27, 39, 6, 2, 14, 36, 3]
+28,20005
+6098,20,6800,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@5995fc
+[11, 28, 32, 38, 36, 17, 23, 18, 24, 19]
+15,19806
+4217,20,6700,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@3e0156
+[29, 34, 9, 24, 33, 38, 26, 39, 12, 7]
+33,20116
+39532,20,6600,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@243daab
+[11, 28, 32, 38, 36, 17, 23, 18, 24, 19]
+23,20199
+38256,20,6500,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@2312498
+[18, 24, 20, 27, 39, 6, 2, 14, 36, 3]
+19,20063
+29114,20,6900,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@1ab14ee
+[18, 32, 5, 33, 20, 12, 7, 16, 26, 38]
+34,19891
+13628,20,6700,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@c801b9
+[11, 28, 32, 38, 36, 17, 23, 18, 24, 19]
+1,20054
+5578,20,6500,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@51f5f1
+[29, 34, 9, 24, 33, 38, 26, 39, 12, 7]
+18,20238
+22662,20,7000,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@14c7a8e
+[29, 34, 9, 24, 33, 38, 26, 39, 12, 7]
+34,19891
+39434,20,6900,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@2426976
+[11, 28, 32, 38, 36, 17, 23, 18, 24, 19]
+26,20157
+15520,20,7200,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@e3bfbd
+[17, 22, 39, 29, 28, 30, 24, 23, 2, 7]
+40,19934
+21583,20,6700,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@13ca738
+[11, 28, 32, 38, 36, 17, 23, 18, 24, 19]
+39,20269
+36193,20,6800,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@212e36c
+[11, 28, 32, 38, 36, 17, 23, 18, 24, 19]
+7,20111
+21277,20,7000,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@1382af8
+[18, 32, 5, 33, 20, 12, 7, 16, 26, 38]
+5,20005
+1714,20,6600,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@194ceb
+[21, 4, 29, 36, 27, 1, 23, 22, 17, 37]
+24,20304
+28976,20,7200,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@1a9101f
+[11, 28, 32, 38, 36, 17, 23, 18, 24, 19]
+34,19891
+28462,20,7700,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@1a1857b
+[18, 32, 5, 33, 20, 12, 7, 16, 26, 38]
+22,20146
+33029,20,7500,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@1e47e2f
+[18, 32, 5, 33, 20, 12, 7, 16, 26, 38]
+12,20074
+35241,20,6800,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@204ee15
+[18, 24, 20, 27, 39, 6, 2, 14, 36, 3]
+26,20157
+23402,20,6200,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@1575345
+[17, 22, 39, 29, 28, 30, 24, 23, 2, 7]
+17,20048
+10070,20,7400,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@93d3dc
+[18, 32, 5, 33, 20, 12, 7, 16, 26, 38]
+7,20111
+24296,20,7200,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@1646e89
+[17, 22, 39, 29, 28, 30, 24, 23, 2, 7]
+20,19923
+39574,20,6800,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@24476d9
+[11, 28, 32, 38, 36, 17, 23, 18, 24, 19]
+5,20005
+18512,20,7200,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@10f9f8f
+[17, 22, 39, 29, 28, 30, 24, 23, 2, 7]
+14,19588
+7904,20,8100,2
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@74121d
+[11, 28, 32, 38, 36, 17, 23, 18, 24, 19]
+11,19957
+28543,20,7600,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@1a2b56b
+[21, 4, 29, 36, 27, 1, 23, 22, 17, 37]
+6,19910
+2228,20,7400,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@20d63f
+[21, 4, 29, 36, 27, 1, 23, 22, 17, 37]
+21,20031
+34263,20,6300,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@1f695df
+[18, 32, 5, 33, 20, 12, 7, 16, 26, 38]
+25,19920
+17519,20,7500,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@1010faf
+[11, 28, 32, 38, 36, 17, 23, 18, 24, 19]
+13,19813
+30908,20,7100,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@1c56556
+[18, 24, 20, 27, 39, 6, 2, 14, 36, 3]
+31,19827
+38650,20,7300,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@236eac1
+[17, 22, 39, 29, 28, 30, 24, 23, 2, 7]
+6,19910
+37048,20,6500,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@21f6d6c
+[18, 24, 20, 27, 39, 6, 2, 14, 36, 3]
+17,20048
+13103,20,7500,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@c04de7
+[29, 34, 9, 24, 33, 38, 26, 39, 12, 7]
+32,20163
+33485,20,5900,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@1eb2e10
+[17, 22, 39, 29, 28, 30, 24, 23, 2, 7]
+5,20005
+32729,20,7300,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@1e018e5
+[29, 34, 9, 24, 33, 38, 26, 39, 12, 7]
+23,20199
+10643,20,6900,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@9c3b2b
+[18, 24, 20, 27, 39, 6, 2, 14, 36, 3]
+7,20111
+14725,20,7200,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@d817a0
+[11, 28, 32, 38, 36, 17, 23, 18, 24, 19]
+23,20199
+11930,20,7000,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@af1b95
+[17, 22, 39, 29, 28, 30, 24, 23, 2, 7]
+12,20074
+16579,20,6600,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@f345bb
+[11, 28, 32, 38, 36, 17, 23, 18, 24, 19]
+24,20304
+5178,20,7600,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@4c1786
+[11, 28, 32, 38, 36, 17, 23, 18, 24, 19]
+2,19993
+7453,20,7000,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@6d7367
+[18, 24, 20, 27, 39, 6, 2, 14, 36, 3]
+15,19806
+16109,20,7200,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@ec6206
+[17, 22, 39, 29, 28, 30, 24, 23, 2, 7]
+5,20005
+17926,20,7400,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@10707e5
+[18, 32, 5, 33, 20, 12, 7, 16, 26, 38]
+32,20163
+9254,20,6700,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@87dcc3
+[18, 32, 5, 33, 20, 12, 7, 16, 26, 38]
+35,19943
+32603,20,6900,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@1de3f25
+[18, 32, 5, 33, 20, 12, 7, 16, 26, 38]
+2,19993
+31072,20,7500,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@1c7cc79
+[21, 4, 29, 36, 27, 1, 23, 22, 17, 37]
+40,19934
+32706,20,6600,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@1dfc209
+[29, 34, 9, 24, 33, 38, 26, 39, 12, 7]
+17,20048
+12769,20,7200,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@bb691d
+[11, 28, 32, 38, 36, 17, 23, 18, 24, 19]
+19,20063
+31479,20,7200,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@1cdc4b5
+[18, 32, 5, 33, 20, 12, 7, 16, 26, 38]
+3,19854
+22871,20,6700,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@14f8a9d
+[11, 28, 32, 38, 36, 17, 23, 18, 24, 19]
+14,19588
+35693,20,7100,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@20b8e48
+[21, 4, 29, 36, 27, 1, 23, 22, 17, 37]
+13,19813
+18297,20,7500,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@10c7826
+[17, 22, 39, 29, 28, 30, 24, 23, 2, 7]
+31,19827
+5451,20,7000,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@5019dc
+[11, 28, 32, 38, 36, 17, 23, 18, 24, 19]
+20,19923
+23453,20,7300,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@158133e
+[18, 24, 20, 27, 39, 6, 2, 14, 36, 3]
+31,19827
+14736,20,6600,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@d83f3c
+[18, 32, 5, 33, 20, 12, 7, 16, 26, 38]
+39,20269
+30779,20,7900,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@1c37f88
+[11, 28, 32, 38, 36, 17, 23, 18, 24, 19]
+17,20048
+10374,20,5600,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@98498b
+[18, 32, 5, 33, 20, 12, 7, 16, 26, 38]
+5,20005
+24243,20,6100,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@163a7e2
+[18, 24, 20, 27, 39, 6, 2, 14, 36, 3]
+16,19918
+29236,20,7300,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@1acdf64
+[17, 22, 39, 29, 28, 30, 24, 23, 2, 7]
+2,19993
+39667,20,7500,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@245d3fc
+[18, 24, 20, 27, 39, 6, 2, 14, 36, 3]
+37,19866
+2547,20,7400,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@2584a7
+[18, 24, 20, 27, 39, 6, 2, 14, 36, 3]
+18,20238
+19584,20,6900,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@11f56d6
+[17, 22, 39, 29, 28, 30, 24, 23, 2, 7]
+22,20146
+4044,20,6400,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@3b77af
+[18, 24, 20, 27, 39, 6, 2, 14, 36, 3]
+14,19588
+21861,20,6900,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@140bbcd
+[21, 4, 29, 36, 27, 1, 23, 22, 17, 37]
+29,20187
+35911,20,7300,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@20ec1a9
+[11, 28, 32, 38, 36, 17, 23, 18, 24, 19]
+18,20238
+8361,20,6100,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@7ac582
+[18, 24, 20, 27, 39, 6, 2, 14, 36, 3]
+6,19910
+4931,20,7000,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@48782e
+[18, 32, 5, 33, 20, 12, 7, 16, 26, 38]
+20,19923
+24432,20,7200,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@1666d3a
+[17, 22, 39, 29, 28, 30, 24, 23, 2, 7]
+39,20269
+26658,20,7500,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@1871180
+[17, 22, 39, 29, 28, 30, 24, 23, 2, 7]
+35,19943
+8349,20,7700,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@7a979d
+[21, 4, 29, 36, 27, 1, 23, 22, 17, 37]
+38,20100
+8339,20,6700,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@7a7177
+[11, 28, 32, 38, 36, 17, 23, 18, 24, 19]
+6,19910
+5989,20,7200,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@57fc7e
+[18, 32, 5, 33, 20, 12, 7, 16, 26, 38]
+26,20157
+23079,20,7000,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@15296cf
+[18, 24, 20, 27, 39, 6, 2, 14, 36, 3]
+38,20100
+19581,20,6700,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@11f4c64
+[18, 24, 20, 27, 39, 6, 2, 14, 36, 3]
+3,19854
+22684,20,6700,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@14ccc28
+[17, 22, 39, 29, 28, 30, 24, 23, 2, 7]
+20,19923
+35599,20,6600,2
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@20a2de3
+[11, 28, 32, 38, 36, 17, 23, 18, 24, 19]
+8,19780
+15776,20,7500,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@e77fa6
+[18, 32, 5, 33, 20, 12, 7, 16, 26, 38]
+25,19920
+34052,20,6700,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@1f37e32
+[29, 34, 9, 24, 33, 38, 26, 39, 12, 7]
+3,19854
+18600,20,7800,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@110e9cd
+[17, 22, 39, 29, 28, 30, 24, 23, 2, 7]
+19,20063
+21234,20,6300,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@13789a9
+[11, 28, 32, 38, 36, 17, 23, 18, 24, 19]
+15,19806
+2620,20,7300,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@2694eb
+[18, 32, 5, 33, 20, 12, 7, 16, 26, 38]
+8,19780
+11829,20,6100,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@ad9f7a
+[29, 34, 9, 24, 33, 38, 26, 39, 12, 7]
+7,20111
+11752,20,7300,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@ac7e82
+[18, 32, 5, 33, 20, 12, 7, 16, 26, 38]
+33,20116
+24680,20,6600,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@16a11f9
+[21, 4, 29, 36, 27, 1, 23, 22, 17, 37]
+14,19588
+12775,20,7000,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@bb7e8a
+[17, 22, 39, 29, 28, 30, 24, 23, 2, 7]
+31,19827
+16976,20,6400,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@f918b5
+[18, 24, 20, 27, 39, 6, 2, 14, 36, 3]
+30,20073
+6055,20,7500,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@58f3fc
+[18, 24, 20, 27, 39, 6, 2, 14, 36, 3]
+3,19854
+26982,20,7000,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@18bd364
+[29, 34, 9, 24, 33, 38, 26, 39, 12, 7]
+3,19854
+34714,20,7700,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@1fd331e
+[21, 4, 29, 36, 27, 1, 23, 22, 17, 37]
+34,19891
+16038,20,7600,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@eb58a7
+[18, 32, 5, 33, 20, 12, 7, 16, 26, 38]
+39,20269
+24422,20,8000,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@166485b
+[18, 32, 5, 33, 20, 12, 7, 16, 26, 38]
+31,19827
+30720,20,7800,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@1c2a30c
+[29, 34, 9, 24, 33, 38, 26, 39, 12, 7]
+37,19866
+12355,20,6900,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@b5565c
+[11, 28, 32, 38, 36, 17, 23, 18, 24, 19]
+5,20005
+30569,20,7400,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@1c06b70
+[17, 22, 39, 29, 28, 30, 24, 23, 2, 7]
+19,20063
+8231,20,7900,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@78dc13
+[18, 32, 5, 33, 20, 12, 7, 16, 26, 38]
+31,19827
+3394,20,7400,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@31ee6d
+[18, 32, 5, 33, 20, 12, 7, 16, 26, 38]
+7,20111
+33206,20,6500,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@1e71653
+[11, 28, 32, 38, 36, 17, 23, 18, 24, 19]
+28,20005
+17899,20,7500,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@106a2c4
+[29, 34, 9, 24, 33, 38, 26, 39, 12, 7]
+18,20238
+467,20,6400,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@702a3
+[11, 28, 32, 38, 36, 17, 23, 18, 24, 19]
+18,20238
+27528,20,7600,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@193d531
+[21, 4, 29, 36, 27, 1, 23, 22, 17, 37]
+14,19588
+37362,20,7300,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@22408eb
+[11, 28, 32, 38, 36, 17, 23, 18, 24, 19]
+36,20126
+27471,20,7100,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@192fd71
+[11, 28, 32, 38, 36, 17, 23, 18, 24, 19]
+39,20269
+9693,20,7800,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@8e4e05
+[18, 32, 5, 33, 20, 12, 7, 16, 26, 38]
+6,19910
+28975,20,7400,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@1a90c32
+[18, 32, 5, 33, 20, 12, 7, 16, 26, 38]
+16,19918
+3387,20,7100,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@31d578
+[18, 24, 20, 27, 39, 6, 2, 14, 36, 3]
+3,19854
+2984,20,7900,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@2beb87
+[29, 34, 9, 24, 33, 38, 26, 39, 12, 7]
+27,19916
+11151,20,8000,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@a3adba
+[29, 34, 9, 24, 33, 38, 26, 39, 12, 7]
+11,19957
+29765,20,6200,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@1b4a12d
+[11, 28, 32, 38, 36, 17, 23, 18, 24, 19]
+25,19920
+16348,20,7100,2
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@efe2aa
+[11, 28, 32, 38, 36, 17, 23, 18, 24, 19]
+14,19588
+13264,20,7100,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@c2aa5b
+[18, 32, 5, 33, 20, 12, 7, 16, 26, 38]
+31,19827
+26344,20,5900,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@18277af
+[29, 34, 9, 24, 33, 38, 26, 39, 12, 7]
+40,19934
+21405,20,7800,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@13a0a29
+[18, 32, 5, 33, 20, 12, 7, 16, 26, 38]
+31,19827
+8481,20,6700,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@7c87c4
+[29, 34, 9, 24, 33, 38, 26, 39, 12, 7]
+35,19943
+36397,20,7100,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@215e1b0
+[18, 24, 20, 27, 39, 6, 2, 14, 36, 3]
+19,20063
+16145,20,6800,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@ece9ad
+[17, 22, 39, 29, 28, 30, 24, 23, 2, 7]
+31,19827
+29010,20,5900,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@1a98f7e
+[17, 22, 39, 29, 28, 30, 24, 23, 2, 7]
+6,19910
+15803,20,7000,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@e7e55e
+[18, 24, 20, 27, 39, 6, 2, 14, 36, 3]
+8,19780
+26164,20,7000,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@17fd31e
+[11, 28, 32, 38, 36, 17, 23, 18, 24, 19]
+30,20073
+26475,20,7200,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@1846442
+[11, 28, 32, 38, 36, 17, 23, 18, 24, 19]
+34,19891
+23384,20,6500,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@15710bc
+[11, 28, 32, 38, 36, 17, 23, 18, 24, 19]
+27,19916
+5411,20,6300,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@4f82f7
+[21, 4, 29, 36, 27, 1, 23, 22, 17, 37]
+27,19916
+11294,20,6700,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@a5c7ec
+[18, 32, 5, 33, 20, 12, 7, 16, 26, 38]
+3,19854
+31089,20,6900,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@1c80bba
+[21, 4, 29, 36, 27, 1, 23, 22, 17, 37]
+23,20199
+29214,20,6300,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@1ac8ceb
+[11, 28, 32, 38, 36, 17, 23, 18, 24, 19]
+8,19780
+14268,20,6800,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@d16269
+[18, 32, 5, 33, 20, 12, 7, 16, 26, 38]
+4,19815
+10807,20,6500,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@9ea3cf
+[21, 4, 29, 36, 27, 1, 23, 22, 17, 37]
+20,19923
+32993,20,7000,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@1e3f705
+[21, 4, 29, 36, 27, 1, 23, 22, 17, 37]
+20,19923
+2493,20,6600,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@24b95f
+[18, 32, 5, 33, 20, 12, 7, 16, 26, 38]
+39,20269
+3310,20,6200,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@30b4d8
+[21, 4, 29, 36, 27, 1, 23, 22, 17, 37]
+33,20116
+37701,20,6700,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@229008d
+[21, 4, 29, 36, 27, 1, 23, 22, 17, 37]
+18,20238
+35786,20,7400,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@20ceb1b
+[11, 28, 32, 38, 36, 17, 23, 18, 24, 19]
+2,19993
+13041,20,6300,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@bf64f9
+[21, 4, 29, 36, 27, 1, 23, 22, 17, 37]
+15,19806
+739,20,6500,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@affec
+[18, 24, 20, 27, 39, 6, 2, 14, 36, 3]
+36,20126
+17111,20,6800,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@fb1420
+[21, 4, 29, 36, 27, 1, 23, 22, 17, 37]
+5,20005
+29841,20,7000,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@1b5be06
+[21, 4, 29, 36, 27, 1, 23, 22, 17, 37]
+27,19916
+32273,20,7800,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@1d96840
+[18, 24, 20, 27, 39, 6, 2, 14, 36, 3]
+13,19813
+32993,20,7000,2
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@1e3f705
+[21, 4, 29, 36, 27, 1, 23, 22, 17, 37]
+32,20163
+7787,20,7100,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@725af5
+[18, 24, 20, 27, 39, 6, 2, 14, 36, 3]
+27,19916
+18510,20,6500,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@10f965c
+[18, 32, 5, 33, 20, 12, 7, 16, 26, 38]
+3,19854
+10824,20,5800,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@9ee274
+[18, 24, 20, 27, 39, 6, 2, 14, 36, 3]
+21,20031
+18845,20,7400,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@114817f
+[18, 32, 5, 33, 20, 12, 7, 16, 26, 38]
+33,20116
+22320,20,7900,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@147768a
+[21, 4, 29, 36, 27, 1, 23, 22, 17, 37]
+2,19993
+13770,20,6900,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@ca1545
+[18, 24, 20, 27, 39, 6, 2, 14, 36, 3]
+25,19920
+17141,20,7400,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@fb855d
+[18, 24, 20, 27, 39, 6, 2, 14, 36, 3]
+8,19780
+11146,20,6800,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@a39b45
+[11, 28, 32, 38, 36, 17, 23, 18, 24, 19]
+23,20199
+1388,20,7100,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@1485e5
+[18, 32, 5, 33, 20, 12, 7, 16, 26, 38]
+21,20031
+36155,20,6600,2
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@212551f
+[18, 24, 20, 27, 39, 6, 2, 14, 36, 3]
+13,19813
+10349,20,5900,3
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@97ebc6
+[29, 34, 9, 24, 33, 38, 26, 39, 12, 7]
+40,19934
+26242,20,6700,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@180f821
+[21, 4, 29, 36, 27, 1, 23, 22, 17, 37]
+40,19934
+13872,20,7100,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@cb94ef
+[21, 4, 29, 36, 27, 1, 23, 22, 17, 37]
+9,19972
+3323,20,6700,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@30e51a
+[21, 4, 29, 36, 27, 1, 23, 22, 17, 37]
+22,20146
+5708,20,7500,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@53dd75
+[11, 28, 32, 38, 36, 17, 23, 18, 24, 19]
+39,20269
+28660,20,6800,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@1a46cb9
+[18, 32, 5, 33, 20, 12, 7, 16, 26, 38]
+29,20187
+20146,20,7200,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@1279414
+[11, 28, 32, 38, 36, 17, 23, 18, 24, 19]
+4,19815
+26432,20,6600,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@183c0ec
+[11, 28, 32, 38, 36, 17, 23, 18, 24, 19]
+11,19957
+6990,20,6800,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@66aa45
+[17, 22, 39, 29, 28, 30, 24, 23, 2, 7]
+25,19920
+1706,20,7600,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@192f87
+[17, 22, 39, 29, 28, 30, 24, 23, 2, 7]
+39,20269
+10008,20,7200,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@92eb45
+[18, 32, 5, 33, 20, 12, 7, 16, 26, 38]
+32,20163
+2087,20,6800,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@1ec602
+[29, 34, 9, 24, 33, 38, 26, 39, 12, 7]
+39,20269
+22175,20,7000,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@1455622
+[18, 24, 20, 27, 39, 6, 2, 14, 36, 3]
+27,19916
+35512,20,7700,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@208e73e
+[11, 28, 32, 38, 36, 17, 23, 18, 24, 19]
+8,19780
+18356,20,6400,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@10d5574
+[17, 22, 39, 29, 28, 30, 24, 23, 2, 7]
+35,19943
+9327,20,6400,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@88efb3
+[17, 22, 39, 29, 28, 30, 24, 23, 2, 7]
+16,19918
+18998,20,7000,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@116bedc
+[17, 22, 39, 29, 28, 30, 24, 23, 2, 7]
+16,19918
+23612,20,6700,2
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@15a6878
+[18, 32, 5, 33, 20, 12, 7, 16, 26, 38]
+35,19943
+26498,20,6900,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@184ba81
+[17, 22, 39, 29, 28, 30, 24, 23, 2, 7]
+3,19854
+23815,20,7100,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@15d6227
+[18, 32, 5, 33, 20, 12, 7, 16, 26, 38]
+38,20100
+9655,20,6600,2
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@8dbdcf
+[29, 34, 9, 24, 33, 38, 26, 39, 12, 7]
+22,20146
+18454,20,7000,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@10ec554
+[29, 34, 9, 24, 33, 38, 26, 39, 12, 7]
+22,20146
+39701,20,7400,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@246536d
+[18, 32, 5, 33, 20, 12, 7, 16, 26, 38]
+39,20269
+34242,20,6900,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@1f646fd
+[17, 22, 39, 29, 28, 30, 24, 23, 2, 7]
+20,19923
+33959,20,6800,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@1f220d8
+[11, 28, 32, 38, 36, 17, 23, 18, 24, 19]
+23,20199
+26243,20,6600,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@180fcb1
+[18, 32, 5, 33, 20, 12, 7, 16, 26, 38]
+6,19910
+10069,20,6500,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@93d034
+[11, 28, 32, 38, 36, 17, 23, 18, 24, 19]
+36,20126
+5184,20,6700,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@4c2edd
+[29, 34, 9, 24, 33, 38, 26, 39, 12, 7]
+13,19813
+19074,20,7200,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@117dcc1
+[17, 22, 39, 29, 28, 30, 24, 23, 2, 7]
+10,19905
+27167,20,7200,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@18e8842
+[18, 32, 5, 33, 20, 12, 7, 16, 26, 38]
+34,19891
+6876,20,7200,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@64fe6c
+[29, 34, 9, 24, 33, 38, 26, 39, 12, 7]
+30,20073
+32082,20,6700,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@1d69c8e
+[18, 24, 20, 27, 39, 6, 2, 14, 36, 3]
+40,19934
+11195,20,7400,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@a453fa
+[18, 24, 20, 27, 39, 6, 2, 14, 36, 3]
+18,20238
+31689,20,6200,2
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@1d0d75b
+[18, 32, 5, 33, 20, 12, 7, 16, 26, 38]
+1,20054
+39058,20,7400,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@23ce65a
+[29, 34, 9, 24, 33, 38, 26, 39, 12, 7]
+7,20111
+10225,20,6400,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@961a08
+[17, 22, 39, 29, 28, 30, 24, 23, 2, 7]
+40,19934
+31266,20,7800,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@1caa507
+[18, 24, 20, 27, 39, 6, 2, 14, 36, 3]
+1,20054
+19426,20,7000,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@11d0702
+[29, 34, 9, 24, 33, 38, 26, 39, 12, 7]
+33,20116
+10400,20,7500,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@98ab85
+[17, 22, 39, 29, 28, 30, 24, 23, 2, 7]
+13,19813
+28548,20,6200,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@1a2c947
+[11, 28, 32, 38, 36, 17, 23, 18, 24, 19]
+20,19923
+29545,20,6700,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@1b16717
+[29, 34, 9, 24, 33, 38, 26, 39, 12, 7]
+6,19910
+11528,20,8400,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@a93576
+[18, 32, 5, 33, 20, 12, 7, 16, 26, 38]
+39,20269
+34794,20,7200,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@1fe604f
+[11, 28, 32, 38, 36, 17, 23, 18, 24, 19]
+40,19934
+35445,20,7200,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@207ebde
+[17, 22, 39, 29, 28, 30, 24, 23, 2, 7]
+38,20100
+5709,20,7000,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@53e174
+[17, 22, 39, 29, 28, 30, 24, 23, 2, 7]
+22,20146
+16652,20,6300,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@f457ad
+[18, 24, 20, 27, 39, 6, 2, 14, 36, 3]
+39,20269
+20861,20,7100,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@1321082
+[18, 24, 20, 27, 39, 6, 2, 14, 36, 3]
+20,19923
+17185,20,6500,2
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@fc2a41
+[17, 22, 39, 29, 28, 30, 24, 23, 2, 7]
+14,19588
+28632,20,7700,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@1a4058b
+[21, 4, 29, 36, 27, 1, 23, 22, 17, 37]
+38,20100
+29230,20,7500,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@1acca20
+[29, 34, 9, 24, 33, 38, 26, 39, 12, 7]
+24,20304
+23704,20,7300,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@15bc199
+[21, 4, 29, 36, 27, 1, 23, 22, 17, 37]
+30,20073
+38605,20,6900,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@236422d
+[29, 34, 9, 24, 33, 38, 26, 39, 12, 7]
+14,19588
+21499,20,6000,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@13b6cbe
+[21, 4, 29, 36, 27, 1, 23, 22, 17, 37]
+6,19910
+3886,20,6100,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@3926c3
+[18, 24, 20, 27, 39, 6, 2, 14, 36, 3]
+16,19918
+11099,20,7500,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@a2eb0f
+[18, 24, 20, 27, 39, 6, 2, 14, 36, 3]
+9,19972
+25469,20,6800,2
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@175a1ec
+[18, 24, 20, 27, 39, 6, 2, 14, 36, 3]
+18,20238
+26945,20,6600,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@18b470a
+[18, 32, 5, 33, 20, 12, 7, 16, 26, 38]
+17,20048
+37458,20,7000,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@22570ad
+[11, 28, 32, 38, 36, 17, 23, 18, 24, 19]
+12,20074
+37661,20,6800,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@2286ab3
+[29, 34, 9, 24, 33, 38, 26, 39, 12, 7]
+32,20163
+6252,20,6300,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@5bd704
+[17, 22, 39, 29, 28, 30, 24, 23, 2, 7]
+4,19815
+1465,20,6500,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@15a597
+[29, 34, 9, 24, 33, 38, 26, 39, 12, 7]
+22,20146
+26546,20,7200,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@1856e73
+[17, 22, 39, 29, 28, 30, 24, 23, 2, 7]
+10,19905
+37756,20,7200,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@229cecc
+[21, 4, 29, 36, 27, 1, 23, 22, 17, 37]
+39,20269
+19656,20,6200,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@120654e
+[17, 22, 39, 29, 28, 30, 24, 23, 2, 7]
+22,20146
+15839,20,6800,2
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@e86d21
+[17, 22, 39, 29, 28, 30, 24, 23, 2, 7]
+25,19920
+31151,20,6700,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@1c8f5a2
+[18, 32, 5, 33, 20, 12, 7, 16, 26, 38]
+33,20116
+20857,20,7400,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@13201d2
+[11, 28, 32, 38, 36, 17, 23, 18, 24, 19]
+12,20074
+38413,20,6900,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@2337190
+[11, 28, 32, 38, 36, 17, 23, 18, 24, 19]
+16,19918
+32672,20,7500,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@1df412e
+[18, 32, 5, 33, 20, 12, 7, 16, 26, 38]
+18,20238
+13636,20,7200,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@c81ec6
+[21, 4, 29, 36, 27, 1, 23, 22, 17, 37]
+39,20269
+29854,20,6500,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@1b5efa3
+[18, 24, 20, 27, 39, 6, 2, 14, 36, 3]
+2,19993
+32780,20,7100,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@1e0d81f
+[29, 34, 9, 24, 33, 38, 26, 39, 12, 7]
+9,19972
+22301,20,6700,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@1472e50
+[18, 24, 20, 27, 39, 6, 2, 14, 36, 3]
+1,20054
+14828,20,7100,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@d99a1e
+[18, 32, 5, 33, 20, 12, 7, 16, 26, 38]
+14,19588
+39423,20,6800,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@242417b
+[18, 24, 20, 27, 39, 6, 2, 14, 36, 3]
+14,19588
+38398,20,7200,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@2333958
+[11, 28, 32, 38, 36, 17, 23, 18, 24, 19]
+28,20005
+25078,20,7300,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@16fe62a
+[18, 32, 5, 33, 20, 12, 7, 16, 26, 38]
+19,20063
+4143,20,6200,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@3cebd7
+[18, 24, 20, 27, 39, 6, 2, 14, 36, 3]
+6,19910
+21583,20,6700,2
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@13ca738
+[17, 22, 39, 29, 28, 30, 24, 23, 2, 7]
+7,20111
+9043,20,7800,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@84c5d0
+[11, 28, 32, 38, 36, 17, 23, 18, 24, 19]
+5,20005
+6830,20,7100,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@6451f8
+[29, 34, 9, 24, 33, 38, 26, 39, 12, 7]
+2,19993
+31001,20,7600,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@1c6c273
+[29, 34, 9, 24, 33, 38, 26, 39, 12, 7]
+20,19923
+35174,20,6700,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@203f29d
+[18, 32, 5, 33, 20, 12, 7, 16, 26, 38]
+36,20126
+14550,20,6900,3
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@d5869b
+[11, 28, 32, 38, 36, 17, 23, 18, 24, 19]
+4,19815
+24273,20,6300,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@16418db
+[29, 34, 9, 24, 33, 38, 26, 39, 12, 7]
+21,20031
+7505,20,7400,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@6e386d
+[29, 34, 9, 24, 33, 38, 26, 39, 12, 7]
+13,19813
+26052,20,6000,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@17e2f70
+[18, 32, 5, 33, 20, 12, 7, 16, 26, 38]
+12,20074
+9679,20,7000,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@8e1886
+[11, 28, 32, 38, 36, 17, 23, 18, 24, 19]
+4,19815
+11781,20,7500,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@aceb28
+[18, 32, 5, 33, 20, 12, 7, 16, 26, 38]
+11,19957
+16079,20,8000,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@ebf237
+[21, 4, 29, 36, 27, 1, 23, 22, 17, 37]
+12,20074
+13862,20,6900,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@cb6e48
+[17, 22, 39, 29, 28, 30, 24, 23, 2, 7]
+3,19854
+15844,20,5900,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@e87f99
+[17, 22, 39, 29, 28, 30, 24, 23, 2, 7]
+15,19806
+12138,20,6900,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@b226a8
+[29, 34, 9, 24, 33, 38, 26, 39, 12, 7]
+18,20238
+19253,20,6700,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@11a7c88
+[29, 34, 9, 24, 33, 38, 26, 39, 12, 7]
+13,19813
+25557,20,6700,2
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@176ed27
+[17, 22, 39, 29, 28, 30, 24, 23, 2, 7]
+20,19923
+17372,20,7100,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@fee81f
+[21, 4, 29, 36, 27, 1, 23, 22, 17, 37]
+33,20116
+28993,20,7400,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@1a94f9e
+[18, 24, 20, 27, 39, 6, 2, 14, 36, 3]
+15,19806
+23312,20,7200,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@1560176
+[18, 32, 5, 33, 20, 12, 7, 16, 26, 38]
+28,20005
+19925,20,7700,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@1245742
+[11, 28, 32, 38, 36, 17, 23, 18, 24, 19]
+1,20054
+15833,20,6400,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@e85706
+[18, 24, 20, 27, 39, 6, 2, 14, 36, 3]
+24,20304
+5364,20,7400,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@4ed23d
+[17, 22, 39, 29, 28, 30, 24, 23, 2, 7]
+1,20054
+16682,20,7000,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@f4c85c
+[17, 22, 39, 29, 28, 30, 24, 23, 2, 7]
+32,20163
+22013,20,7300,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@142f645
+[18, 32, 5, 33, 20, 12, 7, 16, 26, 38]
+22,20146
+9766,20,6800,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@8f5edf
+[29, 34, 9, 24, 33, 38, 26, 39, 12, 7]
+32,20163
+20153,20,6300,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@127ae23
+[21, 4, 29, 36, 27, 1, 23, 22, 17, 37]
+33,20116
+37920,20,6600,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@22c36a8
+[11, 28, 32, 38, 36, 17, 23, 18, 24, 19]
+40,19934
+17962,20,7400,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@1078e89
+[29, 34, 9, 24, 33, 38, 26, 39, 12, 7]
+4,19815
+11902,20,7100,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@aeb278
+[18, 32, 5, 33, 20, 12, 7, 16, 26, 38]
+40,19934
+11595,20,6900,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@aa3204
+[11, 28, 32, 38, 36, 17, 23, 18, 24, 19]
+34,19891
+2315,20,6900,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@221d89
+[18, 24, 20, 27, 39, 6, 2, 14, 36, 3]
+18,20238
+9031,20,7200,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@849900
+[18, 32, 5, 33, 20, 12, 7, 16, 26, 38]
+35,19943
+33093,20,5900,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@1e56d96
+[18, 24, 20, 27, 39, 6, 2, 14, 36, 3]
+9,19972
+12446,20,7000,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@b6ac81
+[21, 4, 29, 36, 27, 1, 23, 22, 17, 37]
+14,19588
+35815,20,7400,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@20d57b7
+[18, 32, 5, 33, 20, 12, 7, 16, 26, 38]
+16,19918
+19048,20,7200,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@1177ab2
+[29, 34, 9, 24, 33, 38, 26, 39, 12, 7]
+8,19780
+39132,20,7400,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@23dfba7
+[11, 28, 32, 38, 36, 17, 23, 18, 24, 19]
+27,19916
+17257,20,6900,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@fd3805
+[11, 28, 32, 38, 36, 17, 23, 18, 24, 19]
+15,19806
+24719,20,6600,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@16aa32e
+[18, 32, 5, 33, 20, 12, 7, 16, 26, 38]
+32,20163
+6630,20,6500,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@616227
+[21, 4, 29, 36, 27, 1, 23, 22, 17, 37]
+22,20146
+25869,20,7100,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@17b80ea
+[18, 24, 20, 27, 39, 6, 2, 14, 36, 3]
+7,20111
+21909,20,6200,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@1416f3a
+[17, 22, 39, 29, 28, 30, 24, 23, 2, 7]
+32,20163
+2072,20,8000,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@1e8c3e
+[29, 34, 9, 24, 33, 38, 26, 39, 12, 7]
+3,19854
+24095,20,6800,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@1617d41
+[17, 22, 39, 29, 28, 30, 24, 23, 2, 7]
+17,20048
+17856,20,7200,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@10600d4
+[29, 34, 9, 24, 33, 38, 26, 39, 12, 7]
+2,19993
+4164,20,7200,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@3d39c9
+[18, 32, 5, 33, 20, 12, 7, 16, 26, 38]
+17,20048
+26808,20,6800,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@189452a
+[21, 4, 29, 36, 27, 1, 23, 22, 17, 37]
+29,20187
+5487,20,5600,2
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@50a110
+[29, 34, 9, 24, 33, 38, 26, 39, 12, 7]
+31,19827
+8522,20,7300,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@7d218d
+[11, 28, 32, 38, 36, 17, 23, 18, 24, 19]
+11,19957
+549,20,7100,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@83730
+[17, 22, 39, 29, 28, 30, 24, 23, 2, 7]
+37,19866
+34414,20,6000,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@1f8cd30
+[29, 34, 9, 24, 33, 38, 26, 39, 12, 7]
+38,20100
+22172,20,6400,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@1454a86
+[21, 4, 29, 36, 27, 1, 23, 22, 17, 37]
+31,19827
+1187,20,5500,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@119347
+[17, 22, 39, 29, 28, 30, 24, 23, 2, 7]
+1,20054
+36749,20,6200,2
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@21b0b2e
+[18, 32, 5, 33, 20, 12, 7, 16, 26, 38]
+34,19891
+21857,20,6700,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@140aaeb
+[11, 28, 32, 38, 36, 17, 23, 18, 24, 19]
+34,19891
+1385,20,6800,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@147a65
+[21, 4, 29, 36, 27, 1, 23, 22, 17, 37]
+22,20146
+8950,20,6100,2
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@836705
+[11, 28, 32, 38, 36, 17, 23, 18, 24, 19]
+33,20116
+10784,20,6300,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@9e4d9f
+[17, 22, 39, 29, 28, 30, 24, 23, 2, 7]
+27,19916
+24417,20,7400,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@166363e
+[29, 34, 9, 24, 33, 38, 26, 39, 12, 7]
+3,19854
+36296,20,7100,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@214659d
+[21, 4, 29, 36, 27, 1, 23, 22, 17, 37]
+38,20100
+31010,20,6900,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@1c6e3c1
+[21, 4, 29, 36, 27, 1, 23, 22, 17, 37]
+13,19813
+5946,20,7400,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@575be8
+[17, 22, 39, 29, 28, 30, 24, 23, 2, 7]
+12,20074
+37642,20,6600,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@228232e
+[17, 22, 39, 29, 28, 30, 24, 23, 2, 7]
+7,20111
+5432,20,6400,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@4fd1bb
+[18, 32, 5, 33, 20, 12, 7, 16, 26, 38]
+9,19972
+32740,20,6100,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@1e04145
+[21, 4, 29, 36, 27, 1, 23, 22, 17, 37]
+6,19910
+22311,20,7200,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@14754e4
+[21, 4, 29, 36, 27, 1, 23, 22, 17, 37]
+22,20146
+33373,20,8100,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@1e98a86
+[18, 24, 20, 27, 39, 6, 2, 14, 36, 3]
+24,20304
+2844,20,7500,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@29de93
+[21, 4, 29, 36, 27, 1, 23, 22, 17, 37]
+24,20304
+10623,20,7100,2
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@9bf0f5
+[21, 4, 29, 36, 27, 1, 23, 22, 17, 37]
+6,19910
+23756,20,7100,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@15c852f
+[18, 24, 20, 27, 39, 6, 2, 14, 36, 3]
+31,19827
+15880,20,7400,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@e90630
+[21, 4, 29, 36, 27, 1, 23, 22, 17, 37]
+6,19910
+4206,20,7200,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@3dd6bd
+[21, 4, 29, 36, 27, 1, 23, 22, 17, 37]
+4,19815
+24696,20,7400,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@16a4c34
+[21, 4, 29, 36, 27, 1, 23, 22, 17, 37]
+38,20100
+24526,20,6200,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@167cec3
+[17, 22, 39, 29, 28, 30, 24, 23, 2, 7]
+12,20074
+36505,20,7600,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@217762e
+[18, 32, 5, 33, 20, 12, 7, 16, 26, 38]
+35,19943
+18858,20,6900,2
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@114b291
+[18, 32, 5, 33, 20, 12, 7, 16, 26, 38]
+9,19972
+38851,20,6900,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@239dcd0
+[11, 28, 32, 38, 36, 17, 23, 18, 24, 19]
+29,20187
+10353,20,7300,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@97fabd
+[18, 32, 5, 33, 20, 12, 7, 16, 26, 38]
+14,19588
+21910,20,5900,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@1417240
+[29, 34, 9, 24, 33, 38, 26, 39, 12, 7]
+12,20074
+8932,20,7100,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@83248b
+[18, 24, 20, 27, 39, 6, 2, 14, 36, 3]
+21,20031
+22313,20,7000,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@1475bcd
+[11, 28, 32, 38, 36, 17, 23, 18, 24, 19]
+14,19588
+19238,20,7500,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@11a4398
+[21, 4, 29, 36, 27, 1, 23, 22, 17, 37]
+31,19827
+3614,20,7100,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@352888
+[18, 24, 20, 27, 39, 6, 2, 14, 36, 3]
+20,19923
+28615,20,7900,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@1a3c3a0
+[29, 34, 9, 24, 33, 38, 26, 39, 12, 7]
+10,19905
+36499,20,6500,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@2176022
+[18, 32, 5, 33, 20, 12, 7, 16, 26, 38]
+6,19910
+31420,20,6200,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@1cce607
+[11, 28, 32, 38, 36, 17, 23, 18, 24, 19]
+23,20199
+723,20,7500,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@ac4a1
+[18, 24, 20, 27, 39, 6, 2, 14, 36, 3]
+14,19588
+12181,20,7700,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@b2c7ff
+[21, 4, 29, 36, 27, 1, 23, 22, 17, 37]
+31,19827
+28858,20,6800,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@1a755eb
+[11, 28, 32, 38, 36, 17, 23, 18, 24, 19]
+27,19916
+20008,20,6800,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@1258f6e
+[29, 34, 9, 24, 33, 38, 26, 39, 12, 7]
+38,20100
+12060,20,7700,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@b1029f
+[11, 28, 32, 38, 36, 17, 23, 18, 24, 19]
+15,19806
+28467,20,7100,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@1a19848
+[21, 4, 29, 36, 27, 1, 23, 22, 17, 37]
+2,19993
+16103,20,7100,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@ec4c89
+[18, 32, 5, 33, 20, 12, 7, 16, 26, 38]
+35,19943
+34525,20,6800,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@1fa6f58
+[18, 32, 5, 33, 20, 12, 7, 16, 26, 38]
+33,20116
+25632,20,7600,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@1780642
+[11, 28, 32, 38, 36, 17, 23, 18, 24, 19]
+32,20163
+6027,20,7000,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@588b98
+[11, 28, 32, 38, 36, 17, 23, 18, 24, 19]
+7,20111
+9943,20,6900,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@91f83c
+[17, 22, 39, 29, 28, 30, 24, 23, 2, 7]
+1,20054
+21953,20,6500,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@14214ed
+[29, 34, 9, 24, 33, 38, 26, 39, 12, 7]
+27,19916
+6608,20,6600,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@611033
+[11, 28, 32, 38, 36, 17, 23, 18, 24, 19]
+19,20063
+13967,20,7400,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@ccfa8e
+[29, 34, 9, 24, 33, 38, 26, 39, 12, 7]
+34,19891
+27555,20,7000,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@1943933
+[17, 22, 39, 29, 28, 30, 24, 23, 2, 7]
+14,19588
+107,20,6600,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@1bbdd
+[29, 34, 9, 24, 33, 38, 26, 39, 12, 7]
+14,19588
+16748,20,7100,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@f5c04f
+[17, 22, 39, 29, 28, 30, 24, 23, 2, 7]
+16,19918
+6532,20,6200,2
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@5ff36b
+[18, 32, 5, 33, 20, 12, 7, 16, 26, 38]
+35,19943
+14881,20,6700,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@da5fec
+[11, 28, 32, 38, 36, 17, 23, 18, 24, 19]
+27,19916
+14072,20,6100,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@ce8411
+[18, 32, 5, 33, 20, 12, 7, 16, 26, 38]
+12,20074
+37033,20,6500,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@21f358d
+[17, 22, 39, 29, 28, 30, 24, 23, 2, 7]
+9,19972
+293,20,6500,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@475d4
+[17, 22, 39, 29, 28, 30, 24, 23, 2, 7]
+10,19905
+6974,20,6900,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@666e90
+[18, 32, 5, 33, 20, 12, 7, 16, 26, 38]
+30,20073
+6569,20,6100,2
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@607e56
+[18, 24, 20, 27, 39, 6, 2, 14, 36, 3]
+29,20187
+11614,20,7700,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@aa78ec
+[17, 22, 39, 29, 28, 30, 24, 23, 2, 7]
+36,20126
+11580,20,6600,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@a9f9e4
+[29, 34, 9, 24, 33, 38, 26, 39, 12, 7]
+1,20054
+21650,20,6800,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@13da34d
+[18, 32, 5, 33, 20, 12, 7, 16, 26, 38]
+16,19918
+11858,20,5900,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@ae0bd6
+[18, 32, 5, 33, 20, 12, 7, 16, 26, 38]
+26,20157
+38312,20,7500,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@231f59b
+[17, 22, 39, 29, 28, 30, 24, 23, 2, 7]
+20,19923
+38496,20,6900,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@234a9e9
+[18, 32, 5, 33, 20, 12, 7, 16, 26, 38]
+20,19923
+18338,20,7400,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@10d11b5
+[29, 34, 9, 24, 33, 38, 26, 39, 12, 7]
+36,20126
+2455,20,6300,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@242978
+[21, 4, 29, 36, 27, 1, 23, 22, 17, 37]
+19,20063
+22111,20,6800,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@144651b
+[18, 32, 5, 33, 20, 12, 7, 16, 26, 38]
+29,20187
+33465,20,6800,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@1eae2cd
+[29, 34, 9, 24, 33, 38, 26, 39, 12, 7]
+29,20187
+12959,20,6600,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@be313d
+[18, 32, 5, 33, 20, 12, 7, 16, 26, 38]
+3,19854
+26361,20,6800,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@182b79c
+[29, 34, 9, 24, 33, 38, 26, 39, 12, 7]
+36,20126
+7122,20,6600,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@689a87
+[11, 28, 32, 38, 36, 17, 23, 18, 24, 19]
+13,19813
+39730,20,6400,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@246c236
+[11, 28, 32, 38, 36, 17, 23, 18, 24, 19]
+33,20116
+20964,20,6400,2
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@13393cd
+[17, 22, 39, 29, 28, 30, 24, 23, 2, 7]
+22,20146
+28529,20,7400,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@1a28114
+[18, 32, 5, 33, 20, 12, 7, 16, 26, 38]
+24,20304
+35426,20,6600,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@207a520
+[18, 32, 5, 33, 20, 12, 7, 16, 26, 38]
+22,20146
+24743,20,7300,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@16afe29
+[21, 4, 29, 36, 27, 1, 23, 22, 17, 37]
+38,20100
+24815,20,7300,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@16c0b17
+[17, 22, 39, 29, 28, 30, 24, 23, 2, 7]
+23,20199
+2519,20,5600,2
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@251a48
+[18, 32, 5, 33, 20, 12, 7, 16, 26, 38]
+34,19891
+11702,20,6700,2
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@abc201
+[18, 24, 20, 27, 39, 6, 2, 14, 36, 3]
+12,20074
+29941,20,6400,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@1b7356d
+[17, 22, 39, 29, 28, 30, 24, 23, 2, 7]
+16,19918
+34016,20,8200,2
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@1f2f843
+[21, 4, 29, 36, 27, 1, 23, 22, 17, 37]
+28,20005
+9993,20,6900,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@92b430
+[11, 28, 32, 38, 36, 17, 23, 18, 24, 19]
+28,20005
+36199,20,6600,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@212fa93
+[17, 22, 39, 29, 28, 30, 24, 23, 2, 7]
+9,19972
+4111,20,6900,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@3c72cb
+[18, 32, 5, 33, 20, 12, 7, 16, 26, 38]
+26,20157
+9362,20,6600,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@8971d8
+[17, 22, 39, 29, 28, 30, 24, 23, 2, 7]
+21,20031
+34485,20,6900,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@1f9d87a
+[21, 4, 29, 36, 27, 1, 23, 22, 17, 37]
+19,20063
+29227,20,7400,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@1acbd06
+[17, 22, 39, 29, 28, 30, 24, 23, 2, 7]
+30,20073
+37939,20,7100,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@22c7ed2
+[18, 32, 5, 33, 20, 12, 7, 16, 26, 38]
+38,20100
+35014,20,6400,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@201998d
+[29, 34, 9, 24, 33, 38, 26, 39, 12, 7]
+26,20157
+12082,20,6500,2
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@b155aa
+[18, 24, 20, 27, 39, 6, 2, 14, 36, 3]
+11,19957
+25934,20,7900,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@17c7423
+[17, 22, 39, 29, 28, 30, 24, 23, 2, 7]
+2,19993
+38928,20,6700,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@23afe56
+[11, 28, 32, 38, 36, 17, 23, 18, 24, 19]
+20,19923
+23842,20,7100,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@15dc82e
+[18, 24, 20, 27, 39, 6, 2, 14, 36, 3]
+6,19910
+4884,20,7400,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@47c9c5
+[18, 24, 20, 27, 39, 6, 2, 14, 36, 3]
+6,19910
+24864,20,6300,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@16cc30d
+[29, 34, 9, 24, 33, 38, 26, 39, 12, 7]
+27,19916
+8451,20,7300,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@7c16f6
+[18, 24, 20, 27, 39, 6, 2, 14, 36, 3]
+4,19815
+4374,20,7100,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@404e28
+[18, 24, 20, 27, 39, 6, 2, 14, 36, 3]
+31,19827
+8892,20,6800,2
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@828da8
+[21, 4, 29, 36, 27, 1, 23, 22, 17, 37]
+34,19891
+9853,20,7600,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@90a6d0
+[18, 32, 5, 33, 20, 12, 7, 16, 26, 38]
+6,19910
+9985,20,6600,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@92959c
+[18, 32, 5, 33, 20, 12, 7, 16, 26, 38]
+16,19918
+20460,20,7200,2
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@12c300c
+[18, 32, 5, 33, 20, 12, 7, 16, 26, 38]
+3,19854
+2472,20,7300,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@24699d
+[18, 24, 20, 27, 39, 6, 2, 14, 36, 3]
+6,19910
+35971,20,7600,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@20fa1a4
+[17, 22, 39, 29, 28, 30, 24, 23, 2, 7]
+4,19815
+17990,20,7400,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@107f77c
+[18, 32, 5, 33, 20, 12, 7, 16, 26, 38]
+37,19866
+24196,20,6600,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@162f719
+[17, 22, 39, 29, 28, 30, 24, 23, 2, 7]
+24,20304
+27599,20,7000,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@194df16
+[21, 4, 29, 36, 27, 1, 23, 22, 17, 37]
+14,19588
+4524,20,6800,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@4281f0
+[11, 28, 32, 38, 36, 17, 23, 18, 24, 19]
+18,20238
+958,20,6700,2
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@e36e7
+[11, 28, 32, 38, 36, 17, 23, 18, 24, 19]
+1,20054
+8123,20,6700,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@77479b
+[18, 32, 5, 33, 20, 12, 7, 16, 26, 38]
+24,20304
+39909,20,7200,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@2496235
+[21, 4, 29, 36, 27, 1, 23, 22, 17, 37]
+23,20199
+17483,20,6800,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@1008736
+[18, 24, 20, 27, 39, 6, 2, 14, 36, 3]
+13,19813
+25580,20,6800,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@17743d8
+[11, 28, 32, 38, 36, 17, 23, 18, 24, 19]
+8,19780
+2972,20,6700,2
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@2bc028
+[17, 22, 39, 29, 28, 30, 24, 23, 2, 7]
+26,20157
+35086,20,6600,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@202a7bf
+[18, 32, 5, 33, 20, 12, 7, 16, 26, 38]
+35,19943
+33844,20,6700,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@1f072bf
+[21, 4, 29, 36, 27, 1, 23, 22, 17, 37]
+20,19923
+5833,20,7400,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@55b23a
+[29, 34, 9, 24, 33, 38, 26, 39, 12, 7]
+22,20146
+5644,20,7300,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@52ed87
+[11, 28, 32, 38, 36, 17, 23, 18, 24, 19]
+20,19923
+9233,20,7200,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@878e27
+[18, 32, 5, 33, 20, 12, 7, 16, 26, 38]
+31,19827
+29697,20,7000,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@1b3a345
+[18, 32, 5, 33, 20, 12, 7, 16, 26, 38]
+21,20031
+20739,20,7400,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@130473f
+[21, 4, 29, 36, 27, 1, 23, 22, 17, 37]
+6,19910
+8416,20,7500,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@7b943d
+[11, 28, 32, 38, 36, 17, 23, 18, 24, 19]
+19,20063
+6973,20,7200,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@666b42
+[21, 4, 29, 36, 27, 1, 23, 22, 17, 37]
+2,19993
+3662,20,7200,2
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@35dc86
+[18, 24, 20, 27, 39, 6, 2, 14, 36, 3]
+13,19813
+31690,20,7200,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@1d0dbc6
+[17, 22, 39, 29, 28, 30, 24, 23, 2, 7]
+2,19993
+5004,20,7400,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@498a80
+[29, 34, 9, 24, 33, 38, 26, 39, 12, 7]
+33,20116
+15106,20,6700,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@ddac1c
+[18, 24, 20, 27, 39, 6, 2, 14, 36, 3]
+35,19943
+515,20,7000,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@7b89c
+[18, 32, 5, 33, 20, 12, 7, 16, 26, 38]
+12,20074
+9506,20,6500,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@8b9038
+[21, 4, 29, 36, 27, 1, 23, 22, 17, 37]
+9,19972
+30470,20,7200,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@1bef8e6
+[17, 22, 39, 29, 28, 30, 24, 23, 2, 7]
+30,20073
+37058,20,7400,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@21f91f7
+[11, 28, 32, 38, 36, 17, 23, 18, 24, 19]
+9,19972
+2412,20,6300,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@23891f
+[29, 34, 9, 24, 33, 38, 26, 39, 12, 7]
+33,20116
+9971,20,6500,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@926144
+[18, 32, 5, 33, 20, 12, 7, 16, 26, 38]
+37,19866
+20875,20,7100,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@1324614
+[29, 34, 9, 24, 33, 38, 26, 39, 12, 7]
+23,20199
+14212,20,7400,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@d09073
+[18, 24, 20, 27, 39, 6, 2, 14, 36, 3]
+39,20269
+7928,20,7000,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@746b24
+[29, 34, 9, 24, 33, 38, 26, 39, 12, 7]
+7,20111
+28949,20,7000,2
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@1a8ab12
+[18, 24, 20, 27, 39, 6, 2, 14, 36, 3]
+28,20005
+22823,20,6700,2
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@14ed6a9
+[21, 4, 29, 36, 27, 1, 23, 22, 17, 37]
+32,20163
+3670,20,7300,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@35fb96
+[17, 22, 39, 29, 28, 30, 24, 23, 2, 7]
+14,19588
+28893,20,6700,2
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@1a7d821
+[29, 34, 9, 24, 33, 38, 26, 39, 12, 7]
+30,20073
+2095,20,6900,3
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@1ee401
+[18, 32, 5, 33, 20, 12, 7, 16, 26, 38]
+16,19918
+34788,20,7200,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@1fe4946
+[18, 32, 5, 33, 20, 12, 7, 16, 26, 38]
+40,19934
+34088,20,6700,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@1f405a0
+[17, 22, 39, 29, 28, 30, 24, 23, 2, 7]
+40,19934
+9584,20,6800,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@8cb505
+[11, 28, 32, 38, 36, 17, 23, 18, 24, 19]
+29,20187
+9673,20,7400,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@8e0235
+[17, 22, 39, 29, 28, 30, 24, 23, 2, 7]
+31,19827
+15517,20,7500,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@e3b37d
+[21, 4, 29, 36, 27, 1, 23, 22, 17, 37]
+24,20304
+6618,20,7100,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@613511
+[11, 28, 32, 38, 36, 17, 23, 18, 24, 19]
+11,19957
+34394,20,6900,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@1f881ac
+[18, 32, 5, 33, 20, 12, 7, 16, 26, 38]
+9,19972
+11575,20,7300,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@a9e529
+[17, 22, 39, 29, 28, 30, 24, 23, 2, 7]
+32,20163
+36708,20,7400,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@21a7132
+[18, 32, 5, 33, 20, 12, 7, 16, 26, 38]
+3,19854
+25034,20,6600,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@16f4140
+[21, 4, 29, 36, 27, 1, 23, 22, 17, 37]
+28,20005
+19605,20,6600,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@11fa69c
+[21, 4, 29, 36, 27, 1, 23, 22, 17, 37]
+10,19905
+9560,20,6200,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@8c5947
+[18, 32, 5, 33, 20, 12, 7, 16, 26, 38]
+2,19993
+15918,20,7000,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@e9952a
+[18, 32, 5, 33, 20, 12, 7, 16, 26, 38]
+40,19934
+26144,20,6900,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@17f88de
+[21, 4, 29, 36, 27, 1, 23, 22, 17, 37]
+14,19588
+27629,20,6800,2
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@1954fb3
+[18, 32, 5, 33, 20, 12, 7, 16, 26, 38]
+18,20238
+30948,20,6800,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@1c5fae4
+[29, 34, 9, 24, 33, 38, 26, 39, 12, 7]
+6,19910
+35227,20,6100,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@204b8a4
+[21, 4, 29, 36, 27, 1, 23, 22, 17, 37]
+39,20269
+36876,20,7400,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@21ce730
+[17, 22, 39, 29, 28, 30, 24, 23, 2, 7]
+33,20116
+6469,20,7200,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@5f068c
+[18, 24, 20, 27, 39, 6, 2, 14, 36, 3]
+15,19806
+3108,20,7200,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@2dbcfe
+[18, 24, 20, 27, 39, 6, 2, 14, 36, 3]
+11,19957
+30557,20,7200,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@1c03ec0
+[17, 22, 39, 29, 28, 30, 24, 23, 2, 7]
+15,19806
+7188,20,6800,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@699252
+[18, 24, 20, 27, 39, 6, 2, 14, 36, 3]
+1,20054
+15503,20,6800,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@e37ede
+[18, 24, 20, 27, 39, 6, 2, 14, 36, 3]
+13,19813
+24506,20,7500,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@16783fe
+[29, 34, 9, 24, 33, 38, 26, 39, 12, 7]
+40,19934
+4198,20,7200,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@3db953
+[17, 22, 39, 29, 28, 30, 24, 23, 2, 7]
+16,19918
+23953,20,7200,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@15f6709
+[17, 22, 39, 29, 28, 30, 24, 23, 2, 7]
+8,19780
+7969,20,7800,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@75069a
+[17, 22, 39, 29, 28, 30, 24, 23, 2, 7]
+34,19891
+10216,20,7000,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@95f89b
+[11, 28, 32, 38, 36, 17, 23, 18, 24, 19]
+26,20157
+26293,20,7000,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@181b7bc
+[17, 22, 39, 29, 28, 30, 24, 23, 2, 7]
+13,19813
+32109,20,7100,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@1d700bf
+[11, 28, 32, 38, 36, 17, 23, 18, 24, 19]
+35,19943
+18034,20,7200,2
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@1089cb8
+[29, 34, 9, 24, 33, 38, 26, 39, 12, 7]
+21,20031
+27860,20,7300,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@198b26e
+[29, 34, 9, 24, 33, 38, 26, 39, 12, 7]
+19,20063
+1191,20,6700,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@11a198
+[18, 32, 5, 33, 20, 12, 7, 16, 26, 38]
+24,20304
+31388,20,7000,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@1cc6de6
+[18, 24, 20, 27, 39, 6, 2, 14, 36, 3]
+14,19588
+22711,20,7100,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@14d31ed
+[18, 24, 20, 27, 39, 6, 2, 14, 36, 3]
+12,20074
+15170,20,7700,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@de9e63
+[18, 32, 5, 33, 20, 12, 7, 16, 26, 38]
+19,20063
+3882,20,6900,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@3916b0
+[29, 34, 9, 24, 33, 38, 26, 39, 12, 7]
+36,20126
+31779,20,6600,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@1d22948
+[18, 24, 20, 27, 39, 6, 2, 14, 36, 3]
+18,20238
+12785,20,6500,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@bba3f5
+[11, 28, 32, 38, 36, 17, 23, 18, 24, 19]
+39,20269
+37981,20,6600,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@22d1caa
+[18, 32, 5, 33, 20, 12, 7, 16, 26, 38]
+15,19806
+26486,20,7000,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@1848d97
+[11, 28, 32, 38, 36, 17, 23, 18, 24, 19]
+11,19957
+23935,20,6700,2
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@15f2558
+[18, 32, 5, 33, 20, 12, 7, 16, 26, 38]
+31,19827
+13118,20,7200,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@c086bf
+[11, 28, 32, 38, 36, 17, 23, 18, 24, 19]
+17,20048
+21648,20,7200,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@13d9a87
+[21, 4, 29, 36, 27, 1, 23, 22, 17, 37]
+22,20146
+36207,20,7900,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@2131939
+[29, 34, 9, 24, 33, 38, 26, 39, 12, 7]
+38,20100
+11249,20,6800,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@a51e2f
+[18, 24, 20, 27, 39, 6, 2, 14, 36, 3]
+19,20063
+3852,20,7700,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@38a721
+[17, 22, 39, 29, 28, 30, 24, 23, 2, 7]
+31,19827
+3863,20,6500,2
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@38d03b
+[11, 28, 32, 38, 36, 17, 23, 18, 24, 19]
+5,20005
+18207,20,8200,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@10b25c2
+[29, 34, 9, 24, 33, 38, 26, 39, 12, 7]
+39,20269
+4867,20,6900,2
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@478873
+[18, 24, 20, 27, 39, 6, 2, 14, 36, 3]
+33,20116
+17568,20,7800,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@101c7e2
+[18, 24, 20, 27, 39, 6, 2, 14, 36, 3]
+24,20304
+6410,20,7300,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@5e285b
+[11, 28, 32, 38, 36, 17, 23, 18, 24, 19]
+1,20054
+37689,20,7300,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@228d3fa
+[17, 22, 39, 29, 28, 30, 24, 23, 2, 7]
+28,20005
+16820,20,8100,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@f6cf18
+[18, 24, 20, 27, 39, 6, 2, 14, 36, 3]
+11,19957
+25820,20,6800,2
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@17ac805
+[29, 34, 9, 24, 33, 38, 26, 39, 12, 7]
+22,20146
+9874,20,6400,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@90f56d
+[11, 28, 32, 38, 36, 17, 23, 18, 24, 19]
+32,20163
+35791,20,7200,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@20cfed5
+[21, 4, 29, 36, 27, 1, 23, 22, 17, 37]
+8,19780
+28016,20,7100,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@19afce2
+[29, 34, 9, 24, 33, 38, 26, 39, 12, 7]
+30,20073
+16735,20,7700,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@f59084
+[11, 28, 32, 38, 36, 17, 23, 18, 24, 19]
+17,20048
+25257,20,7200,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@17286ef
+[11, 28, 32, 38, 36, 17, 23, 18, 24, 19]
+16,19918
+8462,20,6900,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@7c3f6d
+[21, 4, 29, 36, 27, 1, 23, 22, 17, 37]
+8,19780
+18579,20,7200,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@1109a29
+[29, 34, 9, 24, 33, 38, 26, 39, 12, 7]
+28,20005
+9717,20,7600,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@8ea715
+[11, 28, 32, 38, 36, 17, 23, 18, 24, 19]
+24,20304
+36206,20,6600,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@21315a3
+[21, 4, 29, 36, 27, 1, 23, 22, 17, 37]
+6,19910
+34350,20,6700,2
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@1f7dd79
+[18, 24, 20, 27, 39, 6, 2, 14, 36, 3]
+3,19854
+21562,20,6500,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@13c58f7
+[18, 24, 20, 27, 39, 6, 2, 14, 36, 3]
+7,20111
+10561,20,6200,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@9b079d
+[21, 4, 29, 36, 27, 1, 23, 22, 17, 37]
+7,20111
+32167,20,7600,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@1d7d9d3
+[29, 34, 9, 24, 33, 38, 26, 39, 12, 7]
+16,19918
+14109,20,7600,2
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@cf0efb
+[21, 4, 29, 36, 27, 1, 23, 22, 17, 37]
+30,20073
+25490,20,6500,2
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@175f22a
+[18, 32, 5, 33, 20, 12, 7, 16, 26, 38]
+9,19972
+16579,20,6600,2
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@f345bb
+[18, 32, 5, 33, 20, 12, 7, 16, 26, 38]
+27,19916
+8661,20,6800,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@7f2c32
+[29, 34, 9, 24, 33, 38, 26, 39, 12, 7]
+12,20074
+16483,20,6600,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@f1dd44
+[17, 22, 39, 29, 28, 30, 24, 23, 2, 7]
+3,19854
+19752,20,6600,2
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@121cee2
+[11, 28, 32, 38, 36, 17, 23, 18, 24, 19]
+29,20187
+16188,20,6400,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@ed8a27
+[11, 28, 32, 38, 36, 17, 23, 18, 24, 19]
+16,19918
+19819,20,7400,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@122c858
+[21, 4, 29, 36, 27, 1, 23, 22, 17, 37]
+12,20074
+4793,20,6900,2
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@4672be
+[18, 32, 5, 33, 20, 12, 7, 16, 26, 38]
+29,20187
+20871,20,6200,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@13236ca
+[18, 32, 5, 33, 20, 12, 7, 16, 26, 38]
+34,19891
+23391,20,6900,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@1572abc
+[18, 24, 20, 27, 39, 6, 2, 14, 36, 3]
+7,20111
+9326,20,6100,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@88ea8b
+[11, 28, 32, 38, 36, 17, 23, 18, 24, 19]
+27,19916
+17242,20,6200,2
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@fcffe9
+[18, 24, 20, 27, 39, 6, 2, 14, 36, 3]
+12,20074
+30132,20,7600,1
+edu.neu.ccs.cs5010.assignment8.Record.RawRecord@1ba02db
+[11, 28, 32, 38, 36, 17, 23, 18, 24, 19]
+23,20199

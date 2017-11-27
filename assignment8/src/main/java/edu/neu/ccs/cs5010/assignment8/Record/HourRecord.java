@@ -58,4 +58,9 @@ public class HourRecord implements IRecord {
   public static int toIndex(int time) {
     return (time - 1) / MINUTES_IN_HOUR;
   }
+
+  @Override
+  public String toString() {
+    return topTenLifts.toString();
+  }
 }

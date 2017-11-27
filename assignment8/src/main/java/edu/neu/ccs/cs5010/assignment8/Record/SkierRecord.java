@@ -10,7 +10,7 @@ public class SkierRecord implements IRecord {
   private int numViews;
 
   public static final int SIZE = Integer.BYTES * 4;
-  private static final int POS_TO_VIEWS = Integer.BYTES * 3;
+  public static final int POS_TO_VIEWS = Integer.BYTES * 3;
   public static final int SKIER_TOTAL = 40000;
 
   /**
@@ -53,7 +53,7 @@ public class SkierRecord implements IRecord {
     skierId = file.readInt();
     numRides = file.readInt();
     totalVertical = file.readInt();
-    numViews = file.readInt() + 1;
+    numViews = file.readInt();
   }
 
   @Override
@@ -64,12 +64,9 @@ public class SkierRecord implements IRecord {
     file.writeInt(numViews);
   }
 
-  public void updateNumberOfViewsToFile(RandomAccessFile file)
-          throws IOException {
-    synchronized (this) {
+  public void updateNumberOfViewsToFile(RandomAccessFile file) throws IOException {
       file.seek((skierId - 1) * SkierRecord.SIZE + POS_TO_VIEWS);
-      file.writeInt(numViews);
-    }
+      file.writeInt(++numViews);
   }
 
   @Override
