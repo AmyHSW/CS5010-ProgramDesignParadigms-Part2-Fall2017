@@ -44,7 +44,7 @@ public interface IDataProcessor {
    *
    * @return the list stores all hours' lifts' information
    */
-  List<List<IRecord>> getHourRides();
+  List<IRecord> getHourList();
 
   /**
    * Gets all skiers' row indices information.

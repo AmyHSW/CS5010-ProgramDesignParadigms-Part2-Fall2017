@@ -21,7 +21,7 @@ public class SequentialDataProcessor implements IDataProcessor {
   private final List<IRecord> rawList;
   private final List<IRecord> skierList;
   private final List<IRecord> liftList;
-  private final List<List<IRecord>> hourList;
+  private final List<List<IRecord>> hourLiftsList;
   private final List<IRecord> skierRowList;
   private Duration runTime;
 
@@ -39,7 +39,7 @@ public class SequentialDataProcessor implements IDataProcessor {
     rawList = new ArrayList<>(this.inputData.size());
     skierList = new ArrayList<>(SkierRecord.SKIER_TOTAL);
     liftList = new ArrayList<>(LiftRecord.LIFT_TOTAL);
-    hourList = new ArrayList<>(HourRecord.HOUR_TOTAL);
+    hourLiftsList = new ArrayList<>(HourRecord.HOUR_TOTAL);
     skierRowList = new ArrayList<>(SkierRecord.SKIER_TOTAL);
     initSkierList();
     initLiftList();
@@ -58,7 +58,7 @@ public class SequentialDataProcessor implements IDataProcessor {
       for (int j = 0; j < LiftRecord.LIFT_TOTAL; j++) {
         tempList.add(new LiftRecord(j));
       }
-      hourList.add(tempList);
+      hourLiftsList.add(tempList);
     }
   }
 
@@ -101,7 +101,7 @@ public class SequentialDataProcessor implements IDataProcessor {
   }
 
   private void processHour(int time, int liftId) {
-    LiftRecord lift = (LiftRecord) hourList.get(HourRecord.toIndex(time)).get(liftId - 1);
+    LiftRecord lift = (LiftRecord) hourLiftsList.get(HourRecord.toIndex(time)).get(liftId - 1);
     lift.incrementNumber();
   }
 
@@ -137,8 +137,8 @@ public class SequentialDataProcessor implements IDataProcessor {
   }
 
   @Override
-  public List<List<IRecord>> getHourRides() {
-    return hourList;
+  public List<IRecord> getHourList() {
+    return HourRecord.toHourRecordList(hourLiftsList);
   }
 
   @Override
@@ -149,11 +149,6 @@ public class SequentialDataProcessor implements IDataProcessor {
   @Override
   public Duration getRunTime() {
     return runTime;
-  }
-
-  @Override
-  public String toString() {
-    return "Sequential processor";
   }
 
   @Override

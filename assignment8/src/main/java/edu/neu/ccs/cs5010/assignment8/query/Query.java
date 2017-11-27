@@ -20,4 +20,25 @@ public class Query implements IQuery {
     return parameter;
   }
 
+  @Override
+  public boolean equals(Object other) {
+    if (this == other) {
+      return true;
+    }
+    if (other == null || getClass() != other.getClass()) {
+      return false;
+    }
+
+    Query query = (Query) other;
+
+    if (queryId != query.queryId) return false;
+    return parameter == query.parameter;
+  }
+
+  @Override
+  public int hashCode() {
+    int result = queryId;
+    result = 31 * result + parameter;
+    return result;
+  }
 }

@@ -4,7 +4,7 @@ import edu.neu.ccs.cs5010.assignment8.exceptions.InvalidQueryIdException;
 
 import java.io.IOException;
 
-public class ReaderFactory {
+public final class ReaderFactory {
 
   public static IReader getReader(int queryId,
                                   int parameter) throws IOException {

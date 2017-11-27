@@ -52,6 +52,10 @@ public class SkierRecord implements IRecord {
     return numRides;
   }
 
+  public int getTotalVertical() {
+    return totalVertical;
+  }
+
   @Override
   public void readFromFile(RandomAccessFile file) throws IOException {
     skierId = file.readInt();

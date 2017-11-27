@@ -40,4 +40,23 @@ public class SkierRowRecord implements IRecord {
     file.writeInt(skierId);
     file.writeInt(rowIndex);
   }
+
+  @Override
+  public boolean equals(Object other) {
+    if (this == other) {
+      return true;
+    }
+    if (other == null || getClass() != other.getClass()) {
+      return false;
+    }
+
+    SkierRowRecord that = (SkierRowRecord) other;
+
+    return skierId == that.skierId;
+  }
+
+  @Override
+  public int hashCode() {
+    return skierId;
+  }
 }

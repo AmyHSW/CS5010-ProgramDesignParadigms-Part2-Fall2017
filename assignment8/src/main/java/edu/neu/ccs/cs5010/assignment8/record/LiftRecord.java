@@ -1,5 +1,7 @@
 package edu.neu.ccs.cs5010.assignment8.record;
 
+import edu.neu.ccs.cs5010.assignment8.exceptions.InvalidLiftIdException;
+
 import java.io.IOException;
 import java.io.RandomAccessFile;
 
@@ -35,8 +37,8 @@ public class LiftRecord implements IRecord {
    * @throws IllegalArgumentException if the index is out of bound
    */
   public LiftRecord(int liftIndex) {
-    if (liftIndex >= LIFT_TOTAL) {
-      throw new IllegalArgumentException("Lift index out of bound.");
+    if (liftIndex < 0 || liftIndex >= LIFT_TOTAL) {
+      throw new InvalidLiftIdException("Lift index out of bound.");
     }
     liftId = liftIndex + 1;
     number = 0;

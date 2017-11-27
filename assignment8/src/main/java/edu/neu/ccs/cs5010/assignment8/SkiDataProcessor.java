@@ -2,7 +2,7 @@ package edu.neu.ccs.cs5010.assignment8;
 
 import com.univocity.parsers.csv.CsvParser;
 import com.univocity.parsers.csv.CsvParserSettings;
-import edu.neu.ccs.cs5010.assignment8.database.*;
+import edu.neu.ccs.cs5010.assignment8.editor.*;
 import edu.neu.ccs.cs5010.assignment8.dataProcessor.IDataProcessor;
 import edu.neu.ccs.cs5010.assignment8.dataProcessor.SequentialDataProcessor;
 
@@ -36,23 +36,23 @@ public class SkiDataProcessor {
 
     // generates the output dat files
     long datStart = System.currentTimeMillis();
-    IDatabase rawDatabase = new Database(RAW_DATA_FILE);
-    IDatabase skierDatabase = new Database(SKIER_DATA_FILE);
-    IDatabase liftDatabase = new Database(LIFT_DATA_FILE);
-    IDatabase hourDatabase = new HourDatabase(HOUR_DATA_FILE);
-    IDatabase skierRowDatabase = new Database(SKIER_ROW_FILE);
+    IDatFileEditor rawFileEditor = new DatFileEditor(RAW_DATA_FILE);
+    IDatFileEditor skierFileEditor = new DatFileEditor(SKIER_DATA_FILE);
+    IDatFileEditor liftFileEditor = new DatFileEditor(LIFT_DATA_FILE);
+    IDatFileEditor hourFileEditor = new DatFileEditor(HOUR_DATA_FILE);
+    IDatFileEditor skierRowFileEditor = new DatFileEditor(SKIER_ROW_FILE);
 
-    rawDatabase.writeRecordsToFile(processor.getRawList());
-    skierDatabase.writeRecordsToFile(processor.getSkierList());
-    liftDatabase.writeRecordsToFile(processor.getLiftList());
-    ((HourDatabase)hourDatabase).writeHourRecordsToFile(processor.getHourRides());
-    skierRowDatabase.writeRecordsToFile(processor.getSkierRowList());
+    rawFileEditor.writeRecordsToFile(processor.getRawList());
+    skierFileEditor.writeRecordsToFile(processor.getSkierList());
+    liftFileEditor.writeRecordsToFile(processor.getLiftList());
+    hourFileEditor.writeRecordsToFile(processor.getHourList());
+    skierRowFileEditor.writeRecordsToFile(processor.getSkierRowList());
 
-    rawDatabase.close();
-    skierDatabase.close();
-    liftDatabase.close();
-    hourDatabase.close();
-    skierRowDatabase.close();
+    rawFileEditor.close();
+    skierFileEditor.close();
+    liftFileEditor.close();
+    hourFileEditor.close();
+    skierRowFileEditor.close();
 
     System.out.println("Building dat files took "
         + (System.currentTimeMillis() - datStart) + " milliseconds");

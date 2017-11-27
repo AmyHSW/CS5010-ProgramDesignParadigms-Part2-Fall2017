@@ -59,6 +59,39 @@ public class HourRecord implements IRecord {
     return (time - 1) / MINUTES_IN_HOUR;
   }
 
+  public static List<IRecord> toHourRecordList(List<List<IRecord>> hourLiftsList) {
+    List<IRecord> hourRecords = new ArrayList<>();
+    for (int i = 0; i < HourRecord.HOUR_TOTAL; i++) {
+      List<IRecord> liftList = hourLiftsList.get(i);
+      liftList.sort((lift1, lift2) -> ((LiftRecord)lift2).getNumber() - ((LiftRecord)lift1).getNumber());
+      List<Integer> topTenList = new ArrayList<>();
+      for (int j = 0; j < HourRecord.TEN; j++) {
+        topTenList.add(liftList.get(j).getParameter());
+      }
+      hourRecords.add(new HourRecord(i, topTenList));
+    }
+    return hourRecords;
+  }
+
+  @Override
+  public boolean equals(Object other) {
+    if (this == other) {
+      return true;
+    }
+    if (other == null || getClass() != other.getClass()) {
+      return false;
+    }
+
+    HourRecord that = (HourRecord) other;
+
+    return hourId == that.hourId;
+  }
+
+  @Override
+  public int hashCode() {
+    return hourId;
+  }
+
   @Override
   public String toString() {
     return hourId + ":" + topTenLifts.toString();
