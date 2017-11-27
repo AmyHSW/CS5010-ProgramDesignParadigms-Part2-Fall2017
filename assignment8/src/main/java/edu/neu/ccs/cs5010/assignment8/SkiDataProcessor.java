@@ -3,6 +3,7 @@ package edu.neu.ccs.cs5010.assignment8;
 import com.univocity.parsers.csv.CsvParser;
 import com.univocity.parsers.csv.CsvParserSettings;
 import edu.neu.ccs.cs5010.assignment8.Database.Database;
+import edu.neu.ccs.cs5010.assignment8.Database.IDatabase;
 import edu.neu.ccs.cs5010.assignment8.dataProcessor.IDataProcessor;
 import edu.neu.ccs.cs5010.assignment8.dataProcessor.SequentialDataProcessor;
 import edu.neu.ccs.cs5010.assignment8.writer.HourWriter;
@@ -33,21 +34,24 @@ public class SkiDataProcessor {
 
     // generates the output dat files
     long datStart = System.currentTimeMillis();
-    Database rawDatabase = new Database("liftRides.dat");
-    Database skierDatabase = new Database("skiers.dat");
-    Database liftDatabase = new Database("lifts.dat");
-    Database hourDatabase = new Database("hours.dat");
-    Database skierRowDatabase = new Database("skierRow.dat");
+    IDatabase rawDatabase = new Database("liftRides.dat");
+    IDatabase skierDatabase = new Database("skiers.dat");
+    IDatabase liftDatabase = new Database("lifts.dat");
+    IDatabase hourDatabase = new Database("hours.dat");
+    IDatabase skierRowDatabase = new Database("skierRow.dat");
+
     Writer.writeToData(processor.getRawList(), rawDatabase);
     Writer.writeToData(processor.getSkierList(), skierDatabase);
     Writer.writeToData(processor.getLiftList(), liftDatabase);
     HourWriter.writeToHourData(processor.getHourRides(), hourDatabase);
     Writer.writeToData(processor.getSkierRowList(), skierRowDatabase);
+
     rawDatabase.close();
     skierDatabase.close();
     liftDatabase.close();
     hourDatabase.close();
     skierRowDatabase.close();
+
     System.out.println("Building dat files took "
         + (System.currentTimeMillis() - datStart) + " milliseconds");
   }

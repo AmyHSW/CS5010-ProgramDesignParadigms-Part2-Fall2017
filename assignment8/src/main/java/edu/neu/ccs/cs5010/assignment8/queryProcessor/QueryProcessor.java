@@ -1,18 +1,18 @@
 package edu.neu.ccs.cs5010.assignment8.queryProcessor;
 
 import edu.neu.ccs.cs5010.assignment8.query.IQuery;
-import edu.neu.ccs.cs5010.assignment8.thread.QueryThread;
 
 import java.io.IOException;
 import java.time.Duration;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.concurrent.CyclicBarrier;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
-import java.util.concurrent.TimeUnit;
 
 public class QueryProcessor implements IQueryProcessor {
 
+  static CyclicBarrier barrier;
   private static final int NUM_THREADS = 20;
   private final List<IQuery> queries;
   private final ExecutorService executorService = Executors.newFixedThreadPool(NUM_THREADS);
@@ -22,6 +22,7 @@ public class QueryProcessor implements IQueryProcessor {
   public QueryProcessor(List<IQuery> queryList) {
     queries = queryList;
     initOutputList();
+    barrier = new CyclicBarrier(NUM_THREADS + 1);
   }
 
   private void initOutputList() {
@@ -35,15 +36,20 @@ public class QueryProcessor implements IQueryProcessor {
   public void processQueries() throws InterruptedException, IOException {
     final long start = System.currentTimeMillis();
     int numQueriesEachThread = queries.size() / NUM_THREADS;
-    for (int i = 0; i < NUM_THREADS; i++) {
-      executorService.execute(new QueryThread(
-          queries,
-          i * numQueriesEachThread,
-          (i + 1) * numQueriesEachThread,
-          outputList.get(i)));
+    try {
+      for (int i = 0; i < NUM_THREADS; i++) {
+        executorService.execute(new QueryThread(
+            queries,
+            i * numQueriesEachThread,
+            (i + 1) * numQueriesEachThread,
+            outputList.get(i)));
+      }
+      barrier.await();
+      barrier.await();
+    } catch (Exception exception) {
+      throw new RuntimeException(exception);
     }
     executorService.shutdown();
-    executorService.awaitTermination(Long.MAX_VALUE, TimeUnit.SECONDS);
     runtime = Duration.ofMillis(System.currentTimeMillis() - start);
   }
 

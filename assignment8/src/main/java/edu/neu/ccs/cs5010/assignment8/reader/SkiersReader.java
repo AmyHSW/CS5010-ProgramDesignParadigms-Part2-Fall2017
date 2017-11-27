@@ -5,12 +5,10 @@ import edu.neu.ccs.cs5010.assignment8.Record.SkierRecord;
 
 import java.io.IOException;
 import java.io.RandomAccessFile;
-import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantReadWriteLock;
 
 public class SkiersReader implements IReader {
 
-  private static int nReaders = 0;
   private final int parameter;
   private final RandomAccessFile file;
   private final ReentrantReadWriteLock readWriteLock =
@@ -19,7 +17,6 @@ public class SkiersReader implements IReader {
   public SkiersReader(int parameter) throws IOException {
     this.parameter = parameter;
     file = new RandomAccessFile("skiers.dat", "rw");
-    nReaders++;
   }
 
   @Override
@@ -33,9 +30,7 @@ public class SkiersReader implements IReader {
     } finally {
       readWriteLock.writeLock().unlock();
     }
-
     file.close();
-    nReaders--;
     return record.toString();
   }
 }

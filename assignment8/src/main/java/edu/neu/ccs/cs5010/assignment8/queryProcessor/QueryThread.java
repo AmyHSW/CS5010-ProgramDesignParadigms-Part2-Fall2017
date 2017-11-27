@@ -1,4 +1,4 @@
-package edu.neu.ccs.cs5010.assignment8.thread;
+package edu.neu.ccs.cs5010.assignment8.queryProcessor;
 
 import edu.neu.ccs.cs5010.assignment8.query.IQuery;
 import edu.neu.ccs.cs5010.assignment8.reader.IReader;
@@ -7,7 +7,7 @@ import edu.neu.ccs.cs5010.assignment8.reader.ReaderFactory;
 import java.io.IOException;
 import java.util.List;
 
-public class QueryThread extends Thread {
+public class QueryThread implements Runnable {
 
   private final List<IQuery> queries;
   private final int start;
@@ -26,18 +26,20 @@ public class QueryThread extends Thread {
 
   @Override
   public void run() {
-    for (int i = start; i < end; i++) {
-      IQuery query = queries.get(i);
-      int queryId = query.getQueryId();
-      int parameter = query.getParameter();
-      try {
+    try {
+      QueryProcessor.barrier.await();
+      for (int i = start; i < end; i++) {
+        IQuery query = queries.get(i);
+        int queryId = query.getQueryId();
+        int parameter = query.getParameter();
         IReader reader = ReaderFactory.getReader(queryId, parameter);
         String recordInfo = reader.read() + "\n";
         output.add(recordInfo);
-      } catch (IOException exception) {
+      }
+      QueryProcessor.barrier.await();
+    } catch (Exception exception) {
         System.out.println("Something went wrong! : " + exception.getMessage());
         exception.printStackTrace();
-      }
     }
   }
 
