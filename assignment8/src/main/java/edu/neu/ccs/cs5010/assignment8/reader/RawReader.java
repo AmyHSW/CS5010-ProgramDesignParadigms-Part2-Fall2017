@@ -21,6 +21,7 @@ public class RawReader implements IReader {
     IRecord record = new RawRecord();
     file.seek((parameter - 1) * RawRecord.SIZE);
     record.readFromFile(file);
+    file.close();
     return record.toString();
   }
 

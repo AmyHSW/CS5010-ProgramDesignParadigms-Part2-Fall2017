@@ -9,7 +9,6 @@ import java.util.List;
 
 public class QueryThread extends Thread {
 
-  private static int threads = 0;
   private final List<IQuery> queries;
   private final int start;
   private final int end;
@@ -23,7 +22,6 @@ public class QueryThread extends Thread {
     this.start = start;
     this.end = end;
     this.output = output;
-    threads++;
   }
 
   @Override

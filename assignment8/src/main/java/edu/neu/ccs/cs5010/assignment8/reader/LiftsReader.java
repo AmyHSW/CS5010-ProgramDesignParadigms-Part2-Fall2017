@@ -21,6 +21,7 @@ public class LiftsReader implements IReader {
     IRecord record = new LiftRecord();
     file.seek((parameter - 1) * LiftRecord.SIZE);
     record.readFromFile(file);
+    file.close();
     return record.toString();
   }
 }

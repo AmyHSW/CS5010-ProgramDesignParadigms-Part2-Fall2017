@@ -21,6 +21,7 @@ public class SkiersReader implements IReader {
     IRecord record = new SkierRecord();
     file.seek((parameter - 1) * SkierRecord.SIZE);
     record.readFromFile(file);
+    file.close();
     return record.toString();
   }
 }

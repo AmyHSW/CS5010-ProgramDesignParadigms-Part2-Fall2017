@@ -21,6 +21,7 @@ public class HoursReader implements IReader {
     IRecord record = new HourRecord();
     file.seek((parameter - 1) * HourRecord.SIZE);
     record.readFromFile(file);
+    file.close();
     return record.toString();
   }
 }

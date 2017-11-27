@@ -2,24 +2,18 @@ package edu.neu.ccs.cs5010.assignment8;
 
 import com.univocity.parsers.csv.CsvParser;
 import com.univocity.parsers.csv.CsvParserSettings;
-import edu.neu.ccs.cs5010.assignment8.Database.*;
-import edu.neu.ccs.cs5010.assignment8.cmdHandler.CmdHandler;
-import edu.neu.ccs.cs5010.assignment8.cmdHandler.ICmdHandler;
+import edu.neu.ccs.cs5010.assignment8.Database.Database;
+import edu.neu.ccs.cs5010.assignment8.Database.HourDatabase;
+import edu.neu.ccs.cs5010.assignment8.Database.LiftDatabase;
+import edu.neu.ccs.cs5010.assignment8.Database.RawDatabase;
+import edu.neu.ccs.cs5010.assignment8.Database.SkierDatabase;
 import edu.neu.ccs.cs5010.assignment8.dataProcessor.IDataProcessor;
 import edu.neu.ccs.cs5010.assignment8.dataProcessor.SequentialDataProcessor;
-import edu.neu.ccs.cs5010.assignment8.exceptions.InvalidInputArgumentException;
-import edu.neu.ccs.cs5010.assignment8.ioUtil.IoLibrary;
-import edu.neu.ccs.cs5010.assignment8.query.IQuery;
-import edu.neu.ccs.cs5010.assignment8.query.IQueryGenerator;
-import edu.neu.ccs.cs5010.assignment8.query.QueryGenerator;
-import edu.neu.ccs.cs5010.assignment8.queryProcessor.IQueryProcessor;
-import edu.neu.ccs.cs5010.assignment8.queryProcessor.QueryProcessor;
 import edu.neu.ccs.cs5010.assignment8.writer.HourWriter;
 import edu.neu.ccs.cs5010.assignment8.writer.Writer;
 
 import java.io.File;
 import java.io.IOException;
-import java.util.ArrayList;
 import java.util.List;
 
 public class SkiDataProcessor {
