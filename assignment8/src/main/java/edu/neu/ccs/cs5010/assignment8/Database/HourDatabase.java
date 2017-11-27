@@ -1,6 +1,5 @@
-package edu.neu.ccs.cs5010.assignment8.writer;
+package edu.neu.ccs.cs5010.assignment8.Database;
 
-import edu.neu.ccs.cs5010.assignment8.Database.IDatabase;
 import edu.neu.ccs.cs5010.assignment8.Record.HourRecord;
 import edu.neu.ccs.cs5010.assignment8.Record.IRecord;
 import edu.neu.ccs.cs5010.assignment8.Record.LiftRecord;
@@ -9,9 +8,14 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-public class HourWriter {
+public class HourDatabase extends Database {
 
-  public static void writeToHourData(List<List<IRecord>> list, IDatabase database) throws IOException {
+  public HourDatabase(String fileString) throws IOException {
+    super(fileString);
+  }
+
+  public void writeHourRecordsToFile(List<List<IRecord>> list) throws IOException {
+    List<IRecord> hourRecords = new ArrayList<>();
     for (int i = 0; i < HourRecord.HOUR_TOTAL; i++) {
       List<IRecord> liftList = list.get(i);
       liftList.sort((lift1, lift2) -> ((LiftRecord)lift2).getNumber() - ((LiftRecord)lift1).getNumber());
@@ -19,8 +23,8 @@ public class HourWriter {
       for (int j = 0; j < HourRecord.TEN; j++) {
         topTenList.add(liftList.get(j).getParameter());
       }
-      database.addRecord(new HourRecord(i, topTenList));
+      hourRecords.add(new HourRecord(i, topTenList));
     }
+    writeRecordsToFile(hourRecords);
   }
-
 }

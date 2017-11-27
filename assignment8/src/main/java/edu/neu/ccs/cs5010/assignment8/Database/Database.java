@@ -4,6 +4,7 @@ import edu.neu.ccs.cs5010.assignment8.Record.IRecord;
 
 import java.io.IOException;
 import java.io.RandomAccessFile;
+import java.util.List;
 
 public class Database implements IDatabase {
 
@@ -20,8 +21,10 @@ public class Database implements IDatabase {
   }
 
   @Override
-  public void addRecord(IRecord record) throws IOException {
-    record.writeToFile(file);
+  public void writeRecordsToFile(List<IRecord> list) throws IOException {
+    for (IRecord record: list) {
+      record.writeToFile(file);
+    }
   }
 
 }
