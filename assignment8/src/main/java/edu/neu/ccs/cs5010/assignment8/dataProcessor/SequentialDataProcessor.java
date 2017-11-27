@@ -1,6 +1,6 @@
 package edu.neu.ccs.cs5010.assignment8.dataProcessor;
 
-import edu.neu.ccs.cs5010.assignment8.Record.*;
+import edu.neu.ccs.cs5010.assignment8.record.*;
 import edu.neu.ccs.cs5010.assignment8.exceptions.InvalidInputDataException;
 import java.time.Duration;
 import java.util.ArrayList;

@@ -1,7 +1,7 @@
 package edu.neu.ccs.cs5010.assignment8.reader;
 
-import edu.neu.ccs.cs5010.assignment8.Record.HourRecord;
-import edu.neu.ccs.cs5010.assignment8.Record.IRecord;
+import edu.neu.ccs.cs5010.assignment8.record.HourRecord;
+import edu.neu.ccs.cs5010.assignment8.record.IRecord;
 
 import java.io.IOException;
 import java.io.RandomAccessFile;

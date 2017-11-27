@@ -2,7 +2,7 @@ package edu.neu.ccs.cs5010.assignment8;
 
 import com.univocity.parsers.csv.CsvParser;
 import com.univocity.parsers.csv.CsvParserSettings;
-import edu.neu.ccs.cs5010.assignment8.Database.*;
+import edu.neu.ccs.cs5010.assignment8.database.*;
 import edu.neu.ccs.cs5010.assignment8.dataProcessor.IDataProcessor;
 import edu.neu.ccs.cs5010.assignment8.dataProcessor.SequentialDataProcessor;
 

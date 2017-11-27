@@ -1,4 +1,4 @@
-package edu.neu.ccs.cs5010.assignment8.Record;
+package edu.neu.ccs.cs5010.assignment8.record;
 
 import java.io.IOException;
 import java.io.RandomAccessFile;

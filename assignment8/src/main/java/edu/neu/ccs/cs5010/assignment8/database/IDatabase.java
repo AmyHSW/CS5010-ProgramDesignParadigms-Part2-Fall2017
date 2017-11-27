@@ -1,6 +1,6 @@
-package edu.neu.ccs.cs5010.assignment8.Database;
+package edu.neu.ccs.cs5010.assignment8.database;
 
-import edu.neu.ccs.cs5010.assignment8.Record.IRecord;
+import edu.neu.ccs.cs5010.assignment8.record.IRecord;
 
 import java.io.IOException;
 import java.util.List;

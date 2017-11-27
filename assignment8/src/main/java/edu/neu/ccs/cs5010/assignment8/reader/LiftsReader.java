@@ -1,7 +1,7 @@
 package edu.neu.ccs.cs5010.assignment8.reader;
 
-import edu.neu.ccs.cs5010.assignment8.Record.IRecord;
-import edu.neu.ccs.cs5010.assignment8.Record.LiftRecord;
+import edu.neu.ccs.cs5010.assignment8.record.IRecord;
+import edu.neu.ccs.cs5010.assignment8.record.LiftRecord;
 
 import java.io.IOException;
 import java.io.RandomAccessFile;
