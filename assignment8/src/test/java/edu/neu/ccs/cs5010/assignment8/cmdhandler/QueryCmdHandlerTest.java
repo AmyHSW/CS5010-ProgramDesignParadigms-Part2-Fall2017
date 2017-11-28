@@ -5,37 +5,37 @@ import org.junit.Test;
 
 import static org.junit.Assert.*;
 
-public class CmdHandlerTest {
+public class QueryCmdHandlerTest {
 
-  private ICmdHandler handler1;
-  private ICmdHandler handler2;
-  private ICmdHandler handler3;
-  private ICmdHandler handler4;
-  private ICmdHandler handler5;
-  private ICmdHandler handler6;
-  private ICmdHandler handler7;
+  private IQueryCmdHandler handler1;
+  private IQueryCmdHandler handler2;
+  private IQueryCmdHandler handler3;
+  private IQueryCmdHandler handler4;
+  private IQueryCmdHandler handler5;
+  private IQueryCmdHandler handler6;
+  private IQueryCmdHandler handler7;
 
   @Before
   public void setUp() throws Exception {
     String[] args1 = {"PDPAssignment8.csv", "20"};
-    handler1 = new CmdHandler(args1);
+    handler1 = new QueryCmdHandler(args1);
 
     String[] args2 = {"PDPAssignment8.csv"};
-    handler2 = new CmdHandler(args2);
+    handler2 = new QueryCmdHandler(args2);
 
     String[] args3 = {"PDPAssignment8", "20"};
-    handler3 = new CmdHandler(args3);
+    handler3 = new QueryCmdHandler(args3);
 
     String[] args4 = {"PDPAssignment8.csv", "-3"};
-    handler4 = new CmdHandler(args4);
+    handler4 = new QueryCmdHandler(args4);
 
     String[] args5 = {"PDPAssignment8.csv", "30"};
-    handler5 = new CmdHandler(args5);
+    handler5 = new QueryCmdHandler(args5);
 
-    handler6 = new CmdHandler(args1);
+    handler6 = new QueryCmdHandler(args1);
 
     String[] args7 = {"PDPAssignment8.csv", "200"};
-    handler7 = new CmdHandler(args7);
+    handler7 = new QueryCmdHandler(args7);
   }
 
   @Test

@@ -2,10 +2,13 @@ package edu.neu.ccs.cs5010.assignment8;
 
 import com.univocity.parsers.csv.CsvParser;
 import com.univocity.parsers.csv.CsvParserSettings;
+import edu.neu.ccs.cs5010.assignment8.cmdhandler.DataCmdHandler;
+import edu.neu.ccs.cs5010.assignment8.cmdhandler.ICmdHandler;
 import edu.neu.ccs.cs5010.assignment8.dataprocessor.IDataProcessor;
 import edu.neu.ccs.cs5010.assignment8.dataprocessor.SequentialDataProcessor;
 import edu.neu.ccs.cs5010.assignment8.editor.DatFileEditor;
 import edu.neu.ccs.cs5010.assignment8.editor.IDatFileEditor;
+import edu.neu.ccs.cs5010.assignment8.exception.InvalidInputArgumentException;
 
 import java.io.File;
 import java.io.IOException;
@@ -19,7 +22,6 @@ import java.util.List;
  */
 public class SkiDataProcessor {
 
-  private static final String INPUT = "PDPAssignment.csv";
   private static final String RAW_DATA_FILE = "liftRides.dat";
   private static final String SKIER_DATA_FILE = "skiers.dat";
   private static final String LIFT_DATA_FILE = "lifts.dat";
@@ -27,6 +29,7 @@ public class SkiDataProcessor {
   private static final String SKIER_ROW_FILE = "skierRow.dat";
 
   /**
+   *  Reads in the input file name through command-line arguments.
    * Parses the input csv using a CsvParser, processes the raw lift rides information
    * sequentially, saves the information in four dat files.
    *
@@ -35,12 +38,17 @@ public class SkiDataProcessor {
    * @throws IOException if there is an I/O failure
    */
   public static void main(String[] args) throws InterruptedException, IOException {
+    // validates and parses command-line arguments
+    ICmdHandler cmdHandler = new DataCmdHandler(args);
+    if (!cmdHandler.isValid()) {
+      throw new InvalidInputArgumentException(cmdHandler.getErrorMessage());
+    }
 
     // reads csv file to List<String[]>
     long inputStart = System.currentTimeMillis();
     CsvParserSettings settings = new CsvParserSettings();
     CsvParser inputParser = new CsvParser(settings);
-    List<String[]> inputData = inputParser.parseAll(new File(INPUT));
+    List<String[]> inputData = inputParser.parseAll(new File(cmdHandler.getTestFilename()));
     System.out.println("Parsing raw input csv file took "
         + (System.currentTimeMillis() - inputStart) + " milliseconds");
 

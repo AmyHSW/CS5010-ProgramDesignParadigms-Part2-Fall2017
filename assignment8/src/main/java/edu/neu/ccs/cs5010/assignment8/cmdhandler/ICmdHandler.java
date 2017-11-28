@@ -14,12 +14,6 @@ public interface ICmdHandler {
   String getTestFilename();
 
   /**
-   * Returns the number of queries.
-   * @return the number of queries.
-   */
-  int getNumQueries();
-
-  /**
    * Returns if the arguments are in valid format.
    * @return true if the arguments are valid, false otherwise.
    */

@@ -7,13 +7,20 @@ public class SkiProcessorTest {
 
   @Test
   public void main() throws Exception {
-    SkiDataProcessor.main(new String[0]);
-    String[] args = {"PDPAssignment8.csv", "40000"};
-    SkiQueryProcessor.main(args);
+    String[] args1 = {"PDPAssignment.csv"};
+    SkiDataProcessor.main(args1);
+    String[] args2 = {"PDPAssignment8.csv", "40000"};
+    SkiQueryProcessor.main(args2);
   }
 
   @Test(expected = InvalidInputArgumentException.class)
-  public void expectedInvalidInputArgumentException() throws Exception {
+  public void expectedInvalidInputArgumentException1() throws Exception {
+    String[] args = {"PDPAssignment"};
+    SkiDataProcessor.main(args);
+  }
+
+  @Test(expected = InvalidInputArgumentException.class)
+  public void expectedInvalidInputArgumentException2() throws Exception {
     String[] args = {"PDPAssignment"};
     SkiQueryProcessor.main(args);
   }

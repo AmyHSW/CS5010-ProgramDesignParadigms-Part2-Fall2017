@@ -3,38 +3,35 @@ package edu.neu.ccs.cs5010.assignment8.cmdhandler;
 /**
  * The CmdHandler class handles the input command-line arguments.
  *
- * <p>The required arguments are the test data filename and number of queries to process.
- * If 20 is not a factor of the number of queries, then the input arguments are invalid.
+ * <p>The required arguments are the test data filename to process.
  *
  * <p>If the arguments are not in valid format, an error message will be accumulated and
  * a usage message will be attached to end of the error message.
  *
  * @author Shuwan Huang, Jingyu Shen
  */
-public class CmdHandler implements ICmdHandler {
+public class DataCmdHandler implements ICmdHandler {
 
-  private static final int NUM_THREADS = 20;
   private final StringBuilder errorMessage = new StringBuilder();
   private String testFilename = "";
-  private int numQueries = 0;
   private boolean valid = false;
 
   /**
    * Constructs a new CmdHandler with the input arguments.
    * @param args the command-line arguments
    */
-  public CmdHandler(String[] args) {
+  public DataCmdHandler(String[] args) {
     validate(args);
   }
 
   private void validate(String[] args) {
     int len = args.length;
-    if (len != 2) {
+    if (len != 1) {
       errorMessage.append(
-          "Please provide two input arguments: test data filename and number of queries.\n");
+              "Please provide one input arguments: test data filename.\n");
       return;
     }
-    if (parseTestFile(args[0]) && parseNumQueries(args[1])) {
+    if (parseTestFile(args[0])) {
       valid = true;
     }
   }
@@ -46,27 +43,6 @@ public class CmdHandler implements ICmdHandler {
     }
     testFilename = argument;
     return true;
-  }
-
-  private boolean parseNumQueries(String argument) {
-    if (!argument.matches("\\d+")) {
-      errorMessage.append(argument).append(" is not an positive integer\n");
-      return false;
-    }
-    int number = Integer.parseInt(argument);
-    if (validateNumQueries(number)) {
-      numQueries = number;
-      return true;
-    } else {
-      errorMessage.append(NUM_THREADS)
-          .append(" is not a factor of the number of queries: ")
-          .append(number);
-      return false;
-    }
-  }
-
-  private boolean validateNumQueries(int number) {
-    return number % NUM_THREADS == 0;
   }
 
   /**
@@ -88,15 +64,6 @@ public class CmdHandler implements ICmdHandler {
   }
 
   /**
-   * Returns the number of queries.
-   * @return the number of queries.
-   */
-  @Override
-  public int getNumQueries() {
-    return numQueries;
-  }
-
-  /**
    * Returns the error message.
    * @return the error message.
    */
@@ -114,18 +81,15 @@ public class CmdHandler implements ICmdHandler {
       return false;
     }
 
-    CmdHandler that = (CmdHandler) other;
+    DataCmdHandler that = (DataCmdHandler) other;
 
-    if (numQueries != that.numQueries) {
-      return false;
-    }
     return testFilename.equals(that.testFilename);
   }
 
   @Override
   public int hashCode() {
-    int result = testFilename.hashCode();
-    result = 31 * result + numQueries;
-    return result;
+    return testFilename.hashCode();
   }
+
+
 }

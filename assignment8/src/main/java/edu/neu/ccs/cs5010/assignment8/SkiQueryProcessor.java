@@ -2,8 +2,8 @@ package edu.neu.ccs.cs5010.assignment8;
 
 import com.univocity.parsers.csv.CsvParser;
 import com.univocity.parsers.csv.CsvParserSettings;
-import edu.neu.ccs.cs5010.assignment8.cmdhandler.CmdHandler;
-import edu.neu.ccs.cs5010.assignment8.cmdhandler.ICmdHandler;
+import edu.neu.ccs.cs5010.assignment8.cmdhandler.IQueryCmdHandler;
+import edu.neu.ccs.cs5010.assignment8.cmdhandler.QueryCmdHandler;
 import edu.neu.ccs.cs5010.assignment8.exception.InvalidInputArgumentException;
 import edu.neu.ccs.cs5010.assignment8.output.IoLibrary;
 import edu.neu.ccs.cs5010.assignment8.query.IQuery;
@@ -37,7 +37,7 @@ public class SkiQueryProcessor {
   public static void main(String[] args) throws InterruptedException, IOException {
 
     // validates and parses command-line arguments
-    ICmdHandler cmdHandler = new CmdHandler(args);
+    IQueryCmdHandler cmdHandler = new QueryCmdHandler(args);
     if (!cmdHandler.isValid()) {
       throw new InvalidInputArgumentException(cmdHandler.getErrorMessage());
     }
