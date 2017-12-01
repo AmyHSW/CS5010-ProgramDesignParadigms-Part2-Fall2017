@@ -17,10 +17,10 @@ import java.util.concurrent.locks.ReentrantReadWriteLock;
 public class SkiersReader implements IReader {
 
   private static final String SKIER_DATA_FILE = "skiers.dat";
+  private static final ReentrantReadWriteLock readWriteLock =
+      new ReentrantReadWriteLock();
   private final int parameter;
   private final RandomAccessFile file;
-  private final ReentrantReadWriteLock readWriteLock =
-          new ReentrantReadWriteLock();
 
   /**
    * Constructs a new skiers reader with the parameter of query.
