@@ -2,37 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="231aa4ab-a056-44c0-85e9-6dd8112326af" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs5010/assignment8/cmdhandler/DataCmdHandler.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs5010/assignment8/cmdhandler/IQueryCmdHandler.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/edu/neu/ccs/cs5010/assignment8/cmdhandler/DataCmdHandlerTest.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs5010/assignment8/cmdhandler/CmdHandler.java" afterPath="$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs5010/assignment8/cmdhandler/QueryCmdHandler.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/edu/neu/ccs/cs5010/assignment8/cmdhandler/CmdHandlerTest.java" afterPath="$PROJECT_DIR$/src/test/java/edu/neu/ccs/cs5010/assignment8/cmdhandler/QueryCmdHandlerTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../assignment9/.idea/uiDesigner.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../assignment9/.idea/vcs.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../assignment9/src/main/java/edu/neu/ccs/cs5010/assignment9/CmdHandler.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../assignment9/src/main/java/edu/neu/ccs/cs5010/assignment9/ICmdHandler.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../assignment9/src/main/java/edu/neu/ccs/cs5010/assignment9/ServerFrame.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../assignment9/src/main/java/edu/neu/ccs/cs5010/assignment9/ServerMessageParser.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../assignment9/src/main/java/edu/neu/ccs/cs5010/assignment9/YahtzeeGame.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../assignment9/src/main/java/edu/neu/ccs/cs5010/assignment9/exception/InvalidInputArgumentException.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../assignment9/target/classes/edu/neu/ccs/cs5010/assignment9/PlayYahtzee.class" afterPath="$PROJECT_DIR$/../assignment9/target/classes/edu/neu/ccs/cs5010/assignment9/PlayYahtzee.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/skiers.dat" afterPath="$PROJECT_DIR$/skiers.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs5010/assignment8/SkiDataProcessor.java" afterPath="$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs5010/assignment8/SkiDataProcessor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs5010/assignment8/SkiQueryProcessor.java" afterPath="$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs5010/assignment8/SkiQueryProcessor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs5010/assignment8/cmdhandler/ICmdHandler.java" afterPath="$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs5010/assignment8/cmdhandler/ICmdHandler.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/edu/neu/ccs/cs5010/assignment8/SkiProcessorTest.java" afterPath="$PROJECT_DIR$/src/test/java/edu/neu/ccs/cs5010/assignment8/SkiProcessorTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/thread1.txt" afterPath="$PROJECT_DIR$/thread1.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/thread10.txt" afterPath="$PROJECT_DIR$/thread10.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/thread11.txt" afterPath="$PROJECT_DIR$/thread11.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/thread12.txt" afterPath="$PROJECT_DIR$/thread12.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/thread13.txt" afterPath="$PROJECT_DIR$/thread13.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/thread14.txt" afterPath="$PROJECT_DIR$/thread14.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/thread15.txt" afterPath="$PROJECT_DIR$/thread15.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/thread16.txt" afterPath="$PROJECT_DIR$/thread16.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/thread17.txt" afterPath="$PROJECT_DIR$/thread17.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/thread18.txt" afterPath="$PROJECT_DIR$/thread18.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/thread19.txt" afterPath="$PROJECT_DIR$/thread19.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/thread2.txt" afterPath="$PROJECT_DIR$/thread2.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/thread20.txt" afterPath="$PROJECT_DIR$/thread20.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/thread3.txt" afterPath="$PROJECT_DIR$/thread3.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/thread4.txt" afterPath="$PROJECT_DIR$/thread4.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/thread5.txt" afterPath="$PROJECT_DIR$/thread5.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/thread6.txt" afterPath="$PROJECT_DIR$/thread6.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/thread7.txt" afterPath="$PROJECT_DIR$/thread7.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/thread8.txt" afterPath="$PROJECT_DIR$/thread8.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/thread9.txt" afterPath="$PROJECT_DIR$/thread9.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../assignment9/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../assignment9/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../assignment9/src/main/java/edu/neu/ccs/cs5010/assignment9/PlayYahtzee.java" afterPath="$PROJECT_DIR$/../assignment9/src/main/java/edu/neu/ccs/cs5010/assignment9/PlayYahtzee.java" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -44,34 +25,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="SkiQueryProcessor.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs5010/assignment8/SkiQueryProcessor.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="674">
-              <caret line="52" column="43" lean-forward="false" selection-start-line="52" selection-start-column="43" selection-end-line="52" selection-end-column="43" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SkierRecord.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs5010/assignment8/record/SkierRecord.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="362">
-              <caret line="55" column="3" lean-forward="false" selection-start-line="55" selection-start-column="3" selection-end-line="55" selection-end-column="3" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SkiDataProcessor.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="SkiDataProcessor.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs5010/assignment8/SkiDataProcessor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="362">
+            <state relative-caret-position="465">
               <caret line="43" column="0" lean-forward="false" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -80,11 +37,41 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="SkiersReader.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs5010/assignment8/reader/SkiersReader.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="47">
+              <caret line="21" column="30" lean-forward="false" selection-start-line="21" selection-start-column="30" selection-end-line="21" selection-end-column="30" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ICmdHandler.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs5010/assignment8/cmdhandler/ICmdHandler.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="16" column="50" lean-forward="false" selection-start-line="16" selection-start-column="50" selection-end-line="16" selection-end-column="50" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="QueryCmdHandler.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs5010/assignment8/cmdhandler/QueryCmdHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2619">
-              <caret line="115" column="0" lean-forward="false" selection-start-line="115" selection-start-column="0" selection-end-line="115" selection-end-column="0" />
+            <state relative-caret-position="255">
+              <caret line="62" column="26" lean-forward="true" selection-start-line="62" selection-start-column="26" selection-end-line="62" selection-end-column="26" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="IoLibrary.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs5010/assignment8/output/IoLibrary.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="375">
+              <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="31" selection-end-column="28" />
               <folding />
             </state>
           </provider>
@@ -93,7 +80,7 @@
       <file leaf-file-name="QueryCmdHandlerTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/edu/neu/ccs/cs5010/assignment8/cmdhandler/QueryCmdHandlerTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1734">
+            <state relative-caret-position="1140">
               <caret line="79" column="1" lean-forward="false" selection-start-line="79" selection-start-column="1" selection-end-line="79" selection-end-column="1" />
               <folding />
             </state>
@@ -103,18 +90,9 @@
       <file leaf-file-name="DataCmdHandler.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs5010/assignment8/cmdhandler/DataCmdHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="33">
+            <state relative-caret-position="180">
               <caret line="12" column="19" lean-forward="false" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
-              <folding>
-                <element signature="e#738#739#0" expanded="true" />
-                <element signature="e#762#763#0" expanded="true" />
-                <element signature="e#1441#1442#0" expanded="true" />
-                <element signature="e#1463#1464#0" expanded="true" />
-                <element signature="e#1590#1591#0" expanded="true" />
-                <element signature="e#1619#1620#0" expanded="true" />
-                <element signature="e#2118#2119#0" expanded="true" />
-                <element signature="e#2158#2159#0" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -122,8 +100,8 @@
       <file leaf-file-name="DataCmdHandlerTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/edu/neu/ccs/cs5010/assignment8/cmdhandler/DataCmdHandlerTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="32" column="35" lean-forward="true" selection-start-line="32" selection-start-column="35" selection-end-line="32" selection-end-column="35" />
+            <state relative-caret-position="435">
+              <caret line="32" column="35" lean-forward="false" selection-start-line="32" selection-start-column="35" selection-end-line="32" selection-end-column="35" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -152,188 +130,7 @@
                 <node x="882.4731538873586" y="665.0">edu.neu.ccs.cs5010.assignment8.SkiProcessorTest</node>
               </nodes>
               <notes />
-              <edges>
-                <edge source="edu.neu.ccs.cs5010.assignment8.SkiQueryProcessor" target="edu.neu.ccs.cs5010.assignment8.query">
-                  <point x="-69.6875" y="-23.5" />
-                  <point x="268.7856538873585" y="538.0" />
-                  <point x="45.37485843281286" y="538.0" />
-                  <point x="45.37485843281286" y="391.0" />
-                  <point x="150.77453649044537" y="391.0" />
-                  <point x="0.0" y="23.5" />
-                </edge>
-                <edge source="edu.neu.ccs.cs5010.assignment8.dataprocessor" target="edu.neu.ccs.cs5010.assignment8.dataprocessor">
-                  <point x="-87.75" y="23.5" />
-                  <point x="1042.2320012899559" y="351.0" />
-                  <point x="992.9820012899559" y="351.0" />
-                  <point x="992.9820012899559" y="319.25" />
-                  <point x="-117.0" y="11.75" />
-                </edge>
-                <edge source="edu.neu.ccs.cs5010.assignment8.record" target="edu.neu.ccs.cs5010.assignment8.record">
-                  <point x="-38.22222222222223" y="23.5" />
-                  <point x="930.8571428571429" y="224.0" />
-                  <point x="843.0793650793652" y="224.0" />
-                  <point x="843.0793650793652" y="144.83333333333337" />
-                  <point x="-86.0" y="-15.666666666666629" />
-                </edge>
-                <edge source="edu.neu.ccs.cs5010.assignment8.record" target="edu.neu.ccs.cs5010.assignment8.exception">
-                  <point x="-42.999999999999886" y="-23.5" />
-                  <point x="926.0793650793653" y="117.0" />
-                  <point x="910.3708901788448" y="117.0" />
-                  <point x="0.0" y="23.5" />
-                </edge>
-                <edge source="edu.neu.ccs.cs5010.assignment8.dataprocessor" target="edu.neu.ccs.cs5010.assignment8.record">
-                  <point x="-46.799999999999955" y="-23.5" />
-                  <point x="1083.182001289956" y="254.0" />
-                  <point x="1026.4126984126985" y="254.0" />
-                  <point x="57.33333333333337" y="23.5" />
-                </edge>
-                <edge source="edu.neu.ccs.cs5010.assignment8.SkiQueryProcessor" target="edu.neu.ccs.cs5010.assignment8.cmdhandler">
-                  <point x="69.6875" y="-23.5" />
-                  <point x="408.1606538873585" y="538.0" />
-                  <point x="743.065334623289" y="538.0" />
-                  <point x="-17.91666666666663" y="23.5" />
-                </edge>
-                <edge source="edu.neu.ccs.cs5010.assignment8.queryprocessor" target="edu.neu.ccs.cs5010.assignment8.queryprocessor">
-                  <point x="-91.5" y="23.5" />
-                  <point x="389.9820012899557" y="488.0" />
-                  <point x="339.4820012899557" y="488.0" />
-                  <point x="339.4820012899557" y="456.25" />
-                  <point x="-122.0" y="11.75" />
-                </edge>
-                <edge source="edu.neu.ccs.cs5010.assignment8.dataprocessor" target="edu.neu.ccs.cs5010.assignment8.exception">
-                  <point x="46.799999999999955" y="-23.5" />
-                  <point x="1176.7820012899558" y="264.0" />
-                  <point x="1151.373475829726" y="264.0" />
-                  <point x="1151.373475829726" y="97.0" />
-                  <point x="946.1890719970266" y="97.0" />
-                  <point x="35.81818181818187" y="23.5" />
-                </edge>
-                <edge source="edu.neu.ccs.cs5010.assignment8.query" target="edu.neu.ccs.cs5010.assignment8.query">
-                  <point x="-47.428571428571445" y="23.5" />
-                  <point x="103.34596506187393" y="361.0" />
-                  <point x="37.77453649044537" y="361.0" />
-                  <point x="37.77453649044537" y="307.5" />
-                  <point x="-83.0" y="-0.0" />
-                </edge>
-                <edge source="edu.neu.ccs.cs5010.assignment8.query" target="edu.neu.ccs.cs5010.assignment8.exception">
-                  <point x="-41.5" y="-23.5" />
-                  <point x="109.27453649044537" y="87.0" />
-                  <point x="838.7345265424811" y="87.0" />
-                  <point x="-71.63636363636363" y="23.5" />
-                </edge>
-                <edge source="edu.neu.ccs.cs5010.assignment8.SkiProcessorTest" target="edu.neu.ccs.cs5010.assignment8.SkiQueryProcessor">
-                  <point x="-69.00000000000011" y="-23.5" />
-                  <point x="916.9731538873584" y="640.0" />
-                  <point x="338.4731538873585" y="640.0" />
-                  <point x="0.0" y="23.5" />
-                </edge>
-                <edge source="edu.neu.ccs.cs5010.assignment8.reader" target="edu.neu.ccs.cs5010.assignment8.exception">
-                  <point x="-21.375" y="-23.5" />
-                  <point x="484.44033462328906" y="264.0" />
-                  <point x="468.56533462328906" y="264.0" />
-                  <point x="468.56533462328906" y="117.0" />
-                  <point x="892.4617992697539" y="117.0" />
-                  <point x="-17.909090909090878" y="23.5" />
-                </edge>
-                <edge source="edu.neu.ccs.cs5010.assignment8.queryprocessor" target="edu.neu.ccs.cs5010.assignment8.reader">
-                  <point x="81.33333333333337" y="-23.5" />
-                  <point x="57.0" y="23.5" />
-                </edge>
-                <edge source="edu.neu.ccs.cs5010.assignment8.editor" target="edu.neu.ccs.cs5010.assignment8.record">
-                  <point x="1.1368683772161603E-13" y="-23.5" />
-                  <point x="972.4820012899557" y="264.0" />
-                  <point x="988.1904761904763" y="264.0" />
-                  <point x="19.111111111111086" y="23.5" />
-                </edge>
-                <edge source="edu.neu.ccs.cs5010.assignment8.SkiDataProcessor" target="edu.neu.ccs.cs5010.assignment8.cmdhandler">
-                  <point x="-60.571428571428555" y="-23.5" />
-                  <point x="943.6138222047312" y="538.0" />
-                  <point x="850.565334623289" y="538.0" />
-                  <point x="89.58333333333337" y="23.5" />
-                </edge>
-                <edge source="edu.neu.ccs.cs5010.assignment8.SkiQueryProcessor" target="edu.neu.ccs.cs5010.assignment8.exception">
-                  <point x="-97.5625" y="-23.5" />
-                  <point x="240.91065388735848" y="548.0" />
-                  <point x="0.0" y="548.0" />
-                  <point x="0.0" y="77.0" />
-                  <point x="820.8254356333903" y="77.0" />
-                  <point x="-89.5454545454545" y="23.5" />
-                </edge>
-                <edge source="edu.neu.ccs.cs5010.assignment8.reader" target="edu.neu.ccs.cs5010.assignment8.reader">
-                  <point x="0.0" y="23.5" />
-                  <point x="505.81533462328906" y="361.0" />
-                  <point x="390.31533462328906" y="361.0" />
-                  <point x="390.31533462328906" y="295.75" />
-                  <point x="-85.5" y="-11.75" />
-                </edge>
-                <edge source="edu.neu.ccs.cs5010.assignment8.cmdhandler" target="edu.neu.ccs.cs5010.assignment8.cmdhandler">
-                  <point x="-53.75000000000001" y="23.5" />
-                  <point x="707.2320012899556" y="498.0" />
-                  <point x="623.4820012899556" y="498.0" />
-                  <point x="623.4820012899556" y="432.75" />
-                  <point x="-107.5" y="-11.75" />
-                </edge>
-                <edge source="edu.neu.ccs.cs5010.assignment8.SkiProcessorTest" target="edu.neu.ccs.cs5010.assignment8.exception">
-                  <point x="68.99999999999989" y="-23.5" />
-                  <point x="1054.9731538873584" y="640.0" />
-                  <point x="1275.8034298613843" y="640.0" />
-                  <point x="1275.8034298613843" y="67.0" />
-                  <point x="999.9163447242994" y="67.0" />
-                  <point x="89.54545454545459" y="23.5" />
-                </edge>
-                <edge source="edu.neu.ccs.cs5010.assignment8.SkiDataProcessor" target="edu.neu.ccs.cs5010.assignment8.dataprocessor">
-                  <point x="60.57142857142867" y="-23.5" />
-                  <point x="1064.7566793475885" y="538.0" />
-                  <point x="1193.9820012899559" y="538.0" />
-                  <point x="1193.9820012899559" y="401.0" />
-                  <point x="1217.7320012899559" y="401.0" />
-                  <point x="87.75" y="23.5" />
-                </edge>
-                <edge source="edu.neu.ccs.cs5010.assignment8.queryprocessor" target="edu.neu.ccs.cs5010.assignment8.query">
-                  <point x="0.0" y="-23.5" />
-                  <point x="481.4820012899557" y="391.0" />
-                  <point x="221.91739363330248" y="391.0" />
-                  <point x="71.14285714285714" y="23.5" />
-                </edge>
-                <edge source="edu.neu.ccs.cs5010.assignment8.SkiDataProcessor" target="edu.neu.ccs.cs5010.assignment8.exception">
-                  <point x="90.85714285714289" y="-23.5" />
-                  <point x="1095.0423936333027" y="548.0" />
-                  <point x="1257.4820012899559" y="548.0" />
-                  <point x="1257.4820012899559" y="77.0" />
-                  <point x="982.0072538152084" y="77.0" />
-                  <point x="71.6363636363636" y="23.5" />
-                </edge>
-                <edge source="edu.neu.ccs.cs5010.assignment8.reader" target="edu.neu.ccs.cs5010.assignment8.record">
-                  <point x="21.375" y="-23.5" />
-                  <point x="527.1903346232891" y="244.0" />
-                  <point x="949.9682539682541" y="244.0" />
-                  <point x="-19.111111111111086" y="23.5" />
-                </edge>
-                <edge source="edu.neu.ccs.cs5010.assignment8.SkiQueryProcessor" target="edu.neu.ccs.cs5010.assignment8.queryprocessor">
-                  <point x="13.9375" y="-23.5" />
-                  <point x="352.4106538873585" y="518.0" />
-                  <point x="511.9820012899557" y="518.0" />
-                  <point x="30.5" y="23.5" />
-                </edge>
-                <edge source="edu.neu.ccs.cs5010.assignment8.SkiQueryProcessor" target="edu.neu.ccs.cs5010.assignment8.output">
-                  <point x="-13.9375" y="-23.5" />
-                  <point x="324.5356538873585" y="518.0" />
-                  <point x="221.98200128995575" y="518.0" />
-                  <point x="0.0" y="23.5" />
-                </edge>
-                <edge source="edu.neu.ccs.cs5010.assignment8.SkiProcessorTest" target="edu.neu.ccs.cs5010.assignment8.SkiDataProcessor">
-                  <point x="-1.1368683772161603E-13" y="-23.5" />
-                  <point x="985.9731538873584" y="640.0" />
-                  <point x="1004.1852507761597" y="640.0" />
-                  <point x="0.0" y="23.5" />
-                </edge>
-                <edge source="edu.neu.ccs.cs5010.assignment8.SkiDataProcessor" target="edu.neu.ccs.cs5010.assignment8.editor">
-                  <point x="0.0" y="-23.5" />
-                  <point x="1004.1852507761597" y="548.0" />
-                  <point x="1014.4820012899556" y="548.0" />
-                  <point x="42.0" y="23.5" />
-                </edge>
-              </edges>
+              <edges />
               <settings layout="Hierarchic Group" zoom="1.0" x="-68.0" y="138.0" />
               <SelectedNodes>
                 <node>edu.neu.ccs.cs5010.assignment8.record</node>
@@ -348,7 +145,7 @@
       <file leaf-file-name="IQueryCmdHandler.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs5010/assignment8/cmdhandler/IQueryCmdHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="81">
+            <state relative-caret-position="45">
               <caret line="3" column="13" lean-forward="false" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
               <folding />
             </state>
@@ -403,7 +200,6 @@
         <option value="$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs5010/assignment8/reader/HoursReader.java" />
         <option value="$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs5010/assignment8/reader/LiftsReader.java" />
         <option value="$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs5010/assignment8/reader/RawReader.java" />
-        <option value="$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs5010/assignment8/reader/SkiersReader.java" />
         <option value="$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs5010/assignment8/reader/ReaderFactory.java" />
         <option value="$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs5010/assignment8/queryprocessor/QueryThread.java" />
         <option value="$PROJECT_DIR$/src/test/java/edu/neu/ccs/cs5010/assignment8/reader/IReaderTest.java" />
@@ -428,6 +224,7 @@
         <option value="$PROJECT_DIR$/src/test/java/edu/neu/ccs/cs5010/assignment8/cmdhandler/QueryCmdHandlerTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/edu/neu/ccs/cs5010/assignment8/SkiProcessorTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/edu/neu/ccs/cs5010/assignment8/cmdhandler/DataCmdHandlerTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs5010/assignment8/reader/SkiersReader.java" />
       </list>
     </option>
   </component>
@@ -444,10 +241,10 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-57" />
-    <option name="y" value="-22" />
-    <option name="width" value="1856" />
-    <option name="height" value="1094" />
+    <option name="x" value="1400" />
+    <option name="y" value="-169" />
+    <option name="width" value="1237" />
+    <option name="height" value="777" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -464,7 +261,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="AndroidView" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -515,6 +314,24 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="assignment8" type="462c0819:PsiDirectoryNode" />
               <item name="dataprocessor" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="assignment8" type="b2602c69:ProjectViewProjectNode" />
+              <item name="assignment8" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="assignment8" type="462c0819:PsiDirectoryNode" />
+              <item name="exception" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="assignment8" type="b2602c69:ProjectViewProjectNode" />
+              <item name="assignment8" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="assignment8" type="462c0819:PsiDirectoryNode" />
+              <item name="output" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="assignment8" type="b2602c69:ProjectViewProjectNode" />
@@ -586,9 +403,7 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="Scratches" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -849,6 +664,8 @@
       <workItem from="1511680308967" duration="18719000" />
       <workItem from="1511739905890" duration="833000" />
       <workItem from="1511740792534" duration="1453000" />
+      <workItem from="1512110101363" duration="114000" />
+      <workItem from="1512192687437" duration="1500000" />
     </task>
     <servers />
   </component>
@@ -885,60 +702,40 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="76051000" />
+    <option name="totallyTimeSpent" value="77665000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-11" y="-11" width="1942" height="1042" extended-state="6" />
+    <frame x="1400" y="-169" width="1237" height="777" extended-state="0" />
     <editor active="true" />
     <layout>
+      <window_info id="PlantUML" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32648402" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14166667" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24885845" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26458332" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17226891" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="PlantUML" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23739496" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19354838" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3004184" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17226891" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23739496" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23339541" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32943678" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17226891" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32648402" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32943678" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -958,9 +755,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="405">
           <caret line="27" column="72" lean-forward="false" selection-start-line="27" selection-start-column="72" selection-end-line="27" selection-end-column="72" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -968,9 +762,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="16" column="7" lean-forward="true" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1006,9 +797,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="990">
           <caret line="66" column="32" lean-forward="false" selection-start-line="66" selection-start-column="32" selection-end-line="66" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1016,7 +804,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="405">
           <caret line="35" column="0" lean-forward="true" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1024,9 +811,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="570">
           <caret line="38" column="63" lean-forward="false" selection-start-line="38" selection-start-column="63" selection-end-line="38" selection-end-column="63" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1034,9 +818,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="439">
           <caret line="39" column="22" lean-forward="false" selection-start-line="39" selection-start-column="22" selection-end-line="39" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1044,9 +825,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1054,7 +832,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
           <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1062,7 +839,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
           <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1070,10 +846,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="12" selection-end-column="5" />
-          <folding>
-            <element signature="e#391#392#0" expanded="true" />
-            <element signature="e#415#416#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1081,7 +853,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1090,16 +861,6 @@
         <state relative-caret-position="135">
           <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="12" selection-end-column="5" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs5010/assignment8/output/IoLibrary.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="22" lean-forward="true" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1115,7 +876,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
           <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="18" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1133,9 +893,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="420">
           <caret line="28" column="24" lean-forward="false" selection-start-line="28" selection-start-column="24" selection-end-line="28" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1143,9 +900,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="375">
           <caret line="25" column="5" lean-forward="true" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1153,7 +907,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="435">
           <caret line="31" column="0" lean-forward="true" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1163,9 +916,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="14" column="1" lean-forward="true" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1183,7 +933,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="482">
           <caret line="55" column="0" lean-forward="false" selection-start-line="55" selection-start-column="0" selection-end-line="59" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1191,17 +940,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="190">
           <caret line="38" column="5" lean-forward="false" selection-start-line="38" selection-start-column="5" selection-end-line="38" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs5010/assignment8/reader/SkiersReader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="24" column="5" lean-forward="true" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1209,7 +947,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="435">
           <caret line="33" column="21" lean-forward="false" selection-start-line="33" selection-start-column="21" selection-end-line="33" selection-end-column="21" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1217,7 +954,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="480">
           <caret line="36" column="11" lean-forward="true" selection-start-line="36" selection-start-column="11" selection-end-line="36" selection-end-column="11" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1225,9 +961,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="6" column="45" lean-forward="true" selection-start-line="6" selection-start-column="45" selection-end-line="6" selection-end-column="45" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1235,9 +968,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="318">
           <caret line="41" column="69" lean-forward="true" selection-start-line="41" selection-start-column="69" selection-end-line="41" selection-end-column="69" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1245,9 +975,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="45" column="30" lean-forward="false" selection-start-line="45" selection-start-column="30" selection-end-line="45" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1255,9 +982,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="954">
           <caret line="75" column="5" lean-forward="false" selection-start-line="75" selection-start-column="5" selection-end-line="75" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1265,9 +989,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1065">
           <caret line="75" column="5" lean-forward="false" selection-start-line="75" selection-start-column="5" selection-end-line="75" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1275,15 +996,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-486">
           <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1252#1253#0" expanded="true" />
-            <element signature="e#1275#1276#0" expanded="true" />
-            <element signature="e#2118#2119#0" expanded="true" />
-            <element signature="e#2163#2164#0" expanded="true" />
-            <element signature="e#3396#3397#0" expanded="true" />
-            <element signature="e#3419#3420#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1291,9 +1003,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="871">
           <caret line="84" column="56" lean-forward="false" selection-start-line="84" selection-start-column="56" selection-end-line="84" selection-end-column="56" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1309,7 +1018,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs5010/assignment8/SkiQueryProcessor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="674">
+        <state relative-caret-position="555">
           <caret line="52" column="43" lean-forward="false" selection-start-line="52" selection-start-column="43" selection-end-line="52" selection-end-column="43" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1319,43 +1028,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs5010/assignment8/record/SkierRecord.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="362">
+        <state relative-caret-position="780">
           <caret line="55" column="3" lean-forward="false" selection-start-line="55" selection-start-column="3" selection-end-line="55" selection-end-column="3" />
           <folding>
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs5010/assignment8/cmdhandler/ICmdHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="16" column="50" lean-forward="false" selection-start-line="16" selection-start-column="50" selection-end-line="16" selection-end-column="50" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs5010/assignment8/cmdhandler/QueryCmdHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2619">
-          <caret line="115" column="0" lean-forward="false" selection-start-line="115" selection-start-column="0" selection-end-line="115" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs5010/assignment8/cmdhandler/DataCmdHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="33">
-          <caret line="12" column="19" lean-forward="false" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
-          <folding>
-            <element signature="e#738#739#0" expanded="true" />
-            <element signature="e#762#763#0" expanded="true" />
-            <element signature="e#1441#1442#0" expanded="true" />
-            <element signature="e#1463#1464#0" expanded="true" />
-            <element signature="e#1590#1591#0" expanded="true" />
-            <element signature="e#1619#1620#0" expanded="true" />
-            <element signature="e#2118#2119#0" expanded="true" />
-            <element signature="e#2158#2159#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1364,15 +1040,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="486">
           <caret line="18" column="32" lean-forward="false" selection-start-line="18" selection-start-column="32" selection-end-line="18" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs5010/assignment8/cmdhandler/IQueryCmdHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="81">
+        <state relative-caret-position="45">
           <caret line="3" column="13" lean-forward="false" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
           <folding />
         </state>
@@ -1380,7 +1053,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/edu/neu/ccs/cs5010/assignment8/cmdhandler/QueryCmdHandlerTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1734">
+        <state relative-caret-position="1140">
           <caret line="79" column="1" lean-forward="false" selection-start-line="79" selection-start-column="1" selection-end-line="79" selection-end-column="1" />
           <folding />
         </state>
@@ -1388,8 +1061,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/edu/neu/ccs/cs5010/assignment8/cmdhandler/DataCmdHandlerTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="32" column="35" lean-forward="true" selection-start-line="32" selection-start-column="35" selection-end-line="32" selection-end-column="35" />
+        <state relative-caret-position="435">
+          <caret line="32" column="35" lean-forward="false" selection-start-line="32" selection-start-column="35" selection-end-line="32" selection-end-column="35" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1416,188 +1089,7 @@
             <node x="882.4731538873586" y="665.0">edu.neu.ccs.cs5010.assignment8.SkiProcessorTest</node>
           </nodes>
           <notes />
-          <edges>
-            <edge source="edu.neu.ccs.cs5010.assignment8.SkiQueryProcessor" target="edu.neu.ccs.cs5010.assignment8.query">
-              <point x="-69.6875" y="-23.5" />
-              <point x="268.7856538873585" y="538.0" />
-              <point x="45.37485843281286" y="538.0" />
-              <point x="45.37485843281286" y="391.0" />
-              <point x="150.77453649044537" y="391.0" />
-              <point x="0.0" y="23.5" />
-            </edge>
-            <edge source="edu.neu.ccs.cs5010.assignment8.dataprocessor" target="edu.neu.ccs.cs5010.assignment8.dataprocessor">
-              <point x="-87.75" y="23.5" />
-              <point x="1042.2320012899559" y="351.0" />
-              <point x="992.9820012899559" y="351.0" />
-              <point x="992.9820012899559" y="319.25" />
-              <point x="-117.0" y="11.75" />
-            </edge>
-            <edge source="edu.neu.ccs.cs5010.assignment8.record" target="edu.neu.ccs.cs5010.assignment8.record">
-              <point x="-38.22222222222223" y="23.5" />
-              <point x="930.8571428571429" y="224.0" />
-              <point x="843.0793650793652" y="224.0" />
-              <point x="843.0793650793652" y="144.83333333333337" />
-              <point x="-86.0" y="-15.666666666666629" />
-            </edge>
-            <edge source="edu.neu.ccs.cs5010.assignment8.record" target="edu.neu.ccs.cs5010.assignment8.exception">
-              <point x="-42.999999999999886" y="-23.5" />
-              <point x="926.0793650793653" y="117.0" />
-              <point x="910.3708901788448" y="117.0" />
-              <point x="0.0" y="23.5" />
-            </edge>
-            <edge source="edu.neu.ccs.cs5010.assignment8.dataprocessor" target="edu.neu.ccs.cs5010.assignment8.record">
-              <point x="-46.799999999999955" y="-23.5" />
-              <point x="1083.182001289956" y="254.0" />
-              <point x="1026.4126984126985" y="254.0" />
-              <point x="57.33333333333337" y="23.5" />
-            </edge>
-            <edge source="edu.neu.ccs.cs5010.assignment8.SkiQueryProcessor" target="edu.neu.ccs.cs5010.assignment8.cmdhandler">
-              <point x="69.6875" y="-23.5" />
-              <point x="408.1606538873585" y="538.0" />
-              <point x="743.065334623289" y="538.0" />
-              <point x="-17.91666666666663" y="23.5" />
-            </edge>
-            <edge source="edu.neu.ccs.cs5010.assignment8.queryprocessor" target="edu.neu.ccs.cs5010.assignment8.queryprocessor">
-              <point x="-91.5" y="23.5" />
-              <point x="389.9820012899557" y="488.0" />
-              <point x="339.4820012899557" y="488.0" />
-              <point x="339.4820012899557" y="456.25" />
-              <point x="-122.0" y="11.75" />
-            </edge>
-            <edge source="edu.neu.ccs.cs5010.assignment8.dataprocessor" target="edu.neu.ccs.cs5010.assignment8.exception">
-              <point x="46.799999999999955" y="-23.5" />
-              <point x="1176.7820012899558" y="264.0" />
-              <point x="1151.373475829726" y="264.0" />
-              <point x="1151.373475829726" y="97.0" />
-              <point x="946.1890719970266" y="97.0" />
-              <point x="35.81818181818187" y="23.5" />
-            </edge>
-            <edge source="edu.neu.ccs.cs5010.assignment8.query" target="edu.neu.ccs.cs5010.assignment8.query">
-              <point x="-47.428571428571445" y="23.5" />
-              <point x="103.34596506187393" y="361.0" />
-              <point x="37.77453649044537" y="361.0" />
-              <point x="37.77453649044537" y="307.5" />
-              <point x="-83.0" y="-0.0" />
-            </edge>
-            <edge source="edu.neu.ccs.cs5010.assignment8.query" target="edu.neu.ccs.cs5010.assignment8.exception">
-              <point x="-41.5" y="-23.5" />
-              <point x="109.27453649044537" y="87.0" />
-              <point x="838.7345265424811" y="87.0" />
-              <point x="-71.63636363636363" y="23.5" />
-            </edge>
-            <edge source="edu.neu.ccs.cs5010.assignment8.SkiProcessorTest" target="edu.neu.ccs.cs5010.assignment8.SkiQueryProcessor">
-              <point x="-69.00000000000011" y="-23.5" />
-              <point x="916.9731538873584" y="640.0" />
-              <point x="338.4731538873585" y="640.0" />
-              <point x="0.0" y="23.5" />
-            </edge>
-            <edge source="edu.neu.ccs.cs5010.assignment8.reader" target="edu.neu.ccs.cs5010.assignment8.exception">
-              <point x="-21.375" y="-23.5" />
-              <point x="484.44033462328906" y="264.0" />
-              <point x="468.56533462328906" y="264.0" />
-              <point x="468.56533462328906" y="117.0" />
-              <point x="892.4617992697539" y="117.0" />
-              <point x="-17.909090909090878" y="23.5" />
-            </edge>
-            <edge source="edu.neu.ccs.cs5010.assignment8.queryprocessor" target="edu.neu.ccs.cs5010.assignment8.reader">
-              <point x="81.33333333333337" y="-23.5" />
-              <point x="57.0" y="23.5" />
-            </edge>
-            <edge source="edu.neu.ccs.cs5010.assignment8.editor" target="edu.neu.ccs.cs5010.assignment8.record">
-              <point x="1.1368683772161603E-13" y="-23.5" />
-              <point x="972.4820012899557" y="264.0" />
-              <point x="988.1904761904763" y="264.0" />
-              <point x="19.111111111111086" y="23.5" />
-            </edge>
-            <edge source="edu.neu.ccs.cs5010.assignment8.SkiDataProcessor" target="edu.neu.ccs.cs5010.assignment8.cmdhandler">
-              <point x="-60.571428571428555" y="-23.5" />
-              <point x="943.6138222047312" y="538.0" />
-              <point x="850.565334623289" y="538.0" />
-              <point x="89.58333333333337" y="23.5" />
-            </edge>
-            <edge source="edu.neu.ccs.cs5010.assignment8.SkiQueryProcessor" target="edu.neu.ccs.cs5010.assignment8.exception">
-              <point x="-97.5625" y="-23.5" />
-              <point x="240.91065388735848" y="548.0" />
-              <point x="0.0" y="548.0" />
-              <point x="0.0" y="77.0" />
-              <point x="820.8254356333903" y="77.0" />
-              <point x="-89.5454545454545" y="23.5" />
-            </edge>
-            <edge source="edu.neu.ccs.cs5010.assignment8.reader" target="edu.neu.ccs.cs5010.assignment8.reader">
-              <point x="0.0" y="23.5" />
-              <point x="505.81533462328906" y="361.0" />
-              <point x="390.31533462328906" y="361.0" />
-              <point x="390.31533462328906" y="295.75" />
-              <point x="-85.5" y="-11.75" />
-            </edge>
-            <edge source="edu.neu.ccs.cs5010.assignment8.cmdhandler" target="edu.neu.ccs.cs5010.assignment8.cmdhandler">
-              <point x="-53.75000000000001" y="23.5" />
-              <point x="707.2320012899556" y="498.0" />
-              <point x="623.4820012899556" y="498.0" />
-              <point x="623.4820012899556" y="432.75" />
-              <point x="-107.5" y="-11.75" />
-            </edge>
-            <edge source="edu.neu.ccs.cs5010.assignment8.SkiProcessorTest" target="edu.neu.ccs.cs5010.assignment8.exception">
-              <point x="68.99999999999989" y="-23.5" />
-              <point x="1054.9731538873584" y="640.0" />
-              <point x="1275.8034298613843" y="640.0" />
-              <point x="1275.8034298613843" y="67.0" />
-              <point x="999.9163447242994" y="67.0" />
-              <point x="89.54545454545459" y="23.5" />
-            </edge>
-            <edge source="edu.neu.ccs.cs5010.assignment8.SkiDataProcessor" target="edu.neu.ccs.cs5010.assignment8.dataprocessor">
-              <point x="60.57142857142867" y="-23.5" />
-              <point x="1064.7566793475885" y="538.0" />
-              <point x="1193.9820012899559" y="538.0" />
-              <point x="1193.9820012899559" y="401.0" />
-              <point x="1217.7320012899559" y="401.0" />
-              <point x="87.75" y="23.5" />
-            </edge>
-            <edge source="edu.neu.ccs.cs5010.assignment8.queryprocessor" target="edu.neu.ccs.cs5010.assignment8.query">
-              <point x="0.0" y="-23.5" />
-              <point x="481.4820012899557" y="391.0" />
-              <point x="221.91739363330248" y="391.0" />
-              <point x="71.14285714285714" y="23.5" />
-            </edge>
-            <edge source="edu.neu.ccs.cs5010.assignment8.SkiDataProcessor" target="edu.neu.ccs.cs5010.assignment8.exception">
-              <point x="90.85714285714289" y="-23.5" />
-              <point x="1095.0423936333027" y="548.0" />
-              <point x="1257.4820012899559" y="548.0" />
-              <point x="1257.4820012899559" y="77.0" />
-              <point x="982.0072538152084" y="77.0" />
-              <point x="71.6363636363636" y="23.5" />
-            </edge>
-            <edge source="edu.neu.ccs.cs5010.assignment8.reader" target="edu.neu.ccs.cs5010.assignment8.record">
-              <point x="21.375" y="-23.5" />
-              <point x="527.1903346232891" y="244.0" />
-              <point x="949.9682539682541" y="244.0" />
-              <point x="-19.111111111111086" y="23.5" />
-            </edge>
-            <edge source="edu.neu.ccs.cs5010.assignment8.SkiQueryProcessor" target="edu.neu.ccs.cs5010.assignment8.queryprocessor">
-              <point x="13.9375" y="-23.5" />
-              <point x="352.4106538873585" y="518.0" />
-              <point x="511.9820012899557" y="518.0" />
-              <point x="30.5" y="23.5" />
-            </edge>
-            <edge source="edu.neu.ccs.cs5010.assignment8.SkiQueryProcessor" target="edu.neu.ccs.cs5010.assignment8.output">
-              <point x="-13.9375" y="-23.5" />
-              <point x="324.5356538873585" y="518.0" />
-              <point x="221.98200128995575" y="518.0" />
-              <point x="0.0" y="23.5" />
-            </edge>
-            <edge source="edu.neu.ccs.cs5010.assignment8.SkiProcessorTest" target="edu.neu.ccs.cs5010.assignment8.SkiDataProcessor">
-              <point x="-1.1368683772161603E-13" y="-23.5" />
-              <point x="985.9731538873584" y="640.0" />
-              <point x="1004.1852507761597" y="640.0" />
-              <point x="0.0" y="23.5" />
-            </edge>
-            <edge source="edu.neu.ccs.cs5010.assignment8.SkiDataProcessor" target="edu.neu.ccs.cs5010.assignment8.editor">
-              <point x="0.0" y="-23.5" />
-              <point x="1004.1852507761597" y="548.0" />
-              <point x="1014.4820012899556" y="548.0" />
-              <point x="42.0" y="23.5" />
-            </edge>
-          </edges>
+          <edges />
           <settings layout="Hierarchic Group" zoom="1.0" x="-68.0" y="138.0" />
           <SelectedNodes>
             <node>edu.neu.ccs.cs5010.assignment8.record</node>
@@ -1610,11 +1102,51 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs5010/assignment8/SkiDataProcessor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="362">
+        <state relative-caret-position="465">
           <caret line="43" column="0" lean-forward="false" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs5010/assignment8/reader/SkiersReader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="47">
+          <caret line="21" column="30" lean-forward="false" selection-start-line="21" selection-start-column="30" selection-end-line="21" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs5010/assignment8/cmdhandler/ICmdHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="50" lean-forward="false" selection-start-line="16" selection-start-column="50" selection-end-line="16" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs5010/assignment8/cmdhandler/DataCmdHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="19" lean-forward="false" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs5010/assignment8/cmdhandler/QueryCmdHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="62" column="26" lean-forward="true" selection-start-line="62" selection-start-column="26" selection-end-line="62" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs5010/assignment8/output/IoLibrary.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="31" selection-end-column="28" />
+          <folding />
         </state>
       </provider>
     </entry>
