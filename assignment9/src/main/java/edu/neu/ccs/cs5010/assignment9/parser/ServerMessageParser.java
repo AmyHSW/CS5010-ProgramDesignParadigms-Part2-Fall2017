@@ -1,4 +1,4 @@
-package edu.neu.ccs.cs5010.assignment9;
+package edu.neu.ccs.cs5010.assignment9.parser;
 
 public class ServerMessageParser {
 
@@ -11,9 +11,9 @@ public class ServerMessageParser {
   }
 
   private void parse(String message) {
-    String[] strings = message.split(MSG_SPLIT_REGEX);
-    frame = strings[0];
-    payload = strings[1];
+    int splitIndex = message.indexOf(MSG_SPLIT_REGEX);
+    frame = message.substring(0, splitIndex);
+    payload = message.substring(splitIndex + 1).trim();
   }
 
   public String getFrame() {
@@ -21,6 +21,6 @@ public class ServerMessageParser {
   }
 
   public String getPayload() {
-    return payload.trim();
+    return payload;
   }
 }

@@ -1,4 +1,8 @@
-package edu.neu.ccs.cs5010.assignment9;
+package edu.neu.ccs.cs5010.assignment9.controller;
+
+import edu.neu.ccs.cs5010.assignment9.messages.ClientMessageGenerator;
+import edu.neu.ccs.cs5010.assignment9.parser.ServerMessageParser;
+import edu.neu.ccs.cs5010.assignment9.frames.ServerFrame;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -23,21 +27,19 @@ public class YahtzeeGame {
         PrintWriter out = new PrintWriter(socket.getOutputStream(), true);
         BufferedReader in = new BufferedReader(new InputStreamReader(socket.getInputStream()))
     ) {
-      //BufferedReader stdin = new BufferedReader(new InputStreamReader(System.in));
       String fromServer;
-      //String fromUser;
 
       while ((fromServer = in.readLine()) != null) {
         System.out.println("Server: " + fromServer);
         ServerMessageParser parser = new ServerMessageParser(fromServer);
+        if (parser.getFrame().endsWith(ServerFrame.GAME_OVER)) {
+          break;
+        }
         ClientMessageGenerator messageGenerator = new ClientMessageGenerator(parser);
-        System.out.println("Client: " + messageGenerator.getClientMessage());
-        //fromUser = stdin.readLine();
-        //if (fromUser != null) {
-        if (messageGenerator.getClientMessage() != null) {
-          //System.out.println("Client: " + fromUser);
-          out.println(messageGenerator.getClientMessage());
-          //out.println(fromUser);
+        String fromUser = messageGenerator.getClientMessage();
+        if (fromUser != null) {
+          System.out.println("Client: " + fromUser);
+          out.println(fromUser);
         }
       }
       socket.close();

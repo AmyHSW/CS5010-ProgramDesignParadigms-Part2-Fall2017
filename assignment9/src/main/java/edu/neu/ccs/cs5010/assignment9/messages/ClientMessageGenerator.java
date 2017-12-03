@@ -1,4 +1,7 @@
-package edu.neu.ccs.cs5010.assignment9;
+package edu.neu.ccs.cs5010.assignment9.messages;
+
+import edu.neu.ccs.cs5010.assignment9.frames.ServerFrame;
+import edu.neu.ccs.cs5010.assignment9.parser.ServerMessageParser;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -6,6 +9,7 @@ import java.io.InputStreamReader;
 
 public class ClientMessageGenerator {
 
+  private static final String EMPTY_MESSAGE = "";
   private static final String MSG_SPLIT_REGEX = ":";
   private String frame = "";
   private String payload = "";
@@ -14,10 +18,10 @@ public class ClientMessageGenerator {
     String serverFrame = parser.getFrame();
     String serverPayload = parser.getPayload();
     switch (serverFrame) {
-      case "CHOOSE_DICE" :
+      case ServerFrame.CHOOSE_DICE:
         chooseDice(serverPayload);
         break;
-      case "CHOOSE_SCORE" :
+      case ServerFrame.CHOOSE_SCORE:
         chooseScore(serverPayload);
         break;
       default:
@@ -34,7 +38,7 @@ public class ClientMessageGenerator {
         BufferedReader stdin = new BufferedReader(new InputStreamReader(System.in));
         String fromUser = stdin.readLine().trim();
         if (fromUser.contains(" ")) {
-          String[] output = fromUser.split("\\s");
+          String[] output = fromUser.split("\\s+");
           if (output.length != 5) {
             continue;
           }
@@ -49,8 +53,9 @@ public class ClientMessageGenerator {
           }
         }
       }
-    } catch (IOException e) {
-      System.err.println("Couldn't get I/O for the connection to the host");
+    } catch (IOException ioe) {
+      System.out.println("Something went wrong! : " + ioe.getMessage());
+      ioe.printStackTrace();
     }
 
   }
@@ -59,14 +64,14 @@ public class ClientMessageGenerator {
     System.out.println(serverPayload
             + " are the current dice rolls and score slots that you can choose from");
     boolean valid = false;
-    String[] serverInfo = serverPayload.split("\\s");
+    String[] categories = serverPayload.split("\\s");
     try {
       while (!valid) {
         System.out.println("Please give the name of one unused score in the list above");
         BufferedReader stdin = new BufferedReader(new InputStreamReader(System.in));
         String fromUser = stdin.readLine();
-        for (int i = 5; i < serverInfo.length; i++) {
-          if (fromUser.equals(serverInfo[i])) {
+        for (int i = 5; i < categories.length; i++) {
+          if (fromUser.equals(categories[i])) {
             valid = true;
             frame = "SCORE_CHOICE";
             payload = fromUser;
@@ -74,14 +79,15 @@ public class ClientMessageGenerator {
           }
         }
       }
-    } catch (IOException e) {
-      System.err.println("Couldn't get I/O for the connection to the host");
+    } catch (IOException ioe) {
+      System.out.println("Something went wrong! : " + ioe.getMessage());
+      ioe.printStackTrace();
     }
   }
 
   public String getClientMessage() {
     if (frame.equals("")) {
-      return "\n";
+      return EMPTY_MESSAGE;
     }
     return frame + MSG_SPLIT_REGEX + payload;
   }

@@ -1,4 +1,4 @@
-package edu.neu.ccs.cs5010.assignment9;
+package edu.neu.ccs.cs5010.assignment9.cmdhandler;
 
 /**
  * The ICmdHandler interface represents a cmd handler.

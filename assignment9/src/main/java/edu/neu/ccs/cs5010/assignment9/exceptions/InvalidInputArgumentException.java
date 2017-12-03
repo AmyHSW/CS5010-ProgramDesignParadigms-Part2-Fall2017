@@ -1,4 +1,4 @@
-package edu.neu.ccs.cs5010.assignment9.exception;
+package edu.neu.ccs.cs5010.assignment9.exceptions;
 
 /**
  * Thrown to indicate that the input argument is invalid.
