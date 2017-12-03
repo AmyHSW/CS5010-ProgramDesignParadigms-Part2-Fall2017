@@ -68,6 +68,8 @@ public class ClientMessageGenerator {
         for (int i = 5; i < serverInfo.length; i++) {
           if (fromUser.equals(serverInfo[i])) {
             valid = true;
+            frame = "SCORE_CHOICE";
+            payload = fromUser;
             break;
           }
         }
@@ -75,6 +77,13 @@ public class ClientMessageGenerator {
     } catch (IOException e) {
       System.err.println("Couldn't get I/O for the connection to the host");
     }
+  }
+
+  public String getClientMessage() {
+    if (frame.equals("")) {
+      return "\n";
+    }
+    return frame + MSG_SPLIT_REGEX + payload;
   }
 
 }
