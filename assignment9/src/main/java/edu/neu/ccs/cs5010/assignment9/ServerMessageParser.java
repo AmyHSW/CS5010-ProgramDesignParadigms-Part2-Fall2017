@@ -21,6 +21,6 @@ public class ServerMessageParser {
   }
 
   public String getPayload() {
-    return payload;
+    return payload.trim();
   }
 }

@@ -32,7 +32,7 @@ public class ClientMessageGenerator {
       while (!valid) {
         System.out.println("Please give 5 integers separated by space, 1 for keep and 0 for not");
         BufferedReader stdin = new BufferedReader(new InputStreamReader(System.in));
-        String fromUser = stdin.readLine();
+        String fromUser = stdin.readLine().trim();
         if (fromUser.contains(" ")) {
           String[] output = fromUser.split("\\s");
           if (output.length != 5) {
