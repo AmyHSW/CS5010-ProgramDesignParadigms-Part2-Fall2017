@@ -17,7 +17,7 @@ public class ClientMessageGenerator {
       case "CHOOSE_DICE" :
         chooseDice(serverPayload);
         break;
-      case "CHOOSE SCORE" :
+      case "CHOOSE_SCORE" :
         chooseScore(serverPayload);
         break;
       default:
@@ -56,7 +56,25 @@ public class ClientMessageGenerator {
   }
 
   private void chooseScore(String serverPayload) {
-
+    System.out.println(serverPayload
+            + " are the current dice rolls and score slots that you can choose from");
+    boolean valid = false;
+    String[] serverInfo = serverPayload.split("\\s");
+    try {
+      while (!valid) {
+        System.out.println("Please give the name of one unused score in the list above");
+        BufferedReader stdin = new BufferedReader(new InputStreamReader(System.in));
+        String fromUser = stdin.readLine();
+        for (int i = 5; i < serverInfo.length; i++) {
+          if (fromUser.equals(serverInfo[i])) {
+            valid = true;
+            break;
+          }
+        }
+      }
+    } catch (IOException e) {
+      System.err.println("Couldn't get I/O for the connection to the host");
+    }
   }
 
 }
