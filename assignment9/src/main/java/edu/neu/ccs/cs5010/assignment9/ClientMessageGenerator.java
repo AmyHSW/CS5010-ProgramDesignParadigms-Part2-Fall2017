@@ -7,8 +7,8 @@ import java.io.InputStreamReader;
 public class ClientMessageGenerator {
 
   private static final String MSG_SPLIT_REGEX = ":";
-  private String frame;
-  private String payload;
+  private String frame = "";
+  private String payload = "";
 
   public ClientMessageGenerator(ServerMessageParser parser) {
     String serverFrame = parser.getFrame();
