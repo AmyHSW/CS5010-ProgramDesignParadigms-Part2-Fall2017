@@ -2,8 +2,8 @@ package edu.neu.ccs.cs5010.assignment9;
 
 import edu.neu.ccs.cs5010.assignment9.cmdhandler.CmdHandler;
 import edu.neu.ccs.cs5010.assignment9.cmdhandler.ICmdHandler;
-import edu.neu.ccs.cs5010.assignment9.controller.IGame;
-import edu.neu.ccs.cs5010.assignment9.controller.YahtzeeGame;
+import edu.neu.ccs.cs5010.assignment9.controller.IPlayer;
+import edu.neu.ccs.cs5010.assignment9.controller.YahtzeePlayer;
 import edu.neu.ccs.cs5010.assignment9.exceptions.InvalidInputArgumentException;
 
 public class PlayYahtzee {
@@ -16,8 +16,8 @@ public class PlayYahtzee {
     String hostname = cmdHandler.getHostname();
     int portNumber = cmdHandler.getPortNumber();
 
-    // initializes a new game and starts the game
-    IGame game = new YahtzeeGame(hostname, portNumber);
-    game.start();
+    // initializes a new player and starts the game
+    IPlayer player = new YahtzeePlayer(hostname, portNumber);
+    player.playGame();
   }
 }

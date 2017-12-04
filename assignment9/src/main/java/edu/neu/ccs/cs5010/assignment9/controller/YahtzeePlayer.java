@@ -15,18 +15,18 @@ import java.net.Socket;
 import java.net.UnknownHostException;
 import java.nio.charset.StandardCharsets;
 
-public class YahtzeeGame implements IGame {
+public class YahtzeePlayer implements IPlayer {
 
   private final String hostname;
   private final int portNumber;
 
-  public YahtzeeGame(String hostname, int portNumber) {
+  public YahtzeePlayer(String hostname, int portNumber) {
     this.hostname = hostname;
     this.portNumber = portNumber;
   }
 
   @Override
-  public void start() {
+  public void playGame() {
     try (
           Socket socket = new Socket(hostname, portNumber);
           PrintWriter out = new PrintWriter(new OutputStreamWriter(

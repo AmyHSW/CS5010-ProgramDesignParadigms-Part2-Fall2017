@@ -42,7 +42,7 @@ public class ClientMsgGenerator implements IClientMsgGenerator {
     try {
       while (!valid) {
         System.out.println(
-                "Please give 5 integers separated by space, 1 for keep and 0 for not");
+                "Please give 5 integers separated by space, 1 for keep and 0 for not:");
         BufferedReader stdin = new BufferedReader(
                 new InputStreamReader(System.in, StandardCharsets.UTF_8));
         String fromUser = stdin.readLine();
@@ -77,7 +77,7 @@ public class ClientMsgGenerator implements IClientMsgGenerator {
     try {
       while (!valid) {
         System.out.println(
-                "Please give the name of one unused score slot in the list above");
+                "Please give the name of one unused score slot in the list above:");
         BufferedReader stdin = new BufferedReader(
                 new InputStreamReader(System.in, StandardCharsets.UTF_8));
         String fromUser = stdin.readLine();
