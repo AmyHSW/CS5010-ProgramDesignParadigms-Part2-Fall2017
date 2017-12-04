@@ -16,9 +16,9 @@ public class YahtzeeGame implements IGame {
   private final String hostname;
   private final int portNumber;
 
-  public YahtzeeGame(String hostname, int portNumebr) {
+  public YahtzeeGame(String hostname, int portNumber) {
     this.hostname = hostname;
-    this.portNumber = portNumebr;
+    this.portNumber = portNumber;
   }
 
   @Override

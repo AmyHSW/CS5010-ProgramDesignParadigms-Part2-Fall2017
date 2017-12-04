@@ -104,4 +104,22 @@ public class ClientMsgGenerator implements IClientMsgGenerator {
     return frame + MSG_SPLIT_REGEX + payload;
   }
 
+  @Override
+  public boolean equals(Object other) {
+    if (this == other) {
+      return true;
+    }
+    if (other == null || getClass() != other.getClass()) {
+      return false;
+    }
+
+    ClientMsgGenerator that = (ClientMsgGenerator) other;
+
+    return frame.equals(that.frame) && payload.equals(that.payload);
+  }
+
+  @Override
+  public int hashCode() {
+    return 31 * frame.hashCode() + payload.hashCode();
+  }
 }
