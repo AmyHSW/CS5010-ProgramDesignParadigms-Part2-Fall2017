@@ -13,6 +13,9 @@ import java.nio.charset.StandardCharsets;
 public class ClientMsgGenerator implements IClientMsgGenerator {
 
   private static final int CATEGORIES_START_INDEX = 5;
+  private static final int NUM_DICE = 5;
+  private static final String KEEP = "1";
+  private static final String NOT_KEEP = "0";
   private final BufferedReader stdin;
   private String frame = "";
   private String payload = "";
@@ -55,14 +58,14 @@ public class ClientMsgGenerator implements IClientMsgGenerator {
         fromUser = fromUser.trim();
         if (fromUser.contains(" ")) {
           String[] output = fromUser.split("\\s");
-          if (output.length != 5) {
+          if (output.length != NUM_DICE) {
             continue;
           }
           int index = 0;
-          while (index < 5 && (output[index].equals("0") || output[index].equals("1"))) {
+          while (index < NUM_DICE && (output[index].equals(NOT_KEEP) || output[index].equals(KEEP))) {
             index++;
           }
-          if (index == 5) {
+          if (index == NUM_DICE) {
             valid = true;
             frame = ClientFrame.KEEP_DICE;
             payload = serverPayload + " " + fromUser;

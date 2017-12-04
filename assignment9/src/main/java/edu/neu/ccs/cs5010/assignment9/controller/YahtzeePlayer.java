@@ -25,12 +25,10 @@ public class YahtzeePlayer implements IPlayer {
 
   @Override
   public void playGame() {
-    try (
-          PrintWriter out = new PrintWriter(new OutputStreamWriter(
+    try (PrintWriter out = new PrintWriter(new OutputStreamWriter(
                   socket.getOutputStream(),StandardCharsets.UTF_8), true);
-          BufferedReader stdin = new BufferedReader(
-              new InputStreamReader(socket.getInputStream(), StandardCharsets.UTF_8))
-    ) {
+         BufferedReader stdin = new BufferedReader(
+              new InputStreamReader(socket.getInputStream(), StandardCharsets.UTF_8))) {
       String fromServer;
       ITranslator translator = new ServerMessageTranslator();
       IClientMsgGenerator messageGenerator = new ClientMsgGenerator();

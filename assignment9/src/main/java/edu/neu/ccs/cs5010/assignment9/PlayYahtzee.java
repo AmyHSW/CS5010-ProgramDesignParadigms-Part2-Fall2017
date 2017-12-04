@@ -28,7 +28,7 @@ public class PlayYahtzee {
     player.playGame();
   }
 
-  protected static Socket createSocket(String hostname, int portnumber) {
+  private static Socket createSocket(String hostname, int portnumber) {
     try {
       return new Socket(hostname, portnumber);
     } catch (IOException ioe) {
