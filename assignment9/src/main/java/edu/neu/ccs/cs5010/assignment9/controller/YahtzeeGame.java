@@ -1,8 +1,10 @@
 package edu.neu.ccs.cs5010.assignment9.controller;
 
-import edu.neu.ccs.cs5010.assignment9.messages.ClientMessageGenerator;
-import edu.neu.ccs.cs5010.assignment9.parser.ServerMessageParser;
 import edu.neu.ccs.cs5010.assignment9.frames.ServerFrame;
+import edu.neu.ccs.cs5010.assignment9.messages.client.ClientMsgGenerator;
+import edu.neu.ccs.cs5010.assignment9.messages.client.IClientMsgGenerator;
+import edu.neu.ccs.cs5010.assignment9.messages.server.ITranslator;
+import edu.neu.ccs.cs5010.assignment9.messages.server.ServerMessageTranslator;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -11,7 +13,7 @@ import java.io.PrintWriter;
 import java.net.Socket;
 import java.net.UnknownHostException;
 
-public class YahtzeeGame {
+public class YahtzeeGame implements IGame {
 
   private final String hostname;
   private final int portNumber;
@@ -21,6 +23,7 @@ public class YahtzeeGame {
     this.portNumber = portNumebr;
   }
 
+  @Override
   public void start() {
     try (
         Socket socket = new Socket(hostname, portNumber);
@@ -28,17 +31,15 @@ public class YahtzeeGame {
         BufferedReader in = new BufferedReader(new InputStreamReader(socket.getInputStream()))
     ) {
       String fromServer;
-
+      ITranslator translator = new ServerMessageTranslator();
       while ((fromServer = in.readLine()) != null) {
-        System.out.println("Server: " + fromServer);
-        ServerMessageParser parser = new ServerMessageParser(fromServer);
-        if (parser.getFrame().endsWith(ServerFrame.GAME_OVER)) {
+        System.out.println(translator.translate(fromServer));
+        if (fromServer.startsWith(ServerFrame.GAME_OVER)) {
           break;
         }
-        ClientMessageGenerator messageGenerator = new ClientMessageGenerator(parser);
-        String fromUser = messageGenerator.getClientMessage();
+        IClientMsgGenerator messageGenerator = new ClientMsgGenerator(fromServer);
+        String fromUser = messageGenerator.getClientMsg();
         if (fromUser != null) {
-          System.out.println("Client: " + fromUser);
           out.println(fromUser);
         }
       }
