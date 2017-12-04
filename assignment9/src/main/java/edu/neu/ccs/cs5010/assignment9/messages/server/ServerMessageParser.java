@@ -1,5 +1,7 @@
 package edu.neu.ccs.cs5010.assignment9.messages.server;
 
+import edu.neu.ccs.cs5010.assignment9.messages.client.ClientMsgGenerator;
+
 public class ServerMessageParser implements IMessageParser {
 
   private static final String MSG_SPLIT_REGEX = ":";
@@ -24,5 +26,24 @@ public class ServerMessageParser implements IMessageParser {
   @Override
   public String getPayload() {
     return payload;
+  }
+
+  @Override
+  public boolean equals(Object other) {
+    if (this == other) {
+      return true;
+    }
+    if (other == null || getClass() != other.getClass()) {
+      return false;
+    }
+
+    ServerMessageParser that = (ServerMessageParser) other;
+
+    return frame.equals(that.frame) && payload.equals(that.payload);
+  }
+
+  @Override
+  public int hashCode() {
+    return 31 * frame.hashCode() + payload.hashCode();
   }
 }
