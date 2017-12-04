@@ -46,7 +46,7 @@ public class ClientMsgGenerator implements IClientMsgGenerator {
         BufferedReader stdin = new BufferedReader(
                 new InputStreamReader(System.in, StandardCharsets.UTF_8));
         String fromUser = stdin.readLine();
-        assert(fromUser != null);
+        assert (fromUser != null);
         fromUser = fromUser.trim();
         if (fromUser.contains(" ")) {
           String[] output = fromUser.split("\\s");
