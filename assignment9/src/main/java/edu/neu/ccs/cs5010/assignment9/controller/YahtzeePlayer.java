@@ -3,6 +3,7 @@ package edu.neu.ccs.cs5010.assignment9.controller;
 import edu.neu.ccs.cs5010.assignment9.frames.ServerFrame;
 import edu.neu.ccs.cs5010.assignment9.messages.client.ClientMsgGenerator;
 import edu.neu.ccs.cs5010.assignment9.messages.client.IClientMsgGenerator;
+import edu.neu.ccs.cs5010.assignment9.messages.client.IMessage;
 import edu.neu.ccs.cs5010.assignment9.messages.server.ITranslator;
 import edu.neu.ccs.cs5010.assignment9.messages.server.ServerMessageTranslator;
 
@@ -32,16 +33,14 @@ public class YahtzeePlayer implements IPlayer {
     ) {
       String fromServer;
       ITranslator translator = new ServerMessageTranslator();
+      IClientMsgGenerator messageGenerator = new ClientMsgGenerator();
       while ((fromServer = stdin.readLine()) != null) {
         System.out.println(translator.translate(fromServer));
         if (fromServer.startsWith(ServerFrame.GAME_OVER)) {
           break;
         }
-        IClientMsgGenerator messageGenerator = new ClientMsgGenerator(fromServer);
-        String fromUser = messageGenerator.getClientMsg();
-        if (fromUser != null) {
-          out.println(fromUser);
-        }
+        IMessage fromUser = messageGenerator.getClientMsg(fromServer);
+        out.println(fromUser);
       }
       socket.close();
     } catch (IOException e) {

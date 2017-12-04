@@ -14,6 +14,7 @@ import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
 
 public class YahtzeePlayerTest {
+
   private Socket mockServiceSocket;
   private ByteArrayOutputStream outputStream;
   private ByteArrayInputStream inputStream;
@@ -43,6 +44,8 @@ public class YahtzeePlayerTest {
 
   @Test
   public void playGame() throws Exception {
+    String input = "1 1 1 1 1\n 1 1 1 1 1\nYahtzee\nThreeOfKind\n";
+    System.setIn(new ByteArrayInputStream(input.getBytes()));
     IPlayer player = new YahtzeePlayer(mockServiceSocket);
     player.playGame();
     //outputStream.

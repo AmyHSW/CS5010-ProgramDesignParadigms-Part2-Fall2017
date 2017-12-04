@@ -12,13 +12,19 @@ import java.nio.charset.StandardCharsets;
 
 public class ClientMsgGenerator implements IClientMsgGenerator {
 
-  private static final String EMPTY_MESSAGE = "";
-  private static final String MSG_SPLIT_REGEX = ":";
+  private static final int CATEGORIES_START_INDEX = 5;
+  private final BufferedReader stdin;
   private String frame = "";
   private String payload = "";
 
-  public ClientMsgGenerator(String fromServer) {
+  public ClientMsgGenerator() {
+    stdin = new BufferedReader(new InputStreamReader(System.in, StandardCharsets.UTF_8));
+  }
+
+  @Override
+  public IMessage getClientMsg(String fromServer) {
     generateClientMsg(fromServer);
+    return new ClientMessage(frame, payload);
   }
 
   private void generateClientMsg(String fromServer) {
@@ -33,6 +39,7 @@ public class ClientMsgGenerator implements IClientMsgGenerator {
         chooseScore(serverPayload);
         break;
       default:
+        resetClientFrame();
         break;
     }
   }
@@ -43,8 +50,6 @@ public class ClientMsgGenerator implements IClientMsgGenerator {
       while (!valid) {
         System.out.println(
                 "Please give 5 integers separated by space, 1 for keep and 0 for not:");
-        BufferedReader stdin = new BufferedReader(
-                new InputStreamReader(System.in, StandardCharsets.UTF_8));
         String fromUser = stdin.readLine();
         assert (fromUser != null);
         fromUser = fromUser.trim();
@@ -78,10 +83,8 @@ public class ClientMsgGenerator implements IClientMsgGenerator {
       while (!valid) {
         System.out.println(
                 "Please give the name of one unused score slot in the list above:");
-        BufferedReader stdin = new BufferedReader(
-                new InputStreamReader(System.in, StandardCharsets.UTF_8));
         String fromUser = stdin.readLine();
-        for (int i = 5; i < categories.length; i++) {
+        for (int i = CATEGORIES_START_INDEX; i < categories.length; i++) {
           if (fromUser.equals(categories[i])) {
             valid = true;
             frame = ClientFrame.SCORE_CHOICE;
@@ -96,12 +99,8 @@ public class ClientMsgGenerator implements IClientMsgGenerator {
     }
   }
 
-  @Override
-  public String getClientMsg() {
-    if (frame.equals("")) {
-      return EMPTY_MESSAGE;
-    }
-    return frame + MSG_SPLIT_REGEX + payload;
+  private void resetClientFrame() {
+    frame = "";
   }
 
   @Override
@@ -115,11 +114,11 @@ public class ClientMsgGenerator implements IClientMsgGenerator {
 
     ClientMsgGenerator that = (ClientMsgGenerator) other;
 
-    return frame.equals(that.frame) && payload.equals(that.payload);
+    return stdin.equals(that.stdin);
   }
 
   @Override
   public int hashCode() {
-    return 31 * frame.hashCode() + payload.hashCode();
+    return stdin.hashCode();
   }
 }
