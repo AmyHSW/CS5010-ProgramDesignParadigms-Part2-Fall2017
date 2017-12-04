@@ -12,23 +12,19 @@ import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 import java.io.PrintWriter;
 import java.net.Socket;
-import java.net.UnknownHostException;
 import java.nio.charset.StandardCharsets;
 
 public class YahtzeePlayer implements IPlayer {
 
-  private final String hostname;
-  private final int portNumber;
+  private final Socket socket;
 
-  public YahtzeePlayer(String hostname, int portNumber) {
-    this.hostname = hostname;
-    this.portNumber = portNumber;
+  public YahtzeePlayer(Socket socket) {
+    this.socket = socket;
   }
 
   @Override
   public void playGame() {
     try (
-          Socket socket = new Socket(hostname, portNumber);
           PrintWriter out = new PrintWriter(new OutputStreamWriter(
                   socket.getOutputStream(),StandardCharsets.UTF_8), true);
           BufferedReader stdin = new BufferedReader(
@@ -48,10 +44,8 @@ public class YahtzeePlayer implements IPlayer {
         }
       }
       socket.close();
-    } catch (UnknownHostException e) {
-      System.err.println("Don't know about host " + hostname);
     } catch (IOException e) {
-      System.err.println("Couldn't get I/O for the connection to the host" + hostname);
+      System.err.println("Couldn't get I/O for the connection to the host");
     }
   }
 }
