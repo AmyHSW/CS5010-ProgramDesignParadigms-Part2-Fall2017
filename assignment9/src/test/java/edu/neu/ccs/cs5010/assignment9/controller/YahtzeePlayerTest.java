@@ -18,16 +18,18 @@ public class YahtzeePlayerTest {
   private Socket mockServiceSocket;
   private ByteArrayOutputStream outputStream;
   private ByteArrayInputStream inputStream;
-  private static final String SERVER_MSG = "INFO: joinning the game\n"
-    + "START_GAME: \n" + "START_ROUND: 1\n" + "START_TURN: \n"
-      + "CHOOSE_DICE: 1 2 3 4 5\n" + "INVALID_DICE_CHOICE: \n"
-      + "CHOOSE_SCORE: 1 2 3 4 5 LargeStraight FullHouse Yahtzee\n"
-      + "SCORE_CHOICE_VALID: Aces -1 Twos -1 LargeStraight 40 Total 40\n"
-      + "SCORE_CHOICE_INVALID: 1 2 3 4 5 LargeStraight FullHouse Yahtzee\n"
-      + "TURN_OVER: \n"
-      + "ROUND_OVER: 1\n"
-      + "ACK: Thank you\n"
-      + "GAME_OVER: Player1 40\n";
+  private static final String LINE_SEPARATOR = System.lineSeparator();
+  private static final String SERVER_MSG = "INFO: joining the game" + LINE_SEPARATOR
+      + "START_GAME: "  + LINE_SEPARATOR + "START_ROUND: 1" + LINE_SEPARATOR
+      + "START_TURN: " + LINE_SEPARATOR + "CHOOSE_DICE: 1 2 3 4 5" + LINE_SEPARATOR
+      + "INVALID_DICE_CHOICE: " + LINE_SEPARATOR
+      + "CHOOSE_SCORE: 1 2 3 4 5 LargeStraight FullHouse Yahtzee" + LINE_SEPARATOR
+      + "SCORE_CHOICE_VALID: Aces -1 Twos -1 LargeStraight 40 Total 40" + LINE_SEPARATOR
+      + "SCORE_CHOICE_INVALID: 1 2 3 4 5 LargeStraight FullHouse Yahtzee" + LINE_SEPARATOR
+      + "TURN_OVER: " + LINE_SEPARATOR
+      + "ROUND_OVER: 1" + LINE_SEPARATOR
+      + "ACK: Thank you" + LINE_SEPARATOR
+      + "GAME_OVER: Player1 40" + LINE_SEPARATOR;
 
   @Before
   public void setUp() throws Exception {
@@ -45,11 +47,15 @@ public class YahtzeePlayerTest {
 
   @Test
   public void playGame() throws Exception {
-    String input = "1 1 1 1 1 1\n1 1 1 1 0\nYahtzee\n";
+    String input = "1 1 1 1 1 1" + LINE_SEPARATOR + "1 1 1 1 0" + LINE_SEPARATOR
+        + "Yahtzee" + LINE_SEPARATOR;
     System.setIn(new ByteArrayInputStream(input.getBytes()));
     IPlayer player = new YahtzeePlayer(mockServiceSocket);
     player.playGame();
-    String fromUser = "\n\n\n\nKEEP_DICE:1 2 3 4 5 1 1 1 1 0\n\nSCORE_CHOICE:Yahtzee\n\n\n\n\n\n";
+    String fromUser = LINE_SEPARATOR + LINE_SEPARATOR + LINE_SEPARATOR + LINE_SEPARATOR
+    + "KEEP_DICE:1 2 3 4 5 1 1 1 1 0" + LINE_SEPARATOR + LINE_SEPARATOR
+    + "SCORE_CHOICE:Yahtzee" + LINE_SEPARATOR + LINE_SEPARATOR + LINE_SEPARATOR
+        + LINE_SEPARATOR + LINE_SEPARATOR + LINE_SEPARATOR;
     assertEquals(outputStream.toString(), fromUser);
   }
 }

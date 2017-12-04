@@ -10,7 +10,22 @@ import edu.neu.ccs.cs5010.assignment9.exceptions.InvalidInputArgumentException;
 import java.io.IOException;
 import java.net.Socket;
 
+/**
+ * The PlayYahtzee class let one player to connect to the server
+ * and play Yahtzee game.
+ *
+ * @author Shuwan Huang, Jingyu Shen
+ */
 public class PlayYahtzee {
+  /**
+   * Reads in the hostname and port number through command-line arguments.
+   * Creates Socket for the player to connect to the server.
+   * Lets the player play the game.
+   *
+   * @param args the command-line arguments
+   * @throws InvalidInputArgumentException if the arguments are invalid
+   * @throws InvalidHostnameException if there is an I/O failure
+   */
   public static void main(String[] args) {
     // parses the command-line arguments
     ICmdHandler cmdHandler = new CmdHandler(args);

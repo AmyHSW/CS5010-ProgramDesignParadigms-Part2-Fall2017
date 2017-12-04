@@ -9,7 +9,6 @@ import static org.junit.Assert.*;
 
 public class ClientMsgGeneratorTest {
   private IClientMsgGenerator generator;
-  private IClientMsgGenerator generator1;
 
   @Before
   public void setUp() throws Exception {

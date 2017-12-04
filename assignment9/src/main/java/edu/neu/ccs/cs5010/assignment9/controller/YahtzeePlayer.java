@@ -7,18 +7,27 @@ import edu.neu.ccs.cs5010.assignment9.messages.client.IMessage;
 import edu.neu.ccs.cs5010.assignment9.messages.server.ITranslator;
 import edu.neu.ccs.cs5010.assignment9.messages.server.ServerMessageTranslator;
 
-import java.io.IOException;
 import java.io.BufferedReader;
+import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 import java.io.PrintWriter;
 import java.net.Socket;
 import java.nio.charset.StandardCharsets;
 
+/**
+ * The Player class connects to the server socket and starts to play the game.
+ *
+ * @author Shuwan Huang, Jingyu Shen
+ */
 public class YahtzeePlayer implements IPlayer {
 
   private final Socket socket;
 
+  /**
+   * The constructor of YahtzeePlayer.
+   * @param socket the socket connect to the server.
+   */
   public YahtzeePlayer(Socket socket) {
     this.socket = socket;
   }

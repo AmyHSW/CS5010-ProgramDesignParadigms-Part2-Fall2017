@@ -1,13 +1,20 @@
 package edu.neu.ccs.cs5010.assignment9.messages.server;
 
-import edu.neu.ccs.cs5010.assignment9.messages.client.ClientMsgGenerator;
-
+/**
+ * The ServerMessageParser is a class to parse the server's message.
+ *
+ * @author Shuwan Huang, Jingyu Shen
+ */
 public class ServerMessageParser implements IMessageParser {
 
   private static final String MSG_SPLIT_REGEX = ":";
   private String frame;
   private String payload;
 
+  /**
+   * The constructor of ServerMessageParser.
+   * @param message the server's message.
+   */
   public ServerMessageParser(String message) {
     parse(message);
   }

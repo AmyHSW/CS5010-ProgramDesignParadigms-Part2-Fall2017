@@ -1,5 +1,10 @@
 package edu.neu.ccs.cs5010.assignment9.frames;
 
+/**
+ * The ServerFrame interface represents the frames of server.
+ *
+ * @author Shuwan Huang, Jingyu Shen
+ */
 public interface ServerFrame {
 
   String START_GAME = "START_GAME";

@@ -10,6 +10,11 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.nio.charset.StandardCharsets;
 
+/**
+ * The ClientMsgGenerator is a class to generate client's message with the server's message.
+ *
+ * @author Shuwan Huang, Jingyu Shen
+ */
 public class ClientMsgGenerator implements IClientMsgGenerator {
 
   private static final int CATEGORIES_START_INDEX = 5;
@@ -20,6 +25,9 @@ public class ClientMsgGenerator implements IClientMsgGenerator {
   private String frame = "";
   private String payload = "";
 
+  /**
+   * The constructor of ClientMsgGenerator.
+   */
   public ClientMsgGenerator() {
     stdin = new BufferedReader(new InputStreamReader(System.in, StandardCharsets.UTF_8));
   }
@@ -62,7 +70,8 @@ public class ClientMsgGenerator implements IClientMsgGenerator {
             continue;
           }
           int index = 0;
-          while (index < NUM_DICE && (output[index].equals(NOT_KEEP) || output[index].equals(KEEP))) {
+          while (index < NUM_DICE && (output[index].equals(NOT_KEEP)
+                  || output[index].equals(KEEP))) {
             index++;
           }
           if (index == NUM_DICE) {

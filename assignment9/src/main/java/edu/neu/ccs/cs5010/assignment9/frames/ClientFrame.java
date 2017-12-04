@@ -1,5 +1,10 @@
 package edu.neu.ccs.cs5010.assignment9.frames;
 
+/**
+ * The ClientFrame interface represents the frames of client.
+ *
+ * @author Shuwan Huang, Jingyu Shen
+ */
 public interface ClientFrame {
 
   String KEEP_DICE = "KEEP_DICE";

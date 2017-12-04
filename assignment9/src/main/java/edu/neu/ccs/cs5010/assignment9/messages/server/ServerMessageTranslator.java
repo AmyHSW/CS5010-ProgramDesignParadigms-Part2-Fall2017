@@ -3,6 +3,11 @@ package edu.neu.ccs.cs5010.assignment9.messages.server;
 import edu.neu.ccs.cs5010.assignment9.exceptions.InvalidServerFrameException;
 import edu.neu.ccs.cs5010.assignment9.frames.ServerFrame;
 
+/**
+ * The ServerMessageTranslator is to translate server's message to the instructor to the client.
+ *
+ * @author Shuwan Huang, Jingyu Shen
+ */
 public class ServerMessageTranslator implements ITranslator {
 
   private static final String START_GAME_MSG = "Welcome to Yahtzee and have fun gaming!";
