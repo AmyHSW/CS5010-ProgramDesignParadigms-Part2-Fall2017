@@ -20,4 +20,23 @@ public class ClientMessage implements IMessage {
   public String toString() {
     return message;
   }
+
+  @Override
+  public boolean equals(Object other) {
+    if (this == other) {
+      return true;
+    }
+    if (other == null || getClass() != other.getClass()) {
+      return false;
+    }
+
+    ClientMessage that = (ClientMessage) other;
+
+    return message.equals(that.message);
+  }
+
+  @Override
+  public int hashCode() {
+    return message.hashCode();
+  }
 }

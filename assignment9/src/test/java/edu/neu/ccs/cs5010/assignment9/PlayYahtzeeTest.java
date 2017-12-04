@@ -28,6 +28,7 @@ public class PlayYahtzeeTest {
 
   @Test(expected = InvalidHostnameException.class)
   public void expectedInvalidHostnameException() throws Exception {
+    PlayYahtzee playYahtzee = new PlayYahtzee();
     PlayYahtzee.main(new String[] {"host", "1000"});
   }
 
