@@ -32,14 +32,8 @@ public class CmdHandler implements ICmdHandler {
               "Please provide two arguments: host name and port number.\n");
       return;
     }
-    if (parseHostName(args[0]) && parsePortNumber(args[1])) {
-      valid = true;
-    }
-  }
-
-  private boolean parseHostName(String argument) {
-    hostname = argument;
-    return true;
+    hostname = args[0];
+    valid = parsePortNumber(args[1]);
   }
 
   private boolean parsePortNumber(String argument) {
@@ -83,7 +77,25 @@ public class CmdHandler implements ICmdHandler {
     return errorMessage.toString();
   }
 
+  @Override
+  public boolean equals(Object other) {
+    if (this == other) {
+      return true;
+    }
+    if (other == null || getClass() != other.getClass()) {
+      return false;
+    }
 
+    CmdHandler that = (CmdHandler) other;
 
+    if (portNumber != that.portNumber) {
+      return false;
+    }
+    return hostname.equals(that.hostname);
+  }
 
+  @Override
+  public int hashCode() {
+    return 31 * hostname.hashCode() + portNumber;
+  }
 }

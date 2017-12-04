@@ -6,12 +6,10 @@ import edu.neu.ccs.cs5010.assignment9.messages.client.IClientMsgGenerator;
 import edu.neu.ccs.cs5010.assignment9.messages.server.ITranslator;
 import edu.neu.ccs.cs5010.assignment9.messages.server.ServerMessageTranslator;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.io.PrintWriter;
+import java.io.*;
 import java.net.Socket;
 import java.net.UnknownHostException;
+import java.nio.charset.StandardCharsets;
 
 public class YahtzeeGame implements IGame {
 
@@ -26,13 +24,15 @@ public class YahtzeeGame implements IGame {
   @Override
   public void start() {
     try (
-        Socket socket = new Socket(hostname, portNumber);
-        PrintWriter out = new PrintWriter(socket.getOutputStream(), true);
-        BufferedReader in = new BufferedReader(new InputStreamReader(socket.getInputStream()))
+          Socket socket = new Socket(hostname, portNumber);
+          PrintWriter out = new PrintWriter(new OutputStreamWriter(
+                  socket.getOutputStream(),StandardCharsets.UTF_8), true);
+          BufferedReader stdin = new BufferedReader(
+              new InputStreamReader(socket.getInputStream(), StandardCharsets.UTF_8))
     ) {
       String fromServer;
       ITranslator translator = new ServerMessageTranslator();
-      while ((fromServer = in.readLine()) != null) {
+      while ((fromServer = stdin.readLine()) != null) {
         System.out.println(translator.translate(fromServer));
         if (fromServer.startsWith(ServerFrame.GAME_OVER)) {
           break;
@@ -46,7 +46,6 @@ public class YahtzeeGame implements IGame {
       socket.close();
     } catch (UnknownHostException e) {
       System.err.println("Don't know about host " + hostname);
-      System.exit(1);
     } catch (IOException e) {
       System.err.println("Couldn't get I/O for the connection to the host" + hostname);
     }

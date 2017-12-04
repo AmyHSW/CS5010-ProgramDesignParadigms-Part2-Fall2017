@@ -8,11 +8,15 @@ package edu.neu.ccs.cs5010.assignment9.cmdhandler;
 public interface ICmdHandler {
 
   /**
-   * Returns the test data filename.
-   * @return the test data filename.
+   * Returns the hostname.
+   * @return the hostname.
    */
   String getHostname();
 
+  /**
+   * Returns the port number.
+   * @return the port number.
+   */
   int getPortNumber();
 
   /**
