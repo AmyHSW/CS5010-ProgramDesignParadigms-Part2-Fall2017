@@ -51,7 +51,6 @@ public class ClientMsgGenerator implements IClientMsgGenerator {
         break;
       default:
         resetClientFrame();
-        break;
     }
   }
 

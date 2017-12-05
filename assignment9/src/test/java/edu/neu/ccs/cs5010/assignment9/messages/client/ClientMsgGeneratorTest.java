@@ -12,7 +12,7 @@ public class ClientMsgGeneratorTest {
 
   @Before
   public void setUp() throws Exception {
-    String input = "1 1 1 1 1\n 1 1 1 1 1\nYahtzee\nThreeOfKind\n";
+    String input = "4\n1 1 1 1\n1 1 0 1 1\n 1 1 1 1 1\nYahtzee\nThreeOfKind\n";
     System.setIn(new ByteArrayInputStream(input.getBytes()));
     generator = new ClientMsgGenerator();
 }
@@ -20,7 +20,7 @@ public class ClientMsgGeneratorTest {
   @Test
   public void getClientMsg() throws Exception {
     String serverMsg = "CHOOSE_DICE:1 2 3 4 5";
-    assertEquals(generator.getClientMsg(serverMsg).toString(),"KEEP_DICE:1 2 3 4 5 1 1 1 1 1");
+    assertEquals(generator.getClientMsg(serverMsg).toString(),"KEEP_DICE:1 2 3 4 5 1 1 0 1 1");
 
     serverMsg = "CHOOSE_SCORE:1 2 3 4 5 Yahtzee FourOfKind ThreeOfKind";
     assertEquals(generator.getClientMsg(serverMsg).toString(),"SCORE_CHOICE:Yahtzee");
