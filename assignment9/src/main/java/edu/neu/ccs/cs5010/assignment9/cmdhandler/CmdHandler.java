@@ -3,7 +3,7 @@ package edu.neu.ccs.cs5010.assignment9.cmdhandler;
 /**
  * The CmdHandler class handles the input command-line arguments.
  *
- * <p>The required arguments are the test data filename to process.
+ * <p>The required arguments are the hostname and port number.
  *
  * <p>If the arguments are not in valid format, an error message will be accumulated and
  * a usage message will be attached to end of the error message.
@@ -45,19 +45,11 @@ public class CmdHandler implements ICmdHandler {
     return true;
   }
 
-  /**
-   * Returns if the arguments are in valid format.
-   * @return true if the arguments are valid, false otherwise.
-   */
   @Override
   public boolean isValid() {
     return valid;
   }
 
-  /**
-   * Returns the test file name.
-   * @return the test file name.
-   */
   @Override
   public String getHostname() {
     return hostname;
@@ -67,11 +59,7 @@ public class CmdHandler implements ICmdHandler {
   public int getPortNumber() {
     return portNumber;
   }
-
-  /**
-   * Returns the error message.
-   * @return the error message.
-   */
+  
   @Override
   public String getErrorMessage() {
     return errorMessage.toString();
