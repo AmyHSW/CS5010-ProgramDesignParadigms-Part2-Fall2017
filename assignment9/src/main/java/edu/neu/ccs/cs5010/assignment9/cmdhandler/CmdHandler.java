@@ -59,7 +59,7 @@ public class CmdHandler implements ICmdHandler {
   public int getPortNumber() {
     return portNumber;
   }
-  
+
   @Override
   public String getErrorMessage() {
     return errorMessage.toString();
