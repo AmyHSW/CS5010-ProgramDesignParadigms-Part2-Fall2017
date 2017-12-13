@@ -265,7 +265,8 @@ public class CmdHandler implements ICmdHandler {
       case NODE_FILE_LARGE:
         return INFLUENCER_BOUND_LARGE;
       default:
-        return -1;
+        throw new InvalidNodeFileException(nodeFile
+            + " should be nodes_small.csv or nodes_10000.csv");
     }
   }
 

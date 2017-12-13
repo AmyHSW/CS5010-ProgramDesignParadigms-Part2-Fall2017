@@ -121,7 +121,11 @@ public class CmdHandlerTest {
   public void getInfluencerBound() throws Exception {
     assertTrue(cmdHandler1.getInfluencerBound() == 25);
     assertTrue(cmdHandler3.getInfluencerBound() == 250);
-    assertTrue(cmdHandler8.getInfluencerBound() == -1);
+  }
+
+  @Test(expected = InvalidNodeFileException.class)
+  public void expectedInvalidNodeFileException() throws Exception {
+    cmdHandler8.getInfluencerBound();
   }
 
   @Test
